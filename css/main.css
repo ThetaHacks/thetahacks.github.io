@@ -15,7 +15,16 @@ a {
   }
 
 html {
-    overflow: hidden;
+    overflow-x: hidden;
+    scrollbar-color: pink #000000;   /* scroll thumb & track */ 
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;        /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: pink;    /* color of the scroll thumb */
 }
 
 a:hover {
