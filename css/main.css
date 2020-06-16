@@ -190,7 +190,6 @@ animation-iteration-count: infinite;
 }
 
 .main-title:hover {
-    animation: jello;
     animation-duration: 1s;
 }
 
