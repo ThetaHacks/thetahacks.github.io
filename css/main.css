@@ -9,23 +9,30 @@ a {
 
 @font-face {
     font-family: 'CircularStd';
-    src: url('../fonts/CircularStd-Black.eot?#iefix') format('embedded-opentype'),  url('../fonts/CircularStd-Black.woff') format('woff'), url('../fonts/CircularStd-Black.ttf')  format('truetype'), url('../fonts/CircularStd-Black.svg#CircularStd-Black') format('svg');
+    src: url('../fonts/CircularStd-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/CircularStd-Black.woff') format('woff'), url('../fonts/CircularStd-Black.ttf') format('truetype'), url('../fonts/CircularStd-Black.svg#CircularStd-Black') format('svg');
     font-weight: normal;
     font-style: normal;
-  }
+}
 
 html {
     overflow-x: hidden;
-    scrollbar-color: pink #000000;   /* scroll thumb & track */ 
+    scrollbar-color: pink #000000;
+    /* scroll thumb & track */
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: initial;
+}
+
 ::-webkit-scrollbar-track {
-    background: #000000;        /* color of the tracking area */
+    background: #000000;
+    /* color of the tracking area */
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: pink;    /* color of the scroll thumb */
+    background-color: pink;
+    /* color of the scroll thumb */
 }
 
 a:hover {
@@ -88,15 +95,12 @@ a:hover {
         font-size: 30px;
         padding: 20px 0px 5px 15px;
     }
-
-
     .menu-link {
         padding: 5px 20px 0px 1000px;
         color: #b8d3d1;
         float: right;
         font-size: 23px;
     }
-
     #menu-down {
         display: block;
         color: #b8d3d1;
@@ -110,7 +114,6 @@ a:hover {
         -webkit-user-select: none;
         -o-user-select: none;
     }
-
     .menu-bar-hidden {
         display: none;
         float: right;
@@ -119,7 +122,6 @@ a:hover {
         padding-top: 80px;
         background: rgba(0, 0, 0, 0);
     }
-
     .menu-bar {
         display: none;
     }
@@ -137,6 +139,7 @@ h1 {
 .title-right {
     color: #ce7b91 !important;
 }
+
 .title-left {
     color: #B8D3D1 !important;
 }
@@ -173,17 +176,18 @@ h1 {
 .slidefadeleft {
     float: left;
 }
+
 .slidefaderight {
     float: right;
 }
 
 .prof {
-    opacity: 0; 
+    opacity: 0;
 }
 
 .proftitle {
     font-family: 'CircularStd';
-    color: gainsboro; 
+    color: gainsboro;
 }
 
 .desc {
@@ -196,6 +200,6 @@ h1 {
 }
 
 .navbar.scrolled {
-    background-color: #0c0c0c75; 
+    background-color: #0c0c0c75;
     transition: background 500ms;
-  }
+}
