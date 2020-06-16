@@ -13,117 +13,10 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 
 </head>
-
-<style>
-    a {
-        color: #b8d3d1;
-    }
-
-    a:hover {
-        color: #c0e8f9;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    .menu-bar {
-        float: right;
-        width: 70%;
-        height: 100px;
-    }
-
-    .menu-link {
-        padding: 26px 20px 5px 10px;
-        color: #b8d3d1;
-        float: right;
-    }
-
-    .menu-name {
-        padding: 26px 0px 5px 30px;
-        width: 30%;
-        color: #b8d3d1;
-        float: left;
-    }
-
-    .menu-bar-hidden {
-        display: none;
-    }
-
-    #menu-down {
-        display: none;
-    }
-
-    .header {
-        background: rgba(0, 0, 0, 0);
-        width: 100%;
-        height: 80px;
-        position: absolute;
-        z-index: 10;
-    }
-
-    @media (max-width: 900px) {
-        .menu-name {
-            font-size: 30px;
-            padding: 20px 0px 5px 15px;
-        }
-
-
-        .menu-link {
-            padding: 5px 20px 0px 1000px;
-            color: #b8d3d1;
-            float: right;
-            font-size: 23px;
-        }
-
-        #menu-down {
-            display: block;
-            color: #b8d3d1;
-            font-size: 53px;
-            margin-left: 90%;
-            padding: 0px 20px 0px 0px;
-            position: absolute;
-            user-select: none;
-            -moz-user-select: none;
-            -khtml-user-select: none;
-            -webkit-user-select: none;
-            -o-user-select: none;
-        }
-
-        .menu-bar-hidden {
-            display: none;
-            float: right;
-            width: 140px;
-            height: 260px;
-            padding-top: 80px;
-            background: rgba(0, 0, 0, 0);
-        }
-
-        .menu-bar {
-            display: none;
-        }
-    }
-
-    h1 {
-        color: #b8d3d1;
-    }
-
-    .main-title {
-        font-size: 10vw;
-        text-align: center;
-        padding-top: 30vh;
-        z-index: 30;
-    }
-
-    .title-right {
-        color: #ce7b91 !important;
-    }
-
-    .title-right:hover {
-        cursor: text;
-    }
-</style>
 
 <script>
     function showMenu() {
@@ -141,7 +34,9 @@
     <script src="js/bootstrap.js"></script>
     <header class="header">
         <div>
-            <h2 class="menu-name"><a href="">Theta<a class="title-right">Hacks</a></a></h2>
+            <h2 class="menu-name">
+                <a href="">Theta<a class="title-right">Hacks</a></a>
+            </h2>
             <div class="menu-bar">
                 <h2 class="menu-link"><a href="">Sponsors</a></h2>
                 <h2 class="menu-link"><a href="">FAQ</a></h2>
@@ -158,8 +53,29 @@
         </div>
     </header>
 
-    <div class="title-page">
-        <h1 class="main-title">Theta<a class="title-right">Hacks</a></h1>
+    <div class="title-page" style="text-align: center;">
+        <!-- <h1 class="main-title">Theta<a class="title-right">Hacks</a></h1> -->
+        <div class="title-container">
+            <div class="title-left animate__animated animate__bounceInLeft" style="display: inline-block;">
+                <h2 class="main-title">Theta</h2>
+            </div>
+            <div class="title-right animate__animated animate__bounceInRight" style="display: inline-block;">
+                <h2 class="main-title">Hacks</h2>
+            </div>
+        </div>
+        <div class="info-text" style="text-align: center;">
+            <div class="sub1 animate__animated animate__backInUp animate__delay-2s">
+                <h3 class="text1">February 12, 2021</h3>
+            </div>
+            <div class="sub1 animate__animated animate__backInUp animate__delay-3s">
+                <h3 class="text2">Register By February 5</h3>
+            </div>
+            <div class="sub1 animate__animated animate__backInUp animate__delay-4s">
+                <h3 class="text2">02496 Hack Street, Houston, Alabama</h3>
+            </div>
+        </div>
+        <span class="animated bounce"></span>
+
     </div>
 
 
