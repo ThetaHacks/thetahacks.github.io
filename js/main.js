@@ -1,8 +1,9 @@
 $(window).scroll(function (event) {
   var prev = "animate__fadeInRight";
+  var x = 0;
   $(".prof").each(function (i, el) {
     var el = $(el);
-    if (el.visible(true)) {
+    if (el.visible(true) || x < 4) {
       if (prev === "animate__fadeInLeft") {
         if (!el.hasClass("animate__fadeInRight")) {
           el.addClass("animate__animated");
@@ -18,6 +19,7 @@ $(window).scroll(function (event) {
           prev = "animate__fadeInLeft";
         }
       }
+      x++;
     }
   });
 });
