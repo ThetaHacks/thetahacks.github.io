@@ -1,5 +1,5 @@
 $(window).scroll(function (event) {
-  var prev = "animate__fadeInRight";
+  var prev = "animate__fadeInLeft";
   var x = 0;
   $(".prof").each(function (i, el) {
     var el = $(el);
