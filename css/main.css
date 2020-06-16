@@ -15,7 +15,17 @@ a {
   }
 
 html {
-    overflow: hidden;
+    overflow-x: hidden;
+    scrollbar-color: pink #000000;   /* scroll thumb & track */ 
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;        /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: pink;    /* color of the scroll thumb */
 }
 
 a:hover {
@@ -209,11 +219,15 @@ animation-iteration-count: infinite;
 	animation: slide-bl 1s ease-out both;
 }
 
-.faq-page {
+.halfnhalf:before {
+    content: "Theta";
+    color: #c0e8f9;
 }
 
-
-
+.halfnhalf:after {
+    content: "Hacks";
+    color: #CE7B91;
+}
 
  @-webkit-keyframes slide-br {
     0% {
@@ -288,3 +302,82 @@ animation-iteration-count: infinite;
     }
   }
   
+.slidefadeleft {
+    animation: s1 2.5s ease forwards;
+    float: left;
+}
+.slidefaderight {
+    animation: s2 2.5s ease forwards;
+    float: right;
+}
+.slidefadetop {
+    animation: s3 2.5s ease forwards;
+}
+
+.slidefadeleft:nth-child(odd) {
+    animation-duration: 2s;
+}
+.slidefaderight:nth-child(odd) {
+    animation-duration: 2s;
+}
+
+.prof {
+    opacity: 0; 
+}
+
+.proftitle {
+    font-family: 'CircularStd';
+    color: gainsboro; 
+}
+
+.desc {
+    color: gainsboro;
+}
+
+.q {
+    text-align: center;
+    clear: both;
+}
+
+@keyframes s1 {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;    
+    }
+}
+
+
+@keyframes s2 {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;    
+    }
+}
+
+@keyframes s3 {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;    
+    }
+}
+/* 
+.navbar-custom { 
+    background-color: #0c0c0c75; 
+}  */
+
+.navbar.scrolled {
+    background-color: #0c0c0c75; 
+    transition: background 500ms;
+  }
