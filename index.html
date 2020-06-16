@@ -1,0 +1,168 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>ThetaHacks</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+
+</head>
+
+<style>
+    a {
+        color: #b8d3d1;
+    }
+
+    a:hover {
+        color: #c0e8f9;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .menu-bar {
+        float: right;
+        width: 70%;
+        height: 100px;
+    }
+
+    .menu-link {
+        padding: 26px 20px 5px 10px;
+        color: #b8d3d1;
+        float: right;
+    }
+
+    .menu-name {
+        padding: 26px 0px 5px 30px;
+        width: 30%;
+        color: #b8d3d1;
+        float: left;
+    }
+
+    .menu-bar-hidden {
+        display: none;
+    }
+
+    #menu-down {
+        display: none;
+    }
+
+    .header {
+        background: rgba(0, 0, 0, 0);
+        width: 100%;
+        height: 80px;
+        position: absolute;
+        z-index: 10;
+    }
+
+    @media (max-width: 800px) {
+        .menu-name {
+            font-size: 30px;
+            padding: 20px 0px 5px 15px;
+        }
+
+
+        .menu-link {
+            padding: 5px 20px 0px 1000px;
+            color: #b8d3d1;
+            float: right;
+            font-size: 23px;
+        }
+
+        #menu-down {
+            display: block;
+            color: #b8d3d1;
+            font-size: 53px;
+            margin-left: 90%;
+            padding: 0px 20px 0px 0px;
+            position: absolute;
+            user-select: none;
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            -o-user-select: none;
+        }
+
+        .menu-bar-hidden {
+            display: none;
+            float: right;
+            width: 140px;
+            height: 260px;
+            padding-top: 80px;
+            background: rgba(0, 0, 0, 0));
+        }
+
+        .menu-bar {
+            display: none;
+        }
+    }
+
+    h1 {
+        color: #b8d3d1;
+    }
+
+    .main-title {
+        font-size: 20vh;
+        text-align: center;
+        padding-top: 30vh;
+        z-index: 30;
+    }
+
+    .title-right {
+        color: #ce7b91 !important;
+    }
+
+    .title-right:hover {
+        cursor: text;
+    }
+</style>
+
+<script>
+    function showMenu() {
+        var x = document.getElementById("menu-bar-hidden");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+
+<body style="background: #202030;font-family:Montserrat;">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <header class="header">
+        <div>
+            <h2 class="menu-name"><a href="">Theta<a class="title-right">Hacks</a></a></h2>
+            <div class="menu-bar">
+                <h2 class="menu-link"><a href="">Sponsors</a></h2>
+                <h2 class="menu-link"><a href="">FAQ</a></h2>
+                <h2 class="menu-link"><a href="">Schedule</a></h2>
+                <h2 class="menu-link"><a href="">About</a></h2>
+            </div>
+            <div id="menu-down"><a onclick="showMenu()">&#8801;</a></div>
+            <div id="menu-bar-hidden" class="menu-bar-hidden">
+                <h3 class="menu-link"><a href="">About</a></h3>
+                <h3 class="menu-link"><a href="">Schedule</a></h3>
+                <h3 class="menu-link"><a href="">FAQ</a></h3>
+                <h3 class="menu-link"><a href="">Sponsors</a></h3>
+            </div>
+        </div>
+    </header>
+
+    <div class="title-page">
+        <h1 class="main-title">Theta<a class="title-right">Hacks</a></h1>
+    </div>
+
+
+</body>
+
+</html>
