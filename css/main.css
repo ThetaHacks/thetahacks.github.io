@@ -372,7 +372,12 @@ animation-iteration-count: infinite;
         opacity: 1;    
     }
 }
-
+/* 
 .navbar-custom { 
     background-color: #0c0c0c75; 
-} 
+}  */
+
+.navbar.scrolled {
+    background-color: #0c0c0c75; 
+    transition: background 500ms;
+  }
