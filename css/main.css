@@ -219,9 +219,15 @@ animation-iteration-count: infinite;
 	animation: slide-bl 1s ease-out both;
 }
 
-.faq-page {
+.halfnhalf:before {
+    content: "Theta";
+    color: #c0e8f9;
 }
 
+.halfnhalf:after {
+    content: "Hacks";
+    color: #CE7B91;
+}
 
  @-webkit-keyframes slide-br {
     0% {
@@ -366,3 +372,7 @@ animation-iteration-count: infinite;
         opacity: 1;    
     }
 }
+
+.navbar-custom { 
+    background-color: #0c0c0c75; 
+} 
