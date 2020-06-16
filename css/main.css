@@ -150,6 +150,10 @@ h1 {
     animation-duration: 1s;
 }
 
+.prof {
+    width: 30vw;
+}
+
 .faq-page {
     width: 100vw;
     padding-left: 20vw;
