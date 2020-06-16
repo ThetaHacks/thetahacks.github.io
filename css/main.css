@@ -193,6 +193,12 @@ animation-iteration-count: infinite;
     animation-duration: 1s;
 }
 
+.faq-page {
+    width: 74vw;
+    margin-left: 13vw;
+    margin-right: 13vw;
+}
+
 .slidedown {
     -webkit-animation: expand 1s ease-out;
     animation: expand 1s ease-out;
