@@ -302,22 +302,13 @@ animation-iteration-count: infinite;
   }
   
 .slidefadeleft {
-    animation: s1 2.5s ease forwards;
     float: left;
 }
 .slidefaderight {
-    animation: s2 2.5s ease forwards;
     float: right;
 }
 .slidefadetop {
     animation: s3 2.5s ease forwards;
-}
-
-.slidefadeleft:nth-child(odd) {
-    animation-duration: 2s;
-}
-.slidefaderight:nth-child(odd) {
-    animation-duration: 2s;
 }
 
 .prof {
@@ -336,40 +327,6 @@ animation-iteration-count: infinite;
 .q {
     text-align: center;
     clear: both;
-}
-
-@keyframes s1 {
-    0% {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;    
-    }
-}
-
-
-@keyframes s2 {
-    0% {
-        transform: translateX(100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;    
-    }
-}
-
-@keyframes s3 {
-    0% {
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;    
-    }
 }
 /* 
 .navbar-custom { 
