@@ -17,6 +17,7 @@ a {
 html {
     overflow-x: hidden;
     scrollbar-color: pink #000000;   /* scroll thumb & track */ 
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar-track {
@@ -183,19 +184,6 @@ animation-iteration-count: infinite;
     color: #B8D3D1 !important;
 }
 
-.dot {
-    position: fixed;
-    width: 30px;
-    height: 30px;
-
-    border-radius: 30px;
-    background-color: #4bc2f1;
-}
-
-#logoDot {
-    color: #d74580;
-}
-
 .main-title {
     font-size: 8vw;
     font-family: 'CircularStd';
@@ -233,8 +221,6 @@ animation-iteration-count: infinite;
 
 .faq-page {
 }
-
-
 
 
  @-webkit-keyframes slide-br {
@@ -310,3 +296,73 @@ animation-iteration-count: infinite;
     }
   }
   
+.slidefadeleft {
+    animation: s1 2.5s ease forwards;
+    float: left;
+}
+.slidefaderight {
+    animation: s2 2.5s ease forwards;
+    float: right;
+}
+.slidefadetop {
+    animation: s3 2.5s ease forwards;
+}
+
+.slidefadeleft:nth-child(odd) {
+    animation-duration: 2s;
+}
+.slidefaderight:nth-child(odd) {
+    animation-duration: 2s;
+}
+
+.prof {
+    opacity: 0; 
+}
+
+.proftitle {
+    font-family: 'CircularStd';
+    color: gainsboro; 
+}
+
+.desc {
+    color: gainsboro;
+}
+
+.q {
+    text-align: center;
+    clear: both;
+}
+
+@keyframes s1 {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;    
+    }
+}
+
+
+@keyframes s2 {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;    
+    }
+}
+
+@keyframes s3 {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;    
+    }
+}
