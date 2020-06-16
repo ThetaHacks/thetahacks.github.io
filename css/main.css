@@ -4,7 +4,7 @@ a {
 }
 
 :root {
-    --animate-delay: 0.5s;
+    --animate-delay: 0.2s;
 }
 
 @font-face {
@@ -179,6 +179,22 @@ animation-iteration-count: infinite;
     font-family: 'CircularStd';
 }
 
+.main-title:hover {
+    animation: jello;
+    animation-duration: 1s;
+}
+
+.slidedown {
+    -webkit-animation: expand 1s ease-out;
+    animation: expand 1s ease-out;
+}
+
+.slideup {
+    -webkit-animation: expand 1s ease-out;
+    animation: expand 1s ease-out;
+    animation-direction: reverse;
+}
+
 .title-right:hover {
     cursor: text;
 }
@@ -192,6 +208,12 @@ animation-iteration-count: infinite;
 	-webkit-animation: slide-bl 1s ease-out both;
 	animation: slide-bl 1s ease-out both;
 }
+
+.faq-page {
+}
+
+
+
 
  @-webkit-keyframes slide-br {
     0% {
@@ -228,6 +250,17 @@ animation-iteration-count: infinite;
     100% {
         transform: scale(1.0);
     }
+  }
+
+  @-webkit-keyframes expand {
+    0%   { height:   0%; }
+    50%  { height:  50%; }
+    100% { height: 100%; }
+  }
+  @keyframes expand {
+    0%   { height:   0%; }
+    50%  { height:  50%; }
+    100% { height: 100%; }
   }
   
 @-webkit-keyframes slide-bl {
