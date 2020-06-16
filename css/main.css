@@ -178,11 +178,11 @@ h1 {
 }
 
 .slidefadeleft {
-    float: left;
+    /* float: left; */
 }
 
 .slidefaderight {
-    float: right;
+    /* float: right; */
 }
 
 .prof {
