@@ -150,7 +150,6 @@ h1 {
     animation-duration: 1s;
 }
 
-<<<<<<< HEAD
 .faq-page {
     width: 74vw;
     margin-left: 13vw;
@@ -168,8 +167,6 @@ h1 {
     animation-direction: reverse;
 }
 
-=======
->>>>>>> master
 .title-right:hover {
     cursor: text;
 }
