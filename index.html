@@ -9,82 +9,72 @@
     <meta name="description" content="The official ThetaHacks hackathon">
     <meta name="author" content="ThetaHacks">
 
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <script src="js/jquery-3.5.1.min.js"></script>    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
 
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="js/velocity.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.8/paper-full.js"></script>
+    <script src="js/main.js"></script>
 
 </head>
 
-<script>
-    function showMenu() {
-        var x = document.getElementById("menu-bar-hidden");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }
-    }
-
-
-</script>
-
 <body style="background: #202030;font-family:Montserrat;">
 
-    <header class="header">
-        <div>
-            <h2 class="menu-name">
-                <a href="">Theta<a class="title-right">Hacks</a></a>
-            </h2>
-            <div class="menu-bar">
-                <h2 class="menu-link"><a href="">Sponsors</a></h2>
-                <h2 class="menu-link"><a href="">FAQ</a></h2>
-                <h2 class="menu-link"><a href="">Schedule</a></h2>
-                <h2 class="menu-link"><a href="">About</a></h2>
-            </div>
-            <div id="menu-down"><a onclick="showMenu()">&#8801;</a></div>
-            <div id="menu-bar-hidden" class="menu-bar-hidden">
-                <h3 class="menu-link"><a href="">About</a></h3>
-                <h3 class="menu-link"><a href="">Schedule</a></h3>
-                <h3 class="menu-link"><a href="">FAQ</a></h3>
-                <h3 class="menu-link"><a href="">Sponsors</a></h3>
+    <nav class="navbar navbar-expand-lg fixed-top text-uppercase" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">ThetaHacks</a>
+            </a>
+            <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right text-uppercase text-white rounded" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse pull-right" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">FAQ</a></li>
+                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Schedule</a></li>
+                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Sponsors</a></li>
+                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">About</a></li>
+                </ul>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <div class="title-page" style="text-align: center;">
-        <!-- <h1 class="main-title">Theta<a class="title-right">Hacks</a></h1> -->
-        <div class="title-container">
-            <div class="title-left animate__animated animate__bounceInLeft" style="display: inline-block;">
-                <h2 class="main-title">Theta</h2>
+    <section>
+        <div class="title-page" style="text-align: center;">
+            <!-- <h1 class="main-title">Theta<a class="title-right">Hacks</a></h1> -->
+            <div class="title-container">
+                <div class="title-left animate__animated animate__bounceInLeft" style="display: inline-block;">
+                    <h2 class="main-title">Theta</h2>
+                </div>
+                <div class="title-right animate__animated animate__bounceInRight" style="display: inline-block;">
+                    <h2 class="main-title">Hacks</h2>
+                </div>
             </div>
-            <div class="title-right animate__animated animate__bounceInRight" style="display: inline-block;">
-                <h2 class="main-title">Hacks</h2>
+            <div class="info-text" style="text-align: center;">
+                <div class="sub1 animate__animated animate__backInUp animate__delay-1s">
+                    <h3 class="text1">February 12, 2021</h3>
+                </div>
+                <div class="sub1 animate__animated animate__backInUp animate__delay-2s">
+                    <h3 class="text2">Register By February 5</h3>
+                </div>
+                <div class="sub1 animate__animated animate__backInUp animate__delay-3s">
+                    <h3 class="text2">02496 Hack Street, Houston, Alabama</h3>
+                </div>
             </div>
+            <span class="animated bounce"></span>
+    
         </div>
-        <div class="info-text" style="text-align: center;">
-            <div class="sub1 animate__animated animate__backInUp animate__delay-1s">
-                <h3 class="text1">February 12, 2021</h3>
-            </div>
-            <div class="sub1 animate__animated animate__backInUp animate__delay-2s">
-                <h3 class="text2">Register By February 5</h3>
-            </div>
-            <div class="sub1 animate__animated animate__backInUp animate__delay-3s">
-                <h3 class="text2">02496 Hack Street, Houston, Alabama</h3>
-            </div>
+    </section>
+    <section>
+        <div class="faq-page" style="text-align: center;">
         </div>
-        <span class="animated bounce"></span>
+    </section>
+    
 
-    </div>
-    <div class="faq-page" style="text-align: center;">
-        
-    </div>
 
 
 </body>
