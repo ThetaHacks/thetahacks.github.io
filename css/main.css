@@ -151,9 +151,9 @@ h1 {
 }
 
 .faq-page {
-    width: 74vw;
-    margin-left: 13vw;
-    margin-right: 13vw;
+    width: 100vw;
+    padding-left: 13vw;
+    padding-right: 13vw;
 }
 
 .title-right:hover {
