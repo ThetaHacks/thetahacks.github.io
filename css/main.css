@@ -99,6 +99,11 @@ a:hover {
     height: 100px;
 }
 
+#copyright {
+    color: #b8d3d1;
+    text-align: center;
+}
+
 .menu-link {
     padding: 26px 20px 5px 10px;
     color: #b8d3d1;
