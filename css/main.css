@@ -43,6 +43,9 @@ html {
     .prof {
         width: 60vw !important;
     }
+    .mobile-only {
+        height: 120vh;
+    }
 
 }
 
@@ -50,10 +53,16 @@ html {
     .prof {
         padding: 50px 0vw 150px 0vw !important;
     }
+    .mobile-only {
+        height: 150vh;
+    }
 }
 @media (max-width: 700px) {
     .prof {
         padding: 100px 0vw 150px 0vw !important;
+    }
+    .mobile-only {
+        height: 190vh;
     }
 }
 
