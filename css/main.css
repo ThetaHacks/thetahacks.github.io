@@ -36,9 +36,11 @@ html {
 }
 
 a:hover {
-    color: #c0e8f9;
+    color: #546066;
     text-decoration: none;
     cursor: pointer;
+    text-shadow: 0px 1px 1px #546066;
+
 }
 
 .text1 {
@@ -211,9 +213,9 @@ h1 {
     clear: both;
 }
 
-.navbar.scrolled {
+.scrolled {
     background-color: #0c0c0ce3;
-    transition: background 500ms;
+    transition: background 1.5s;
 }
 
 .attendee {
