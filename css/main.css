@@ -21,6 +21,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 .row {
     height: 220px;
 }
@@ -38,9 +39,10 @@ html {
         display: none;
     }
     .mobile-only {
-        display: block;
+        display: inline-block;
     }
     .prof {
+        display: inline-block;
         width: 60vw !important;
     }
 
@@ -174,8 +176,12 @@ h1 {
     color: #b8d3d1;
 }
 
+.title-page {
+    padding-bottom: 10vh;
+}
+
 .title-container {
-    padding-top: 25vh;
+    padding-top: 22vh;
     z-index: 30;
 }
 
@@ -256,6 +262,11 @@ h1 {
 
 .scrolled {
     background-color: #0c0c0ce3;
+    transition: background 1.5s;
+}
+
+.un-scrolled {
+    background-color: rgba(0,0,0,0);
     transition: background 1.5s;
 }
 
