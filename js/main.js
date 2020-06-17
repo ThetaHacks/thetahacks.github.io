@@ -3,7 +3,7 @@ $(window).scroll(function (event) {
   var x = 0;
   $(".prof").each(function (i, el) {
     var el = $(el);
-    if (el.visible(true) || x < 8) {
+    if (el.visible(true)) {
       if (prev === "animate__fadeInLeft") {
         if (!el.hasClass("animate__fadeInRight")) {
           el.addClass("animate__animated");

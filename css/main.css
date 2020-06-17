@@ -186,9 +186,16 @@ h1 {
     float: right;
 }
 
+.slidefadeleft:nth-child(odd) {
+    animation-duration: 0.6s; /* So they look staggered */
+  }
+  .slidefaderight:nth-child(odd) {
+    animation-duration: 0.6s; /* So they look staggered */
+  }
+
 .prof {
     opacity: 0;
-}
+}   
 
 .proftitle {
     font-family: 'CircularStd';
