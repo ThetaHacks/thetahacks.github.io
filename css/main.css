@@ -3,6 +3,7 @@ a {
     font-family: 'CircularStd';
 }
 
+
 :root {
     --animate-delay: 0.2s;
 }
@@ -92,8 +93,9 @@ figure {
 }
 
 html {
-    overflow-x: hidden;
-    scrollbar-color: pink #000000;
+    overflow: hidden !important;
+    overflow-y: auto !important;
+    scrollbar-color: #000000;
     /* scroll thumb & track */
     scroll-behavior: smooth;
 }
@@ -442,7 +444,7 @@ h1 {
 }
 
 .scrolled {
-    background-color: #c97d9291;
+    background-color: #0c0c0ce8;
     /* ? Scroll Color! */
     transition: background 1.5s;
 }
