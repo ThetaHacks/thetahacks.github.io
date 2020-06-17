@@ -208,3 +208,13 @@ h1 {
     background-color: #0c0c0ce3;
     transition: background 500ms;
 }
+
+.attendee {
+    margin-top: 2%;
+    display: inline-block;
+}
+
+.mentor {
+    margin-top: 2%;
+    display: inline-block;
+}

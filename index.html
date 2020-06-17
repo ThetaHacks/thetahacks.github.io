@@ -17,6 +17,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
@@ -81,6 +82,42 @@
                     <h3 class="text2">02496 Hack Street, Houston, Alabama</h3>
                 </div>
             </div>
+            <button class="gb gb-bordered hover-slide hover-fill reverse attendee typeform-share" id="gb12" href="https://form.typeform.com/to/iPkfUe">Attendee Signup</button>
+            <script>
+            (function() {
+                var qs, js, q, s, d = document,
+                    gi = d.getElementById,
+                    ce = d.createElement,
+                    gt = d.getElementsByTagName,
+                    id = "typef_orm_share",
+                    b = "https://embed.typeform.com/";
+                if(!gi.call(d, id)) {
+                    js = ce.call(d, "script");
+                    js.id = id;
+                    js.src = b + "embed.js";
+                    q = gt.call(d, "script")[0];
+                    q.parentNode.insertBefore(js, q)
+                }
+            })()
+            </script>
+            <button class="gb gb-bordered hover-slide hover-fill reverse mentor typeform-share" id="gb10" href="https://form.typeform.com/to/EDb7Pt">Mentor Signup</button>
+            <script>
+                (function() {
+                    var qs, js, q, s, d = document,
+                        gi = d.getElementById,
+                        ce = d.createElement,
+                        gt = d.getElementsByTagName,
+                        id = "typef_orm_share",
+                        b = "https://embed.typeform.com/";
+                    if(!gi.call(d, id)) {
+                        js = ce.call(d, "script");
+                        js.id = id;
+                        js.src = b + "embed.js";
+                        q = gt.call(d, "script")[0];
+                        q.parentNode.insertBefore(js, q)
+                    }
+                })()
+                </script>
         </div>
     </header>
     <section id="all" class="dark-back">
@@ -343,4 +380,44 @@
 
 </body>
 
+<div class="modal fade" id="mentormodal" tabindex="-1" role="dialog" aria-labelledby="mentormodal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Mentor Sign-Up</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="attendeemodal" tabindex="-1" role="dialog" aria-labelledby="attendeemodal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Attendee Sign-Up</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 </html>
+
