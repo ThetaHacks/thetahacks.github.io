@@ -222,6 +222,11 @@ h1 {
     color: rgb(71, 91, 179);
 }
 
+a.questionLink:hover{
+    text-shadow: none;
+
+}
+
 .attendee {
     margin-top: 2%;
     display: inline-block;
