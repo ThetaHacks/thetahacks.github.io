@@ -35,6 +35,5 @@ $(function () {
       $nav.addClass("scrolled");
       $nav.removeClass("un-scrolled");
     }
-
   });
 });
