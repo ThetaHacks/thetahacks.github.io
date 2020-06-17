@@ -41,6 +41,10 @@ figure {
     width: 20vw;
 }
 
+.prof {
+    display: absolute;
+}
+
 .figure-e {
     width: 15vw;
 }
