@@ -21,6 +21,42 @@ html {
     scroll-behavior: smooth;
 }
 
+.row {
+    height: 220px;
+}
+
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+
+    .col-md-6 {
+        min-width: 80vw;
+    }
+    .not-mobile {
+        display: none;
+    }
+    .mobile-only {
+        display: block;
+    }
+    .prof {
+        width: 60vw !important;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .prof {
+        padding: 50px 0vw 150px 0vw !important;
+    }
+}
+@media (max-width: 700px) {
+    .prof {
+        padding: 100px 0vw 150px 0vw !important;
+    }
+}
+
 ::-webkit-scrollbar {
     width: initial;
 }
