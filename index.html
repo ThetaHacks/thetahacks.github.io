@@ -17,7 +17,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-        
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/main.css">
@@ -37,34 +37,34 @@
 <body style="background: #202030;font-family:Montserrat;">
 
     <nav class="navbar navbar-custom navbar-expand-lg fixed-top text-uppercase" id="mainNav">
-        
+
         <div class="container">
 
             <a class="navbar-brand js-scroll-trigger halfnhalf" href="#page-top"></a>
             </a>
-            
+
             <button data-toggle="collapse" data-target="#navbarResponsive"
                 class="navbar-toggler navbar-toggler-right text-uppercase text-white rounded"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i
                     class="fa fa-bars"></i>
             </button>
-            
+
             <div class="collapse navbar-collapse pull-right" id="navbarResponsive">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item mx-0 mx-lg-1" role="presentation"><a
                             class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#faq">FAQ</a></li>
-            
-                            <li class="nav-item mx-0 mx-lg-1" role="presentation"><a
+
+                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a
                             class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#schedule">Schedule</a>
                     </li>
-            
+
                     <li class="nav-item mx-0 mx-lg-1" role="presentation"><a
                             class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#sponsors">Sponsors</a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1" role="presentation"><a
                             class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
-            
-                        </ul>
+
+                </ul>
             </div>
         </div>
     </nav>
@@ -92,34 +92,18 @@
                     <h3 class="text2">12345 Hack Street, Sunnyvale, California</h3>
                 </div>
             </div>
-            <button class="gb gb-bordered hover-slide hover-fill reverse attendee typeform-share animate__animated animate__fadeInUp" id="gb12" href="https://form.typeform.com/to/iPkfUe">Attendee Signup</button>
+            <button
+                class="gb gb-bordered hover-slide hover-fill reverse attendee typeform-share animate__animated animate__fadeInUp"
+                id="gb12" href="https://form.typeform.com/to/iPkfUe">Attendee Signup</button>
             <script>
-            (function() {
-                var qs, js, q, s, d = document,
-                    gi = d.getElementById,
-                    ce = d.createElement,
-                    gt = d.getElementsByTagName,
-                    id = "typef_orm_share",
-                    b = "https://embed.typeform.com/";
-                if(!gi.call(d, id)) {
-                    js = ce.call(d, "script");
-                    js.id = id;
-                    js.src = b + "embed.js";
-                    q = gt.call(d, "script")[0];
-                    q.parentNode.insertBefore(js, q)
-                }
-            })()
-            </script>
-            <button class="gb gb-bordered hover-slide hover-fill reverse mentor typeform-share animate__animated animate__fadeInUp" id="gb10" href="https://form.typeform.com/to/EDb7Pt">Mentor Signup</button>
-            <script>
-                (function() {
+                (function () {
                     var qs, js, q, s, d = document,
                         gi = d.getElementById,
                         ce = d.createElement,
                         gt = d.getElementsByTagName,
                         id = "typef_orm_share",
                         b = "https://embed.typeform.com/";
-                    if(!gi.call(d, id)) {
+                    if (!gi.call(d, id)) {
                         js = ce.call(d, "script");
                         js.id = id;
                         js.src = b + "embed.js";
@@ -127,12 +111,60 @@
                         q.parentNode.insertBefore(js, q)
                     }
                 })()
-                </script>
+            </script>
+            <button
+                class="gb gb-bordered hover-slide hover-fill reverse mentor typeform-share animate__animated animate__fadeInUp"
+                id="gb10" href="https://form.typeform.com/to/EDb7Pt">Mentor Signup</button>
+            <script>
+                    (function () {
+                        var qs, js, q, s, d = document,
+                            gi = d.getElementById,
+                            ce = d.createElement,
+                            gt = d.getElementsByTagName,
+                            id = "typef_orm_share",
+                            b = "https://embed.typeform.com/";
+                        if (!gi.call(d, id)) {
+                            js = ce.call(d, "script");
+                            js.id = id;
+                            js.src = b + "embed.js";
+                            q = gt.call(d, "script")[0];
+                            q.parentNode.insertBefore(js, q)
+                        }
+                    })()
+            </script>
         </div>
     </header>
-    <section id="all" class="dark-back">
 
-        <div class="faq-page2" style="text-align: center; clear: both;background: #101020;">
+    <section style="padding: 5vh 0vh 5vh 0vh;background: #101020;">
+
+        <div class="schedule-container" style="text-align: center;">
+            <h1 id="schedule" style="font-size: 5vh; font-family: 'CircularStd'; color: #ce7b91; margin-top: 2%;">
+                Schedule
+            </h1>
+
+            <hr width="15%"
+                style="height: 1px; border-color: gainsboro; background-color: gainsboro; margin-bottom: 4%;">
+        </div>
+
+    </section>
+
+    <section style="padding: 5vh 0vh 5vh 0vh;">
+
+        <div class="schedule-container" style="text-align: center;">
+            <h1 id="schedule" style="font-size: 5vh; font-family: 'CircularStd'; color: #ce7b91; margin-top: 2%;">
+                Sponsors
+            </h1>
+
+            <hr width="15%"
+                style="height: 1px; border-color: gainsboro; background-color: gainsboro; margin-bottom: 4%;">
+        </div>
+
+    </section>
+
+
+    <section id="all" class="dark-back" style="background: #101020;">
+
+        <div class="faq-page2" style="text-align: center; clear: both;">
             <section id="faq" class="dark-back" style="padding: 10vh 0vh 10vh 0vh;">
                 <div class="faq-page" style="text-align: center; clear: both;">
 
@@ -148,7 +180,8 @@
                             <div class="col-md-6">
                                 <div class="prof">
                                     <h3 class="proftitle">What is ThetaHacks?</h3>
-                                    <p class="desc">ThetaHacks is a 24 hour event where students from all over the Bay Area can come together to make something together, whether software or hardware!
+                                    <p class="desc">ThetaHacks is a 24 hour event where students from all over the Bay
+                                        Area can come together to make something together, whether software or hardware!
                                     </p>
                                 </div>
                             </div>
@@ -156,7 +189,8 @@
                             <div class="col-md-6">
                                 <div class="prof">
                                     <h3 class="proftitle">Who can participate?</h3>
-                                    <p class="desc">Anyone in high school can join! If you've graduated already, consider becoming a mentor! If you are in middle school, email us for details.
+                                    <p class="desc">Anyone in high school can join! If you've graduated already,
+                                        consider becoming a mentor! If you are in middle school, email us for details.
                                     </p>
                                 </div>
                             </div>
@@ -169,7 +203,8 @@
                             <div class="col-md-6">
                                 <div class="prof">
                                     <h3 class="proftitle">How do I form a team? Do I need a team?</h3>
-                                    <p class="desc">You may form a team with up to 4 members! If you would like to go solo, thats perfectly fine too.
+                                    <p class="desc">You may form a team with up to 4 members! If you would like to go
+                                        solo, thats perfectly fine too.
                                     </p>
                                 </div>
                             </div>
@@ -177,7 +212,8 @@
                             <div class="col-md-6">
                                 <div class="prof">
                                     <h3 class="proftitle">Does this cost money?</h3>
-                                    <p class="desc">Nope. ThetaHacks is free, and always will be! Everything from food to swag is covered for all participants. 
+                                    <p class="desc">Nope. ThetaHacks is free, and always will be! Everything from food
+                                        to swag is covered for all participants.
                                     </p>
                                 </div>
                             </div>
@@ -190,7 +226,8 @@
                             <div class="col-md-6">
                                 <div class="prof">
                                     <h3 class="proftitle">What if I cant code?</h3>
-                                    <p class="desc">If you can't code, thats totally not a problem! We will be hosting workshops so you can learn, so please join us.
+                                    <p class="desc">If you can't code, thats totally not a problem! We will be hosting
+                                        workshops so you can learn, so please join us.
                                     </p>
                                 </div>
                             </div>
@@ -198,7 +235,9 @@
                             <div class="col-md-6">
                                 <div class="prof">
                                     <h3 class="proftitle">What should I bring?</h3>
-                                    <p class="desc">Bring your school student ID (or a government issued ID), laptop, charger, water bottle, and waiver (details soon). If you want to sleep (yolo-ing is overrated), feel free to bring a sleeping bag and toiletries.
+                                    <p class="desc">Bring your school student ID (or a government issued ID), laptop,
+                                        charger, water bottle, and waiver (details soon). If you want to sleep (yolo-ing
+                                        is overrated), feel free to bring a sleeping bag and toiletries.
                                     </p>
                                 </div>
                             </div>
@@ -211,7 +250,8 @@
                             <div class="col-md-6">
                                 <div class="prof">
                                     <h3 class="proftitle">What are the prizes? Rules? Code of Conduct?</h3>
-                                    <p class="desc">We will be posting a DevPost link soon with all the technical details. We plan to have some pretty epic prizes, so bring your best ideas!
+                                    <p class="desc">We will be posting a DevPost link soon with all the technical
+                                        details. We plan to have some pretty epic prizes, so bring your best ideas!
                                     </p>
                                 </div>
                             </div>
@@ -219,8 +259,9 @@
                             <div class="col-md-6">
                                 <div class="prof">
                                     <h3 class="proftitle">I have another question!</h3>
-                                    <p class="desc">Great! Feel free to contact us <a class="questionLink" target="_blank" href="https://forms.gle/bCT2fwE8JkSx4PSd7">here.</a>
-                                        
+                                    <p class="desc">Great! Feel free to contact us <a class="questionLink"
+                                            target="_blank" href="https://forms.gle/bCT2fwE8JkSx4PSd7">here.</a>
+
                                     </p>
                                 </div>
                             </div>
@@ -237,16 +278,6 @@
 
     </div>
 
-
-    <div class="schedule-container" style="text-align: center;">
-        <h1 id="schedule" style="font-size: 5vh; font-family: 'CircularStd'; color: #ce7b91; margin-top: 2%;">Schedule
-        </h1>
-
-        <hr width="15%" style="height: 1px; border-color: gainsboro; background-color: gainsboro; margin-bottom: 4%;">
-    </div>
-
-    </section>
-
 </body>
 
 <div class="modal fade" id="mentormodal" tabindex="-1" role="dialog" aria-labelledby="mentormodal" aria-hidden="true">
@@ -255,7 +286,7 @@
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Mentor Sign-Up</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
@@ -268,13 +299,14 @@
         </div>
     </div>
 </div>
-<div class="modal fade" id="attendeemodal" tabindex="-1" role="dialog" aria-labelledby="attendeemodal" aria-hidden="true">
+<div class="modal fade" id="attendeemodal" tabindex="-1" role="dialog" aria-labelledby="attendeemodal"
+    aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Attendee Sign-Up</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
@@ -289,4 +321,3 @@
 </div>
 
 </html>
-
