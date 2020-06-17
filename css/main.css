@@ -218,6 +218,10 @@ h1 {
     transition: background 1.5s;
 }
 
+.questionLink{
+    color: rgb(71, 91, 179);
+}
+
 .attendee {
     margin-top: 2%;
     display: inline-block;
