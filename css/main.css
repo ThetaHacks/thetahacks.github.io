@@ -438,7 +438,8 @@ h1 {
 }
 
 .scrolled {
-    background-color: #0c0c0ce3;
+    background-color: #c97d9291;
+    /* ? Scroll Color! */
     transition: background 1.5s;
 }
 
