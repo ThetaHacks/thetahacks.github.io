@@ -37,15 +37,15 @@ function showSVG() {
 
 var scheduleDone = false;
 
-$.fn.isolatedScroll = function() {
+$.fn.isolatedScroll = function () {
   this.bind('mousewheel DOMMouseScroll', function (e) {
-      var delta = e.wheelDelta || (e.originalEvent && e.originalEvent.wheelDelta) || -e.detail,
-          bottomOverflow = this.scrollTop + $(this).outerHeight() - this.scrollHeight >= 0,
-          topOverflow = this.scrollTop <= 0;
+    var delta = e.wheelDelta || (e.originalEvent && e.originalEvent.wheelDelta) || -e.detail,
+      bottomOverflow = this.scrollTop + $(this).outerHeight() - this.scrollHeight >= 0,
+      topOverflow = this.scrollTop <= 0;
 
-      if ((delta < 0 && bottomOverflow) || (delta > 0 && topOverflow)) {
-          e.preventDefault();
-      }
+    if ((delta < 0 && bottomOverflow) || (delta > 0 && topOverflow)) {
+      e.preventDefault();
+    }
   });
   return this;
 };
@@ -78,11 +78,11 @@ $(window).scroll(function (event) {
   $(".schedule").each(function (i, el) {
     var el = $(el);
     if (el.visible(true)) {
-      if(!scheduleDone) {
+      if (!scheduleDone) {
         showSVG();
         scheduleDone = true;
       }
-    }  
+    }
   });
   //$('.svg-container').isolatedScroll();
 });
@@ -102,8 +102,8 @@ $(function () {
 });
 
 function shift() {
-  if(document.getElementById("day").innerHTML == "Saturday") {
-    document.getElementById("day").innerHTML = "Sunday";
+  if (document.getElementById("day").innerHTML == "Saturday") {
+    document.getElementById("day").innerHTML = "&nbsp;Sunday&nbsp;";
     document.getElementById("sched1").style.display = "none";
     document.getElementById("sched2").style.display = "block";
   } else {
@@ -114,20 +114,20 @@ function shift() {
 }
 
 positions = {
-  "9:00" : 1,
-  "10:00" : 4,
-  "11:00" : 7,
-  "12:30" : 11,
-  "7:15" : 15,
-  "9:30" : 16.5,
-  "10:30" : 18,
-  "12:00" : 19,
-  "1:30" : 20,
-  "7:00" : 24,
-  "7:30" : 25,
-  "8:00" : 28,
-  "9:35" : 33,
-  "10:15" : 38
+  "9:00": 1,
+  "10:00": 4,
+  "11:00": 7,
+  "12:30": 11,
+  "7:15": 15,
+  "9:30": 16.5,
+  "10:30": 18,
+  "12:00": 19,
+  "1:30": 20,
+  "7:00": 24,
+  "7:30": 25,
+  "8:00": 28,
+  "9:35": 33,
+  "10:15": 38
 };
 
 function doThis() {
@@ -136,7 +136,7 @@ function doThis() {
   var arrow = document.getElementsByClassName("arrow-container")[0];
   document.getElementById("timestamp").innerText = timeEl.innerText;
   document.getElementById("timestamp").style.left = positions[time] + "%";
-  if(positions[time] > 18) {
+  if (positions[time] > 18) {
     document.getElementById("daystamp").innerText = "Sunday";
   } else {
     document.getElementById("daystamp").innerText = "Saturday";
@@ -152,13 +152,13 @@ function onRowClick(tableClass) {
   var rows = table[0].getElementsByTagName("tr");
   var i;
   for (i = 0; i < rows.length; i++) {
-      rows[i].addEventListener('click', doThis.bind(rows[i]));
+    rows[i].addEventListener('click', doThis.bind(rows[i]));
   }
-  
+
   rows = table[1].getElementsByTagName("tr");
   var x;
   for (x = 0; x < rows.length; x++) {
-      rows[x].addEventListener('click', doThis.bind(rows[x]));
+    rows[x].addEventListener('click', doThis.bind(rows[x]));
 
   }
 };

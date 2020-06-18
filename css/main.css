@@ -12,7 +12,6 @@ h3 {
     font-size: 24px !important;
 }
 
-
 :root {
     --animate-delay: 0.2s;
 }
@@ -492,6 +491,10 @@ a.questionLink:hover{
     stroke-linejoin: round;
 }
 
+table {
+    min-width: 30vw !important;
+}
+
 .leftarrow {
     cursor: pointer;
     color: gainsboro;
@@ -500,7 +503,7 @@ a.questionLink:hover{
 }
 
 .leftarrow:hover {
-    font-size: 25px;
+    color: gray;
 }
 
 .rightarrow {
@@ -511,7 +514,7 @@ a.questionLink:hover{
 }
 
 .rightarrow:hover {
-    font-size: 25px;
+    color: gray;
 }
 
 #day {
