@@ -545,3 +545,11 @@ a.questionLink:hover{
     top: 0.2vh;
     transition: all 2s ease-in-out;
 }
+
+.attendee {
+    filter: grayscale(100%);
+}
+
+.mentor {
+    filter: grayscale(100%);
+}
