@@ -30,6 +30,8 @@ function showSVG() {
 
   path.style.strokeDashoffset = '0';
 
+  document.getElementById("timestamp").classList.add("animate__fadeIn");
+  document.getElementById("daystamp").classList.add("animate__fadeIn");
 
 }
 
@@ -163,4 +165,8 @@ function onRowClick(tableClass) {
 
 onRowClick("schedule1");
 document.getElementById("timestamp").style.left = "1%";
+document.getElementById("timestamp").innerText = "9:00 AM"
+
+
 document.getElementById("daystamp").style.left = "1%";
+document.getElementById("daystamp").innerText = "Saturday"
