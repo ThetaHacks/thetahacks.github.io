@@ -567,6 +567,16 @@ pre {
     transition: all 2s ease-in-out;
 }
 
+.column2 {
+    font-family: Montserrat !important;
+    font-weight: normal !important;
+}
+}
+
+.column1 {
+    font-family: Montserrat !important;
+}
+
 
 #daystamp {
     color: gainsboro;
