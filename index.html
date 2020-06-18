@@ -97,9 +97,10 @@
                 </div>
             </div>
             <!-- to open forms, add typeform-share to class, and make the href https://form.typeform.com/to/iPkfUe -->
-            <button
-                class="gb gb-bordered hover-slide hover-fill reverse attendee animate__animated animate__fadeInUp"
-                id="gb12" onclick="alert('Sign-ups are not open yet! Sign up for our {mailing list} to get notified when they do!');">Attendee Signup</button>
+            <button class="gb gb-bordered hover-slide hover-fill reverse attendee animate__animated animate__fadeInUp"
+                id="gb12"
+                onclick="alert('Sign-ups are not open yet! Sign up for our {mailing list} to get notified when they do!');">Attendee
+                Signup</button>
             <script>
                 (function () {
                     var qs, js, q, s, d = document,
@@ -118,9 +119,10 @@
                 })()
             </script>
             <!-- to open forms, add typeform-share to class, and make the href https://form.typeform.com/to/EDb7Pt -->
-            <button
-                class="gb gb-bordered hover-slide hover-fill reverse mentor animate__animated animate__fadeInUp"
-                id="gb10" onclick="alert('Sign-ups are not open yet! Sign up for our {mailing list} to get notified when they do!');">Mentor Signup</button>
+            <button class="gb gb-bordered hover-slide hover-fill reverse mentor animate__animated animate__fadeInUp"
+                id="gb10"
+                onclick="alert('Sign-ups are not open yet! Sign up for our {mailing list} to get notified when they do!');">Mentor
+                Signup</button>
             <script>
                     (function () {
                         var qs, js, q, s, d = document,
@@ -141,32 +143,40 @@
         </div>
     </header>
 
-    <section style="padding: 5vh 0vh 5vh 0vh;background: #101020; min-height: 80vh;">
+    <section id="schedule" style="padding: 5vh 0vh 5vh 0vh;background: #101020; min-height: 100vh;">
 
         <div class="schedule-container" style="text-align: center;">
-            <h1 id="schedule" style="font-size: 5vh; font-family: 'CircularStd'; color: #ce7b91; margin-top: 1%;">Schedule</h1>
+            <h1 style="font-size: 5vh; font-family: 'CircularStd'; color: #ce7b91; margin-top: 1%;">Schedule</h1>
             <hr width="15%" style="height: 1px; border-color: gainsboro; background-color: gainsboro; ">
             <div class="innercontainer">
-                <div class="svg-container" style="position: relative; margin-left: 15%;">
+                <div class="svg-container" style="position: relative; margin-left: 10vw;">
                     <span id="timestamp"></span>
                     <div class="arrow-container">
-                        <svg id="arrowsvg" style="visibility: hidden; transform: none;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 50 640" width="40" height="600">
-                            <path class="arrowpath" opacity="1" fill-opacity="0" stroke="#b8d3d1" stroke-width="5" stroke-linecap="round" stroke-opacity="1" d="M10 636.03L10 6.33" id="a2v1t8OFOh"></path>
+                        <svg id="arrowsvg" style="visibility: hidden; transform: none;" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 50 640" width="40" height="600">
+                            <path class="arrowpath" opacity="1" fill-opacity="0" stroke="#b8d3d1" stroke-width="5"
+                                stroke-linecap="round" stroke-opacity="1" d="M10 636.03L10 6.33" id="a2v1t8OFOh"></path>
                         </svg>
                     </div>
                     <span id="daystamp"></span>
                     <div class="path-container">
-                        <svg style="visibility: hidden;" class="sched-line" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" width="640" height="640">
-                            <path class="mainpath" id="mainpath" opacity="1" fill-opacity="0" stroke="#ce7b91" stroke-width="5" stroke-opacity="1" stroke-dasharray="1500 1500" d="M626.47 348.06C510.93 614.72 410.81 614.72 326.11 348.06C241.41 81.39 141.53 81.39 26.47 348.06" id="aLxU1whWA"></path>
+                        <svg style="visibility: hidden;" class="sched-line" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" width="640" height="640">
+                            <path class="mainpath" id="mainpath" opacity="1" fill-opacity="0" stroke="#ce7b91"
+                                stroke-width="5" stroke-opacity="1" stroke-dasharray="1500 1500"
+                                d="M626.47 348.06C510.93 614.72 410.81 614.72 326.11 348.06C241.41 81.39 141.53 81.39 26.47 348.06"
+                                id="aLxU1whWA"></path>
                         </svg>
                     </div>
                 </div>
-                <div class="schedule" style="float: right; margin-right: 25%; margin-top: 6vh;">
+                <div class="schedule" style="float: right; margin: 6vh 10vw 0 0;">
                     <span class="leftarrow" onclick="shift()">◀</span>
                     <span id="day">Saturday</span>
-                    <span class="rightarrow" onclick="shift()">▶</span>
+                    <span class=" rightarrow" onclick="shift()">▶</span>
                     <div id="sched1">
-                        <div class="table100 ver1 m-b-110">
+                        <div class=" table100 ver1 m-b-110">
                             <div class="table100-head">
                                 <table>
                                     <thead>
@@ -177,9 +187,9 @@
                                     </thead>
                                 </table>
                             </div>
-        
+
                             <div class="table100-body js-pscroll">
-                                <table class="schedule1">
+                                <table class="schedule1" style="overflow-y: hidden;overflow-x: hidden;">
                                     <tbody style="cursor:pointer">
                                         <tr class="row100 body">
                                             <td class="cell100 column1">9:00 AM</td>
@@ -226,7 +236,7 @@
                                     </thead>
                                 </table>
                             </div>
-        
+
                             <div class="table100-body js-pscroll">
                                 <table class="schedule1">
                                     <tbody style="cursor:pointer">
