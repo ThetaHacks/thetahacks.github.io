@@ -640,7 +640,7 @@ pre {
     }
 
     .schedule {
-        margin: 0vh 5vw 0 0 !important;
+        margin: 6vh 5vw 0 0 !important;
     }
 
     .svg-container {
@@ -653,7 +653,7 @@ pre {
 @media (max-width: 1055px) {
     .schedule {
         float: none;
-        margin: 0vh 5vw 0vh 5vw !important;
+        margin: 6vh 5vw 0vh 5vw !important;
     }
 
     .svg-container {
