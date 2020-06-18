@@ -495,6 +495,14 @@ table {
     min-width: 400px !important;
 }
 
+#daystamp {
+    opacity: 1 !important;
+}
+
+#timestamp {
+    opacity: 1 !important;
+}
+
 pre {
     margin: 0;
     padding: 0;
@@ -553,7 +561,7 @@ pre {
 #timestamp {
     color: gainsboro;
     position: absolute;
-    top: 2vh;
+    top: 3.5vh;
     opacity: 0;
     animation-duration: 2s;
     transition: all 2s ease-in-out;

@@ -30,9 +30,6 @@ function showSVG() {
 
   path.style.strokeDashoffset = '0';
 
-  document.getElementById("timestamp").classList.add("animate__fadeIn");
-  document.getElementById("daystamp").classList.add("animate__fadeIn");
-
 }
 
 var scheduleDone = false;
@@ -137,11 +134,12 @@ function doThis() {
   document.getElementById("timestamp").innerText = timeEl.innerText;
   document.getElementById("timestamp").style.left = positions[time] + "%";
   if (positions[time] > 18) {
-    document.getElementById("daystamp").innerText = "Sunday";
+    document.getElementById("daystamp").innerHTML = "Sunday";
   } else {
-    document.getElementById("daystamp").innerText = "Saturday";
+    document.getElementById("daystamp").innerHTML = "Saturday";
   }
   document.getElementById("daystamp").style.left = positions[time] + "%";
+  console.log(document.getElementById("daystamp"))
   arrow.style.left = positions[time] + "%";
 }
 
@@ -169,4 +167,5 @@ document.getElementById("timestamp").innerText = "9:00 AM"
 
 
 document.getElementById("daystamp").style.left = "1%";
-document.getElementById("daystamp").innerText = "Saturday"
+document.getElementById("daystamp").innerText = "Saturday";
+
