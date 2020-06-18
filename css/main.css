@@ -492,7 +492,13 @@ a.questionLink:hover{
 }
 
 table {
-    min-width: 30vw !important;
+    min-width: 400px !important;
+}
+
+pre {
+    margin: 0;
+    padding: 0;
+    display: inline;
 }
 
 .leftarrow {

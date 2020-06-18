@@ -103,7 +103,7 @@ $(function () {
 
 function shift() {
   if (document.getElementById("day").innerHTML == "Saturday") {
-    document.getElementById("day").innerHTML = "&nbsp;Sunday&nbsp;";
+    document.getElementById("day").innerHTML = " Sunday ";
     document.getElementById("sched1").style.display = "none";
     document.getElementById("sched2").style.display = "block";
   } else {
