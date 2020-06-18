@@ -576,3 +576,13 @@ pre {
 .mentor {
     filter: grayscale(100%);
 }
+
+@media (max-width: 1500px) {
+    .schedule {
+        margin: 6vh 10vw 0 0;
+    }
+
+    .svg-container {
+        margin-left: 10vw;
+    }
+}
