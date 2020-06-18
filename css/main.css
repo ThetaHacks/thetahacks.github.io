@@ -3,8 +3,95 @@ a {
     font-family: 'CircularStd';
 }
 
+body {
+    font-size: 18px !important;
+}
+
+
+h3 {
+    font-size: 24px !important;
+}
+
+
 :root {
     --animate-delay: 0.2s;
+}
+
+.main-title {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.nav-link {
+    float: right;
+    font-size: 18px;
+}
+
+
+.main-title:hover {
+    cursor: default;
+}
+
+.directors {
+    display: flex;
+    flex-direction: row;
+    padding: 0vw 20vw;
+    margin: 2vw 0vw 2vw 0vw;
+}
+
+.everyone-else {
+    display: flex;
+    flex-direction: row;
+    padding: 0vw 20vw;
+}
+
+figure {
+    width: 20vw;
+}
+
+.prof {
+    display: absolute;
+}
+
+.figure-e {
+    width: 15vw;
+}
+
+.figure-image {
+    width: 15vw;
+    border-radius: 50%;
+    border: 0.3vw solid #eeeeee;
+}
+
+.figure-image-e {
+    width: 12vw;
+    border-radius: 50%;
+    border: 0.3vw solid #eeeeee;
+}
+
+
+.figure-caption {
+    color: lightgray;
+    font-size: 18px !important;
+}
+
+.figure-caption-e {
+    color: lightgray;
+    font-size: 16px !important;
+}
+
+.figure-caption-title {
+    margin-top: 20px;
+    color: white;
+    font-size: 26px !important;
+}
+
+.figure-caption-title-e {
+    margin-top: 20px;
+    color: white;
+    font-size: 20px !important;
 }
 
 @font-face {
@@ -15,11 +102,13 @@ a {
 }
 
 html {
-    overflow-x: hidden;
-    scrollbar-color: pink #000000;
+    overflow: hidden !important;
+    overflow-y: auto !important;
+    scrollbar-color: #000000;
     /* scroll thumb & track */
     scroll-behavior: smooth;
 }
+
 
 .row {
     height: 220px;
@@ -38,11 +127,33 @@ html {
         display: none;
     }
     .mobile-only {
-        display: block;
+        display: inline-block;
     }
     .prof {
+        display: inline-block;
         width: 60vw !important;
     }
+
+    .main-title {
+        font-size: 110px !important;
+    }
+
+    .figure-caption-title {
+        font-size: 22px !important;
+    }
+
+    .figure-caption {
+        font-size: 16px !important;
+    }
+
+
+    .figure-caption-e {
+        font-size: 16px !important;
+    }
+    .figure-caption-title-e {
+        font-size: 18px !important;
+    }
+
 
 }
 
@@ -50,10 +161,94 @@ html {
     .prof {
         padding: 50px 0vw 150px 0vw !important;
     }
+
+    .main-title {
+        font-size: 90px !important;
+    }
+
+    h3 {
+        font-size: 20px !important;
+    }
+
+    .gb {
+        padding: 4px 16px;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 4px;
+        margin: 0px 10px;
+    }
+
+    .figure-caption-title {
+        font-size: 18px !important;
+    }
+
+    .figure-caption {
+        font-size: 12px !important;
+    }
+
+    .figure-caption-e {
+        font-size: 12px !important;
+    }
+    .figure-caption-title-e {
+        font-size: 16px !important;
+    }
+
+    figure {
+        width: 25vw;
+    }
+
+    .figure-e {
+        width: 20vw;
+    }
+
+    .figure-image {
+        width: 20vw;
+    }
+
+    .figure-image-e {
+        width: 17vw;
+    }
+
+    .directors {
+        padding: 0vw 12.5vw;
+    }
+
+    .everyone-else {
+        padding: 0vw 10vw;
+    }
 }
 @media (max-width: 700px) {
     .prof {
         padding: 100px 0vw 150px 0vw !important;
+    }
+    .main-title {
+        font-size: 60px !important;
+    }
+    h3 {
+        font-size: 18px !important;
+    }
+
+    .gb {
+        padding: 2px 12px;
+        cursor: pointer;
+        font-size: 14px;
+        border-radius: 4px;
+        margin: 0px 5px;
+    }
+
+    .figure-caption-title {
+        font-size: 14px !important;
+    }
+
+    .figure-caption {
+        font-size: 12px !important;
+    }
+
+    .figure-caption-e {
+        font-size: 10px !important;
+    }
+    .figure-caption-title-e {
+        font-size: 12px !important;
     }
 }
 
@@ -71,12 +266,11 @@ html {
     /* color of the scroll thumb */
 }
 
+
 a:hover {
-    color: #546066;
+    color: #768891;
     text-decoration: none;
     cursor: pointer;
-    text-shadow: 0px 1px 1px #546066;
-
 }
 
 .text1 {
@@ -97,6 +291,11 @@ a:hover {
     float: right;
     width: 70%;
     height: 100px;
+}
+
+#copyright {
+    color: #b8d3d1;
+    text-align: center;
 }
 
 .menu-link {
@@ -169,8 +368,12 @@ h1 {
     color: #b8d3d1;
 }
 
+.title-page {
+    padding-bottom: 10vh;
+}
+
 .title-container {
-    padding-top: 25vh;
+    padding-top: 22vh;
     z-index: 30;
 }
 
@@ -183,7 +386,7 @@ h1 {
 }
 
 .main-title {
-    font-size: 8vw;
+    font-size: 130px;
     font-family: 'CircularStd';
 }
 
@@ -250,7 +453,13 @@ h1 {
 }
 
 .scrolled {
-    background-color: #0c0c0ce3;
+    background-color: #0c0c0ce8;
+    /* ? Scroll Color! */
+    transition: background 1.5s;
+}
+
+.un-scrolled {
+    background-color: rgba(0,0,0,0);
     transition: background 1.5s;
 }
 
@@ -264,12 +473,12 @@ a.questionLink:hover{
 }
 
 .attendee {
-    margin-top: 2%;
+    margin-top: 4vh;
     display: inline-block;
 }
 
 .mentor {
-    margin-top: 2%;
+    margin-top: 4vh;
     display: inline-block;
 }
 

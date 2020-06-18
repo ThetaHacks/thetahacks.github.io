@@ -87,8 +87,15 @@ $(window).scroll(function (event) {
 
 $(function () {
   $(document).scroll(function () {
-    var $nav = $("#mainNav");
-    $nav.addClass("scrolled", $(this).scrollTop() > $nav.height());
+    var $title = $("#title-1");
+    var $nav = $("#mainNav")
+    if ($(this).scrollTop() <= $title.offset().top) {
+      $nav.removeClass("scrolled");
+      $nav.addClass("un-scrolled");
+    } else {
+      $nav.addClass("scrolled");
+      $nav.removeClass("un-scrolled");
+    }
   });
 });
 

@@ -7,10 +7,10 @@ body {
   }
   .gb {
     padding: 8px 20px;
-    margin-right: 25px;
     cursor: pointer;
     font-size: 18px;
     border-radius: 4px;
+    margin: 0px 20px;
   }
   .gb-bordered {
     padding: 6px 20px;
