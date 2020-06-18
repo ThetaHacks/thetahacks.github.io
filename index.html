@@ -21,15 +21,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/table.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.5/vivus.js"></script>
 
     <script src="js/velocity.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.8/paper-full.js"></script>
-    <script src="js/main.js"></script>
 
 </head>
 
@@ -75,7 +74,7 @@
             <!-- <h1 class="main-title">Theta<a class="title-right">Hacks</a></h1> -->
             <div class="title-container">
                 <div class="title-left animate__animated animate__bounceInLeft" style="display: inline-block;">
-                    <h2 class="main-title">Theta</h2>
+                    <h2 class="main-title" id="theta">Theta</h2>
                 </div>
                 <div class="title-right animate__animated animate__bounceInRight" style="display: inline-block;">
                     <h2 class="main-title">Hacks</h2>
@@ -135,15 +134,130 @@
         </div>
     </header>
 
-    <section style="padding: 5vh 0vh 5vh 0vh;background: #101020;">
+    <section style="padding: 5vh 0vh 5vh 0vh;background: #101020; min-height: 80vh;">
 
         <div class="schedule-container" style="text-align: center;">
-            <h1 id="schedule" style="font-size: 5vh; font-family: 'CircularStd'; color: #ce7b91; margin-top: 2%;">
-                Schedule
-            </h1>
-
-            <hr width="15%"
-                style="height: 1px; border-color: gainsboro; background-color: gainsboro; margin-bottom: 4%;">
+            <h1 id="schedule" style="font-size: 5vh; font-family: 'CircularStd'; color: #ce7b91; margin-top: 1%;">Schedule</h1>
+            <hr width="15%" style="height: 1px; border-color: gainsboro; background-color: gainsboro; ">
+            <div class="innercontainer">
+                <div class="svg-container" style="position: relative; margin-left: 15%;">
+                    <span id="timestamp"></span>
+                    <div class="arrow-container">
+                        <svg id="arrowsvg" style="visibility: hidden; transform: none;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 50 640" width="40" height="600">
+                            <path class="arrowpath" opacity="1" fill-opacity="0" stroke="#b8d3d1" stroke-width="5" stroke-linecap="round" stroke-opacity="1" d="M10 636.03L10 6.33" id="a2v1t8OFOh"></path>
+                        </svg>
+                    </div>
+                    <span id="daystamp"></span>
+                    <div class="path-container">
+                        <svg style="visibility: hidden;" class="sched-line" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" width="640" height="640">
+                            <path class="mainpath" id="mainpath" opacity="1" fill-opacity="0" stroke="#ce7b91" stroke-width="5" stroke-opacity="1" stroke-dasharray="1500 1500" d="M626.47 348.06C510.93 614.72 410.81 614.72 326.11 348.06C241.41 81.39 141.53 81.39 26.47 348.06" id="aLxU1whWA"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="schedule" style="float: right; margin-right: 25%; margin-top: 6vh;">
+                    <span class="leftarrow" onclick="shift()">◀</span>
+                    <span id="day">Saturday</span>
+                    <span class="rightarrow" onclick="shift()">▶</span>
+                    <div id="sched1">
+                        <div class="table100 ver1 m-b-110">
+                            <div class="table100-head">
+                                <table>
+                                    <thead>
+                                        <tr class="row100 head">
+                                            <th class="cell100 column1">Time</th>
+                                            <th class="cell100 column2">Event</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+        
+                            <div class="table100-body js-pscroll">
+                                <table class="schedule1">
+                                    <tbody style="cursor:pointer">
+                                        <tr class="row100 body">
+                                            <td class="cell100 column1">9:00 AM</td>
+                                            <td class="cell100 column2">Check In</td>
+                                        </tr>
+                                        <tr class="row100 body">
+                                            <td class="cell100 column1">10:00 AM</td>
+                                            <td class="cell100 column2">Opening Ceremony</td>
+                                        </tr>
+                                        <tr class="row100 body">
+                                            <td class="cell100 column1">11:00 AM</td>
+                                            <td class="cell100 column2">Hacking Begins</td>
+                                        </tr>
+                                        <tr class="row100 body">
+                                            <td class="cell100 column1">12:30 PM</td>
+                                            <td class="cell100 column2">Lunch</td>
+                                        </tr>
+                                        <tr class="row100 body">
+                                            <td class="cell100 column1">7:30 PM</td>
+                                            <td class="cell100 column2">Dinner</td>
+                                        </tr>
+                                        <tr class="row100 body">
+                                            <td class="cell100 column1">9:30 PM</td>
+                                            <td class="cell100 column2">Digital CTF</td>
+                                        </tr>
+                                        <tr class="row100 body">
+                                            <td class="cell100 column1">10:30 PM</td>
+                                            <td class="cell100 column2">Cup Stacking</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sched2" style="display: none;">
+                        <div class="table100 ver1 m-b-110">
+                            <div class="table100-head">
+                                <table>
+                                    <thead>
+                                        <tr class="row100 head">
+                                            <th class="cell100 column1">Time</th>
+                                            <th class="cell100 column2">Event</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+        
+                            <div class="table100-body js-pscroll">
+                                <table class="schedule1">
+                                    <tbody style="cursor:pointer">
+                                        <tr class="row100 body">
+                                            <td class="cell100 column1">12:00 AM</td>
+                                            <td class="cell100 column2">Midnight! Surprise In Store?</td>
+                                        </tr>
+                                        <tr class="row100 body">
+                                            <td class="cell100 column1">1:30 AM</td>
+                                            <td class="cell100 column2">Minecraft Hunger Games :)</td>
+                                        </tr>
+                                        <tr class="row100 body">
+                                            <td class="cell100 column1">7:00 AM</td>
+                                            <td class="cell100 column2">DevPost Submissions Due</td>
+                                        </tr>
+                                        <tr class="row100 body">
+                                            <td class="cell100 column1">7:30 AM</td>
+                                            <td class="cell100 column2">Breakfast</td>
+                                        </tr>
+                                        <tr class="row100 body">
+                                            <td class="cell100 column1">8:00 AM</td>
+                                            <td class="cell100 column2">Judges Arrive, Judging Begins</td>
+                                        </tr>
+                                        <tr class="row100 body">
+                                            <td class="cell100 column1">9:35 AM</td>
+                                            <td class="cell100 column2">Closing Ceremony, Prizes</td>
+                                        </tr>
+                                        <tr class="row100 body">
+                                            <td class="cell100 column1">10:15 AM</td>
+                                            <td class="cell100 column2">End of Hackathon</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </section>
@@ -332,53 +446,17 @@
         </div>
     </section>
 
-
-
     </div>
     </section>
 
     </div>
 
+    <script>
+        
+    </script>
+
 </body>
 
-<div class="modal fade" id="mentormodal" tabindex="-1" role="dialog" aria-labelledby="mentormodal" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Mentor Sign-Up</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                ...
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-primary">Submit</button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="attendeemodal" tabindex="-1" role="dialog" aria-labelledby="attendeemodal"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Attendee Sign-Up</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                ...
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-primary">Submit</button>
-            </div>
-        </div>
-    </div>
-</div>
+<script src="js/main.js"></script>
 
 </html>

@@ -273,44 +273,66 @@ a.questionLink:hover{
     display: inline-block;
 }
 
-.icon-bar {
-	width: 22px; 
-	height: 2px;
-	background-color: #B6B6B6;
-	display: block;
-	transition: all 0.2s;
-	margin-top: 4px
+  
+.path {
+    stroke: white;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    stroke-width: 5px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
-.navbar-toggler {
-  border: none;
-  background: transparent !important;
+.leftarrow {
+    cursor: pointer;
+    color: gainsboro;
+    font-size: 20px;
+    margin-right: 2%;
+}
+
+.leftarrow:hover {
+    font-size: 25px;
+}
+
+.rightarrow {
+    cursor: pointer;
+    color: gainsboro;
+    font-size: 20px;
+    margin-left: 2%;
+}
+
+.rightarrow:hover {
+    font-size: 25px;
+}
+
+#day {
+    color: gainsboro;
+    font-size: 23px;
+    margin-bottom: 1%;
+}
+
+.arrow-container {
+    position: absolute; 
+    left: 1%;
+    transition: all 2s ease-in-out;
+}
+
+.path-container {
+    position: absolute;
+    left: 0;
+}
+
+#timestamp {
+    color: gainsboro;
+    position: absolute;
+    top: 2vh;
+    transition: all 2s ease-in-out;
 }
 
 
-.navbar-toggler .top-bar {
-    transform: rotate(45deg);
-    transform-origin: 10% 10%;
-  }
-  
-  .navbar-toggler .middle-bar {
-    opacity: 0;
-  }
-  
-  .navbar-toggler .bottom-bar {
-    transform: rotate(-45deg);
-    transform-origin: 10% 90%;
-  }
-  
-  .navbar-toggler.collapsed .top-bar {
-    transform: rotate(0);
-  }
-  
-  .navbar-toggler.collapsed .middle-bar {
-    opacity: 1;
-  }
-  
-  .navbar-toggler.collapsed .bottom-bar {
-    transform: rotate(0);
-  }
-  
+#daystamp {
+    color: gainsboro;
+    position: absolute;
+    top: 0.2vh;
+    transition: all 2s ease-in-out;
+}
