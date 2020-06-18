@@ -500,6 +500,11 @@ table {
     color: gainsboro;
     font-size: 20px;
     margin-right: 2%;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
 }
 
 .leftarrow:hover {
@@ -511,6 +516,11 @@ table {
     color: gainsboro;
     font-size: 20px;
     margin-left: 2%;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
 }
 
 .rightarrow:hover {
