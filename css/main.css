@@ -118,6 +118,12 @@ html {
 }
 
 @media (max-width: 1200px) {
+    .row {
+        height: 260px;
+    }
+}
+
+@media (max-width: 1050px) {
 
     .col-md-6 {
         min-width: 80vw;
@@ -519,6 +525,8 @@ pre {
     -khtml-user-select: none;
     -webkit-user-select: none;
     -o-user-select: none;
+
+    z-index: 100;
 }
 
 .leftarrow:hover {
@@ -535,6 +543,8 @@ pre {
     -khtml-user-select: none;
     -webkit-user-select: none;
     -o-user-select: none;
+
+    z-index: 100;
 }
 
 .rightarrow:hover {
@@ -571,7 +581,7 @@ pre {
     font-family: Montserrat !important;
     font-weight: normal !important;
 }
-}
+
 
 .column1 {
     font-family: Montserrat !important;
@@ -587,6 +597,15 @@ pre {
     transition: all 2s ease-in-out;
 }
 
+.svg-container {
+    margin-left: 15vw;
+}
+
+.schedule {
+    margin-right: 15vw;
+    float: right;
+}
+
 .attendee {
     filter: grayscale(100%);
 }
@@ -597,10 +616,85 @@ pre {
 
 @media (max-width: 1500px) {
     .schedule {
-        margin: 6vh 10vw 0 0;
+        margin: 6vh 10vw 0 0 !important;
     }
 
     .svg-container {
-        margin-left: 10vw;
+        margin-left: 10vw !important;
+    }
+}
+
+@media (max-width: 1300px) {
+    .schedule {
+        margin: 6vh 5vw 0 0 !important;
+    }
+
+    .svg-container {
+        margin-left: 5vw !important;
+    }
+}
+
+@media (max-width: 1130px) {
+    .svg-container {
+        transform: scaleX(0.9);
+    }
+
+    .schedule {
+        margin: 0vh 5vw 0 0 !important;
+    }
+
+    .svg-container {
+        margin-left: 0vw !important;
+    }
+
+}
+
+
+@media (max-width: 1055px) {
+    .schedule {
+        float: none;
+        margin: 0vh 5vw 0vh 5vw !important;
+    }
+
+    .svg-container {
+        margin-top: 720px;
+        transform: translateY(-675px);
+        margin-left: 20vw !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .svg-container {
+        margin-left: 15vw !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .svg-container {
+        margin-left: 10vw !important;
+    }
+}
+
+@media (max-width: 700px) {
+    .svg-container {
+        transform: translateY(-585px) scale(0.9);
+        margin-left: 5vw !important;
+        margin-top: 730px;
+    }
+}
+
+@media (max-width: 600px) {
+    .svg-container {
+        transform: translateY(-585px) scale(0.8);
+        margin-left: 0vw !important;
+        margin-top: 730px;
+    }
+}
+
+@media (max-width: 700px) {
+    .svg-container {
+        transform: translateY(-405px) scale(0.6);
+        margin-left: 0vw !important;
+        margin-top: 450px;
     }
 }
