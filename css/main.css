@@ -660,14 +660,12 @@ pre {
         margin-top: 720px;
         transform: translateY(-675px);
         margin-left: 20vw !important;
-        display: none;
     }
 }
 
 @media (max-width: 900px) {
     .svg-container {
         margin-left: 15vw !important;
-        display: none;
     }
 }
 
