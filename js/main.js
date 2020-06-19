@@ -47,13 +47,34 @@ $.fn.isolatedScroll = function () {
   return this;
 };
 
+var isMobile = {
+  Android: function () {
+    return navigator.userAgent.match(/Android/i);
+  },
+  BlackBerry: function () {
+    return navigator.userAgent.match(/BlackBerry/i);
+  },
+  iOS: function () {
+    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+  },
+  Opera: function () {
+    return navigator.userAgent.match(/Opera Mini/i);
+  },
+  Windows: function () {
+    return navigator.userAgent.match(/IEMobile/i);
+  },
+  any: function () {
+    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+  }
+};
+
+
 $(window).scroll(function (event) {
-  if (/Mobi | Android | webOS | iPhone | iPad | iPod | BlackBerry | IEMobile | Opera Mini /.test(navigator.userAgent)) {
+  if (isMobile.any()) {
     $(".prof").each(function (i, el) {
       var el = $(el);
       if (el.visible(true)) {
         el.addClass("animate__animated");
-        el.addClass("slidefadeleft");
         el.addClass("animate__fadeInLeft");
       }
     });
@@ -66,14 +87,12 @@ $(window).scroll(function (event) {
         if (prev === "animate__fadeInLeft") {
           if (!el.hasClass("animate__fadeInRight")) {
             el.addClass("animate__animated");
-            el.addClass("slidefadeleft");
             el.addClass("animate__fadeInLeft");
             prev = "animate__fadeInRight";
           }
         } else {
           if (!el.hasClass("animate__fadeInLeft")) {
             el.addClass("animate__animated");
-            el.addClass("slidefaderight");
             el.addClass("animate__fadeInRight");
             prev = "animate__fadeInLeft";
           }
