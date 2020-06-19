@@ -191,3 +191,10 @@ document.getElementById("timestamp").innerText = "9:00 AM"
 
 document.getElementById("daystamp").style.left = "1%";
 document.getElementById("daystamp").innerText = "Saturday";
+
+function calcHyperlinkPos(){
+  // Set hyperlinks to be at the correct positions
+  // Avoid stuff being covered up by the navbar
+  $(".hyperlink").css("top", '-' + $(".navbar").css("height"));
+}
+calcHyperlinkPos();
