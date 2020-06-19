@@ -1,6 +1,6 @@
 # ThetaHacksSite
 The official site for ThetaHacks, a high school hackathon located in Sunnyvale, CA. Join us in February with a couple friends to earn free swag and awards while coding with others! <br>
-Created by AndyLi23, Rohan-Bansal, theAnshulGupta, and yixqiao. <br>
+Website created by AndyLi23, Rohan-Bansal, theAnshulGupta, and yixqiao. <br>
 https://thetahacks.github.io/
 
 ### Sign up Today!
@@ -14,4 +14,4 @@ Discord Bot: https://github.com/ThetaHacks/ThetaHacksBot <br>
 ### Be sure to follow us on social media!
 Instagram: @ThetaHacks <br>
 Twitter: <br>
-Email: 
+Email: {thethahacks@thetahacks.tech}
