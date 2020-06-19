@@ -474,10 +474,6 @@ a.questionLink:hover {
     stroke-linejoin: round;
 }
 
-table {
-    min-width: 470px !important;
-}
-
 #daystamp {
     opacity: 1 !important;
 }
