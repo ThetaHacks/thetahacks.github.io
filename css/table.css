@@ -73,7 +73,7 @@
   
   .table100.ver1 th {
     font-family: CircularStd;
-    font-size: 18px;
+    font-size: 1.4rem;
     /* color: #fff; */
     line-height: 1.4;
   
@@ -82,7 +82,7 @@
   
   .table100.ver1 td {
     font-family: CircularStd;
-    font-size: 15px;
+    font-size: 1.2rem;
     /* color: #808080; */
     line-height: 1.4;
   }

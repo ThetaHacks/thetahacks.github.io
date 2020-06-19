@@ -4,11 +4,11 @@ a {
 }
 
 body {
-    font-size: 18px !important;
+    font-size: 1.1rem !important;
 }
 
 h3 {
-    font-size: 24px !important;
+    font-size: 1.5rem !important;
 }
 
 :root {
@@ -16,14 +16,12 @@ h3 {
 }
 
 ::-moz-selection {
-    color: white;
-    background: #6EA4B1;
+    background: rgba(206, 123, 145, 0.7);
   }
   
-  ::selection {
-    color: white;
-    background: #6EA4B1;
-  }
+::selection {
+    background: rgba(206, 123, 145, 0.7);
+}
 
 .main-title {
     -webkit-user-select: none;
@@ -34,7 +32,7 @@ h3 {
 
 .nav-link {
     float: right;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 .main-title:hover {
@@ -80,24 +78,24 @@ figure {
 
 .figure-caption {
     color: lightgray;
-    font-size: 18px !important;
+    font-size: 1.4rem !important;
 }
 
 .figure-caption-e {
     color: lightgray;
-    font-size: 16px !important;
+    font-size: 1.2rem !important;
 }
 
 .figure-caption-title {
     margin-top: 20px;
     color: white;
-    font-size: 26px !important;
+    font-size: 1.8rem !important;
 }
 
 .figure-caption-title-e {
     margin-top: 20px;
     color: white;
-    font-size: 20px !important;
+    font-size: 1.6rem !important;
 }
 
 @font-face {
@@ -116,7 +114,7 @@ html {
 }
 
 .row {
-    height: 220px;
+    height: 180px;
 }
 
 .mobile-only {
@@ -141,53 +139,58 @@ html {
     }
     .prof {
         display: inline-block;
-        width: 60vw !important;
+        width: 90vw !important;
+    }
+    .faq-page {
+        width: 100vw;
+        padding-left: 5vw !important;
+        padding-right: 5vw !important;
     }
     .main-title {
-        font-size: 110px !important;
+        font-size: 8rem !important;
     }
     .figure-caption-title {
-        font-size: 22px !important;
+        font-size: 1.5rem !important;
     }
     .figure-caption {
-        font-size: 16px !important;
+        font-size: 1.3rem !important;
     }
     .figure-caption-e {
-        font-size: 16px !important;
+        font-size: 1.1rem !important;
     }
     .figure-caption-title-e {
-        font-size: 18px !important;
+        font-size: 1.3rem !important;
+    }
+    .prof {
+        padding: 50px 0vw 50px 0vw !important;
     }
 }
 
 @media (max-width: 1000px) {
-    .prof {
-        padding: 50px 0vw 150px 0vw !important;
-    }
     .main-title {
-        font-size: 90px !important;
+        font-size: 6rem !important;
     }
     h3 {
-        font-size: 20px !important;
+        font-size: 1.5rem !important;
     }
     .gb {
         padding: 4px 16px;
         cursor: pointer;
-        font-size: 16px;
+        font-size: 1rem;
         border-radius: 4px;
         margin: 0px 10px;
     }
     .figure-caption-title {
-        font-size: 18px !important;
+        font-size: 1.3rem !important;
     }
     .figure-caption {
-        font-size: 12px !important;
+        font-size: 1.1rem !important;
     }
     .figure-caption-e {
-        font-size: 12px !important;
+        font-size: 0.9rem !important;
     }
     .figure-caption-title-e {
-        font-size: 16px !important;
+        font-size: 1.1rem !important;
     }
     figure {
         width: 25vw;
@@ -211,32 +214,32 @@ html {
 
 @media (max-width: 700px) {
     .prof {
-        padding: 100px 0vw 150px 0vw !important;
+        padding: 50px 0vw 100px 0vw !important;
     }
     .main-title {
-        font-size: 60px !important;
+        font-size: 5rem !important;
     }
     h3 {
-        font-size: 18px !important;
+        font-size: 1.2rem !important;
     }
     .gb {
         padding: 2px 12px;
         cursor: pointer;
-        font-size: 14px;
+        font-size: 1rem;
         border-radius: 4px;
         margin: 0px 5px;
     }
     .figure-caption-title {
-        font-size: 14px !important;
+        font-size: 1rem !important;
     }
     .figure-caption {
-        font-size: 12px !important;
+        font-size: 0.8rem !important;
     }
     .figure-caption-e {
-        font-size: 10px !important;
+        font-size: 0.8rem !important;
     }
     .figure-caption-title-e {
-        font-size: 12px !important;
+        font-size: 0.9rem !important;
     }
 }
 
@@ -323,19 +326,19 @@ a:hover {
 
 @media (max-width: 900px) {
     .menu-name {
-        font-size: 30px;
+        font-size: 2rem;
         padding: 20px 0px 5px 15px;
     }
     .menu-link {
         padding: 5px 20px 0px 1000px;
         color: #b8d3d1;
         float: right;
-        font-size: 23px;
+        font-size: 1.5rem;
     }
     #menu-down {
         display: block;
         color: #b8d3d1;
-        font-size: 53px;
+        font-size: 3rem;
         margin-left: 90%;
         padding: 0px 20px 0px 0px;
         position: absolute;
@@ -380,7 +383,7 @@ h1 {
 }
 
 .main-title {
-    font-size: 130px;
+    font-size: 9rem;
     font-family: 'CircularStd';
 }
 
@@ -389,14 +392,14 @@ h1 {
 }
 
 .prof {
-    width: 25vw;
-    height: 15vw;
+    width: 35vw;
+    height: 5vh;
 }
 
 .faq-page {
     width: 100vw;
-    padding-left: 20vw;
-    padding-right: 20vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 
 .title-right:hover {
