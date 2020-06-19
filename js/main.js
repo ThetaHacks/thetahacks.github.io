@@ -50,27 +50,38 @@ $.fn.isolatedScroll = function () {
 $(window).scroll(function (event) {
   var prev = "animate__fadeInLeft";
   var x = 0;
-  $(".prof").each(function (i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-      if (prev === "animate__fadeInLeft") {
-        if (!el.hasClass("animate__fadeInRight")) {
-          el.addClass("animate__animated");
-          el.addClass("slidefadeleft");
-          el.addClass("animate__fadeInLeft");
-          prev = "animate__fadeInRight";
+  if ($(window).width() > 1055) {
+    $(".prof").each(function (i, el) {
+      var el = $(el);
+      if (el.visible(true)) {
+        if (prev === "animate__fadeInLeft") {
+          if (!el.hasClass("animate__fadeInRight")) {
+            el.addClass("animate__animated");
+            el.addClass("slidefadeleft");
+            el.addClass("animate__fadeInLeft");
+            prev = "animate__fadeInRight";
+          }
+        } else {
+          if (!el.hasClass("animate__fadeInLeft")) {
+            el.addClass("animate__animated");
+            el.addClass("slidefaderight");
+            el.addClass("animate__fadeInRight");
+            prev = "animate__fadeInLeft";
+          }
         }
-      } else {
-        if (!el.hasClass("animate__fadeInLeft")) {
-          el.addClass("animate__animated");
-          el.addClass("slidefaderight");
-          el.addClass("animate__fadeInRight");
-          prev = "animate__fadeInLeft";
-        }
+        x++;
       }
-      x++;
-    }
-  });
+    });
+  } else {
+    $(".prof").each(function (i, el) {
+      var el = $(el);
+      if (el.visible(true)) {
+        el.addClass("animate__animated");
+        el.addClass("slidefadeleft");
+        el.addClass("animate__fadeInLeft");
+      }
+    });
+  }
 
   $(".schedule").each(function (i, el) {
     var el = $(el);
