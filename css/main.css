@@ -15,6 +15,16 @@ h3 {
     --animate-delay: 0.2s;
 }
 
+::-moz-selection {
+    color: white;
+    background: #6EA4B1;
+  }
+  
+  ::selection {
+    color: white;
+    background: #6EA4B1;
+  }
+
 .main-title {
     -webkit-user-select: none;
     -moz-user-select: none;
