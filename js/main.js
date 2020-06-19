@@ -30,9 +30,6 @@ function showSVG() {
 
   path.style.strokeDashoffset = '0';
 
-  document.getElementById("daystamp").classList.add("animate__fadeIn")
-  document.getElementById("timestamp").classList.add("animate__fadeIn")
-
 }
 
 var scheduleDone = false;
