@@ -475,7 +475,17 @@ a.questionLink:hover {
 }
 
 table {
-    min-width: 470px !important;
+    min-width: 400px !important;
+}
+
+#show-faq-button {
+    color: gainsboro;
+    font-family: monospace;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
 }
 
 #daystamp {

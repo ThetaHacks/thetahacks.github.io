@@ -32,6 +32,45 @@ function showSVG() {
 
 }
 
+function showFaq() {
+  var arrow = document.querySelector('#show-faq-button');
+  var mobOnly = document.querySelector('.mobile-only');
+  var notMob = document.querySelector('.not-mobile');
+  if (arrow.innerText === " ⌵") {
+    arrow.innerText = " >";
+    mobOnly.style.display = "none";
+    notMob.style.display = "none";
+
+  } else {
+    arrow.innerText = " ⌵";
+    if ($(document).width() <= 992) {
+      mobOnly.style.display = "inline-block";
+      notMob.style.display = "none";
+    } else {
+      notMob.style.display = "inline-block";
+      mobOnly.style.display = "none";
+    }
+  }
+}
+
+$(window).resize(function () {
+  var arrow = document.querySelector('#show-faq-button');
+  var mobOnly = document.querySelector('.mobile-only');
+  var notMob = document.querySelector('.not-mobile');
+  if (!(arrow.innerText === " ⌵")) {
+    mobOnly.style.display = "none";
+    notMob.style.display = "none";
+  } else {
+    if ($(document).width() <= 992) {
+      notMob.style.display = "none";
+      mobOnly.style.display = "inline-block";
+    } else {
+      mobOnly.style.display = "none";
+      notMob.style.display = "inline-block";
+    }
+  }
+});
+
 var scheduleDone = false;
 
 $.fn.isolatedScroll = function () {
@@ -119,10 +158,10 @@ function shift() {
 }
 
 function getPos(el) {
-  for (var lx=0, ly=0;
-       el != null;
-       lx += el.offsetLeft, ly += el.offsetTop, el = el.offsetParent);
-  return {x: lx,y: ly};
+  for (var lx = 0, ly = 0;
+    el != null;
+    lx += el.offsetLeft, ly += el.offsetTop, el = el.offsetParent);
+  return { x: lx, y: ly };
 }
 
 positions = {
@@ -189,7 +228,7 @@ document.getElementById("timestamp").innerText = "9:00 AM"
 document.getElementById("daystamp").style.left = "1%";
 document.getElementById("daystamp").innerText = "Saturday";
 
-function calcHyperlinkPos(){
+function calcHyperlinkPos() {
   // Set hyperlinks to be at the correct positions
   // Avoid stuff being covered up by the navbar
   $(".hyperlink").css("top", '-' + $(".navbar").css("height"));
