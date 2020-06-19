@@ -472,7 +472,7 @@ a.questionLink:hover {
 }
 
 table {
-    min-width: 400px !important;
+    min-width: 470px !important;
 }
 
 #show-faq-button {
@@ -645,5 +645,9 @@ table.schedule1 {
     }
     .svg-container {
         display: none;
+    }
+
+    table {
+        min-width: none !important;
     }
 }
