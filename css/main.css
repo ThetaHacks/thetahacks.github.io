@@ -200,7 +200,10 @@ html {
         padding: 0vw 5vw;
     }
     .navbar-brand,
-    .navbar-toggler,
+    .navbar-toggler {
+        font-size: 3rem !important;
+    }
+    
     .nav-link {
         font-size: 2rem !important;
     }
