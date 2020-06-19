@@ -127,7 +127,7 @@ html {
     }
 }
 
-@media (max-width: 1055px) {
+@media (max-width: 992px) {
     .col-md-6 {
         min-width: 80vw;
     }
@@ -204,6 +204,7 @@ html {
     .nav-link {
         font-size: 2rem !important;
     }
+
 }
 
 
@@ -320,42 +321,6 @@ a:hover {
     z-index: 10;
 }
 
-@media (max-width: 900px) {
-    .menu-name {
-        font-size: 2rem;
-        padding: 20px 0px 5px 15px;
-    }
-    .menu-link {
-        padding: 5px 20px 0px 1000px;
-        color: #b8d3d1;
-        float: right;
-        font-size: 1.5rem;
-    }
-    #menu-down {
-        display: block;
-        color: #b8d3d1;
-        font-size: 3rem;
-        margin-left: 90%;
-        padding: 0px 20px 0px 0px;
-        position: absolute;
-        user-select: none;
-        -moz-user-select: none;
-        -khtml-user-select: none;
-        -webkit-user-select: none;
-        -o-user-select: none;
-    }
-    .menu-bar-hidden {
-        display: none;
-        float: right;
-        width: 140px;
-        height: 260px;
-        padding-top: 80px;
-        background: rgba(0, 0, 0, 0);
-    }
-    .menu-bar {
-        display: none;
-    }
-}
 
 h1 {
     color: #b8d3d1;
@@ -647,7 +612,7 @@ table.schedule1 {
     }
 }
 
-@media (max-width: 1055px) {
+@media (max-width: 992px) {
     .schedule {
         float: none;
         margin: 6vh 5vw 0vh 5vw !important;
