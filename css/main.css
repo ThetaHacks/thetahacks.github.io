@@ -199,6 +199,11 @@ html {
     .everyone-else {
         padding: 0vw 10vw;
     }
+    .navbar-brand,
+    .navbar-toggler,
+    .nav-link {
+        font-size: 2rem !important;
+    }
 }
 
 
