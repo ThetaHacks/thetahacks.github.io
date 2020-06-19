@@ -152,30 +152,34 @@ html {
     .prof {
         padding: 50px 0vw 50px 0vw !important;
     }
-}
 
-@media (max-width: 1000px) {
     h3 {
-        font-size: 1.5rem !important;
+        font-size: 2rem !important;
+    }
+    body {
+        font-size: 1.4rem !important;
+    }
+    h3 {
+        font-size: 2rem !important;
     }
     .gb {
         padding: 4px 16px;
         cursor: pointer;
-        font-size: 1.5rem;
+        font-size: 2rem;
         border-radius: 4px;
         margin: 0px 10px;
     }
     .figure-caption-title {
-        font-size: 1.3rem !important;
+        font-size: 1.6rem !important;
     }
     .figure-caption {
-        font-size: 1.1rem !important;
+        font-size: 1.4rem !important;
     }
     .figure-caption-e {
-        font-size: 0.9rem !important;
+        font-size: 1.4rem !important;
     }
     .figure-caption-title-e {
-        font-size: 1.1rem !important;
+        font-size: 1.2rem !important;
     }
     figure {
         width: 25vw;
@@ -196,6 +200,7 @@ html {
         padding: 0vw 10vw;
     }
 }
+
 
 @media (max-width: 700px) {
     .prof {
@@ -226,6 +231,7 @@ html {
     .figure-caption-title-e {
         font-size: 1.2rem !important;
     }
+
 }
 
 ::-webkit-scrollbar {
@@ -480,7 +486,7 @@ a.questionLink:hover {
 }
 
 table {
-    min-width: 400px !important;
+    min-width: 470px !important;
 }
 
 #daystamp {
@@ -500,7 +506,7 @@ pre {
 .leftarrow {
     cursor: pointer;
     color: gainsboro;
-    font-size: 20px;
+    font-size: 2rem;
     margin-right: 2%;
     user-select: none;
     -moz-user-select: none;
@@ -517,7 +523,7 @@ pre {
 .rightarrow {
     cursor: pointer;
     color: gainsboro;
-    font-size: 20px;
+    font-size: 2rem;
     margin-left: 2%;
     user-select: none;
     -moz-user-select: none;
@@ -533,7 +539,7 @@ pre {
 
 #day {
     color: gainsboro;
-    font-size: 23px;
+    font-size: 2rem;
     margin-bottom: 1%;
 }
 
