@@ -599,6 +599,7 @@ pre {
 
 .svg-container {
     margin-left: 15vw;
+    position: absolute;
 }
 
 .schedule {

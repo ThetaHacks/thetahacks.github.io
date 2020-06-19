@@ -30,6 +30,9 @@ function showSVG() {
 
   path.style.strokeDashoffset = '0';
 
+  document.getElementById("daystamp").classList.add("animate__fadeIn")
+  document.getElementById("timestamp").classList.add("animate__fadeIn")
+
 }
 
 var scheduleDone = false;
@@ -110,6 +113,13 @@ function shift() {
   }
 }
 
+function getPos(el) {
+  for (var lx=0, ly=0;
+       el != null;
+       lx += el.offsetLeft, ly += el.offsetTop, el = el.offsetParent);
+  return {x: lx,y: ly};
+}
+
 positions = {
   "9:00": 1,
   "10:00": 4,
@@ -127,13 +137,14 @@ positions = {
   "10:15": 35.5
 };
 
+
 function doThis() {
   let timeEl = this.querySelector('td');
   let time = timeEl.innerText.split(" ")[0];
   var arrow = document.getElementsByClassName("arrow-container")[0];
   document.getElementById("timestamp").innerText = timeEl.innerText;
   document.getElementById("timestamp").style.left = positions[time] + "%";
-  if (positions[time] > 18) {
+  if (positions[time] >= 18) {
     document.getElementById("daystamp").innerHTML = "Sunday";
   } else {
     document.getElementById("daystamp").innerHTML = "Saturday";
@@ -141,6 +152,13 @@ function doThis() {
   document.getElementById("daystamp").style.left = positions[time] + "%";
   console.log(document.getElementById("daystamp"))
   arrow.style.left = positions[time] + "%";
+
+  // var width = document.getElementById("path-container").offsetWidth;
+  // var startX = getPos(document.getElementById("path-container"))['x'];
+  // console.log(startX + " " + width);
+  // var halfway = (startX + (startX + width)) / 2;
+  // console.log(startX + " " + width + " " + halfway);
+  // arrow.style.left = halfway + "px";
 }
 
 function onRowClick(tableClass) {
@@ -168,4 +186,3 @@ document.getElementById("timestamp").innerText = "9:00 AM"
 
 document.getElementById("daystamp").style.left = "1%";
 document.getElementById("daystamp").innerText = "Saturday";
-
