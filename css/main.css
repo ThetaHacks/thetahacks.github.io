@@ -648,6 +648,6 @@ table.schedule1 {
     }
 
     table {
-        min-width: none !important;
+        min-width: 300px !important;
     }
 }
