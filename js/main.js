@@ -47,42 +47,28 @@ $.fn.isolatedScroll = function () {
   return this;
 };
 
-if (/Mobi|Tablet|iPad|iPhone/.test(navigator.userAgent)) {
-  // do something
-}
-
 $(window).scroll(function (event) {
-  if (/mobi|tablet|ipad|iphone|ipod|android|safari/.test(navigator.userAgent.toLowerCase())) {
-    $(".prof").each(function (i, el) {
-      var el = $(el);
-      if (el.visible(true)) {
-        el.addClass("animate__animated");
-        el.addClass("animate__fadeInLeft");
-      }
-    });
-  } else {
-    var prev = "animate__fadeInLeft";
-    var x = 0;
-    $(".prof").each(function (i, el) {
-      var el = $(el);
-      if (el.visible(true)) {
-        if (prev === "animate__fadeInLeft") {
-          if (!el.hasClass("animate__fadeInRight")) {
-            el.addClass("animate__animated");
-            el.addClass("animate__fadeInLeft");
-            prev = "animate__fadeInRight";
-          }
-        } else {
-          if (!el.hasClass("animate__fadeInLeft")) {
-            el.addClass("animate__animated");
-            el.addClass("animate__fadeInRight");
-            prev = "animate__fadeInLeft";
-          }
+  var prev = "animate__fadeInLeft";
+  var x = 0;
+  $(".prof").each(function (i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      if (prev === "animate__fadeInLeft") {
+        if (!el.hasClass("animate__fadeInRight")) {
+          el.addClass("animate__animated");
+          el.addClass("animate__fadeInLeft");
+          prev = "animate__fadeInRight";
         }
-        x++;
+      } else {
+        if (!el.hasClass("animate__fadeInLeft")) {
+          el.addClass("animate__animated");
+          el.addClass("animate__fadeInRight");
+          prev = "animate__fadeInLeft";
+        }
       }
-    });
-  }
+      x++;
+    }
+  });
 
   $(".schedule").each(function (i, el) {
     var el = $(el);
