@@ -121,6 +121,10 @@ html {
     display: none;
 }
 
+.not-mobile {
+    display: none;
+}
+
 @media (max-width: 1200px) {
     .row {
         height: 260px;
@@ -134,14 +138,7 @@ html {
     .main-title {
         font-size: 12vw !important;
     }
-    .not-mobile {
-        display: none;
-    }
-    .mobile-only {
-        display: inline-block;
-    }
     .prof {
-        display: inline-block;
         width: 90vw !important;
     }
     .faq-page {
@@ -214,7 +211,7 @@ html {
 }
 
 .dark-back {
-    padding: 8vh 0vh 50px 0vh;
+    padding: 4vh 0vh 50px 0vh;
 }
 
 @media (max-width: 700px) {
