@@ -606,6 +606,10 @@ pre {
     float: right;
 }
 
+table.schedule1{
+    background-color: #202030;
+}
+
 .attendee {
     filter: grayscale(100%);
 }
