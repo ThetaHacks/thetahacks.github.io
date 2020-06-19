@@ -78,24 +78,24 @@ figure {
 
 .figure-caption {
     color: lightgray;
-    font-size: 1.4rem !important;
+    font-size: 1.2rem !important;
 }
 
 .figure-caption-e {
     color: lightgray;
-    font-size: 1.2rem !important;
+    font-size: 1.0rem !important;
 }
 
 .figure-caption-title {
     margin-top: 20px;
     color: white;
-    font-size: 1.8rem !important;
+    font-size: 1.4rem !important;
 }
 
 .figure-caption-title-e {
     margin-top: 20px;
     color: white;
-    font-size: 1.6rem !important;
+    font-size: 1.2rem !important;
 }
 
 @font-face {
@@ -131,6 +131,9 @@ html {
     .col-md-6 {
         min-width: 80vw;
     }
+    .main-title {
+        font-size: 15vw !important;
+    }
     .not-mobile {
         display: none;
     }
@@ -146,37 +149,19 @@ html {
         padding-left: 5vw !important;
         padding-right: 5vw !important;
     }
-    .main-title {
-        font-size: 8rem !important;
-    }
-    .figure-caption-title {
-        font-size: 1.5rem !important;
-    }
-    .figure-caption {
-        font-size: 1.3rem !important;
-    }
-    .figure-caption-e {
-        font-size: 1.1rem !important;
-    }
-    .figure-caption-title-e {
-        font-size: 1.3rem !important;
-    }
     .prof {
         padding: 50px 0vw 50px 0vw !important;
     }
 }
 
 @media (max-width: 1000px) {
-    .main-title {
-        font-size: 6rem !important;
-    }
     h3 {
         font-size: 1.5rem !important;
     }
     .gb {
         padding: 4px 16px;
         cursor: pointer;
-        font-size: 1rem;
+        font-size: 1.5rem;
         border-radius: 4px;
         margin: 0px 10px;
     }
@@ -214,32 +199,32 @@ html {
 
 @media (max-width: 700px) {
     .prof {
-        padding: 50px 0vw 100px 0vw !important;
+        padding: 100px 0vw 150px 0vw !important;
     }
-    .main-title {
-        font-size: 5rem !important;
+    body {
+        font-size: 1.4rem !important;
     }
     h3 {
-        font-size: 1.2rem !important;
+        font-size: 2rem !important;
     }
     .gb {
         padding: 2px 12px;
         cursor: pointer;
-        font-size: 1rem;
+        font-size: 2rem;
         border-radius: 4px;
         margin: 0px 5px;
     }
     .figure-caption-title {
-        font-size: 1rem !important;
+        font-size: 1.4rem !important;
     }
     .figure-caption {
-        font-size: 0.8rem !important;
+        font-size: 1.2rem !important;
     }
     .figure-caption-e {
-        font-size: 0.8rem !important;
+        font-size: 1.1rem !important;
     }
     .figure-caption-title-e {
-        font-size: 0.9rem !important;
+        font-size: 1.2rem !important;
     }
 }
 
