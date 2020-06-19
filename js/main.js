@@ -52,7 +52,7 @@ if (/Mobi|Tablet|iPad|iPhone/.test(navigator.userAgent)) {
 }
 
 $(window).scroll(function (event) {
-  if (/mobi|tablet|ipad|iphone|ipod|android/.test(navigator.userAgent.toLowerCase())) {
+  if (/mobi|tablet|ipad|iphone|ipod|android|safari/.test(navigator.userAgent.toLowerCase())) {
     $(".prof").each(function (i, el) {
       var el = $(el);
       if (el.visible(true)) {
