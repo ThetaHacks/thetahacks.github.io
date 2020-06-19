@@ -607,6 +607,10 @@ pre {
     float: right;
 }
 
+div.table100-head{
+    background-color: #6c7ae0;
+}
+
 table.schedule1{
     background-color: #202030;
 }
