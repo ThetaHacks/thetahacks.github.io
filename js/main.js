@@ -51,7 +51,7 @@ $.fn.isolatedScroll = function () {
 };
 
 $(window).scroll(function (event) {
-  if ((/^((?!chrome|android).)*safari/i.test(navigator.userAgent) && !(/Chrome/i.test(navigator.userAgent))) || /Mobi|Android/i.test(navigator.userAgent)) {
+  if ($(window).width() <= 1055) {
     $(".prof").each(function (i, el) {
       var el = $(el);
       if (el.visible(true)) {
