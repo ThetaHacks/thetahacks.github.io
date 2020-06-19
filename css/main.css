@@ -7,7 +7,6 @@ body {
     font-size: 18px !important;
 }
 
-
 h3 {
     font-size: 24px !important;
 }
@@ -27,7 +26,6 @@ h3 {
     float: right;
     font-size: 18px;
 }
-
 
 .main-title:hover {
     cursor: default;
@@ -70,7 +68,6 @@ figure {
     border: 0.3vw solid #eeeeee;
 }
 
-
 .figure-caption {
     color: lightgray;
     font-size: 18px !important;
@@ -108,7 +105,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 .row {
     height: 220px;
 }
@@ -124,7 +120,6 @@ html {
 }
 
 @media (max-width: 1055px) {
-
     .col-md-6 {
         min-width: 80vw;
     }
@@ -138,43 +133,33 @@ html {
         display: inline-block;
         width: 60vw !important;
     }
-
     .main-title {
         font-size: 110px !important;
     }
-
     .figure-caption-title {
         font-size: 22px !important;
     }
-
     .figure-caption {
         font-size: 16px !important;
     }
-
-
     .figure-caption-e {
         font-size: 16px !important;
     }
     .figure-caption-title-e {
         font-size: 18px !important;
     }
-
-
 }
 
 @media (max-width: 1000px) {
     .prof {
         padding: 50px 0vw 150px 0vw !important;
     }
-
     .main-title {
         font-size: 90px !important;
     }
-
     h3 {
         font-size: 20px !important;
     }
-
     .gb {
         padding: 4px 16px;
         cursor: pointer;
@@ -182,46 +167,38 @@ html {
         border-radius: 4px;
         margin: 0px 10px;
     }
-
     .figure-caption-title {
         font-size: 18px !important;
     }
-
     .figure-caption {
         font-size: 12px !important;
     }
-
     .figure-caption-e {
         font-size: 12px !important;
     }
     .figure-caption-title-e {
         font-size: 16px !important;
     }
-
     figure {
         width: 25vw;
     }
-
     .figure-e {
         width: 20vw;
     }
-
     .figure-image {
         width: 20vw;
     }
-
     .figure-image-e {
         width: 17vw;
     }
-
     .directors {
         padding: 0vw 12.5vw;
     }
-
     .everyone-else {
         padding: 0vw 10vw;
     }
 }
+
 @media (max-width: 700px) {
     .prof {
         padding: 100px 0vw 150px 0vw !important;
@@ -232,7 +209,6 @@ html {
     h3 {
         font-size: 18px !important;
     }
-
     .gb {
         padding: 2px 12px;
         cursor: pointer;
@@ -240,15 +216,12 @@ html {
         border-radius: 4px;
         margin: 0px 5px;
     }
-
     .figure-caption-title {
         font-size: 14px !important;
     }
-
     .figure-caption {
         font-size: 12px !important;
     }
-
     .figure-caption-e {
         font-size: 10px !important;
     }
@@ -270,7 +243,6 @@ html {
     background-color: pink;
     /* color of the scroll thumb */
 }
-
 
 a:hover {
     color: #768891;
@@ -431,17 +403,23 @@ h1 {
 .slidefaderight {
     float: right;
 }
+
+
 /*! this is bad we should remove it */
+
 .slidefadeleft:nth-child(odd) {
-    animation-duration: 0.6s; /* So they look staggered */
-  }
-  .slidefaderight:nth-child(odd) {
-    animation-duration: 0.6s; /* So they look staggered */
-  }
+    animation-duration: 0.6s;
+    /* So they look staggered */
+}
+
+.slidefaderight:nth-child(odd) {
+    animation-duration: 0.6s;
+    /* So they look staggered */
+}
 
 .prof {
     opacity: 0;
-}   
+}
 
 .proftitle {
     font-family: 'CircularStd';
@@ -464,17 +442,17 @@ h1 {
 }
 
 .un-scrolled {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     transition: background 1.5s;
 }
 
-.questionLink{
+.questionLink {
     color: rgb(71, 91, 179);
+    font-family: inherit;
 }
 
-a.questionLink:hover{
+a.questionLink:hover {
     text-shadow: none;
-
 }
 
 .attendee {
@@ -487,7 +465,6 @@ a.questionLink:hover{
     display: inline-block;
 }
 
-  
 .path {
     stroke: white;
     stroke-dasharray: 1000;
@@ -525,7 +502,6 @@ pre {
     -khtml-user-select: none;
     -webkit-user-select: none;
     -o-user-select: none;
-
     z-index: 100;
 }
 
@@ -543,7 +519,6 @@ pre {
     -khtml-user-select: none;
     -webkit-user-select: none;
     -o-user-select: none;
-
     z-index: 100;
 }
 
@@ -558,7 +533,7 @@ pre {
 }
 
 .arrow-container {
-    position: absolute; 
+    position: absolute;
     left: 1%;
     transition: all 2s ease-in-out;
 }
@@ -582,11 +557,9 @@ pre {
     font-weight: normal !important;
 }
 
-
 .column1 {
     font-family: Montserrat !important;
 }
-
 
 #daystamp {
     color: gainsboro;
@@ -607,16 +580,16 @@ pre {
     float: right;
 }
 
-div.table100-head{
+div.table100-head {
     background-color: #6c7ae0;
 }
 
-div.table100{
-    /* Get rid of annoying lines along table */
+div.table100 {
+    /* Get rid of annoying lines around table */
     background-color: #202030;
 }
 
-table.schedule1{
+table.schedule1 {
     background-color: #202030;
 }
 
@@ -632,7 +605,6 @@ table.schedule1{
     .schedule {
         margin: 6vh 10vw 0 0 !important;
     }
-
     .svg-container {
         margin-left: 10vw !important;
     }
@@ -642,7 +614,6 @@ table.schedule1{
     .schedule {
         margin: 6vh 5vw 0 0 !important;
     }
-
     .svg-container {
         margin-left: 5vw !important;
     }
@@ -652,27 +623,20 @@ table.schedule1{
     .svg-container {
         transform: scaleX(0.9);
     }
-
     .schedule {
         margin: 6vh 5vw 0 0 !important;
     }
-
     .svg-container {
         margin-left: 0vw !important;
     }
-
 }
-
 
 @media (max-width: 1055px) {
     .schedule {
         float: none;
         margin: 6vh 5vw 0vh 5vw !important;
     }
-
     .svg-container {
         display: none;
     }
 }
-
-
