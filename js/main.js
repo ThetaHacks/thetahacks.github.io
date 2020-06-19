@@ -158,15 +158,12 @@ function doThis() {
     document.getElementById("daystamp").innerHTML = "Saturday";
   }
   document.getElementById("daystamp").style.left = positions[time] + "%";
-  console.log(document.getElementById("daystamp"))
   arrow.style.left = positions[time] + "%";
 
-  // var width = document.getElementById("path-container").offsetWidth;
-  // var startX = getPos(document.getElementById("path-container"))['x'];
-  // console.log(startX + " " + width);
-  // var halfway = (startX + (startX + width)) / 2;
-  // console.log(startX + " " + width + " " + halfway);
-  // arrow.style.left = halfway + "px";
+  var rect = document.getElementById("sched-line").getBoundingClientRect();
+  var left = document.getElementById("path-container").offsetLeft;
+  console.log(left + (rect.width / 2));
+  arrow.style.left = left + (rect.width / 2);
 }
 
 function onRowClick(tableClass) {
