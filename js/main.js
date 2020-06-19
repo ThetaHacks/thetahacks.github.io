@@ -47,30 +47,12 @@ $.fn.isolatedScroll = function () {
   return this;
 };
 
-var isMobile = {
-  Android: function () {
-    return navigator.userAgent.match(/Android/i);
-  },
-  BlackBerry: function () {
-    return navigator.userAgent.match(/BlackBerry/i);
-  },
-  iOS: function () {
-    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-  },
-  Opera: function () {
-    return navigator.userAgent.match(/Opera Mini/i);
-  },
-  Windows: function () {
-    return navigator.userAgent.match(/IEMobile/i);
-  },
-  any: function () {
-    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-  }
-};
-
+if (/Mobi|Tablet|iPad|iPhone/.test(navigator.userAgent)) {
+  // do something
+}
 
 $(window).scroll(function (event) {
-  if (isMobile.any()) {
+  if (/mobi|tablet|ipad|iphone|ipod|android/.test(navigator.userAgent.toLowerCase())) {
     $(".prof").each(function (i, el) {
       var el = $(el);
       if (el.visible(true)) {
