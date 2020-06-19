@@ -160,12 +160,12 @@ html {
         font-size: 1.4rem !important;
     }
     h3 {
-        font-size: 2rem !important;
+        font-size: 1.5rem !important;
     }
     .gb {
         padding: 4px 16px;
         cursor: pointer;
-        font-size: 2rem;
+        font-size: 1.5rem;
         border-radius: 4px;
         margin: 0px 10px;
     }
@@ -201,11 +201,11 @@ html {
     }
     .navbar-brand,
     .navbar-toggler {
-        font-size: 3rem !important;
+        font-size: 2rem !important;
     }
     
     .nav-link {
-        font-size: 2rem !important;
+        font-size: 1.5rem !important;
     }
 
 }
@@ -219,26 +219,26 @@ html {
         font-size: 1.4rem !important;
     }
     h3 {
-        font-size: 2rem !important;
+        font-size: 1.5rem !important;
     }
     .gb {
         padding: 2px 12px;
         cursor: pointer;
-        font-size: 2rem;
+        font-size: 1.5rem;
         border-radius: 4px;
         margin: 0px 5px;
     }
     .figure-caption-title {
-        font-size: 1.4rem !important;
+        font-size: 1.2rem !important;
     }
     .figure-caption {
-        font-size: 1.2rem !important;
+        font-size: 1.0rem !important;
     }
     .figure-caption-e {
-        font-size: 1.1rem !important;
+        font-size: 0.8rem !important;
     }
     .figure-caption-title-e {
-        font-size: 1.2rem !important;
+        font-size: 1.0rem !important;
     }
 
 }
