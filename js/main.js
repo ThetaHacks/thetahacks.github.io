@@ -48,7 +48,7 @@ $.fn.isolatedScroll = function () {
 };
 
 $(window).scroll(function (event) {
-  if (/Mobi/.test(navigator.userAgent)) {
+  if (/Mobi | Android | webOS | iPhone | iPad | iPod | BlackBerry | IEMobile | Opera Mini /.test(navigator.userAgent)) {
     $(".prof").each(function (i, el) {
       var el = $(el);
       if (el.visible(true)) {
