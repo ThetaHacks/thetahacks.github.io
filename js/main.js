@@ -48,7 +48,7 @@ $.fn.isolatedScroll = function () {
 };
 
 $(window).scroll(function (event) {
-  if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+  if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent) && !(/Macintosh/i.test(navigator.userAgent))) {
     $(".prof").each(function (i, el) {
       var el = $(el);
       if (el.visible(true)) {
