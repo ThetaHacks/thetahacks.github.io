@@ -421,7 +421,10 @@ h1 {
 
 .desc {
     color: gainsboro;
-    display: none;
+    display: block;
+    overflow: hidden;
+    height: 0px;
+    transition: height 0.3s ease-out;
 }
 
 .q {

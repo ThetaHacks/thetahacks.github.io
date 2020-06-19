@@ -53,15 +53,16 @@ function showFaq() {
 }
 
 function bindFaq() {
-  var faqs = $(".prof").click(function() {
+  $(".prof").click(function() {
     this.classList.toggle("active");
     console.log(this)
     var content = $(this).find(".desc");
     console.log(content)
-    if (content.css("display") === "block") {
-      content.css("display", 'none');
+    console.log(content.css('height'))
+    if (content.css("height") !== '0px') {
+      content.css("height", '0px');
     } else {
-      content.css("display", 'block');
+      content.css("height", '100px');
     }
   });
 }
