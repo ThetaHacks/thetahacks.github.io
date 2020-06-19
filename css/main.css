@@ -123,7 +123,7 @@ html {
     }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1055px) {
 
     .col-md-6 {
         min-width: 80vw;
@@ -607,6 +607,10 @@ pre {
     float: right;
 }
 
+table.schedule1{
+    background-color: #202030;
+}
+
 .attendee {
     filter: grayscale(100%);
 }
@@ -641,7 +645,7 @@ pre {
     }
 
     .schedule {
-        margin: 0vh 5vw 0 0 !important;
+        margin: 6vh 5vw 0 0 !important;
     }
 
     .svg-container {
@@ -654,48 +658,12 @@ pre {
 @media (max-width: 1055px) {
     .schedule {
         float: none;
-        margin: 0vh 5vw 0vh 5vw !important;
+        margin: 6vh 5vw 0vh 5vw !important;
     }
 
     .svg-container {
-        margin-top: 720px;
-        transform: translateY(-675px);
-        margin-left: 20vw !important;
+        display: none;
     }
 }
 
-@media (max-width: 900px) {
-    .svg-container {
-        margin-left: 15vw !important;
-    }
-}
 
-@media (max-width: 800px) {
-    .svg-container {
-        margin-left: 10vw !important;
-    }
-}
-
-@media (max-width: 700px) {
-    .svg-container {
-        transform: translateY(-585px) scale(0.9);
-        margin-left: 5vw !important;
-        margin-top: 730px;
-    }
-}
-
-@media (max-width: 600px) {
-    .svg-container {
-        transform: translateY(-585px) scale(0.8);
-        margin-left: 0vw !important;
-        margin-top: 730px;
-    }
-}
-
-@media (max-width: 700px) {
-    .svg-container {
-        transform: translateY(-405px) scale(0.6);
-        margin-left: 0vw !important;
-        margin-top: 450px;
-    }
-}
