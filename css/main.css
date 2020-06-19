@@ -17,8 +17,8 @@ h3 {
 
 ::-moz-selection {
     background: rgba(206, 123, 145, 0.7);
-  }
-  
+}
+
 ::selection {
     background: rgba(206, 123, 145, 0.7);
 }
@@ -58,6 +58,7 @@ figure {
 
 .prof {
     display: absolute;
+    margin-bottom: 30px;
 }
 
 .figure-e {
@@ -114,16 +115,18 @@ html {
 }
 
 .row {
-    height: 180px;
+    /* height: 180px; */
+    min-height: 40px;
 }
 
 .mobile-only {
     display: none;
 }
 
-.not-mobile {
+
+/* .not-mobile {
     display: none;
-}
+} */
 
 @media (max-width: 1200px) {
     .row {
@@ -196,14 +199,12 @@ html {
     .navbar-toggler {
         font-size: 1.5rem !important;
     }
-    
     .nav-link {
         font-size: 1rem !important;
     }
     .dark-back {
         padding: 4vh 0vh 30px 0vh !important;
     }
-
 }
 
 #ssssc {
@@ -243,18 +244,13 @@ html {
         padding-top: 8px !important;
         padding-bottom: 8px !important;
     }
-
     .table100 {
         padding-top: 30px !important;
     }
-
     #ssssc {
-    min-height: 460px !important;
+        min-height: 460px !important;
+    }
 }
-
-
-}
-
 
 ::-webkit-scrollbar {
     width: initial;
@@ -273,7 +269,7 @@ html {
 a.hyperlink {
     display: block;
     position: relative;
-    top:-5vh;
+    top: -5vh;
     visibility: hidden;
 }
 
@@ -337,7 +333,6 @@ a:hover {
     z-index: 10;
 }
 
-
 h1 {
     color: #b8d3d1;
 }
@@ -370,7 +365,7 @@ h1 {
 
 .prof {
     width: 35vw;
-    height: 5vh;
+    /* height: 5vh; */
 }
 
 .faq-page {
@@ -419,12 +414,14 @@ h1 {
 }
 
 .proftitle {
+    cursor: pointer;
     font-family: 'CircularStd';
     color: gainsboro;
 }
 
 .desc {
     color: gainsboro;
+    display: none;
 }
 
 .q {
@@ -646,7 +643,6 @@ table.schedule1 {
     .svg-container {
         display: none;
     }
-
     table {
         min-width: 300px !important;
     }
