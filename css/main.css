@@ -419,6 +419,10 @@ h1 {
     color: gainsboro;
 }
 
+.proftitle:hover{
+    color: #bbb;
+}
+
 .desc {
     color: gainsboro;
     display: block;
