@@ -73,7 +73,6 @@ function showFaq() {
     arrow.style.transform = 'rotate(0deg)';
     mobOnly.style.display = "none";
     notMob.style.display = "none";
-
   } else {
     arrow.style.transform = 'rotate(90deg)';
     if ($(document).width() <= 992) {
@@ -100,21 +99,20 @@ function showFaqBeginning() {
 }
 
 
-
 $(window).resize(function() {
   var arrow = document.querySelector('#show-faq-button');
   var mobOnly = document.querySelector('.mobile-only');
   var notMob = document.querySelector('.not-mobile');
-  if (!(arrow.innerText === " ⌵")) {
+  if (arrow.style.transform === 'rotate(0deg)') {
     mobOnly.style.display = "none";
     notMob.style.display = "none";
   } else {
     if ($(document).width() <= 992) {
-      notMob.style.display = "none";
       mobOnly.style.display = "inline-block";
+      notMob.style.display = "none";
     } else {
-      mobOnly.style.display = "none";
       notMob.style.display = "inline-block";
+      mobOnly.style.display = "none";
     }
   }
 });

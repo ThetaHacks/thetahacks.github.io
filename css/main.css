@@ -118,14 +118,14 @@ html {
     min-height: 40px;
 }
 
-.mobile-only {
+/* .mobile-only {
     display: none;
 }
 
 
 .not-mobile {
     display: none;
-}
+} */
 
 /* @media (max-width: 1200px) {
     .row {
