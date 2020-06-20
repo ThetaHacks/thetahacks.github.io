@@ -546,7 +546,7 @@ pre {
 .arrow-container {
     position: absolute;
     left: 1%;
-    transition: all 2s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .path-container {
@@ -559,8 +559,8 @@ pre {
     position: absolute;
     top: 2.5vh;
     opacity: 0;
-    animation-duration: 2s;
-    transition: all 2s ease-in-out;
+    animation-duration: 1s;
+    transition: all 1s ease-in-out;
 }
 
 .column2 {
@@ -577,8 +577,8 @@ pre {
     position: absolute;
     top: 0vh;
     opacity: 0;
-    animation-duration: 2s;
-    transition: all 2s ease-in-out;
+    animation-duration: 1s;
+    transition: all 1s ease-in-out;
 }
 
 .svg-container {
