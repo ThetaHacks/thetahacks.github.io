@@ -1,4 +1,3 @@
-
 function showSVG() {
   var path = document.querySelector('.mainpath');
   var length = path.getTotalLength();
@@ -53,7 +52,24 @@ function showFaq() {
   }
 }
 
-$(window).resize(function () {
+function bindFaq() {
+  $(".prof").click(function() {
+    this.classList.toggle("active");
+    console.log(this)
+    var content = $(this).find(".desc");
+    console.log(content)
+    console.log(content.css('height'))
+    if (content.css("height") !== '0px') {
+      content.css("height", '0px');
+    } else {
+      content.css("height", '100px');
+    }
+  });
+}
+
+bindFaq();
+
+$(window).resize(function() {
   var arrow = document.querySelector('#show-faq-button');
   var mobOnly = document.querySelector('.mobile-only');
   var notMob = document.querySelector('.not-mobile');
@@ -73,8 +89,8 @@ $(window).resize(function () {
 
 var scheduleDone = false;
 
-$.fn.isolatedScroll = function () {
-  this.bind('mousewheel DOMMouseScroll', function (e) {
+$.fn.isolatedScroll = function() {
+  this.bind('mousewheel DOMMouseScroll', function(e) {
     var delta = e.wheelDelta || (e.originalEvent && e.originalEvent.wheelDelta) || -e.detail,
       bottomOverflow = this.scrollTop + $(this).outerHeight() - this.scrollHeight >= 0,
       topOverflow = this.scrollTop <= 0;
@@ -86,10 +102,10 @@ $.fn.isolatedScroll = function () {
   return this;
 };
 
-$(window).scroll(function (event) {
+$(window).scroll(function(event) {
   var prev = "animate__fadeInLeft";
   var x = 0;
-  $(".prof").each(function (i, el) {
+  $(".prof").each(function(i, el) {
     var el = $(el);
     if (el.visible(true)) {
       if (prev === "animate__fadeInLeft") {
@@ -109,7 +125,7 @@ $(window).scroll(function (event) {
     }
   });
 
-  $(".schedule").each(function (i, el) {
+  $(".schedule").each(function(i, el) {
     var el = $(el);
     if (el.visible(true)) {
       if (!scheduleDone) {
@@ -121,8 +137,8 @@ $(window).scroll(function (event) {
   //$('.svg-container').isolatedScroll();
 });
 
-$(function () {
-  $(document).scroll(function () {
+$(function() {
+  $(document).scroll(function() {
     var $title = $("#title-1");
     var $nav = $("#mainNav")
     if ($(this).scrollTop() <= $title.offset().top) {
@@ -148,9 +164,7 @@ function shift() {
 }
 
 function getPos(el) {
-  for (var lx = 0, ly = 0;
-    el != null;
-    lx += el.offsetLeft, ly += el.offsetTop, el = el.offsetParent);
+  for (var lx = 0, ly = 0; el != null; lx += el.offsetLeft, ly += el.offsetTop, el = el.offsetParent);
   return { x: lx, y: ly };
 }
 
