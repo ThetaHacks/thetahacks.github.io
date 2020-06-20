@@ -53,12 +53,12 @@ function bindFaq() {
       // Close
       content.css("height", '0px');
       content.css("margin-bottom", "0px");
-      $(this).children('span').html('>')
+      $(this).children('span').css('transform', 'rotate(0deg)')
     } else {
       // Open
       content.css("height", content.data("height"));
       content.css("margin-bottom", "30px");
-      $(this).children('span').html('⌵')
+      $(this).children('span').css('transform', 'rotate(90deg)')
     }    
   });
 }

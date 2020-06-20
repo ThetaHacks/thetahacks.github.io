@@ -370,7 +370,9 @@ h1 {
 
 .proftitle span{
     margin-left: 12px;
+    display: inline-block;
     color: inherit;
+    transition: transform 0.3s ease-out;
 }
 
 .faq-page {
