@@ -124,15 +124,15 @@ html {
 }
 
 
-/* .not-mobile {
+.not-mobile {
     display: none;
-} */
+}
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     .row {
         height: 260px;
     }
-}
+} */
 
 @media (max-width: 992px) {
     .col-md-6 {

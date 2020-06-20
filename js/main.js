@@ -52,17 +52,31 @@ function showFaq() {
   }
 }
 
+function showFaqBeginning() {
+  var mobOnly = document.querySelector('.mobile-only');
+  var notMob = document.querySelector('.not-mobile');
+  // Show correct faq on load
+  if ($(document).width() <= 992) {
+    mobOnly.style.display = "inline-block";
+    notMob.style.display = "none";
+  } else {
+    notMob.style.display = "inline-block";
+    mobOnly.style.display = "none";
+  }
+}
+showFaqBeginning();
+
 function bindFaq() {
   $(".prof").click(function() {
     this.classList.toggle("active");
-    console.log(this)
     var content = $(this).find(".desc");
-    console.log(content)
-    console.log(content.css('height'))
     if (content.css("height") !== '0px') {
       content.css("height", '0px');
     } else {
-      content.css("height", '100px');
+      if ($(document).width() <= 1200)
+        content.css("height", '260px');
+      else
+        content.css("height", '100px');
     }
   });
 }
