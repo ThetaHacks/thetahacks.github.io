@@ -74,7 +74,7 @@ function bindFaq() {
       content.css("height", '0px');
     } else {
       if ($(document).width() <= 1200)
-        content.css("height", '120px');
+        content.css("height", '150px');
       else
         content.css("height", '100px');
     }
