@@ -73,7 +73,7 @@ function bindFaq() {
     if (content.css("height") !== '0px') {
       content.css("height", '0px');
     } else {
-      if ($(document).width() <= 1200)
+      if ($(document).width() <= 992)
         content.css("height", 'auto');
       else
         content.css("height", '100px');
