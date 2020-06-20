@@ -36,11 +36,8 @@ $( document ).ready(function() {
   var notMob = document.querySelector('.not-mobile');
   mobOnly.style.display = "inline-block";
   notMob.style.display = "inline-block";
-
-  console.log($(".desc"))
   $(".desc").each(function(index) {
     $(this).data("height", $(this).height())
-    console.log($(this).data())
   });
 
   $(".desc").height('0px');
@@ -49,23 +46,20 @@ $( document ).ready(function() {
 });
 
 function bindFaq() {
-  
-
-  console.log('x')
-  $(".desc").each(function(index) {
-    console.log(index)
-    console.log($(this).data())
-  });
-  $(".prof").click(function() {
-    this.classList.toggle("active");
-    var content = $(this).find(".desc");
+  $(".proftitle").click(function() {
+    $(this).parent().toggleClass("active");
+    var content = $(this).parent().find(".desc");
     if (content.css("height") !== '0px') {
+      // Close
       content.css("height", '0px');
       content.css("margin-bottom", "0px");
+      $(this).children('span').html('>')
     } else {
+      // Open
       content.css("height", content.data("height"));
       content.css("margin-bottom", "30px");
-    }
+      $(this).children('span').html('⌵')
+    }    
   });
 }
 

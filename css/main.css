@@ -368,6 +368,11 @@ h1 {
     margin-bottom: 15px;
 }
 
+.proftitle span{
+    margin-left: 12px;
+    color: inherit;
+}
+
 .faq-page {
     width: 100vw;
     padding-left: 10vw;
