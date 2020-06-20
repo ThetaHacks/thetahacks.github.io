@@ -72,11 +72,13 @@ function bindFaq() {
     var content = $(this).find(".desc");
     if (content.css("height") !== '0px') {
       content.css("height", '0px');
+      content.css("margin-bottom", "0px");
     } else {
       if ($(document).width() <= 992)
         content.css("height", 'auto');
       else
         content.css("height", '100px');
+      content.css("margin-bottom", "30px");
     }
   });
 }

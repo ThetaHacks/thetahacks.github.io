@@ -58,7 +58,6 @@ figure {
 
 .prof {
     display: absolute;
-    margin-bottom: 30px;
 }
 
 .figure-e {
@@ -150,7 +149,7 @@ html {
         padding-right: 5vw !important;
     }
     .prof {
-        padding: 10px 0vw 10px 0vw;
+        padding: 5px 0;
     }
     body {
         font-size: 1rem !important;
@@ -217,7 +216,7 @@ html {
 
 @media (max-width: 700px) {
     .prof {
-        padding: 2px 0vw 2px 0vw;
+        padding: 5px 0;
     }
     .gb {
         padding: 2px 12px;
@@ -428,6 +427,7 @@ h1 {
     display: block;
     overflow: hidden;
     height: 0px;
+    margin-bottom: 0px;
     transition: height 0.3s ease-out;
 }
 
