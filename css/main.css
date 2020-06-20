@@ -365,6 +365,7 @@ h1 {
 .prof {
     width: 35vw;
     /* height: 5vh; */
+    margin-bottom: 15px;
 }
 
 .faq-page {
