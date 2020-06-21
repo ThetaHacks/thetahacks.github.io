@@ -340,8 +340,13 @@ h1 {
     padding-bottom: 10vh;
 }
 
+.main-logo {
+    margin-top: 20vh;
+    height: 15vh;
+}
+
 .title-container {
-    padding-top: 22vh;
+    padding-top: 2vh;
     z-index: 30;
 }
 
