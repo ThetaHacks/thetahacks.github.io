@@ -31,7 +31,7 @@ function showSVG() {
 
 }
 
-$( document ).ready(function() {
+$(document).ready(function() {
   var mobOnly = document.querySelector('.mobile-only');
   var notMob = document.querySelector('.not-mobile');
   mobOnly.style.display = "inline-block";
@@ -59,7 +59,7 @@ function bindFaq() {
       content.css("height", content.data("height"));
       content.css("margin-bottom", "30px");
       $(this).children('span').css('transform', 'rotate(90deg)')
-    }    
+    }
   });
 }
 
@@ -100,6 +100,15 @@ function showFaqBeginning() {
 
 
 $(window).resize(function() {
+  $(".prof").each(function(i, el) {
+    var el = $(el);
+    if (el.hasClass("animate__animated")) {
+      // el.removeClass("animate__animated");
+      el.removeClass("animate__fadeInLeft");
+      el.removeClass("animate__fadeInRight");
+      el.addClass("animate__fadeIn")
+    }
+  });
   var arrow = document.querySelector('#show-faq-button');
   var mobOnly = document.querySelector('.mobile-only');
   var notMob = document.querySelector('.not-mobile');
@@ -115,6 +124,7 @@ $(window).resize(function() {
       mobOnly.style.display = "none";
     }
   }
+  
 });
 
 var scheduleDone = false;
@@ -139,13 +149,13 @@ $(window).scroll(function(event) {
     var el = $(el);
     if (el.visible(true)) {
       if (prev === "animate__fadeInLeft") {
-        if (!el.hasClass("animate__fadeInRight")) {
+        if (!el.hasClass("animate__animated")) {
           el.addClass("animate__animated");
           el.addClass("animate__fadeInLeft");
           prev = "animate__fadeInRight";
         }
       } else {
-        if (!el.hasClass("animate__fadeInLeft")) {
+        if (!el.hasClass("animate__animated")) {
           el.addClass("animate__animated");
           el.addClass("animate__fadeInRight");
           prev = "animate__fadeInLeft";
