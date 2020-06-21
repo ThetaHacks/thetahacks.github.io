@@ -350,6 +350,10 @@ h1 {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     .main-logo {
         filter: blur(0px);
+        object-fit: contain;
+
+        /* Bit of extra room for chrome so image doesn't cut*/
+        width: calc(15vh * 1176 / 2676 * 1.05)
     }
 }
 
