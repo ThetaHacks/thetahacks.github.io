@@ -32,6 +32,7 @@ function showSVG() {
 }
 
 $(document).ready(function() {
+  // Calculate heights
   var mobOnly = document.querySelector('.mobile-only');
   var notMob = document.querySelector('.not-mobile');
   mobOnly.style.display = "inline-block";
@@ -100,6 +101,7 @@ function showFaqBeginning() {
 
 
 $(window).resize(function() {
+  // Don't show same animations when resizing
   $(".prof").each(function(i, el) {
     var el = $(el);
     if (el.hasClass("animate__animated")) {
@@ -109,6 +111,7 @@ $(window).resize(function() {
       el.addClass("animate__fadeIn")
     }
   });
+
   var arrow = document.querySelector('#show-faq-button');
   var mobOnly = document.querySelector('.mobile-only');
   var notMob = document.querySelector('.not-mobile');
@@ -124,7 +127,6 @@ $(window).resize(function() {
       mobOnly.style.display = "none";
     }
   }
-  
 });
 
 var scheduleDone = false;
@@ -144,7 +146,6 @@ $.fn.isolatedScroll = function() {
 
 $(window).scroll(function(event) {
   var prev = "animate__fadeInLeft";
-  var x = 0;
   $(".prof").each(function(i, el) {
     var el = $(el);
     if (el.visible(true)) {
@@ -161,7 +162,6 @@ $(window).scroll(function(event) {
           prev = "animate__fadeInLeft";
         }
       }
-      x++;
     }
   });
 
