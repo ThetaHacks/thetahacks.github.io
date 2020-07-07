@@ -683,3 +683,19 @@ table.schedule1 {
         min-width: 300px !important;
     }
 }
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg)
+    }
+    to {
+        transform:rotateY(360deg);
+    }
+}
+
+#mainlogo {
+    animation-name: spin;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
