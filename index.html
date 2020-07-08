@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/table.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.5/vivus.js"></script>
 
@@ -101,7 +102,7 @@
             <!-- to open forms, add typeform-share to class, and make the href https://form.typeform.com/to/iPkfUe -->
             <button class="gb gb-bordered hover-slide hover-fill reverse attendee animate__animated animate__fadeInUp"
                 id="gb12"
-                onclick="alert('Sign-ups are not open yet! Sign up for our {mailing list} to get notified when they do!');">Attendee
+                onclick="swal('Sign-ups are not open yet!', 'Sign up for our {mailing list} to get notified when they do!', 'error');">Attendee
                 Signup</button>
             <script>
                 (function () {
@@ -123,7 +124,7 @@
             <!-- to open forms, add typeform-share to class, and make the href https://form.typeform.com/to/EDb7Pt -->
             <button class="gb gb-bordered hover-slide hover-fill reverse mentor animate__animated animate__fadeInUp"
                 id="gb10"
-                onclick="alert('Sign-ups are not open yet! Sign up for our {mailing list} to get notified when they do!');">Mentor
+                onclick="swal('Sign-ups are not open yet!', ' Sign up for our {mailing list} to get notified when they do!', 'error');">Mentor
                 Signup</button>
             <script>
                     (function () {
