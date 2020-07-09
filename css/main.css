@@ -711,6 +711,14 @@ table.schedule1 {
     }
 }
 
+.quote {
+    background-color: #202030;
+    padding: 0px 50px;
+    border-radius: 20px; 
+    width: auto; 
+    display:inline-block;
+}
+
 @keyframes spin {
     from {
         transform: rotateY(0deg)
