@@ -224,6 +224,10 @@ html {
     min-height: 760px;
 }
 
+.sponsor {
+    width: 250px;
+}
+
 .dark-back {
     padding: 4vh 0vh 40px 0vh;
 }
