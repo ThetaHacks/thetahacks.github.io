@@ -69,6 +69,12 @@ figure {
     height: 15vw;
     border-radius: 50%;
     border: 0.3vw solid #eeeeee;
+    transition: transform 0.3s ease-out;
+}
+
+.figure-image:hover,
+.figure-image-e:hover {
+    transform: scale(1.05); 
 }
 
 .figure-image-e {
@@ -76,6 +82,7 @@ figure {
     height: 12vw;
     border-radius: 50%;
     border: 0.3vw solid #eeeeee;
+    transition: transform 0.3s ease-out;
 }
 
 .figure-caption {
@@ -387,6 +394,18 @@ h1 {
     width: 35vw;
     /* height: 5vh; */
     margin-bottom: 15px;
+}
+
+.social-logo {
+    max-height: 60px;
+    max-width: 60px;
+    margin: 0px 20px;
+    transition: transform 0.3s ease-out;
+}
+
+.social-logo:hover {
+    transform: translateY(-5px);
+
 }
 
 .proftitle span {
