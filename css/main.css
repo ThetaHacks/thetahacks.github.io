@@ -699,3 +699,7 @@ table.schedule1 {
     animation-iteration-count: infinite;
     animation-timing-function: linear; 
 }
+
+.swal-modal .swal-text {
+    text-align: center;
+}
