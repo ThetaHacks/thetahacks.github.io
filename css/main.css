@@ -355,8 +355,7 @@ h1 {
 }
 
 .main-logo {
-    margin-right: 2vw;
-    margin-top: -12vh;
+    margin: -12.5vh 2vw 0vh 2vw;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -719,10 +718,11 @@ table.schedule1 {
 
 #mainlogo {
     animation-name: spin;
-    animation-duration: 3000ms;
+    animation-duration: 4000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear; 
 }
+
 
 .swal-modal .swal-text {
     text-align: center;
