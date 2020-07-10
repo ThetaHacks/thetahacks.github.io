@@ -145,12 +145,44 @@ html {
     }
 } */
 
+@media (max-width: 1100px) {
+    .main-title {
+        font-size: 12vw !important;
+    }
+    .title-right {
+        margin-right: 20px !important;
+    }
+    .main-logo {
+        width: 50px !important;
+        margin-bottom: -50px !important;
+        margin-right: 20px !important;
+        margin-left: 20px !important;
+    }
+
+    #about-section {
+        padding: 5vh 10vw 5vh 10vw !important;
+    }
+    .quote {
+        padding: 0px 10px !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-logo {
+        width: 30px !important;
+        margin-bottom: -100px !important;
+        margin-right: 20px !important;
+        margin-left: 20px !important;
+    }
+}
+
+#about-section {
+    padding: 5vh 20vw 5vh 20vw;
+}
+
 @media (max-width: 992px) {
     .col-md-6 {
         min-width: 80vw;
-    }
-    .main-title {
-        font-size: 12vw !important;
     }
     .prof {
         width: 90vw !important;
@@ -229,8 +261,15 @@ html {
     margin: 5% 2%;
 }
 
+
 .dark-back {
     padding: 4vh 0vh 40px 0vh;
+}
+
+@media (max-width: 1000px) {
+    .sponsor {
+        width: 175px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -238,8 +277,7 @@ html {
         padding: 5px 0;
     }
     .sponsor {
-        width: 150px;
-        margin: 5% 2%;
+        width: 100px;
     }
     .gb {
         padding: 2px 12px;
@@ -371,16 +409,14 @@ h1 {
 }
 
 .main-logo {
-    margin: -12.5vh 2vw 0vh 2vw;
+    margin: -16.5vh 50px 0vh 50px;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     .main-logo {
         filter: blur(0px);
         object-fit: contain;
-
-        /* Bit of extra room for chrome so image doesn't cut*/
-        width: calc(15vh * 1176 / 2676 * 1.05)
+        width: 60px;
     }
 }
 
@@ -391,6 +427,7 @@ h1 {
 
 .title-right {
     color: #ce7b91 !important;
+    margin-right: 50px;
 }
 
 .title-left {
@@ -416,7 +453,7 @@ h1 {
     max-height: 60px;
     max-width: 60px;
     height: 5vw;
-    min-height: 50px;
+    min-height: 35px;
     margin: 5% 20px;
     transition: transform 0.3s ease-out;
     display: inline-block;
