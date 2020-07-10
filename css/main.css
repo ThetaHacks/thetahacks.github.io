@@ -145,6 +145,10 @@ html {
     }
 } */
 
+#schedule-section {
+    height: 800px;
+}
+
 @media (max-width: 1100px) {
     .main-title {
         font-size: 12vw !important;
