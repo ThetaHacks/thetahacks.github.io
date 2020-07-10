@@ -766,11 +766,18 @@ table.schedule1 {
         float: none;
         margin: 6vh 5vw 0vh 5vw !important;
     }
+    #schedule-section {
+        height: auto !important;
+        padding-bottom: 60px !important;
+    }
     .svg-container {
         display: none;
     }
     table {
         min-width: 300px !important;
+    }
+    #copyright {
+        font-size: 0.7rem !important;
     }
 }
 
