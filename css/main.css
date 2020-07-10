@@ -276,7 +276,21 @@ html {
     }
 }
 
+#title-navbar-left {
+    margin-left: 30px;
+}
+
 @media (max-width: 700px) {
+    #title-navbar-left {
+        margin-left: 10px !important;
+    }
+    #title-navbar-right {
+        transform: translateY(5px) translateX(110px) !important;
+    }
+    #mainlogo {
+        height: 30px !important;
+        margin-bottom: -15px !important;
+    }
     .prof {
         padding: 5px 0;
     }
@@ -314,6 +328,8 @@ html {
     #ssssc {
         min-height: 460px !important;
     }
+
+
 }
 
 ::-webkit-scrollbar {
@@ -803,6 +819,7 @@ table.schedule1 {
     animation-duration: 4000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear; 
+    height: 50px;
 }
 
 
