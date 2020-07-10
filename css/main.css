@@ -226,8 +226,7 @@ html {
 
 .sponsor {
     width: 250px;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin: 5% 2%;
 }
 
 .dark-back {
@@ -237,6 +236,10 @@ html {
 @media (max-width: 700px) {
     .prof {
         padding: 5px 0;
+    }
+    .sponsor {
+        width: 150px;
+        margin: 5% 2%;
     }
     .gb {
         padding: 2px 12px;
@@ -310,6 +313,13 @@ a:hover {
     color: #c0e8f9;
     /* font-family: 'CircularStd'; */
     margin-top: 20px;
+}
+
+.text3 {
+    color: #c0e8f9;
+    /* font-family: 'CircularStd'; */
+    margin-top: 30px;
+    font-size: 20px;
 }
 
 .menu-bar {
@@ -405,13 +415,22 @@ h1 {
 .social-logo {
     max-height: 60px;
     max-width: 60px;
-    margin: 0px 20px;
+    height:5vw;
+    min-height: 50px;
+    margin: 5% 20px;
     transition: transform 0.3s ease-out;
 }
 
 .social-logo:hover {
     transform: translateY(-5px);
 
+}
+
+
+@media (max-width: 530px) {
+    .social-logo {
+        margin: 5% 10px;
+    }
 }
 
 .proftitle span {
