@@ -1,7 +1,15 @@
 .faq-page {
     text-align: center; clear: both;background: url(../img/city.jpg) no-repeat center center scroll !important; 
+    -webkit-background-size: auto !important;
+    -moz-background-size: auto !important;
+    -o-background-size: auto !important;
+    background-size: auto !important;
 }
 
 .masthead {
     background: url(../img/city2.jpg) no-repeat center center scroll !important; 
+    -webkit-background-size: auto !important;
+    -moz-background-size: auto !important;
+    -o-background-size: auto !important;
+    background-size: auto !important;
 }
