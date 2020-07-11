@@ -279,7 +279,7 @@ html {
 }
 
 .layer {
-    background-color: #101020cf;
+    background-color: #101020bb;
     top: 0;
     left: 0;
     min-width: 100vw;
@@ -287,7 +287,7 @@ html {
 }
 
 .layer2 {
-    background-color: #101020d5;
+    background-color: #101020d0;
 }
 
 @media (max-width: 700px) {
