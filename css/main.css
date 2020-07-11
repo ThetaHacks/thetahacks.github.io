@@ -118,31 +118,13 @@ figure {
 html {
     overflow: hidden !important;
     overflow-y: auto !important;
-    /* scroll thumb & track */
     scroll-behavior: smooth;
 }
 
 .row {
-    /* height: 180px; */
     min-height: 40px;
 }
 
-
-/* .mobile-only {
-    display: none;
-}
-
-
-.not-mobile {
-    display: none;
-} */
-
-
-/* @media (max-width: 1200px) {
-    .row {
-        height: 260px;
-    }
-} */
 
 #schedule-section {
     height: 800px;
@@ -368,21 +350,16 @@ a:hover {
 
 .text1 {
     color: #c0e8f9;
-    /* font-family: 'CircularStd'; */
     margin-top: 100px;
-    /* animation: backInUp;
-    animation-duration: 1s; */
 }
 
 .text2 {
     color: #c0e8f9;
-    /* font-family: 'CircularStd'; */
     margin-top: 20px;
 }
 
 .text3 {
     color: #c0e8f9;
-    /* font-family: 'CircularStd'; */
     margin-top: 30px;
     font-size: 20px;
 }
@@ -472,7 +449,6 @@ h1 {
 
 .prof {
     width: 35vw;
-    /* height: 5vh; */
     margin-bottom: 15px;
 }
 
@@ -544,16 +520,12 @@ h1 {
 }
 
 
-/*! this is bad we should remove it */
-
 .slidefadeleft:nth-child(odd) {
     animation-duration: 0.6s;
-    /* So they look staggered */
 }
 
 .slidefaderight:nth-child(odd) {
     animation-duration: 0.6s;
-    /* So they look staggered */
 }
 
 .prof {
@@ -574,7 +546,6 @@ h1 {
     color: gainsboro;
     display: block;
     overflow: hidden;
-    /* height: 0px; */
     margin-bottom: 0px;
     transition: all 0.3s ease-out;
 }
@@ -586,7 +557,6 @@ h1 {
 
 .scrolled {
     background-color: #0c0c0ce8;
-    /* ? Scroll Color! */
     transition: background 1.5s;
 }
 
@@ -709,7 +679,7 @@ pre {
 #timestamp {
     color: gainsboro;
     position: absolute;
-    top: 2.5vh;
+    top: 21px;
     opacity: 0;
     animation-duration: 1s;
     transition: all 1s ease-in-out;
@@ -748,7 +718,6 @@ div.table100-head {
 }
 
 div.table100 {
-    /* Get rid of annoying lines around table */
     background-color: #202030;
 }
 
