@@ -79,57 +79,42 @@
         </div>
     </nav>
 
-    <header class="masthead" style="min-height: 100vh;">
-        <div class="title-page" style="text-align: center;">
-            <!-- <h1 class="main-title">Theta<a class="title-right">Hacks</a></h1> -->
+    <header class="masthead" style="min-height: 100vh;background: url(img/windy_3.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;">
+        <div class="layer">
 
-            <div class="title-container">
-                <div class="title-left animate__animated animate__bounceInLeft" style="display: inline-block;">
-                    <h2 class="main-title" id="title-1">Theta</h2>
+            <div class="title-page" style="text-align: center;">
+                <!-- <h1 class="main-title">Theta<a class="title-right">Hacks</a></h1> -->
+
+                <div class="title-container">
+                    <div class="title-left animate__animated animate__bounceInLeft" style="display: inline-block;">
+                        <h2 class="main-title" id="title-1">Theta</h2>
+                    </div>
+                    <div class="title-right animate__animated animate__bounceInRight" style="display: inline-block;">
+                        <h2 class="main-title" id="title-2">Hacks</h2>
+                    </div>
                 </div>
-                <div class="title-right animate__animated animate__bounceInRight" style="display: inline-block;">
-                    <h2 class="main-title" id="title-2">Hacks</h2>
+                <div class="info-text" style="text-align: center;">
+                    <div class="sub1 animate__animated animate__bounceInLeft">
+                        <h3 class="text1">February 13-14, 2021</h3>
+                    </div>
+                    <div class="sub1 animate__animated animate__bounceInRight">
+                        <h3 class="text2">Register By February 5</h3>
+                    </div>
+                    <div class="sub1 animate__animated animate__bounceInLeft">
+                        <h3 class="text2">12345 Hack Street, Sunnyvale, California</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="info-text" style="text-align: center;">
-                <div class="sub1 animate__animated animate__bounceInLeft">
-                    <h3 class="text1">February 13-14, 2021</h3>
-                </div>
-                <div class="sub1 animate__animated animate__bounceInRight">
-                    <h3 class="text2">Register By February 5</h3>
-                </div>
-                <div class="sub1 animate__animated animate__bounceInLeft">
-                    <h3 class="text2">12345 Hack Street, Sunnyvale, California</h3>
-                </div>
-            </div>
-            <!-- to open forms, add typeform-share to class, and make the href https://form.typeform.com/to/iPkfUe -->
-            <button class="gb gb-bordered hover-slide hover-fill reverse attendee animate__animated animate__fadeInUp"
-                id="gb12"
-                onclick="swal('Sign-ups are not open yet!', 'Sign up for our {mailing list} to get notified when they do!', 'error');">Attendee
-                Signup</button>
-            <script>
-                (function () {
-                    var qs, js, q, s, d = document,
-                        gi = d.getElementById,
-                        ce = d.createElement,
-                        gt = d.getElementsByTagName,
-                        id = "typef_orm_share",
-                        b = "https://embed.typeform.com/";
-                    if (!gi.call(d, id)) {
-                        js = ce.call(d, "script");
-                        js.id = id;
-                        js.src = b + "embed.js";
-                        q = gt.call(d, "script")[0];
-                        q.parentNode.insertBefore(js, q)
-                    }
-                })()
-            </script>
-            <!-- to open forms, add typeform-share to class, and make the href https://form.typeform.com/to/EDb7Pt -->
-            <button class="gb gb-bordered hover-slide hover-fill reverse mentor animate__animated animate__fadeInUp"
-                id="gb10"
-                onclick="swal('Sign-ups are not open yet!', ' Sign up for our {mailing list} to get notified when they do!', 'error');">Mentor
-                Signup</button>
-            <script>
+                <!-- to open forms, add typeform-share to class, and make the href https://form.typeform.com/to/iPkfUe -->
+                <button
+                    class="gb gb-bordered hover-slide hover-fill reverse attendee animate__animated animate__fadeInUp"
+                    id="gb12"
+                    onclick="swal('Sign-ups are not open yet!', 'Sign up for our {mailing list} to get notified when they do!', 'error');">Attendee
+                    Signup</button>
+                <script>
                     (function () {
                         var qs, js, q, s, d = document,
                             gi = d.getElementById,
@@ -145,14 +130,37 @@
                             q.parentNode.insertBefore(js, q)
                         }
                     })()
-            </script>
+                </script>
+                <!-- to open forms, add typeform-share to class, and make the href https://form.typeform.com/to/EDb7Pt -->
+                <button class="gb gb-bordered hover-slide hover-fill reverse mentor animate__animated animate__fadeInUp"
+                    id="gb10"
+                    onclick="swal('Sign-ups are not open yet!', ' Sign up for our {mailing list} to get notified when they do!', 'error');">Mentor
+                    Signup</button>
+                <script>
+                        (function () {
+                            var qs, js, q, s, d = document,
+                                gi = d.getElementById,
+                                ce = d.createElement,
+                                gt = d.getElementsByTagName,
+                                id = "typef_orm_share",
+                                b = "https://embed.typeform.com/";
+                            if (!gi.call(d, id)) {
+                                js = ce.call(d, "script");
+                                js.id = id;
+                                js.src = b + "embed.js";
+                                q = gt.call(d, "script")[0];
+                                q.parentNode.insertBefore(js, q)
+                            }
+                        })()
+                </script>
+            </div>
         </div>
     </header>
 
     <a class="hyperlink" id="about"></a>
     <section id="about-section" style="background: #181828;">
         <div class="about-container" style="text-align: center;">
-            <h1 style="font-size: 5vh; font-family: 'CircularStd'; color: #ce7b91; margin-top: 2%;">
+            <h1 style="font-size: 2.5rem; font-family: 'CircularStd'; color: #ce7b91; margin-top: 2%;">
                 About
             </h1>
 
@@ -175,7 +183,7 @@
     <a class="hyperlink" id="schedule"></a>
     <section id="schedule-section" style="padding: 5vh 0vh 5vh 0vh; background: #101020;">
         <div class="schedule-container" style="text-align: center;">
-            <h1 style="font-size: 5vh; font-family: 'CircularStd'; color: #ce7b91; margin-top: 1%;">Schedule</h1>
+            <h1 style="font-size: 2.5rem; font-family: 'CircularStd'; color: #ce7b91; margin-top: 1%;">Schedule</h1>
             <hr width="15%" style="height: 1px; border-color: gainsboro; background-color: gainsboro; ">
             <div class="innercontainer">
                 <div class="svg-container" style="position: relative;">
@@ -311,187 +319,199 @@
     </section>
 
 
-    <section id="all" class="dark-back">
+    <section id="all" class="dark-back; ">
 
         <div class="faq-page2" style="text-align: center; clear: both;">
             <a class="hyperlink" id="faq"></a>
             <section class="dark-back">
-                <div class="faq-page" style="text-align: center; clear: both;">
+                <div class="faq-page" style="text-align: center; clear: both;background: url(img/break-banner.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;">
+                    <div class="layer2">
 
-                    <h1 class="ml-4 faq-arrow-rotate"
-                        style="font-size: 5vh; opacity: 1; font-family: 'CircularStd'; color: #ce7b91;">FAQ<a
-                            id="show-faq-button" onclick="showFaq()">▸</a>
-                    </h1>
+                        <h1 class="ml-4 faq-arrow-rotate"
+                            style="font-size: 2.5rem; opacity: 1; font-family: 'CircularStd'; color: #ce7b91;">FAQ<a
+                                id="show-faq-button" onclick="showFaq()">▸</a>
+                        </h1>
 
-                    <hr width="15%" style="height: 1px; border-color: gainsboro; background-color: gainsboro;">
-                    <div class="not-mobile">
-                        <div class="container-fluid">
+                        <hr width="15%" style="height: 1px; border-color: gainsboro; background-color: gainsboro;">
+                        <div class="not-mobile">
+                            <div class="container-fluid">
 
-                            <div class="row order-1">
-                                <div class="col-md-6">
-                                    <div class="prof">
-                                        <h3 class="proftitle">What is ThetaHacks?<span>▸</span></h3>
-                                        <p class="desc">ThetaHacks is a 24 hour event where students from all over the
-                                            Bay
-                                            Area can come together to make something together, whether software or
-                                            hardware!
-                                        </p>
+                                <div class="row order-1">
+                                    <div class="col-md-6">
+                                        <div class="prof">
+                                            <h3 class="proftitle">What is ThetaHacks?<span>▸</span></h3>
+                                            <p class="desc">ThetaHacks is a 24 hour event where students from all over
+                                                the
+                                                Bay
+                                                Area can come together to make something together, whether software or
+                                                hardware!
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="prof">
+                                            <h3 class="proftitle">Who can participate?<span>▸</span></h3>
+                                            <p class="desc">Anyone in high school can join! If you've graduated already,
+                                                consider becoming a mentor! If you are in middle school, email us for
+                                                details.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
 
-                                <div class="col-md-6">
-                                    <div class="prof">
-                                        <h3 class="proftitle">Who can participate?<span>▸</span></h3>
-                                        <p class="desc">Anyone in high school can join! If you've graduated already,
-                                            consider becoming a mentor! If you are in middle school, email us for
-                                            details.
-                                        </p>
+                            <div class="container-fluid">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="prof">
+                                            <h3 class="proftitle">Do I need to form a team?<span>▸</span></h3>
+                                            <p class="desc">You may form a team with up to 4 members! If you would like
+                                                to
+                                                go
+                                                solo, thats perfectly fine too.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="prof">
+                                            <h3 class="proftitle">Does this cost money?<span>▸</span></h3>
+                                            <p class="desc">Nope. ThetaHacks is free, and always will be! Everything
+                                                from
+                                                food
+                                                to swag is covered for all participants.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container-fluid">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="prof">
+                                            <h3 class="proftitle">What if I can't code?<span>▸</span></h3>
+                                            <p class="desc">If you can't code, thats totally not a problem! We will be
+                                                hosting
+                                                workshops so you can learn, so please join us.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="prof">
+                                            <h3 class="proftitle">What should I bring?<span>▸</span></h3>
+                                            <p class="desc">Bring your school student ID (or a government issued ID),
+                                                laptop,
+                                                charger, water bottle, and waiver (details soon). If you want to sleep,
+                                                feel
+                                                free to bring a sleeping bag and toiletries.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container-fluid">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="prof">
+                                            <h3 class="proftitle">Where do I get more information?<span>▸</span></h3>
+                                            <p class="desc">We will be posting a DevPost link soon with all the
+                                                technical
+                                                details. We plan to have some pretty epic prizes, so bring your best
+                                                ideas!
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="prof">
+                                            <h3 class="proftitle">I have another question!<span>▸</span></h3>
+                                            <p class="desc">Great! Feel free to contact us <a class="questionLink"
+                                                    target="_blank" href="https://forms.gle/bCT2fwE8JkSx4PSd7">here.</a>
+
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="container-fluid">
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="prof">
-                                        <h3 class="proftitle">Do I need to form a team?<span>▸</span></h3>
-                                        <p class="desc">You may form a team with up to 4 members! If you would like to
-                                            go
-                                            solo, thats perfectly fine too.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="prof">
-                                        <h3 class="proftitle">Does this cost money?<span>▸</span></h3>
-                                        <p class="desc">Nope. ThetaHacks is free, and always will be! Everything from
-                                            food
-                                            to swag is covered for all participants.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="container-fluid">
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="prof">
-                                        <h3 class="proftitle">What if I can't code?<span>▸</span></h3>
-                                        <p class="desc">If you can't code, thats totally not a problem! We will be
-                                            hosting
-                                            workshops so you can learn, so please join us.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="prof">
-                                        <h3 class="proftitle">What should I bring?<span>▸</span></h3>
-                                        <p class="desc">Bring your school student ID (or a government issued ID),
-                                            laptop,
-                                            charger, water bottle, and waiver (details soon). If you want to sleep, feel
-                                            free to bring a sleeping bag and toiletries.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="container-fluid">
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="prof">
-                                        <h3 class="proftitle">Where do I get more information?<span>▸</span></h3>
-                                        <p class="desc">We will be posting a DevPost link soon with all the technical
-                                            details. We plan to have some pretty epic prizes, so bring your best ideas!
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="prof">
-                                        <h3 class="proftitle">I have another question!<span>▸</span></h3>
-                                        <p class="desc">Great! Feel free to contact us <a class="questionLink"
-                                                target="_blank" href="https://forms.gle/bCT2fwE8JkSx4PSd7">here.</a>
-
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mobile-only"">
+                        <div class="mobile-only"">
 
                         <div class=" prof">
-                        <h3 class="proftitle">What is ThetaHacks?<span>▸</span></h3>
-                        <p class="desc">ThetaHacks is a 24 hour event where students from all over the
-                            Bay
-                            Area can come together to make something together, whether software or
-                            hardware!
-                        </p>
-                    </div>
+                            <h3 class="proftitle">What is ThetaHacks?<span>▸</span></h3>
+                            <p class="desc">ThetaHacks is a 24 hour event where students from all over the
+                                Bay
+                                Area can come together to make something together, whether software or
+                                hardware!
+                            </p>
+                        </div>
 
-                    <div class="prof">
-                        <h3 class="proftitle">Who can participate?<span>▸</span></h3>
-                        <p class="desc">Anyone in high school can join! If you've graduated already,
-                            consider becoming a mentor! If you are in middle school, email us for
-                            details.
-                        </p>
-                    </div>
-                    <div class="prof">
-                        <h3 class="proftitle">How do I form a team? Do I need a team?<span>▸</span></h3>
-                        <p class="desc">You may form a team with up to 4 members! If you would like to
-                            go
-                            solo, thats perfectly fine too.
-                        </p>
-                    </div>
+                        <div class="prof">
+                            <h3 class="proftitle">Who can participate?<span>▸</span></h3>
+                            <p class="desc">Anyone in high school can join! If you've graduated already,
+                                consider becoming a mentor! If you are in middle school, email us for
+                                details.
+                            </p>
+                        </div>
+                        <div class="prof">
+                            <h3 class="proftitle">How do I form a team? Do I need a team?<span>▸</span></h3>
+                            <p class="desc">You may form a team with up to 4 members! If you would like to
+                                go
+                                solo, thats perfectly fine too.
+                            </p>
+                        </div>
 
-                    <div class="prof">
-                        <h3 class="proftitle">Does this cost money?<span>▸</span></h3>
-                        <p class="desc">Nope. ThetaHacks is free, and always will be! Everything from
-                            food
-                            to swag is covered for all participants.
-                        </p>
-                    </div>
-                    <div class="prof">
-                        <h3 class="proftitle">What if I can't code?<span>▸</span></h3>
-                        <p class="desc">If you can't code, thats totally not a problem! We will be
-                            hosting
-                            workshops so you can learn, so please join us.
-                        </p>
-                    </div>
+                        <div class="prof">
+                            <h3 class="proftitle">Does this cost money?<span>▸</span></h3>
+                            <p class="desc">Nope. ThetaHacks is free, and always will be! Everything from
+                                food
+                                to swag is covered for all participants.
+                            </p>
+                        </div>
+                        <div class="prof">
+                            <h3 class="proftitle">What if I can't code?<span>▸</span></h3>
+                            <p class="desc">If you can't code, thats totally not a problem! We will be
+                                hosting
+                                workshops so you can learn, so please join us.
+                            </p>
+                        </div>
 
-                    <div class="prof">
-                        <h3 class="proftitle">What should I bring?<span>▸</span></h3>
-                        <p class="desc">Bring your school student ID (or a government issued ID),
-                            laptop,
-                            charger, water bottle, and waiver (details soon). If you want to sleep, feel free to bring a
-                            sleeping bag and toiletries.
-                        </p>
+                        <div class="prof">
+                            <h3 class="proftitle">What should I bring?<span>▸</span></h3>
+                            <p class="desc">Bring your school student ID (or a government issued ID),
+                                laptop,
+                                charger, water bottle, and waiver (details soon). If you want to sleep, feel free to
+                                bring a
+                                sleeping bag and toiletries.
+                            </p>
+                        </div>
+
+                        <div class="prof">
+                            <h3 class="proftitle">What are the prizes? Rules? Code of Conduct?<span>▸</span></h3>
+                            <p class="desc">We will be posting a DevPost link soon with all the technical
+                                details. We plan to have some pretty epic prizes, so bring your best ideas!
+                            </p>
+                        </div>
+
+                        <div class="prof">
+                            <h3 class="proftitle">I have another question!<span>▸</span></h3>
+                            <p class="desc">Great! Feel free to contact us <a class="questionLink" target="_blank"
+                                    href="https://forms.gle/bCT2fwE8JkSx4PSd7">here.</a>
+
+                            </p>
+                        </div>
                     </div>
-
-                    <div class="prof">
-                        <h3 class="proftitle">What are the prizes? Rules? Code of Conduct?<span>▸</span></h3>
-                        <p class="desc">We will be posting a DevPost link soon with all the technical
-                            details. We plan to have some pretty epic prizes, so bring your best ideas!
-                        </p>
-                    </div>
-
-                    <div class="prof">
-                        <h3 class="proftitle">I have another question!<span>▸</span></h3>
-                        <p class="desc">Great! Feel free to contact us <a class="questionLink" target="_blank"
-                                href="https://forms.gle/bCT2fwE8JkSx4PSd7">here.</a>
-
-                        </p>
-                    </div>
-
                 </div>
         </div>
         </div>
@@ -501,7 +521,7 @@
     <section style="padding: 5vh 0vh 5vh 0vh;background: #181828;">
 
         <div class="sponsors-container" style="text-align: center;">
-            <h1 style="font-size: 5vh; font-family: 'CircularStd'; color: #ce7b91; margin-top: 2%;">
+            <h1 style="font-size: 2.5rem; font-family: 'CircularStd'; color: #ce7b91; margin-top: 2%;">
                 Sponsors
             </h1>
             <hr width="15%"
@@ -525,7 +545,7 @@
     <section style="padding: 5vh 0vw 5vh 0vw;background: #202030;">
 
         <div class="team-container" style="text-align: center;">
-            <h1 style="font-size: 5vh; font-family: 'CircularStd'; color: #ce7b91; margin-top: 2%;">
+            <h1 style="font-size: 2.5rem; font-family: 'CircularStd'; color: #ce7b91; margin-top: 2%;">
                 Our Team
             </h1>
 

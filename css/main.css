@@ -251,7 +251,7 @@ html {
     .nav-link {
         font-size: 1rem !important;
     }
-    .dark-back {
+    .layer2 {
         padding: 4vh 0vh 30px 0vh !important;
     }
 }
@@ -266,7 +266,7 @@ html {
 }
 
 
-.dark-back {
+.layer2 {
     padding: 4vh 0vh 40px 0vh;
 }
 
@@ -291,6 +291,18 @@ html {
 
 .fa-bars {
     transform: translateY(2px);
+}
+
+.layer {
+    background-color: #101020cc;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.layer2 {
+    background-color: #101020bb;
 }
 
 @media (max-width: 700px) {
@@ -440,7 +452,7 @@ h1 {
 }
 
 .title-page {
-    padding-bottom: 10vh;
+    padding-bottom: 100px;
 }
 
 .main-logo {
@@ -515,8 +527,6 @@ h1 {
 
 .faq-page {
     width: 100vw;
-    padding-left: 10vw;
-    padding-right: 10vw;
 }
 
 .title-right:hover {
