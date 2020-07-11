@@ -276,20 +276,35 @@ html {
     }
 }
 
+.gb {
+    box-shadow: 2px 5px 10px #101030;
+}
+
 #title-navbar-left {
     margin-left: 30px;
+    font-size: 30px;transform:translateY(5px);position:absolute;
+}
+
+#title-navbar-right {
+    color: #ce7b91;font-size: 30px;transform:translateY(5px) translateX(130px);position:absolute;
+}
+
+.fa-bars {
+    transform: translateY(2px);
 }
 
 @media (max-width: 700px) {
     #title-navbar-left {
         margin-left: 10px !important;
+        font-size: 20px !important;
     }
     #title-navbar-right {
-        transform: translateY(5px) translateX(110px) !important;
+        transform: translateY(5px) translateX(77px) !important;
+        font-size: 20px !important;
     }
     #mainlogo {
         height: 30px !important;
-        margin-bottom: -15px !important;
+        margin-bottom: 0px !important;
     }
     .prof {
         padding: 5px 0;
@@ -803,6 +818,7 @@ table.schedule1 {
     border-radius: 20px; 
     width: auto; 
     display:inline-block;
+    box-shadow: 5px 10px 10px #050510;
 }
 
 @keyframes spin {
