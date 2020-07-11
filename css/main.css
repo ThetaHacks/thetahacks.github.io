@@ -270,10 +270,6 @@ html {
     text-align: center; 
     clear: both;
     background: url(../img/city.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 #title-navbar-right {
@@ -283,10 +279,6 @@ html {
 .masthead {
     min-height: 100vh;
     background: url(../img/city2.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 .navbar-brand:hover {
