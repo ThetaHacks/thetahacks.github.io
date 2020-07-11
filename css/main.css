@@ -118,7 +118,6 @@ figure {
 html {
     overflow: hidden !important;
     overflow-y: auto !important;
-    scrollbar-color: #000000;
     /* scroll thumb & track */
     scroll-behavior: smooth;
 }
@@ -354,20 +353,6 @@ html {
 
 }
 
-::-webkit-scrollbar {
-    width: initial;
-}
-
-::-webkit-scrollbar-track {
-    background: #000000;
-    /* color of the tracking area */
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: pink;
-    /* color of the scroll thumb */
-}
-
 a.hyperlink {
     display: block;
     position: relative;
@@ -496,20 +481,32 @@ h1 {
     max-width: 60px;
     height: 5vw;
     min-height: 35px;
-    margin: 5% 20px;
+    margin: 2% 20px;
     transition: transform 0.3s ease-out;
     display: inline-block;
 }
 
 .social-logo:hover {
     transform: translateY(-5px);
+}
 
+
+.social-logo-2 {
+    max-width: 250px;
+    width: 20vw;
+    min-width: 150px;
+    transition: transform 0.3s ease-out;
+    display: inline-block;
+}
+
+.social-logo-2:hover {
+    transform: translateY(-5px);
 }
 
 
 @media (max-width: 530px) {
     .social-logo {
-        margin: 5% 10px;
+        margin: 2% 10px;
     }
 }
 
