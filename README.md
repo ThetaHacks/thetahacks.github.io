@@ -8,8 +8,8 @@ Website created by **AndyLi23**, **Rohan-Bansal**, **yixqiao**, and **theAnshulG
 link: https://thetahacks.tech
 
 ### Sign up Today!
-Student: {link} <br>
-Mentor: {link}
+Student: Signups not released <br>
+Mentor: Signups not released
 
 ### Join our Discord!
 Discord: Going public soon! <br>
