@@ -270,6 +270,10 @@ html {
     color: #ce7b91;font-size: 30px;transform:translateY(5px) translateX(130px);position:absolute;
 }
 
+.navbar-brand:hover {
+    color: #B8D3D1;
+}
+
 .fa-bars {
     transform: translateY(2px);
 }
