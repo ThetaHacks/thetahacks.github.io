@@ -266,27 +266,8 @@ html {
     font-size: 30px;transform:translateY(5px);position:absolute;
 }
 
-.faq-page {
-    text-align: center; 
-    clear: both;
-    background: url(img/city.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 #title-navbar-right {
     color: #ce7b91;font-size: 30px;transform:translateY(5px) translateX(130px);position:absolute;
-}
-
-.masthead {
-    min-height: 100vh;
-    background: url(img/city2.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 .navbar-brand:hover {
