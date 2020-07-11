@@ -256,6 +256,11 @@ html {
     box-shadow: 2px 5px 10px #101030;
 }
 
+.gb:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 5px 10px 10px #101030;
+}
+
 #title-navbar-left {
     margin-left: 30px;
     font-size: 30px;transform:translateY(5px);position:absolute;
@@ -270,7 +275,7 @@ html {
 }
 
 .layer {
-    background-color: #101020cc;
+    background-color: #101020cf;
     top: 0;
     left: 0;
     min-width: 100vw;
@@ -278,7 +283,7 @@ html {
 }
 
 .layer2 {
-    background-color: #101020bb;
+    background-color: #101020d5;
 }
 
 @media (max-width: 700px) {
