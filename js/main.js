@@ -1,3 +1,21 @@
+function isIPadOs() {
+  if (window.AuthenticatorAssertionResponse === undefined
+    && window.AuthenticatorAttestationResponse === undefined
+    && window.AuthenticatorResponse === undefined
+    && window.Credential === undefined
+    && window.CredentailsContainer === undefined
+    && window.DeviceMotionEvent !== undefined
+    && window.DeviceOrientationEvent !== undefined
+    && navigator.maxTouchPoints === 5
+    && navigator.plugins.length === 0
+    && navigator.platform !== "iPhone") {
+    $('head').append('<link rel="stylesheet" type="text/css" href="css/ipad.css">');
+  }
+}
+
+isIPadOs();
+
+
 function showSVG() {
   var path = document.querySelector('.mainpath');
   var length = path.getTotalLength();
@@ -31,22 +49,6 @@ function showSVG() {
 
 }
 
-let isIPadOs = function () {
-  return window.AuthenticatorAssertionResponse === undefined
-    && window.AuthenticatorAttestationResponse === undefined
-    && window.AuthenticatorResponse === undefined
-    && window.Credential === undefined
-    && window.CredentailsContainer === undefined
-    && window.DeviceMotionEvent !== undefined
-    && window.DeviceOrientationEvent !== undefined
-    && navigator.maxTouchPoints === 5
-    && navigator.plugins.length === 0
-    && navigator.platform !== "iPhone";
-}
-
-if (isIPadOs()) {
-  $('head').append('<link rel="stylesheet" type="text/css" href="css/ipad.css">');
-}
 
 
 $(document).ready(function () {
