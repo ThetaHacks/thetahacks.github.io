@@ -269,7 +269,7 @@ html {
 .faq-page {
     text-align: center; 
     clear: both;
-    background: url(../img/city.jpg) no-repeat center center fixed; 
+    background: url(../img/city.jpg) no-repeat center center scroll; 
     background-size: cover;
 }
 
@@ -283,7 +283,7 @@ html {
 
 .masthead {
     min-height: 100vh;
-    background: url(../img/city2.jpg) no-repeat center center fixed; 
+    background: url(../img/city2.jpg) no-repeat center center scroll; 
     background-size: cover;
 }
 
