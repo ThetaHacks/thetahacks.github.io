@@ -265,8 +265,9 @@ html {
 }
 
 #title-navbar-left {
-    margin-left: 30px;
-    font-size: 30px;transform:translateY(5px);position:absolute;
+    margin-left: 70px;
+    font-size: 30px;position:absolute;
+    transform:translateY(-20px);
 }
 
 .faq-page {
@@ -281,7 +282,7 @@ html {
 }
 
 #title-navbar-right {
-    color: #ce7b91;font-size: 30px;transform:translateY(5px) translateX(130px);position:absolute;
+    color: #ce7b91;font-size: 30px;transform:translateY(-20px) translateX(170px);position:absolute;
 }
 
 .masthead {
@@ -836,10 +837,10 @@ table.schedule1 {
 
 @keyframes spin {
     from {
-        transform: rotateY(0deg)
+        transform: translateY(-23px) rotateY(0deg)
     }
     to {
-        transform:rotateY(360deg);
+        transform:translateY(-23px) rotateY(360deg);
     }
 }
 
@@ -849,6 +850,7 @@ table.schedule1 {
     animation-iteration-count: infinite;
     animation-timing-function: linear; 
     height: 50px;
+    position: absolute;
 }
 
 
