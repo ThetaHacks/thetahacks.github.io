@@ -34,6 +34,7 @@ h3 {
 .nav-link {
     float: right;
     font-size: 1.2rem;
+    z-index: 100 !important;
 }
 
 .main-title:hover {
@@ -851,7 +852,7 @@ table.schedule1 {
     animation-timing-function: linear; 
     height: 50px;
     position: absolute;
-    z-index: -1 !important;
+    z-index: 100 !important;
 }
 
 
