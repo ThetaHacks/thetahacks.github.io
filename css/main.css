@@ -34,7 +34,7 @@ h3 {
 .nav-link {
     float: right;
     font-size: 1.2rem;
-    z-index: 100000000000 !important;
+    z-index: -1 !important;
 }
 
 .main-title:hover {
