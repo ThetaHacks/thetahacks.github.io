@@ -809,6 +809,13 @@ table.schedule1 {
     border-radius: 20px; 
     width: auto; 
     display:inline-block;
+    box-shadow: 5px 10px 10px #05051077;
+    transition: transform 0.1s ease-out;
+    
+}
+
+.quote:hover {
+    transform: translate(-2px, -2px);
     box-shadow: 5px 10px 10px #050510;
 }
 
