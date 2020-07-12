@@ -273,6 +273,10 @@ html {
     background-size: cover;
 }
 
+.copyright-wrapper {
+    padding: 2vh 20vw 2vh 20vw;
+}
+
 #title-navbar-right {
     color: #ce7b91;font-size: 30px;transform:translateY(5px) translateX(130px);position:absolute;
 }
@@ -396,6 +400,7 @@ a:hover {
     font-size: 1rem;
     color: #b8d3d1;
     text-align: center;
+    margin-bottom: 0;
 }
 
 .menu-link {
@@ -803,6 +808,10 @@ table.schedule1 {
     }
     #copyright {
         font-size: 0.7rem !important;
+    }
+
+    .copyright-wrapper {
+        padding: 2vh 5vw 2vh 5vw;
     }
 }
 
