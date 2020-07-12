@@ -1,7 +1,9 @@
 .faq-page {
-    background: url(../img/city.jpg) no-repeat center center scroll !important; 
+    background: url(../img/city.jpg) no-repeat center center scroll !important;
+    background-size: cover !important; 
 }
 
 .masthead {
     background: url(../img/city2.jpg) no-repeat center center scroll !important; 
+    background-size: cover !important; 
 }

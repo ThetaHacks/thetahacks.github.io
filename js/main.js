@@ -1,19 +1,11 @@
-function isIPadOs() {
-  if (window.AuthenticatorAssertionResponse === undefined
-    && window.AuthenticatorAttestationResponse === undefined
-    && window.AuthenticatorResponse === undefined
-    && window.Credential === undefined
-    && window.CredentailsContainer === undefined
-    && window.DeviceMotionEvent !== undefined
-    && window.DeviceOrientationEvent !== undefined
-    && navigator.maxTouchPoints === 5
-    && navigator.plugins.length === 0
-    && navigator.platform !== "iPhone") {
-    $('head').append('<link rel="stylesheet" type="text/css" href="css/ipad.css">');
-  }
-}
+var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
+  navigator.userAgent &&
+  navigator.userAgent.indexOf('CriOS') == -1 &&
+  navigator.userAgent.indexOf('FxiOS') == -1;
 
-isIPadOs();
+if (isSafari) {
+  $('head').append('<link rel="stylesheet" type="text/css" href="css/ipad.css">');
+}
 
 
 function showSVG() {
