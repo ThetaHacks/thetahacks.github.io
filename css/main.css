@@ -838,10 +838,12 @@ table.schedule1 {
 
 @keyframes spin {
     from {
-        transform: translateY(-23px) rotateY(0deg)
+        transform: translateY(-23px) rotateY(0deg);
+        z-index: -1 !important;
     }
     to {
         transform: translateY(-23px) rotateY(360deg);
+        z-index: -1 !important;
     }
 }
 
@@ -852,7 +854,7 @@ table.schedule1 {
     animation-timing-function: linear; 
     height: 50px;
     position: absolute;
-    z-index: 100000000000 !important;
+    z-index: -1 !important;
 }
 
 
