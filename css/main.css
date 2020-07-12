@@ -840,7 +840,7 @@ table.schedule1 {
         transform: translateY(-23px) rotateY(0deg)
     }
     to {
-        transform:translateY(-23px) rotateY(360deg);
+        transform: translateY(-23px) rotateY(360deg);
     }
 }
 
@@ -851,6 +851,7 @@ table.schedule1 {
     animation-timing-function: linear; 
     height: 50px;
     position: absolute;
+    z-index: -1 !important;
 }
 
 
