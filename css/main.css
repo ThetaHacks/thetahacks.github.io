@@ -270,7 +270,7 @@ html {
     text-align: center; 
     clear: both;
     background: url(../img/city.jpg) no-repeat center center fixed; 
-    background-size: 100%;
+    background-size: cover;
 }
 
 #title-navbar-right {
@@ -280,7 +280,7 @@ html {
 .masthead {
     min-height: 100vh;
     background: url(../img/city2.jpg) no-repeat center center fixed; 
-    background-size: 100%;
+    background-size: cover;
 }
 
 .navbar-brand:hover {
