@@ -148,6 +148,12 @@ html {
     #about-section {
         padding: 5vh 10vw 5vh 10vw !important;
     }
+    .prev {
+        transform: translateY(-50px) translateX(-40px) !important;
+    }
+    .next {
+        transform: translateY(-50px) translateX(40px) !important;
+    }
     .quote {
         padding: 0px 10px !important;
     }
@@ -379,6 +385,81 @@ a.hyperlink {
     position: relative;
     top: -5vh;
     visibility: hidden;
+}
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  color: white !important;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.prev {
+    left: 0 !important;
+    transform: translateY(-50px) translateX(-100px);
+}
+
+.next {
+    right: 0 !important;
+    transform: translateY(-50px) translateX(100px);
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade3 {
+  -webkit-animation-name: fade3;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade3;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade3 {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade3 {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 a:hover {
