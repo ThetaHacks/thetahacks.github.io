@@ -267,7 +267,8 @@ html {
 
 #title-navbar-left {
     margin-left: 70px;
-    font-size: 30px;position:absolute;
+    font-size: 30px;
+    position:absolute;
     transform:translateY(-20px);
 }
 
@@ -320,16 +321,17 @@ html {
     #title-navbar-left {
         margin-left: 10px !important;
         font-size: 20px !important;
-        transform: translateY(-20px) translateX(50px) !important;
+        transform: translateY(-12px) translateX(45px) !important;
     }
     #title-navbar-right {
-        transform: translateY(-20px) translateX(127px) !important;
+        transform: translateY(-12px) translateX(122px) !important;
         font-size: 20px !important;
     }
     #mainlogo {
         height: 30px !important;
         margin-bottom: 0px !important;
-        transform: translateX(-40px);
+        position: absolute;
+        margin-top: 10px;
     }
     .prof {
         padding: 5px 0;
