@@ -171,7 +171,7 @@ html {
         min-width: 80vw;
     }
     .text3 {
-        font-size: 1.2rem !important;
+        font-size: 0.8rem !important;
     }
     .prof {
         width: 90vw !important;
@@ -392,7 +392,7 @@ a:hover {
 .text3 {
     color: #c0e8f9;
     margin-top: 30px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .menu-bar {
