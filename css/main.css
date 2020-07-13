@@ -283,8 +283,12 @@ html {
 }
 
 #title-navbar-right {
-    color: #ce7b91;font-size: 30px;transform:translateY(-20px) translateX(170px);position:absolute;
+    color: #ce7b91;font-size: 30px;
+    transform:translateY(-20px) translateX(170px);
+    position:absolute;
 }
+
+
 
 .masthead {
     min-height: 100vh;
@@ -318,7 +322,7 @@ html {
         font-size: 20px !important;
     }
     #title-navbar-right {
-        transform: translateY(5px) translateX(77px) !important;
+        transform: translateY(-20px) translateX(77px) !important;
         font-size: 20px !important;
     }
     #mainlogo {
