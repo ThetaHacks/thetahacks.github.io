@@ -669,6 +669,7 @@ pre {
     -webkit-user-select: none;
     -o-user-select: none;
     z-index: 100;
+    transition-duration: 0.1s;
 }
 
 .leftarrow:hover {
@@ -686,6 +687,7 @@ pre {
     -webkit-user-select: none;
     -o-user-select: none;
     z-index: 100;
+    transition-duration: 0.1s;
 }
 
 .rightarrow:hover {
