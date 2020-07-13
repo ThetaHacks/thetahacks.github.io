@@ -320,14 +320,16 @@ html {
     #title-navbar-left {
         margin-left: 10px !important;
         font-size: 20px !important;
+        transform: translateY(-20px) translateX(50px) !important;
     }
     #title-navbar-right {
-        transform: translateY(-20px) translateX(77px) !important;
+        transform: translateY(-20px) translateX(127px) !important;
         font-size: 20px !important;
     }
     #mainlogo {
         height: 30px !important;
         margin-bottom: 0px !important;
+        transform: translateX(-40px);
     }
     .prof {
         padding: 5px 0;
