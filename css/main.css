@@ -278,7 +278,7 @@ html {
     background-size: cover;
 }
 
-.copyright-wrapper {
+#copyright-wrapper {
     padding: 2vh 20vw 2vh 20vw;
 }
 
@@ -815,7 +815,7 @@ table.schedule1 {
         font-size: 0.7rem !important;
     }
 
-    .copyright-wrapper {
+    #copyright-wrapper {
         padding: 2vh 5vw 2vh 5vw;
     }
 }
