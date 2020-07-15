@@ -37,7 +37,6 @@
 
 </head>
 
-
 <body id="top" style="background: #202030;font-family:Montserrat;">
 
     <nav class="navbar navbar-custom navbar-expand-lg fixed-top text-uppercase" id="mainNav"
@@ -46,7 +45,7 @@
         <div class="container">
 
             <a class="navbar-brand js-scroll-trigger" href="#top" style="z-index: 100000000000 !important;"><img
-                    id="mainlogo" src="img/logo.png" class="logo" style="margin-left: 30px;"><span
+                    id="mainlogo" src="img/logo.png" class="logo" style="margin-left: 30px; filter: blur(0px);"><span
                     id="title-navbar-left">Theta</span><span id="title-navbar-right">Hacks</span></a>
             </a>
 
@@ -164,18 +163,93 @@
 
             <hr width="15%"
                 style="height: 1px; border-color: gainsboro; background-color: gainsboro; margin-bottom: 4%;">
-            <div class="quote">
-                <p class="text3">
-                    "I think it is possible for ordinary people to choose to be extraordinary."<br>-Elon
-                    Musk
-                </p>
+
+
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade3">
+                    <div class="quote">
+                        <p class="text3">
+                            "I think it is possible for ordinary people to choose to be extraordinary."<br>-Elon
+                            Musk
+                        </p>
+                    </div>
+                    <p class="text3">
+                        Here at ThetaHacks, we believe that everyone has the potential to be exceptional. We want to
+                        help you
+                        fulfill that potential by providing you with the resources and opportunity to innovate and
+                        create
+                        something that could change the world.
+                    </p>
+                </div>
+
+                <div class="mySlides fade3">
+                    <div class="quote">
+                        <p class="text3">
+                            frick this
+                        </p>
+                    </div>
+                    <p class="text3">
+                        testing
+                    </p>
+                </div>
+
+                <div class="mySlides fade3">
+                    <div class="quote">
+                        <p class="text3">
+                            owo (it's a joke)
+                        </p>
+                    </div>
+                    <p class="text3">
+                        owo (it's a joke)
+                    </p>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-            <p class="text3">
-                Here at ThetaHacks, we believe that everyone has the potential to be exceptional. We want to help you
-                fulfill that potential by providing you with the resources and opportunity to innovate and create
-                something that could change the world.
-            </p>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
         </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            } 
+        </script>
     </section>
 
     <a class="hyperlink" id="schedule"></a>
@@ -661,7 +735,7 @@
     </section>
 
 
-    <section id="copyright-wrapper" style=";background: #101020;">
+    <section id="copyright-wrapper" style="background: #101020;">
 
         <p id="copyright">Copyright &copy; 2020-2021 ThetaHacks, a 501(c)(3) non-profit organization, fiscally
             sponsored by Hack Club Bank, a project by the The Hack Foundation (d.b.a Hack Club) (EIN: 81-2908499). </p>

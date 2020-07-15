@@ -148,6 +148,12 @@ html {
     #about-section {
         padding: 5vh 10vw 5vh 10vw !important;
     }
+    .prev {
+        transform: translateY(-50px) translateX(-40px) !important;
+    }
+    .next {
+        transform: translateY(-50px) translateX(40px) !important;
+    }
     .quote {
         padding: 0px 10px !important;
     }
@@ -171,7 +177,7 @@ html {
         min-width: 80vw;
     }
     .text3 {
-        font-size: 1.2rem !important;
+        font-size: 0.8rem !important;
     }
     .prof {
         width: 90vw !important;
@@ -267,7 +273,8 @@ html {
 
 #title-navbar-left {
     margin-left: 70px;
-    font-size: 30px;position:absolute;
+    font-size: 30px;
+    position:absolute;
     transform:translateY(-20px);
 }
 
@@ -283,8 +290,12 @@ html {
 }
 
 #title-navbar-right {
-    color: #ce7b91;font-size: 30px;transform:translateY(-20px) translateX(170px);position:absolute;
+    color: #ce7b91;font-size: 30px;
+    transform:translateY(-20px) translateX(170px);
+    position:absolute;
 }
+
+
 
 .masthead {
     min-height: 100vh;
@@ -316,14 +327,17 @@ html {
     #title-navbar-left {
         margin-left: 10px !important;
         font-size: 20px !important;
+        transform: translateY(-12px) translateX(45px) !important;
     }
     #title-navbar-right {
-        transform: translateY(5px) translateX(77px) !important;
+        transform: translateY(-12px) translateX(122px) !important;
         font-size: 20px !important;
     }
     #mainlogo {
         height: 30px !important;
         margin-bottom: 0px !important;
+        position: absolute;
+        margin-top: 10px;
     }
     .prof {
         padding: 5px 0;
@@ -373,6 +387,81 @@ a.hyperlink {
     visibility: hidden;
 }
 
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  color: white !important;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 50px;
+  transition: 0.3s ease;
+  border-radius: 3px;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.prev {
+    left: 0 !important;
+    transform: translateY(-50px) translateX(-100px);
+}
+
+.next {
+    right: 0 !important;
+    transform: translateY(-50px) translateX(100px);
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: #999 !important;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+span.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade3 {
+  -webkit-animation-name: fade3;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade3;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade3 {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade3 {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 a:hover {
     color: #768891;
     text-decoration: none;
@@ -392,7 +481,7 @@ a:hover {
 .text3 {
     color: #c0e8f9;
     margin-top: 30px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .menu-bar {
@@ -669,6 +758,7 @@ pre {
     -webkit-user-select: none;
     -o-user-select: none;
     z-index: 100;
+    transition-duration: 0.1s;
 }
 
 .leftarrow:hover {
@@ -686,6 +776,7 @@ pre {
     -webkit-user-select: none;
     -o-user-select: none;
     z-index: 100;
+    transition-duration: 0.1s;
 }
 
 .rightarrow:hover {
