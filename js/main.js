@@ -288,3 +288,10 @@ function calcHyperlinkPos() {
   $(".hyperlink").css("top", '-' + $(".navbar").css("height"));
 }
 calcHyperlinkPos();
+
+$("#table-saturday tr").click(function() {
+  var selected = $(this).hasClass("highlight");
+  $("#table-saturday tr").removeClass("highlight");
+  if(!selected)
+          $(this).addClass("highlight");
+});

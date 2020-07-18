@@ -427,6 +427,10 @@ a.hyperlink {
   color: #999 !important;
 }
 
+.highlight {
+    transform: scale(1.1);
+}
+
 
 /* The dots/bullets/indicators */
 .dot {
