@@ -956,3 +956,8 @@ table.schedule1 {
 .swal-modal .swal-text {
     text-align: center;
 }
+
+.personal {
+    margin-left: 2%;
+    margin-right: 2%;
+}
