@@ -872,6 +872,10 @@ table.schedule1 {
   /* filter: grayscale(100%); */
 }
 
+.discord {
+    filter: grayscale(100%);
+}
+
 @media (max-width: 1500px) {
   .schedule {
     margin: 6vh 10vw 0 0 !important;
