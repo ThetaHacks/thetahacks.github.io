@@ -284,7 +284,6 @@ html {
   clear: both;
   background: url(../img/parallax/city.jpg) no-repeat center center fixed;
   background-size: cover;
-  filter: brightness(140%);
 }
 
 #copyright-wrapper {
@@ -302,7 +301,6 @@ html {
   min-height: 100vh;
   background: url(../img/parallax/city2.jpg) no-repeat center center fixed;
   background-size: cover;
-  filter: brightness(140%);
 }
 
 .navbar-brand:hover {
