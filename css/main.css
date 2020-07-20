@@ -28,7 +28,7 @@ h3 {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  margin-top: 15vh;
+  margin-top: 18vh;
 }
 
 .nav-link {
@@ -137,9 +137,7 @@ html {
   .main-title {
     font-size: 12vw !important;
   }
-  .title-right {
-    margin-right: 20px !important;
-  }
+
   .main-logo {
     width: 50px !important;
     margin-bottom: -50px !important;
@@ -488,7 +486,7 @@ a:hover {
 
 .text1 {
   color: #c0e8f9;
-  margin-top: 15vh;
+  margin-top: 22vh;
 }
 
 .text2 {
@@ -571,7 +569,6 @@ h1 {
 
 .title-right {
   color: #ce7b91 !important;
-  margin-right: 50px;
 }
 
 .title-left {
@@ -580,7 +577,8 @@ h1 {
 
 .main-title {
   font-size: 9rem;
-  font-family: "CircularStd";
+  font-family: Montserrat;
+  font-weight: 800;
 }
 
 .main-title:hover {
