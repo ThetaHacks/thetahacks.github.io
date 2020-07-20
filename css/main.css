@@ -869,7 +869,7 @@ table.schedule1 {
 }
 
 .mentor {
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
 }
 
 @media (max-width: 1500px) {
