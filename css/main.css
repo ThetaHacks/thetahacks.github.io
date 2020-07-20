@@ -28,7 +28,7 @@ h3 {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 
 .nav-link {
@@ -174,6 +174,13 @@ html {
   padding: 5vh 20vw 5vh 20vw;
 }
 
+a:active, a:focus {
+  outline: 0 !important;
+  border: none !important;
+  -moz-outline-style: none !important;
+  outline-style: none !important;
+}
+
 @media (max-width: 992px) {
   .col-md-6 {
     min-width: 80vw;
@@ -268,7 +275,6 @@ html {
 }
 
 .gb:hover {
-  transform: translateY(-5px) !important;
   box-shadow: 5px 10px 10px #101030;
 }
 
@@ -312,7 +318,7 @@ html {
 }
 
 .layer {
-  background-color: #101020b5;
+  background-color: #101020cc;
   top: 0;
   left: 0;
   min-width: 100vw;
@@ -320,7 +326,7 @@ html {
 }
 
 .layer2 {
-  background-color: #101020cc;
+  background-color: #101020cf;
 }
 
 @media (max-width: 700px) {
@@ -482,7 +488,7 @@ a:hover {
 
 .text1 {
   color: #c0e8f9;
-  margin-top: 100px;
+  margin-top: 15vh;
 }
 
 .text2 {
