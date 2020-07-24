@@ -2,6 +2,7 @@ var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
   navigator.userAgent;
 
 if (isSafari) {
+  // Special iPad css
   $('head').append('<link rel="stylesheet" type="text/css" href="css/ipad.css">');
 }
 
@@ -41,8 +42,8 @@ function showSVG() {
 
 
 
-$(document).ready(function () {
-  // Calculate heights
+$(document).ready(function() {
+  // Calculate heights for FAQ
   var mobOnly = document.querySelector('.mobile-only');
   var notMob = document.querySelector('.not-mobile');
   mobOnly.style.display = "inline-block";
@@ -81,10 +82,12 @@ function showFaq() {
   var mobOnly = document.querySelector('.mobile-only');
   var notMob = document.querySelector('.not-mobile');
   if (arrow.style.transform !== 'rotate(0deg)') {
+    // Close
     arrow.style.transform = 'rotate(0deg)';
     mobOnly.style.display = "none";
     notMob.style.display = "none";
   } else {
+    // Open
     arrow.style.transform = 'rotate(90deg)';
     if ($(document).width() <= 992) {
       mobOnly.style.display = "inline-block";
@@ -126,9 +129,11 @@ $(window).resize(function () {
   var mobOnly = document.querySelector('.mobile-only');
   var notMob = document.querySelector('.not-mobile');
   if (arrow.style.transform === 'rotate(0deg)') {
+    // Close
     mobOnly.style.display = "none";
     notMob.style.display = "none";
   } else {
+    // Open
     if ($(document).width() <= 992) {
       mobOnly.style.display = "inline-block";
       notMob.style.display = "none";
