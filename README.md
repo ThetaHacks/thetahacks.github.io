@@ -19,4 +19,5 @@ Discord Bot: https://github.com/ThetaHacks/ThetaHacksBot
 Instagram: @ThetaHacks  
 Twitter: @ThetaHacks  
 Email: hello@thetahacks.tech
+<br>
 Sponsor email: sponsors@thetahacks.tech
