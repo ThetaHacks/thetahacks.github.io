@@ -2,7 +2,7 @@
 The official site for ThetaHacks, a high school hackathon located in Sunnyvale, CA. Join us in February with a couple friends to earn free swag and awards while coding with others! <br>
 
 
-Website created by **AndyLi23**, **Rohan-Bansal**, **theAnshulGupta**, and **yixqiao**. <br>
+Website created by **AndyLi23**, **Rohan-Bansal**, **yixqiao**, and **theAnshulGupta**. <br>
 
 ### Website
 https://thetahacks.tech
