@@ -2,6 +2,8 @@
 
 _We adhere to the standard MLH Code of Conduct. Find it here: [code](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiAsdqe6-TqAhUaJzQIHZmiCXoQFjAAegQIBhAB&url=https%3A%2F%2Fstatic.mlh.io%2Fdocs%2Fmlh-code-of-conduct.pdf&usg=AOvVaw0Qin0DJeBNFdzKaMNPp3lU)_
 
+Note that we are not associated with MLH at the time being.
+
 ## Our Pledge
 
 In the interest of fostering an open and welcoming environment, we as

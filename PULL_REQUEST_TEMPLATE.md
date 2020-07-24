@@ -13,6 +13,7 @@ Fixes # (issue)
 
 **Test Configuration**:
 
+- Operating System (with version #):
 - Firmware version:
 - Hardware:
 - Toolchain:
