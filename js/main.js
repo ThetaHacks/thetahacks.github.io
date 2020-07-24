@@ -41,13 +41,13 @@ function showSVG() {
 
 
 
-$(document).ready(function() {
+$(document).ready(function () {
   // Calculate heights
   var mobOnly = document.querySelector('.mobile-only');
   var notMob = document.querySelector('.not-mobile');
   mobOnly.style.display = "inline-block";
   notMob.style.display = "inline-block";
-  $(".desc").each(function(index) {
+  $(".desc").each(function (index) {
     $(this).data("height", $(this).height())
   });
 
@@ -57,7 +57,7 @@ $(document).ready(function() {
 });
 
 function bindFaq() {
-  $(".proftitle").click(function() {
+  $(".proftitle").click(function () {
     $(this).parent().toggleClass("active");
     var content = $(this).parent().find(".desc");
     if (content.css("height") !== '0px') {
@@ -110,9 +110,9 @@ function showFaqBeginning() {
 }
 
 
-$(window).resize(function() {
+$(window).resize(function () {
   // Don't show same animations when resizing
-  $(".prof").each(function(i, el) {
+  $(".prof").each(function (i, el) {
     var el = $(el);
     if (el.hasClass("animate__animated")) {
       // el.removeClass("animate__animated");
@@ -141,8 +141,8 @@ $(window).resize(function() {
 
 var scheduleDone = false;
 
-$.fn.isolatedScroll = function() {
-  this.bind('mousewheel DOMMouseScroll', function(e) {
+$.fn.isolatedScroll = function () {
+  this.bind('mousewheel DOMMouseScroll', function (e) {
     var delta = e.wheelDelta || (e.originalEvent && e.originalEvent.wheelDelta) || -e.detail,
       bottomOverflow = this.scrollTop + $(this).outerHeight() - this.scrollHeight >= 0,
       topOverflow = this.scrollTop <= 0;
@@ -154,9 +154,9 @@ $.fn.isolatedScroll = function() {
   return this;
 };
 
-$(window).scroll(function(event) {
+$(window).scroll(function (event) {
   var prev = "animate__fadeInLeft";
-  $(".prof").each(function(i, el) {
+  $(".prof").each(function (i, el) {
     var el = $(el);
     if (el.visible(true)) {
       if (prev === "animate__fadeInLeft") {
@@ -175,7 +175,7 @@ $(window).scroll(function(event) {
     }
   });
 
-  $(".schedule").each(function(i, el) {
+  $(".schedule").each(function (i, el) {
     var el = $(el);
     if (el.visible(true)) {
       if (!scheduleDone) {
@@ -187,8 +187,8 @@ $(window).scroll(function(event) {
   //$('.svg-container').isolatedScroll();
 });
 
-$(function() {
-  $(document).scroll(function() {
+$(function () {
+  $(document).scroll(function () {
     var $title = $("#title-1");
     var $nav = $("#mainNav")
     if ($(this).scrollTop() <= $title.offset().top) {
@@ -292,6 +292,6 @@ calcHyperlinkPos();
 $("#table-saturday tr").click(function() {
   var selected = $(this).hasClass("highlight");
   $("#table-saturday tr").removeClass("highlight");
-  if (!selected)
-    $(this).addClass("highlight");
+  if(!selected)
+          $(this).addClass("highlight");
 });
