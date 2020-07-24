@@ -2,6 +2,6 @@ Contributions come from the **Coordinators** and **Tech** groups that are part o
 <br>
 ## Current contributors
 **Rohan Bansal** (Coordinator)  
-**Andy Li** (Coordinator)  
 **Anshul Gupta** (Coordinator)  
+**Andy Li** (Coordinator)
 **Yixuan Qiao** (Tech)
