@@ -1,3 +1,5 @@
+![](/img/logo/logotext.png)
+
 # ThetaHacks Official Website
 The official site for ThetaHacks, a high school hackathon located in Sunnyvale, CA. 
 
