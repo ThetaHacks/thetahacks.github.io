@@ -259,6 +259,18 @@ a:focus {
   margin: 5% 2% !important;
 }
 
+#sponsor-list {
+  margin-left: 13%;
+  margin-right: 13%;
+}
+
+@media (max-width: 1460px) {
+  #sponsor-list {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+
 .layer2 {
   padding: 4vh 0vh 40px 0vh;
 }
@@ -864,16 +876,19 @@ table.schedule1 {
   background-color: #202030;
 }
 
+.discord {
+  /* filter: grayscale(0%); */
+  filter: grayscale(100%);
+}
+
 .attendee {
+  /* filter: grayscale(0%); */
   filter: grayscale(100%);
 }
 
 .mentor {
+  filter: grayscale(0%);
   /* filter: grayscale(100%); */
-}
-
-.discord {
-  filter: grayscale(100%);
 }
 
 @media (max-width: 1500px) {
