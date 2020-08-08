@@ -259,6 +259,33 @@ a:focus {
   margin: 5% 2% !important;
 }
 
+.sponsor-row {
+  max-width: 80vw;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.sponsor-row > :not(:only-child) {
+  padding: 1rem;
+}
+
+.sponsor-row > a {
+  display: flex;
+  justify-content: center;
+  flex: 1 calc(240px + 7 * 1vw)
+}
+
+.sponsor-row > a > img{
+  transition: transform 0.5s, filter 0.5s;
+}
+
+#sponsors-sec img {
+  max-height: calc(20px + 6 * 1vw)
+}
+
 #sponsor-list {
   margin-left: 13%;
   margin-right: 13%;
