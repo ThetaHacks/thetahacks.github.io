@@ -270,7 +270,7 @@ a:focus {
 
 .sponsor-row > :not(:only-child) {
   padding: 1rem;
-}
+} 
 
 .sponsor-row > a {
   display: flex;
