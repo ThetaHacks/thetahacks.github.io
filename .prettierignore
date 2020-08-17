@@ -1,0 +1,14 @@
+css/animate.min.css
+css/bootstrap.min.css
+css/fontawesome.min.css
+css/hamburger.min.css
+
+js/bootstrap.min.js
+js/jquery-3.5.1.min.js
+js/jquery.visible.min.js
+js/sweetalert.min.js
+js/velocity.min.js
+js/vivus.js
+
+.gitignore
+.prettierignore
