@@ -16,14 +16,20 @@
       content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"
     />
     <meta name="author" content="ThetaHacks" />
-    <meta property="og:title" content="ThetaHacks | Bringing the world of tech to prospective engineers">
-    <meta property="og:site_name" content="ThetaHacks">
+    <meta
+      property="og:title"
+      content="ThetaHacks | Bringing the world of tech to prospective engineers"
+    />
+    <meta property="og:site_name" content="ThetaHacks" />
 
-    <meta property="og:description" content="ThetaHacks is an in-person 24 hour
-            hackathon in the Bay Area, aimed at having the brighest young minds of our generation hack for our future.">
-    <meta property="og:image" content="https://i.imgur.com/ihydEWt.png">
+    <meta
+      property="og:description"
+      content="ThetaHacks is an in-person 24 hour
+            hackathon in the Bay Area, aimed at having the brighest young minds of our generation hack for our future."
+    />
+    <meta property="og:image" content="https://i.imgur.com/ihydEWt.png" />
     <meta property="og:image:height" content="300" />
-    <meta property="og:url" content="https://thetahacks.tech">
+    <meta property="og:url" content="https://thetahacks.tech" />
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/hover.css" />
@@ -38,22 +44,22 @@
     <link rel="stylesheet" href="fonts/exo.css" />
   </head>
 
-  <body id="top" style="background: #202030; font-family: Montserrat;">
+  <body id="top" style="background: #202030; font-family: Montserrat">
     <nav
       class="navbar navbar-custom navbar-expand-lg fixed-top text-uppercase"
       id="mainNav"
-      style="z-index: 10000000 !important;"
+      style="z-index: 10000000 !important"
     >
       <div class="container">
         <a
           class="navbar-brand js-scroll-trigger"
           href="#top"
-          style="z-index: 100000000000 !important;"
+          style="z-index: 100000000000 !important"
           ><img
             id="mainlogo"
             src="img/logo/logo_clear.png"
             class="logo"
-            style="margin-left: 30px; filter: blur(0px);"
+            style="margin-left: 30px; filter: blur(0px)"
           /><span id="title-navbar-left">Theta</span
           ><span id="title-navbar-right">Hacks</span>
         </a>
@@ -114,22 +120,22 @@
 
     <header class="masthead">
       <div class="layer">
-        <div class="title-page" style="text-align: center;">
+        <div class="title-page" style="text-align: center">
           <div class="title-container">
             <div
               class="title-left animate__animated animate__bounceInLeft"
-              style="display: inline-block;"
+              style="display: inline-block"
             >
               <h2 class="main-title" id="title-1">Theta</h2>
             </div>
             <div
               class="title-right animate__animated animate__bounceInRight"
-              style="display: inline-block;"
+              style="display: inline-block"
             >
               <h2 class="main-title" id="title-2">Hacks</h2>
             </div>
           </div>
-          <div class="info-text" style="text-align: center;">
+          <div class="info-text" style="text-align: center">
             <div class="sub1 animate__animated animate__bounceInLeft">
               <h3 class="text1"><strong>Postponed</strong></h3>
             </div>
@@ -141,22 +147,47 @@
             </div>
           </div>
           <!-- to open add link to a -->
+
           <a target="_blank">
             <button
               class="gb gb-bordered hover-slide hover-fill reverse discord animate__animated animate__fadeInUp"
               id="gb12"
               onclick="swal('Discord server not open yet', 'Check back soon though!', 'error');"
             >
-              <span style="font-family: Montserrat;">Discord Server</span>
+              <span style="font-family: Montserrat">Discord Server</span>
             </button>
           </a>
-          <button
-            class="gb gb-bordered hover-slide hover-fill reverse attendee animate__animated animate__fadeInUp"
-            id="gb12"
-            onclick="swal('Sign-ups are not open yet!', 'Sign up for our mailing list (coming soon) to get notified when they do!', 'error');"
-          >
-            Attendee Signup
-          </button>
+
+          <a
+            class="typeform-share button gb gb-bordered hover-slide hover-fill reverse attendee animate__animated animate__fadeInUp"
+            href="https://form.typeform.com/to/IC9PtApF"
+            data-mode="drawer_left"
+            target="_blank"
+            id="gb10"
+            >Attendee Signup
+          </a>
+          <script>
+            (function () {
+              var qs,
+                js,
+                q,
+                s,
+                d = document,
+                gi = d.getElementById,
+                ce = d.createElement,
+                gt = d.getElementsByTagName,
+                id = "typef_orm_share",
+                b = "https://embed.typeform.com/";
+              if (!gi.call(d, id)) {
+                js = ce.call(d, "script");
+                js.id = id;
+                js.src = b + "embed.js";
+                q = gt.call(d, "script")[0];
+                q.parentNode.insertBefore(js, q);
+              }
+            })();
+          </script>
+
           <script>
             (function () {
               var qs,
@@ -212,8 +243,8 @@
     </header>
 
     <a class="hyperlink" id="about"></a>
-    <section id="about-section" style="background: #181828;">
-      <div class="about-container" style="text-align: center;">
+    <section id="about-section" style="background: #181828">
+      <div class="about-container" style="text-align: center">
         <h1
           style="
             font-size: 2.5rem;
@@ -254,22 +285,16 @@
 
           <div class="mySlides fade3">
             <div class="quote">
-              <p class="text3">
-                placeholder
-              </p>
+              <p class="text3">placeholder</p>
             </div>
-            <p class="text3">
-              placeholder
-            </p>
+            <p class="text3">placeholder</p>
           </div>
 
           <div class="mySlides fade3">
             <div class="quote">
               <p class="text3">placeholder placeholder</p>
             </div>
-            <p class="text3">
-              placeholder
-            </p>
+            <p class="text3">placeholder</p>
           </div>
 
           <!-- Next and previous buttons -->
@@ -279,7 +304,7 @@
         <br />
 
         <!-- The dots/circles -->
-        <div style="text-align: center;">
+        <div style="text-align: center">
           <span class="dot" onclick="currentSlide(1)"></span>
           <span class="dot" onclick="currentSlide(2)"></span>
           <span class="dot" onclick="currentSlide(3)"></span>
@@ -324,9 +349,9 @@
     <a class="hyperlink" id="schedule"></a>
     <section
       id="schedule-section"
-      style="padding: 5vh 0vh 5vh 0vh; background: #101020;"
+      style="padding: 5vh 0vh 5vh 0vh; background: #101020"
     >
-      <div class="schedule-container" style="text-align: center;">
+      <div class="schedule-container" style="text-align: center">
         <h1
           style="
             font-size: 2.5rem;
@@ -346,13 +371,13 @@
           "
         />
         <div class="innercontainer">
-          <div class="svg-container" style="position: relative;">
+          <div class="svg-container" style="position: relative">
             <span id="timestamp"></span>
             <span id="daystamp"></span>
             <div class="arrow-container">
               <svg
                 id="arrowsvg"
-                style="transform: none;"
+                style="transform: none"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -402,12 +427,12 @@
             </div>
           </div>
           <div class="schedule">
-            <div style="margin-bottom: 2vh;">
+            <div style="margin-bottom: 2vh">
               <span class="leftarrow" onclick="shift()">◄</span>
               <pre id="day">Saturday</pre>
               <span class="rightarrow" onclick="shift()">►</span>
             </div>
-            <div id="sched1" style="box-shadow: 5px 10px 10px #050510;">
+            <div id="sched1" style="box-shadow: 5px 10px 10px #050510">
               <div class="table100 ver1 m-b-110">
                 <div class="table100-head">
                   <table>
@@ -424,9 +449,9 @@
                   <table
                     class="schedule1"
                     id="table-saturday"
-                    style="overflow-y: hidden; overflow-x: hidden;"
+                    style="overflow-y: hidden; overflow-x: hidden"
                   >
-                    <tbody style="cursor: pointer;">
+                    <tbody style="cursor: pointer">
                       <tr class="row100 body">
                         <td class="cell100 column1">9:00 AM</td>
                         <td class="cell100 column2">Check In</td>
@@ -460,7 +485,7 @@
                 </div>
               </div>
             </div>
-            <div id="sched2" style="display: none;">
+            <div id="sched2" style="display: none">
               <div class="table100 ver1 m-b-110">
                 <div class="table100-head">
                   <table>
@@ -477,9 +502,9 @@
                   <table
                     class="schedule1"
                     id="table-sunday"
-                    style="overflow-y: hidden; overflow-x: hidden;"
+                    style="overflow-y: hidden; overflow-x: hidden"
                   >
-                    <tbody style="cursor: pointer;">
+                    <tbody style="cursor: pointer">
                       <tr class="row100 body">
                         <td class="cell100 column1">12:00 AM</td>
                         <td class="cell100 column2">
@@ -527,7 +552,7 @@
     </section>
 
     <section id="all" class="dark-back;">
-      <div class="faq-page2" style="text-align: center; clear: both;">
+      <div class="faq-page2" style="text-align: center; clear: both">
         <a class="hyperlink" id="faq"></a>
         <section class="dark-back">
           <div class="faq-page">
@@ -766,8 +791,11 @@
     </section>
 
     <a class="hyperlink" id="sponsors"></a>
-    <section id="sponsors-sec" style="padding: 5vh 0vh 5vh 0vh; background: #181828;">
-      <div class="sponsors-container" style="text-align: center;">
+    <section
+      id="sponsors-sec"
+      style="padding: 5vh 0vh 5vh 0vh; background: #181828"
+    >
+      <div class="sponsors-container" style="text-align: center">
         <h1
           style="
             font-size: 2.5rem;
@@ -787,7 +815,7 @@
             margin-bottom: 2%;
           "
         />
-        <p style="color: gainsboro; margin-bottom: 2%;">
+        <p style="color: gainsboro; margin-bottom: 2%">
           Interested in sponsoring us? Read the
           <a href="pdfs/prospectus.pdf">Sponsorship Prospectus</a> and shoot us
           an email!
@@ -807,41 +835,65 @@
                 Bronze Tier
             </h3> -->
 
-          <div class="sponsor-row">
-            <a target="_blank" href="https://www.get.tech">
-              <img src="img/sponsors/dottech.png" alt="Dot Tech" title=".Tech">
-            </a>
-            <a target="_blank" href="https://www.discord.com">
-              <img src="img/sponsors/discord-word.png" alt="Discord" title="Discord">
-            </a>
-            <a target="_blank" href="https://bahacks.vercel.app">
-              <img src="img/sponsors/bah.png" alt="Bay Area Hackathons" title="Bay Area Hackathons">
-            </a>
-          </div>
-          <div class="sponsor-row">
-            <a target="_blank" href="https://www.cynderhost.com">
-              <img src="img/sponsors/cynderhost.png" alt="CynderHost" title="CynderHost">
-            </a>
-            <a target="_blank" href="https://www.taskade.com">
-              <img src="img/sponsors/taskade.png" alt="Taskade" title="Taskade">
-            </a>
-            <a target="_blank" href="https://stickermule.com">
-              <img src="img/sponsors/stickermule.png" alt="StickerMule" title="StickerMule">
-            </a>
-          </div>
-          <div class="sponsor-row">
-            <a target="_blank" href="https://www.sublimetext.com">
-              <img src="img/sponsors/sublime_3.png" alt="Sublime Text" title="Sublime Text">
-            </a>
-            <a target="_blank" href="https://www.balsamiq.com">
-              <img src="img/sponsors/balsamiq.png" alt="Balsamiq" title="Balsamiq">
-            </a>
-          </div>
+        <div class="sponsor-row">
+          <a target="_blank" href="https://www.get.tech">
+            <img src="img/sponsors/dottech.png" alt="Dot Tech" title=".Tech" />
+          </a>
+          <a target="_blank" href="https://www.discord.com">
+            <img
+              src="img/sponsors/discord-word.png"
+              alt="Discord"
+              title="Discord"
+            />
+          </a>
+          <a target="_blank" href="https://bahacks.vercel.app">
+            <img
+              src="img/sponsors/bah.png"
+              alt="Bay Area Hackathons"
+              title="Bay Area Hackathons"
+            />
+          </a>
+        </div>
+        <div class="sponsor-row">
+          <a target="_blank" href="https://www.cynderhost.com">
+            <img
+              src="img/sponsors/cynderhost.png"
+              alt="CynderHost"
+              title="CynderHost"
+            />
+          </a>
+          <a target="_blank" href="https://www.taskade.com">
+            <img src="img/sponsors/taskade.png" alt="Taskade" title="Taskade" />
+          </a>
+          <a target="_blank" href="https://stickermule.com">
+            <img
+              src="img/sponsors/stickermule.png"
+              alt="StickerMule"
+              title="StickerMule"
+            />
+          </a>
+        </div>
+        <div class="sponsor-row">
+          <a target="_blank" href="https://www.sublimetext.com">
+            <img
+              src="img/sponsors/sublime_3.png"
+              alt="Sublime Text"
+              title="Sublime Text"
+            />
+          </a>
+          <a target="_blank" href="https://www.balsamiq.com">
+            <img
+              src="img/sponsors/balsamiq.png"
+              alt="Balsamiq"
+              title="Balsamiq"
+            />
+          </a>
+        </div>
       </div>
     </section>
     <a class="hyperlink" id="team"></a>
-    <section style="padding: 5vh 0vw 5vh 0vw; background: #202030;">
-      <div class="team-container" style="text-align: center;">
+    <section style="padding: 5vh 0vw 5vh 0vw; background: #202030">
+      <div class="team-container" style="text-align: center">
         <h1
           style="
             font-size: 2.5rem;
@@ -874,14 +926,14 @@
               <a href="https://linkedin.com/in/bansal-rohan" target="_blank"
                 ><i
                   class="personal hvr-grow-shadow fab fa-linkedin fa-lg"
-                  style="color: white;"
+                  style="color: white"
                   aria-hidden="true"
                 ></i
               ></a>
               <a href="https://github.com/rohan-bansal" target="_blank"
                 ><i
                   class="personal hvr-grow-shadow fab fa-github fa-lg"
-                  style="color: white;"
+                  style="color: white"
                   aria-hidden="true"
                 ></i
               ></a>
@@ -898,14 +950,14 @@
               <a href="https://instagram.com/andilyee" target="_blank"
                 ><i
                   class="personal hvr-grow-shadow fab fa-instagram fa-lg"
-                  style="color: white;"
+                  style="color: white"
                   aria-hidden="true"
                 ></i
               ></a>
               <a href="https://github.com/andyli23" target="_blank"
                 ><i
                   class="personal hvr-grow-shadow fab fa-github fa-lg"
-                  style="color: white;"
+                  style="color: white"
                   aria-hidden="true"
                 ></i
               ></a>
@@ -925,14 +977,14 @@
               <a href="https://linkedin.com/in/theAnshulGupta" target="_blank"
                 ><i
                   class="personal hvr-grow-shadow fab fa-linkedin fa-lg"
-                  style="color: white;"
+                  style="color: white"
                   aria-hidden="true"
                 ></i
               ></a>
               <a href="https://github.com/theAnshulGupta" target="_blank"
                 ><i
                   class="personal hvr-grow-shadow fab fa-github fa-lg"
-                  style="color: white;"
+                  style="color: white"
                   aria-hidden="true"
                 ></i
               ></a>
@@ -984,20 +1036,20 @@
       </div>
     </section>
 
-    <section style="padding: 5vh 0vh 5vh 0vh; background: #151525;">
+    <section style="padding: 5vh 0vh 5vh 0vh; background: #151525">
       <!-- logos since imo white and black are meh: https://www.flaticon.com/packs/social-media?word=social%20media -->
-      <div class="footer-container" style="text-align: center; display: block;">
+      <div class="footer-container" style="text-align: center; display: block">
         <div class="social-links">
           <a
             href="https://discord.gg"
-            style="display: inline-block;"
+            style="display: inline-block"
             target="_blank"
           >
             <img class="social-logo" src="img/media/discord.svg" />
           </a>
           <a
             href="https://www.linkedin.com/company/ThetaHacks"
-            style="display: inline-block;"
+            style="display: inline-block"
             target="_blank"
           >
             <img class="social-logo" src="img/media/linkedin.svg" />
@@ -1032,7 +1084,7 @@
           </a>
           <a
             href="https://www.hackclub.com/bank"
-            style="margin: 2% 20px; display: inline-block;"
+            style="margin: 2% 20px; display: inline-block"
             target="_blank"
           >
             <img class="social-logo-2" src="img/media/bank.png" />
@@ -1041,7 +1093,7 @@
       </div>
     </section>
 
-    <section id="copyright-wrapper" style="background: #101020;">
+    <section id="copyright-wrapper" style="background: #101020">
       <p id="copyright">
         Copyright &copy; 2020 -
         <script>

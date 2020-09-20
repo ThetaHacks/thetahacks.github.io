@@ -270,20 +270,20 @@ a:focus {
 
 .sponsor-row > :not(:only-child) {
   padding: 1rem;
-} 
+}
 
 .sponsor-row > a {
   display: flex;
   justify-content: center;
-  flex: 1 calc(240px + 7 * 1vw)
+  flex: 1 calc(240px + 7 * 1vw);
 }
 
-.sponsor-row > a > img{
+.sponsor-row > a > img {
   transition: transform 0.5s, filter 0.5s;
 }
 
 #sponsors-sec img {
-  max-height: calc(20px + 6 * 1vw)
+  max-height: calc(20px + 6 * 1vw);
 }
 
 #sponsor-list {
@@ -909,8 +909,8 @@ table.schedule1 {
 }
 
 .attendee {
-  /* filter: grayscale(0%); */
-  filter: grayscale(100%);
+  filter: grayscale(0%);
+  /* filter: grayscale(100%); */
 }
 
 .mentor {
