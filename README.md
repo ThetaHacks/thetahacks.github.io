@@ -1,4 +1,4 @@
-![](/img/logo/logo_text.png)
+![](/img/logo/logo-new.png)
 
 # ThetaHacks Official Website
 
