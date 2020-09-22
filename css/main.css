@@ -72,6 +72,8 @@ figure {
   border-radius: 50%;
   border: 0.3vw solid #eeeeee;
   transition: transform 0.3s ease-out;
+  max-width: 250px;
+  max-height: 250px;
 }
 
 .figure-image:hover,
@@ -85,6 +87,8 @@ figure {
   border-radius: 50%;
   border: 0.3vw solid #eeeeee;
   transition: transform 0.3s ease-out;
+  max-width: 200px;
+  max-height: 200px;
 }
 
 .figure-caption {
