@@ -6,7 +6,9 @@ The official site for ThetaHacks, a high school hackathon located in Sunnyvale, 
 
 ThetaHacks I will be a 24-hour online hackathon from December 19-20, with teams of up to four persons. Please sign up before December 5.
 
-Due to COVID-19, the official date for the 2021 in-person hackathon has not been determined yet. We will be monitoring conditions to decide when it is safe enough to hold the hackathon. Currently, we are aiming to host the hackathon around April, but this is by no means a final date.
+Due to COVID-19, the official date for the 2021 in-person hackathon has not been determined yet. 
+
+We are, however, hosting a digital hackathon on December 19-20, 2020! Register on our site.
 
 ### Team
 
