@@ -63,7 +63,7 @@ figure {
 }
 
 .figure-e {
-  width: 15vw;
+  width: 25vw;
 }
 
 .figure-image {
@@ -222,7 +222,7 @@ a:focus {
     width: 25vw;
   }
   .figure-e {
-    width: 18vw;
+    width: 25vw;
   }
   .figure-image {
     width: 20vw;
@@ -337,7 +337,7 @@ a:focus {
 #title-navbar-right {
   color: #ce7b91;
   font-size: 30px;
-  transform: translateY(-20px) translateX(170px);
+  transform: translateY(-22px) translateX(170px);
   position: absolute;
 }
 
@@ -374,7 +374,7 @@ a:focus {
     transform: translateY(-12px) translateX(45px) !important;
   }
   #title-navbar-right {
-    transform: translateY(-12px) translateX(122px) !important;
+    transform: translateY(-13px) translateX(122px) !important;
     font-size: 20px !important;
   }
   #mainlogo {
