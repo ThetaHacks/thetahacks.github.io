@@ -909,7 +909,7 @@ table.schedule1 {
 
 .discord {
   /* filter: grayscale(0%); */
-  filter: grayscale(100%);
+  filter: grayscale(0%);
 }
 
 .attendee {
