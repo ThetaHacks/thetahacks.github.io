@@ -288,6 +288,7 @@ a:focus {
 
 #sponsors-sec img {
   max-height: calc(20px + 6 * 1vw);
+  max-width: auto;
 }
 
 #sponsor-list {
