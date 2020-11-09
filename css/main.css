@@ -263,6 +263,7 @@ a:focus {
   margin: 5% 2% !important;
 }
 
+
 .sponsor-row {
   max-width: 80vw;
   width: 100%;
@@ -284,6 +285,7 @@ a:focus {
 
 .sponsor-row > a > img {
   transition: transform 0.5s, filter 0.5s;
+  object-fit: contain;
 }
 
 #sponsors-sec img {
