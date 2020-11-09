@@ -1,570 +1,711 @@
 <!DOCTYPE html>
 
 <html lang="en" prefix="oh: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
 
-<head>
-  <meta charset="utf-8" />
+    <title>ThetaHacks I</title>
 
-  <title>ThetaHacks I</title>
+    <link rel="icon" href="img/logo/logo_nobuffer.png" />
 
-  <link rel="icon" href="img/logo/logo_nobuffer.png" />
+    <meta
+      name="description"
+      content="ThetaHacks is a 24 hour high school hackathon located in the Bay Area"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"
+    />
+    <meta name="author" content="ThetaHacks" />
+    <meta
+      property="og:title"
+      content="ThetaHacks | Bringing the world of tech to prospective engineers"
+    />
+    <meta property="og:site_name" content="ThetaHacks" />
 
-  <meta name="description" content="ThetaHacks is a 24 hour high school hackathon located in the Bay Area" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
-  <meta name="author" content="ThetaHacks" />
-  <meta property="og:title" content="ThetaHacks | Bringing the world of tech to prospective engineers">
-  <meta property="og:site_name" content="ThetaHacks">
+    <meta
+      property="og:description"
+      content="ThetaHacks is a virtual 24 hour
+            hackathon open to those all around the world, aimed at having the brighest young minds of our generation hack for our future."
+    />
+    <meta property="og:image" content="https://i.imgur.com/ihydEWt.png" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:url" content="https://thetahacks.tech" />
 
-  <meta property="og:description"
-    content="ThetaHacks is a virtual 24 hour
-            hackathon open to those all around the world, aimed at having the brighest young minds of our generation hack for our future.">
-  <meta property="og:image" content="https://i.imgur.com/ihydEWt.png">
-  <meta property="og:image:height" content="300" />
-  <meta property="og:url" content="https://thetahacks.tech">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/hover.css" />
+    <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/table.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/hamburger.min.css" />
 
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/hover.css" />
-  <link rel="stylesheet" href="css/button.css" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/table.css" />
-  <link rel="stylesheet" href="css/animate.min.css" />
-  <link rel="stylesheet" href="css/fontawesome.min.css" />
-  <link rel="stylesheet" href="css/hamburger.min.css" />
+    <link rel="stylesheet" href="fonts/montserrat.css" />
+    <link rel="stylesheet" href="fonts/exo.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Merriweather"
+    />
+  </head>
 
-  <link rel="stylesheet" href="fonts/montserrat.css" />
-  <link rel="stylesheet" href="fonts/exo.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
-
-</head>
-
-<body id="top" style="background: #202030; font-family: Montserrat;">
-  <nav class="navbar navbar-custom navbar-expand-lg fixed-top text-uppercase" id="mainNav"
-    style="z-index: 10000000 !important;">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#top" style="z-index: 100000000000 !important;"><img id="mainlogo"
-          src="img/logo/logo_clear.png" class="logo" style="margin-left: 30px; filter: blur(0px);" /><span
-          id="title-navbar-left">Theta</span><span id="title-navbar-right">Hacks <span
-            style="font-family: Merriweather; font-weight: 600;">I</span></span>
-      </a>
-
-      <button data-toggle="collapse" data-target="#navbarResponsive"
-        class="navbar-toggler navbar-toggler-right text-uppercase text-white rounded" aria-controls="navbarResponsive"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa fa-bars"></i>
-      </button>
-
-      <div class="collapse navbar-collapse pull-right" id="navbarResponsive">
-        <ul class="nav navbar-nav ml-auto">
-          <li class="nav-item mx-0 mx-lg-1" role="presentation">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1" role="presentation">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#schedule">Schedule</a>
-          </li>
-
-          <li class="nav-item mx-0 mx-lg-1" role="presentation">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#faq">FAQ</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1" role="presentation">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#sponsors">Sponsors</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1" role="presentation">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#team">Team</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <header class="masthead">
-    <div class="layer">
-      <div class="title-page" style="text-align: center;">
-        <div class="title-container">
-          <div class="title-left animate__animated animate__bounceInLeft" style="display: inline-block;">
-            <h2 class="main-title" id="title-1">Theta</h2>
-          </div>
-          <div class="title-right animate__animated animate__bounceInRight" style="display: inline-block;">
-            <h2 class="main-title" id="title-2">Hacks <span
-                style="font-family: Merriweather; font-weight: 600;">I</span></h2>
-          </div>
-        </div>
-        <div class="info-text" style="text-align: center;">
-          <div class="sub1 animate__animated animate__bounceInLeft">
-            <h3 class="text1"><strong>December 19-20, 2020</strong></h3>
-          </div>
-          <div class="sub1 animate__animated animate__bounceInRight">
-            <h3 class="text2">Register By December 5</h3>
-          </div>
-          <div class="sub1 animate__animated animate__bounceInLeft">
-            <h3 class="text2"><i>Digital</i></h3>
-          </div>
-        </div>
-        <!-- to open add link to a -->
-        <a target="_blank">
-          <button class="gb gb-bordered hover-slide hover-fill reverse discord animate__animated animate__fadeInUp"
-            id="gb12" onclick="location.href='https://discord.gg/NCpE8PD'">
-            <span style="font-family: Montserrat;">Discord Server</span>
-          </button>
+  <body id="top" style="background: #202030; font-family: Montserrat">
+    <nav
+      class="navbar navbar-custom navbar-expand-lg fixed-top text-uppercase"
+      id="mainNav"
+      style="z-index: 10000000 !important"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand js-scroll-trigger"
+          href="#top"
+          style="z-index: 100000000000 !important"
+          ><img
+            id="mainlogo"
+            src="img/logo/logo_clear.png"
+            class="logo"
+            style="margin-left: 30px; filter: blur(0px)"
+          /><span id="title-navbar-left">Theta</span
+          ><span id="title-navbar-right"
+            >Hacks
+            <span style="font-family: Merriweather; font-weight: 600"
+              >I</span
+            ></span
+          >
         </a>
-        <button class="gb gb-bordered hover-slide hover-fill reverse attendee animate__animated animate__fadeInUp"
-          id="gb12"
-          onclick="location.href='https://my.mlh.io/oauth/authorize?client_id=BsR75pzhCV5yk-cxK9szCRcmA01ca8AeOCwlPNOtWsU&redirect_uri=https://thetahacks.tech&response_type=token'">
-          Attendee Signup
-        </button>
 
         <button
-          class="gb gb-bordered hover-slide hover-fill reverse mentor animate__animated animate__fadeInUp"
-          id="gb10"
-          onclick="location.href='https://my.mlh.io/oauth/authorize?client_id=5Z6u2-6ADbz4ZcWCLACSnijx3ClPFQGB5Ac3By9qP7E&redirect_uri=https://thetahacks.tech&response_type=token'">
-          Mentor Signup
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          class="navbar-toggler navbar-toggler-right text-uppercase text-white rounded"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa fa-bars"></i>
         </button>
-      </div>
-    </div>
-  </header>
 
-  <a class="hyperlink" id="about"></a>
-  <section id="about-section" style="background: #181828;">
-    <div class="about-container" style="text-align: center;">
-      <h1 style="
+        <div class="collapse navbar-collapse pull-right" id="navbarResponsive">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1" role="presentation">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1" role="presentation">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="#schedule"
+                >Schedule</a
+              >
+            </li>
+
+            <li class="nav-item mx-0 mx-lg-1" role="presentation">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="#faq"
+                >FAQ</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1" role="presentation">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="#sponsors"
+                >Sponsors</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1" role="presentation">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="#team"
+                >Team</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead">
+      <div class="layer">
+        <div class="title-page" style="text-align: center">
+          <div class="title-container">
+            <div
+              class="title-left animate__animated animate__bounceInLeft"
+              style="display: inline-block"
+            >
+              <h2 class="main-title" id="title-1">Theta</h2>
+            </div>
+            <div
+              class="title-right animate__animated animate__bounceInRight"
+              style="display: inline-block"
+            >
+              <h2 class="main-title" id="title-2">
+                Hacks
+                <span style="font-family: Merriweather; font-weight: 600"
+                  >I</span
+                >
+              </h2>
+            </div>
+          </div>
+          <div class="info-text" style="text-align: center">
+            <div class="sub1 animate__animated animate__bounceInLeft">
+              <h3 class="text1"><strong>December 19-20, 2020</strong></h3>
+            </div>
+            <div class="sub1 animate__animated animate__bounceInRight">
+              <h3 class="text2">Register By December 5</h3>
+            </div>
+            <div class="sub1 animate__animated animate__bounceInLeft">
+              <h3 class="text2"><i>Digital</i></h3>
+            </div>
+          </div>
+          <!-- to open add link to a -->
+          <a target="_blank">
+            <button
+              class="gb gb-bordered hover-slide hover-fill reverse discord animate__animated animate__fadeInUp"
+              id="gb12"
+              onclick="location.href='https://discord.gg/NCpE8PD'"
+            >
+              <span style="font-family: Montserrat">Discord Server</span>
+            </button>
+          </a>
+          <button
+            class="gb gb-bordered hover-slide hover-fill reverse attendee animate__animated animate__fadeInUp"
+            id="gb12"
+            onclick="location.href='https://my.mlh.io/oauth/authorize?client_id=BsR75pzhCV5yk-cxK9szCRcmA01ca8AeOCwlPNOtWsU&redirect_uri=https://thetahacks.tech&response_type=token'"
+          >
+            Attendee Signup
+          </button>
+
+          <button
+            class="gb gb-bordered hover-slide hover-fill reverse mentor animate__animated animate__fadeInUp"
+            id="gb10"
+            onclick="location.href='https://my.mlh.io/oauth/authorize?client_id=5Z6u2-6ADbz4ZcWCLACSnijx3ClPFQGB5Ac3By9qP7E&redirect_uri=https://thetahacks.tech&response_type=token'"
+          >
+            Mentor Signup
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <a class="hyperlink" id="about"></a>
+    <section id="about-section" style="background: #181828">
+      <div class="about-container" style="text-align: center">
+        <h1
+          style="
             font-size: 2.5rem;
             font-family: 'CircularStd';
             color: #ce7b91;
             margin-top: 2%;
-          ">
-        About
-      </h1>
+          "
+        >
+          About
+        </h1>
 
-      <hr width="200px" style="
+        <hr
+          width="200px"
+          style="
             height: 1px;
             border-color: gainsboro;
             background-color: gainsboro;
             margin-bottom: 4%;
-          " />
+          "
+        />
 
-      <div class="quote">
+        <div class="quote">
+          <p class="text3">
+            "I think it is possible for ordinary people to choose to be
+            extraordinary."<br />-Elon Musk
+          </p>
+        </div>
         <p class="text3">
-          "I think it is possible for ordinary people to choose to be
-          extraordinary."<br />-Elon Musk
+          Here at ThetaHacks, we believe that everyone has the potential to be
+          exceptional. We want to help you fulfill that potential by providing
+          you with the resources and opportunity to innovate and create
+          something that could change the world.
         </p>
+
+        <br />
       </div>
-      <p class="text3">
-        Here at ThetaHacks, we believe that everyone has the potential to
-        be exceptional. We want to help you fulfill that potential by
-        providing you with the resources and opportunity to innovate and
-        create something that could change the world.
-      </p>
+    </section>
 
-      <br />
-
-    </div>
-
-  </section>
-
-  <a class="hyperlink" id="schedule"></a>
-  <section id="schedule-section" style="padding: 5vh 0vh 5vh 0vh; background: #101020;">
-    <div class="schedule-container" style="text-align: center;">
-      <h1 style="
+    <a class="hyperlink" id="schedule"></a>
+    <section
+      id="schedule-section"
+      style="padding: 5vh 0vh 5vh 0vh; background: #101020"
+    >
+      <div class="schedule-container" style="text-align: center">
+        <h1
+          style="
             font-size: 2.5rem;
             font-family: 'CircularStd';
             color: #ce7b91;
             margin-top: 1%;
-          ">
-        Schedule
-      </h1>
-      <hr width="200px" style="
+          "
+        >
+          Schedule
+        </h1>
+        <hr
+          width="200px"
+          style="
             height: 1px;
             border-color: gainsboro;
             background-color: gainsboro;
-          " />
-      <div class="innercontainer">
-        <div class="svg-container" style="position: relative;">
-          <span id="timestamp"></span>
-          <span id="daystamp"></span>
-          <div class="arrow-container">
-            <svg id="arrowsvg" style="transform: none;" version="1.1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 50 640"
-              width="40" height="600">
-              <path class="arrowpath" opacity="1" fill-opacity="0" stroke="#b8d3d1" stroke-width="5"
-                stroke-linecap="round" stroke-opacity="1" d="M10 636.03L10 6.33" id="a2v1t8OFOh"></path>
-            </svg>
+          "
+        />
+        <div class="innercontainer">
+          <div class="svg-container" style="position: relative">
+            <span id="timestamp"></span>
+            <span id="daystamp"></span>
+            <div class="arrow-container">
+              <svg
+                id="arrowsvg"
+                style="transform: none"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 50 640"
+                width="40"
+                height="600"
+              >
+                <path
+                  class="arrowpath"
+                  opacity="1"
+                  fill-opacity="0"
+                  stroke="#b8d3d1"
+                  stroke-width="5"
+                  stroke-linecap="round"
+                  stroke-opacity="1"
+                  d="M10 636.03L10 6.33"
+                  id="a2v1t8OFOh"
+                ></path>
+              </svg>
+            </div>
+            <div class="path-container" id="path-container">
+              <svg
+                class="sched-line"
+                id="sched-line"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 640 640"
+                width="600"
+                height="640"
+              >
+                <path
+                  class="mainpath"
+                  id="mainpath"
+                  opacity="1"
+                  fill-opacity="0"
+                  stroke="#ce7b91"
+                  stroke-width="5"
+                  stroke-opacity="1"
+                  stroke-dasharray="1500 1500"
+                  d="M626.47 348.06C510.93 614.72 410.81 614.72 326.11 348.06C241.41 81.39 141.53 81.39 26.47 348.06"
+                  id="aLxU1whWA"
+                ></path>
+              </svg>
+            </div>
           </div>
-          <div class="path-container" id="path-container">
-            <svg class="sched-line" id="sched-line" version="1.1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640"
-              width="600" height="640">
-              <path class="mainpath" id="mainpath" opacity="1" fill-opacity="0" stroke="#ce7b91" stroke-width="5"
-                stroke-opacity="1" stroke-dasharray="1500 1500"
-                d="M626.47 348.06C510.93 614.72 410.81 614.72 326.11 348.06C241.41 81.39 141.53 81.39 26.47 348.06"
-                id="aLxU1whWA"></path>
-            </svg>
-          </div>
-        </div>
-        <div class="schedule">
-          <div style="margin-bottom: 2vh;">
-            <span class="leftarrow" onclick="shift()">◄</span>
-            <pre id="day">Saturday</pre>
-            <span class="rightarrow" onclick="shift()">►</span>
-          </div>
-          <div id="sched1" style="box-shadow: 5px 10px 10px #050510;">
-            <div class="table100 ver1 m-b-110">
-              <div class="table100-head">
-                <table>
-                  <thead>
-                    <tr class="row100 head">
-                      <th class="column1 header1">Time</th>
-                      <th class="column2 header1">Event</th>
-                    </tr>
-                  </thead>
-                </table>
-              </div>
+          <div class="schedule">
+            <div style="margin-bottom: 2vh">
+              <span class="leftarrow" onclick="shift()">◄</span>
+              <pre id="day">Saturday</pre>
+              <span class="rightarrow" onclick="shift()">►</span>
+            </div>
+            <div id="sched1" style="box-shadow: 5px 10px 10px #050510">
+              <div class="table100 ver1 m-b-110">
+                <div class="table100-head">
+                  <table>
+                    <thead>
+                      <tr class="row100 head">
+                        <th class="column1 header1">Time</th>
+                        <th class="column2 header1">Event</th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
 
-              <div class="table100-body js-pscroll">
-                <table class="schedule1" id="table-saturday" style="overflow-y: hidden; overflow-x: hidden;">
-                  <tbody style="cursor: pointer;">
-                    <tr class="row100 body">
-                      <td class="cell100 column1">9:00 AM</td>
-                      <td class="cell100 column2">Check In</td>
-                    </tr>
-                    <tr class="row100 body">
-                      <td class="cell100 column1">10:00 AM</td>
-                      <td class="cell100 column2">Opening, Hacking Begins</td>
-                    </tr>
-                    <tr class="row100 body">
-                      <td class="cell100 column1">11:00 AM</td>
-                      <td class="cell100 column2">Team Mixer</td>
-                    </tr>
-                    <!-- <tr class="row100 body">
+                <div class="table100-body js-pscroll">
+                  <table
+                    class="schedule1"
+                    id="table-saturday"
+                    style="overflow-y: hidden; overflow-x: hidden"
+                  >
+                    <tbody style="cursor: pointer">
+                      <tr class="row100 body">
+                        <td class="cell100 column1">9:00 AM</td>
+                        <td class="cell100 column2">Check In</td>
+                      </tr>
+                      <tr class="row100 body">
+                        <td class="cell100 column1">10:00 AM</td>
+                        <td class="cell100 column2">Opening, Hacking Begins</td>
+                      </tr>
+                      <tr class="row100 body">
+                        <td class="cell100 column1">11:00 AM</td>
+                        <td class="cell100 column2">Team Mixer</td>
+                      </tr>
+                      <!-- <tr class="row100 body">
                       <td class="cell100 column1">12:30 PM</td>
                       <td class="cell100 column2">Lunch</td>
                     </tr> -->
-                    <tr class="row100 body">
-                      <td class="cell100 column1">1:15 PM</td>
-                      <td class="cell100 column2">Workshop (EchoAR)</td>
-                    </tr>
-                    <tr class="row100 body">
-                      <td class="cell100 column1">4:30 PM</td>
-                      <td class="cell100 column2">Workshop (Linux Ricing)</td>
-                    </tr>
-                    <tr class="row100 body">
-                      <td class="cell100 column1">9:30 PM</td>
-                      <td class="cell100 column2">Minecraft Hunger Games :)</td>
-                    </tr>
-                    <!-- <tr class="row100 body">
+                      <tr class="row100 body">
+                        <td class="cell100 column1">1:15 PM</td>
+                        <td class="cell100 column2">Workshop (EchoAR)</td>
+                      </tr>
+                      <tr class="row100 body">
+                        <td class="cell100 column1">4:30 PM</td>
+                        <td class="cell100 column2">Workshop (Linux Ricing)</td>
+                      </tr>
+                      <tr class="row100 body">
+                        <td class="cell100 column1">9:30 PM</td>
+                        <td class="cell100 column2">
+                          Minecraft Hunger Games :)
+                        </td>
+                      </tr>
+                      <!-- <tr class="row100 body">
                       <td class="cell100 column1">10:30 PM</td>
                       <td class="cell100 column2">Cup Stacking</td>
                     </tr> -->
-                  </tbody>
-                </table>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
-          </div>
-          <div id="sched2" style="display: none;">
-            <div class="table100 ver1 m-b-110">
-              <div class="table100-head">
-                <table>
-                  <thead>
-                    <tr class="row100 head">
-                      <th class="column1">Time</th>
-                      <th class="column2">Event</th>
-                    </tr>
-                  </thead>
-                </table>
-              </div>
+            <div id="sched2" style="display: none">
+              <div class="table100 ver1 m-b-110">
+                <div class="table100-head">
+                  <table>
+                    <thead>
+                      <tr class="row100 head">
+                        <th class="column1">Time</th>
+                        <th class="column2">Event</th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
 
-              <div class="table100-body js-pscroll">
-                <table class="schedule1" id="table-sunday" style="overflow-y: hidden; overflow-x: hidden;">
-                  <tbody style="cursor: pointer;">
-                    <!-- <tr class="row100 body">
+                <div class="table100-body js-pscroll">
+                  <table
+                    class="schedule1"
+                    id="table-sunday"
+                    style="overflow-y: hidden; overflow-x: hidden"
+                  >
+                    <tbody style="cursor: pointer">
+                      <!-- <tr class="row100 body">
                       <td class="cell100 column1">12:00 AM</td>
                       <td class="cell100 column2">
                         Midnight! Surprise In Store?
                       </td>
                     </tr> -->
-                    <tr class="row100 body">
-                      <td class="cell100 column1">1:30 AM</td>
-                      <td class="cell100 column2">
-                        Scribbl.io Tournament
-                      </td>
-                    </tr>
-                    <tr class="row100 body">
-                      <td class="cell100 column1">7:00 AM</td>
-                      <td class="cell100 column2">DevPost Submissions Due</td>
-                    </tr>
-                    <tr class="row100 body">
-                      <td class="cell100 column1">7:30 AM</td>
-                      <td class="cell100 column2">Workshop (TBD)</td>
-                    </tr>
-                    <tr class="row100 body">
-                      <td class="cell100 column1">8:00 AM</td>
-                      <td class="cell100 column2">
-                        Judging Begins
-                      </td>
-                    </tr>
-                    <tr class="row100 body">
-                      <td class="cell100 column1">9:35 AM</td>
-                      <td class="cell100 column2">
-                        Closing Ceremony, Prizes
-                      </td>
-                    </tr>
-                    <tr class="row100 body">
-                      <td class="cell100 column1">10:15 AM</td>
-                      <td class="cell100 column2">End of Hackathon</td>
-                    </tr>
-                  </tbody>
-                </table>
+                      <tr class="row100 body">
+                        <td class="cell100 column1">1:30 AM</td>
+                        <td class="cell100 column2">Scribbl.io Tournament</td>
+                      </tr>
+                      <tr class="row100 body">
+                        <td class="cell100 column1">7:00 AM</td>
+                        <td class="cell100 column2">DevPost Submissions Due</td>
+                      </tr>
+                      <tr class="row100 body">
+                        <td class="cell100 column1">7:30 AM</td>
+                        <td class="cell100 column2">Workshop (TBD)</td>
+                      </tr>
+                      <tr class="row100 body">
+                        <td class="cell100 column1">8:00 AM</td>
+                        <td class="cell100 column2">Judging Begins</td>
+                      </tr>
+                      <tr class="row100 body">
+                        <td class="cell100 column1">9:35 AM</td>
+                        <td class="cell100 column2">
+                          Closing Ceremony, Prizes
+                        </td>
+                      </tr>
+                      <tr class="row100 body">
+                        <td class="cell100 column1">10:15 AM</td>
+                        <td class="cell100 column2">End of Hackathon</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="all" class="dark-back;">
-    <div class="faq-page2" style="text-align: center; clear: both;">
-      <a class="hyperlink" id="faq"></a>
-      <section class="dark-back">
-        <div class="faq-page">
-          <div class="layer2">
-            <h1 class="ml-4 faq-arrow-rotate" style="
+    <section id="all" class="dark-back;">
+      <div class="faq-page2" style="text-align: center; clear: both">
+        <a class="hyperlink" id="faq"></a>
+        <section class="dark-back">
+          <div class="faq-page">
+            <div class="layer2">
+              <h1
+                class="ml-4 faq-arrow-rotate"
+                style="
                   font-size: 2.5rem;
                   opacity: 1;
                   font-family: 'CircularStd';
                   color: #ce7b91;
-                ">
-              FAQ
-              <a id="show-faq-button" onclick="showFaq()">▸</a>
-            </h1>
+                "
+              >
+                FAQ
+                <a id="show-faq-button" onclick="showFaq()">▸</a>
+              </h1>
 
-            <hr width="200px" style="
+              <hr
+                width="200px"
+                style="
                   height: 1px;
                   border-color: gainsboro;
                   background-color: gainsboro;
-                " />
-            <div class="not-mobile">
-              <div class="container-fluid">
-                <div class="row order-1">
-                  <div class="col-md-6">
-                    <div class="prof">
-                      <h3 class="proftitle">
-                        What is ThetaHacks?<span>▸</span>
-                      </h3>
-                      <p class="desc">
-                        ThetaHacks is a 24 hour event where students from all
-                        over the world can come together to make something
-                        together, whether software or hardware!
-                      </p>
+                "
+              />
+              <div class="not-mobile">
+                <div class="container-fluid">
+                  <div class="row order-1">
+                    <div class="col-md-6">
+                      <div class="prof">
+                        <h3 class="proftitle">
+                          What is ThetaHacks?<span>▸</span>
+                        </h3>
+                        <p class="desc">
+                          ThetaHacks is a 24 hour event where students from all
+                          over the world can come together to make something
+                          together, whether software or hardware!
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="prof">
+                        <h3 class="proftitle">
+                          Who can participate?<span>▸</span>
+                        </h3>
+                        <p class="desc">
+                          Anyone in high school can join! If you've graduated
+                          already, consider becoming a mentor! If you are in
+                          middle school, email us for details.
+                        </p>
+                      </div>
                     </div>
                   </div>
+                </div>
 
-                  <div class="col-md-6">
-                    <div class="prof">
-                      <h3 class="proftitle">
-                        Who can participate?<span>▸</span>
-                      </h3>
-                      <p class="desc">
-                        Anyone in high school can join! If you've graduated
-                        already, consider becoming a mentor! If you are in
-                        middle school, email us for details.
-                      </p>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="prof">
+                        <h3 class="proftitle">
+                          Do I need to form a team?<span>▸</span>
+                        </h3>
+                        <p class="desc">
+                          You may form a team with up to 4 members! If you would
+                          like to go solo, thats perfectly fine too.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="prof">
+                        <h3 class="proftitle">
+                          Does this cost money?<span>▸</span>
+                        </h3>
+                        <p class="desc">
+                          Nope. ThetaHacks is free, and always will be!
+                          Everything from swag to workshops is covered for all
+                          participants.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="prof">
+                        <h3 class="proftitle">
+                          What if I can't code?<span>▸</span>
+                        </h3>
+                        <p class="desc">
+                          If you can't code, thats totally not a problem! We
+                          will be hosting workshops so you can learn, so please
+                          join us.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="prof">
+                        <h3 class="proftitle">
+                          What should I bring?<span>▸</span>
+                        </h3>
+                        <p class="desc">
+                          Make sure you have a computer handy! Other than that,
+                          just sign the waiver (details soon).
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="prof">
+                        <h3 class="proftitle">
+                          Where do I get more information?<span>▸</span>
+                        </h3>
+                        <p class="desc">
+                          We will be posting a DevPost link soon with all the
+                          technical details. We plan to have some pretty epic
+                          prizes, so bring your best ideas!
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="prof">
+                        <h3 class="proftitle">
+                          I have another question!<span>▸</span>
+                        </h3>
+                        <p class="desc">
+                          Great, we're always open to questions! Feel free to
+                          contact us at
+                          <a
+                            class="questionLink"
+                            target="_blank"
+                            href="mailto: hello@thetahacks.tech"
+                            >hello@thetahacks.tech!</a
+                          >
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="prof">
-                      <h3 class="proftitle">
-                        Do I need to form a team?<span>▸</span>
-                      </h3>
-                      <p class="desc">
-                        You may form a team with up to 4 members! If you would
-                        like to go solo, thats perfectly fine too.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="prof">
-                      <h3 class="proftitle">
-                        Does this cost money?<span>▸</span>
-                      </h3>
-                      <p class="desc">
-                        Nope. ThetaHacks is free, and always will be!
-                        Everything from swag to workshops is covered for all
-                        participants.
-                      </p>
-                    </div>
-                  </div>
+              <div class="mobile-only">
+                <div class="prof">
+                  <h3 class="proftitle">What is ThetaHacks?<span>▸</span></h3>
+                  <p class="desc">
+                    ThetaHacks is a 24 hour event where students from all over
+                    the world can come together to make something together,
+                    whether software or hardware!
+                  </p>
                 </div>
-              </div>
 
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="prof">
-                      <h3 class="proftitle">
-                        What if I can't code?<span>▸</span>
-                      </h3>
-                      <p class="desc">
-                        If you can't code, thats totally not a problem! We
-                        will be hosting workshops so you can learn, so please
-                        join us.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="prof">
-                      <h3 class="proftitle">
-                        What should I bring?<span>▸</span>
-                      </h3>
-                      <p class="desc">
-                        Make sure you have a computer handy! Other than that, just sign the waiver
-                        (details soon).
-                      </p>
-                    </div>
-                  </div>
+                <div class="prof">
+                  <h3 class="proftitle">Who can participate?<span>▸</span></h3>
+                  <p class="desc">
+                    Anyone in high school can join! If you've graduated already,
+                    consider becoming a mentor! If you are in middle school,
+                    email us for details.
+                  </p>
                 </div>
-              </div>
-
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="prof">
-                      <h3 class="proftitle">
-                        Where do I get more information?<span>▸</span>
-                      </h3>
-                      <p class="desc">
-                        We will be posting a DevPost link soon with all the
-                        technical details. We plan to have some pretty epic
-                        prizes, so bring your best ideas!
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="prof">
-                      <h3 class="proftitle">
-                        I have another question!<span>▸</span>
-                      </h3>
-                      <p class="desc">
-                        Great, we're always open to questions! Feel free to
-                        contact us at
-                        <a class="questionLink" target="_blank"
-                          href="mailto: hello@thetahacks.tech">hello@thetahacks.tech!</a>
-                      </p>
-                    </div>
-                  </div>
+                <div class="prof">
+                  <h3 class="proftitle">
+                    How do I form a team? Do I need a team?<span>▸</span>
+                  </h3>
+                  <p class="desc">
+                    You may form a team with up to 4 members! If you would like
+                    to go solo, thats perfectly fine too.
+                  </p>
                 </div>
-              </div>
-            </div>
 
-            <div class="mobile-only">
-              <div class="prof">
-                <h3 class="proftitle">What is ThetaHacks?<span>▸</span></h3>
-                <p class="desc">
-                  ThetaHacks is a 24 hour event where students from all over
-                  the world can come together to make something together,
-                  whether software or hardware!
-                </p>
-              </div>
+                <div class="prof">
+                  <h3 class="proftitle">Does this cost money?<span>▸</span></h3>
+                  <p class="desc">
+                    Nope. ThetaHacks is free, and always will be! Everything
+                    from swag to workshops is covered for all participants.
+                  </p>
+                </div>
+                <div class="prof">
+                  <h3 class="proftitle">What if I can't code?<span>▸</span></h3>
+                  <p class="desc">
+                    If you can't code, thats totally not a problem! We will be
+                    hosting workshops so you can learn, so please join us.
+                  </p>
+                </div>
 
-              <div class="prof">
-                <h3 class="proftitle">Who can participate?<span>▸</span></h3>
-                <p class="desc">
-                  Anyone in high school can join! If you've graduated already,
-                  consider becoming a mentor! If you are in middle school,
-                  email us for details.
-                </p>
-              </div>
-              <div class="prof">
-                <h3 class="proftitle">
-                  How do I form a team? Do I need a team?<span>▸</span>
-                </h3>
-                <p class="desc">
-                  You may form a team with up to 4 members! If you would like
-                  to go solo, thats perfectly fine too.
-                </p>
-              </div>
+                <div class="prof">
+                  <h3 class="proftitle">What should I bring?<span>▸</span></h3>
+                  <p class="desc">
+                    Make sure you have a computer handy! Other than that, just
+                    sign the waiver (details soon).
+                  </p>
+                </div>
 
-              <div class="prof">
-                <h3 class="proftitle">Does this cost money?<span>▸</span></h3>
-                <p class="desc">
-                  Nope. ThetaHacks is free, and always will be! Everything
-                  from swag to workshops is covered for all participants.
-                </p>
-              </div>
-              <div class="prof">
-                <h3 class="proftitle">What if I can't code?<span>▸</span></h3>
-                <p class="desc">
-                  If you can't code, thats totally not a problem! We will be
-                  hosting workshops so you can learn, so please join us.
-                </p>
-              </div>
+                <div class="prof">
+                  <h3 class="proftitle">
+                    What are the prizes? Rules? Code of Conduct?<span>▸</span>
+                  </h3>
+                  <p class="desc">
+                    We will be posting a DevPost link soon with all the
+                    technical details. We plan to have some pretty epic prizes,
+                    so bring your best ideas!
+                  </p>
+                </div>
 
-              <div class="prof">
-                <h3 class="proftitle">What should I bring?<span>▸</span></h3>
-                <p class="desc">
-                  Make sure you have a computer handy! Other than that, just sign the waiver
-                  (details soon).
-                </p>
-              </div>
-
-              <div class="prof">
-                <h3 class="proftitle">
-                  What are the prizes? Rules? Code of Conduct?<span>▸</span>
-                </h3>
-                <p class="desc">
-                  We will be posting a DevPost link soon with all the
-                  technical details. We plan to have some pretty epic prizes,
-                  so bring your best ideas!
-                </p>
-              </div>
-
-              <div class="prof">
-                <h3 class="proftitle">
-                  I have another question!<span>▸</span>
-                </h3>
-                <p class="desc">
-                  Great! Feel free to contact us
-                  <a class="questionLink" target="_blank" href="https://forms.gle/bCT2fwE8JkSx4PSd7">here.</a>
-                </p>
+                <div class="prof">
+                  <h3 class="proftitle">
+                    I have another question!<span>▸</span>
+                  </h3>
+                  <p class="desc">
+                    Great! Feel free to contact us
+                    <a
+                      class="questionLink"
+                      target="_blank"
+                      href="https://forms.gle/bCT2fwE8JkSx4PSd7"
+                      >here.</a
+                    >
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
-  </section>
+        </section>
+      </div>
+    </section>
 
-  <a class="hyperlink" id="sponsors"></a>
-  <section id="sponsors-sec" style="padding: 5vh 0vh 5vh 0vh; background: #181828;">
-    <div class="sponsors-container" style="text-align: center;">
-      <h1 style="
+    <a class="hyperlink" id="sponsors"></a>
+    <section
+      id="sponsors-sec"
+      style="padding: 5vh 0vh 5vh 0vh; background: #181828"
+    >
+      <div class="sponsors-container" style="text-align: center">
+        <h1
+          style="
             font-size: 2.5rem;
             font-family: 'CircularStd';
             color: #ce7b91;
             margin-top: 2%;
-          ">
-        Sponsors
-      </h1>
-      <hr width="200px" style="
+          "
+        >
+          Sponsors
+        </h1>
+        <hr
+          width="200px"
+          style="
             height: 1px;
             border-color: gainsboro;
             background-color: gainsboro;
             margin-bottom: 2%;
-          " />
-      <p style="color: gainsboro; margin-bottom: 2%;">
-        Interested in sponsoring us? Read the
-        <a href="pdfs/prospectus.pdf">Sponsorship Prospectus</a> and shoot us
-        an email!
-      </p>
+          "
+        />
+        <p style="color: gainsboro; margin-bottom: 2%">
+          Interested in sponsoring us? Read the
+          <a href="pdfs/prospectus.pdf">Sponsorship Prospectus</a> and shoot us
+          an email!
+        </p>
 
-      <!--? tiers -->
-      <!-- <h2 style="font-size: 2.5rem; font-family: 'CircularStd'; color: #61b4c9; margin-top: 2%;">
+        <!--? tiers -->
+        <!-- <h2 style="font-size: 2.5rem; font-family: 'CircularStd'; color: #61b4c9; margin-top: 2%;">
                 Platinum Tier
             </h2>
             <h3 style="font-size: 2.5rem; font-family: 'CircularStd'; color: #dad161; margin-top: 2%;">
@@ -577,208 +718,293 @@
                 Bronze Tier
             </h3> -->
 
-      <div class="sponsor-row">
-        <a target="_blank" href="https://www.get.tech">
-          <img src="img/sponsors/dottech.png" alt="Dot Tech" title=".Tech">
-        </a>
-        <a target="_blank" href="https://www.discord.com">
-          <img src="img/sponsors/discord-word.png" alt="Discord" title="Discord">
-        </a>
-        <a target="_blank" href="https://discord.gg/FxABpUX">
-          <img src="img/sponsors/bah.png" alt="Bay Area Hackathons" title="Bay Area Hackathons">
-        </a>
+        <div class="sponsor-row">
+          <a target="_blank" href="https://www.get.tech">
+            <img src="img/sponsors/dottech.png" alt="Dot Tech" title=".Tech" />
+          </a>
+          <a target="_blank" href="https://www.discord.com">
+            <img
+              src="img/sponsors/discord-word.png"
+              alt="Discord"
+              title="Discord"
+            />
+          </a>
+          <a target="_blank" href="https://discord.gg/FxABpUX">
+            <img
+              src="img/sponsors/bah.png"
+              alt="Bay Area Hackathons"
+              title="Bay Area Hackathons"
+            />
+          </a>
+        </div>
+        <div class="sponsor-row">
+          <a target="_blank" href="https://www.cynderhost.com">
+            <img
+              src="img/sponsors/cynderhost.png"
+              alt="CynderHost"
+              title="CynderHost"
+            />
+          </a>
+          <a target="_blank" href="https://stickermule.com">
+            <img
+              src="img/sponsors/stickermule.png"
+              alt="StickerMule"
+              title="StickerMule"
+            />
+          </a>
+          <a target="_blank" href="https://www.taskade.com">
+            <img src="img/sponsors/taskade.png" alt="Taskade" title="Taskade" />
+          </a>
+          <a target="_blank" href="https://linode.com">
+            <img src="img/sponsors/linode2.png" alt="Linode" title="Linode" />
+          </a>
+          <a target="_blank" href="https://wolfram.com">
+            <img src="img/sponsors/wolfram.png" alt="Wolfram" title="Wolfram" />
+          </a>
+        </div>
+        <div class="sponsor-row">
+          <a target="_blank" href="https://www.sublimetext.com">
+            <img
+              src="img/sponsors/sublime_3.png"
+              alt="Sublime Text"
+              title="Sublime Text"
+            />
+          </a>
+          <a target="_blank" href="https://www.balsamiq.com">
+            <img
+              src="img/sponsors/balsamiq.png"
+              alt="Balsamiq"
+              title="Balsamiq"
+            />
+          </a>
+        </div>
+        <div class="sponsor-row">
+          <a target="_blank" href="https://www.echoar.xyz">
+            <img src="img/sponsors/echoar.png" alt="EchoAR" title="EchoAR" />
+          </a>
+        </div>
       </div>
-      <div class="sponsor-row">
-        <a target="_blank" href="https://www.cynderhost.com">
-          <img src="img/sponsors/cynderhost.png" alt="CynderHost" title="CynderHost">
-        </a>
-        <a target="_blank" href="https://stickermule.com">
-          <img src="img/sponsors/stickermule.png" alt="StickerMule" title="StickerMule">
-        </a>
-        <a target="_blank" href="https://www.taskade.com">
-          <img src="img/sponsors/taskade.png" alt="Taskade" title="Taskade">
-        </a>
-        <a target="_blank" href="https://linode.com">
-          <img src="img/sponsors/linode2.png" alt="Linode" title="Linode">
-        </a>
-        <a target="_blank" href="https://wolfram.com">
-          <img src="img/sponsors/wolfram.png" alt="Wolfram" title="Wolfram">
-        </a>
-      </div>
-      <div class="sponsor-row">
-        <a target="_blank" href="https://www.sublimetext.com">
-          <img src="img/sponsors/sublime_3.png" alt="Sublime Text" title="Sublime Text">
-        </a>
-        <a target="_blank" href="https://www.balsamiq.com">
-          <img src="img/sponsors/balsamiq.png" alt="Balsamiq" title="Balsamiq">
-        </a>
-      </div>
-      <div class="sponsor-row">
-        <a target="_blank" href="https://www.echoar.xyz">
-          <img src="img/sponsors/echoar.png" alt="EchoAR" title="EchoAR">
-        </a>
-      </div>
-    </div>
-  </section>
-  <a class="hyperlink" id="team"></a>
-  <section style="padding: 5vh 0vw 5vh 0vw; background: #202030;">
-    <div class="team-container" style="text-align: center;">
-      <h1 style="
+    </section>
+    <a class="hyperlink" id="team"></a>
+    <section style="padding: 5vh 0vw 5vh 0vw; background: #202030">
+      <div class="team-container" style="text-align: center">
+        <h1
+          style="
             font-size: 2.5rem;
             font-family: 'CircularStd';
             color: #ce7b91;
             margin-top: 2%;
-          ">
-        Our Team
-      </h1>
+          "
+        >
+          Our Team
+        </h1>
 
-      <hr width="200px" style="
+        <hr
+          width="200px"
+          style="
             height: 1px;
             border-color: gainsboro;
             background-color: gainsboro;
             margin-bottom: 4%;
-          " />
+          "
+        />
 
-      <div class="directors">
-        <figure>
-          <div class="figure-image-container">
-            <img class="figure-image" src="img/profiles/rohan2.jpeg" />
-          </div>
-          <figcaption>
-            <h5 class="figure-caption-title">Rohan Bansal</h5>
-            <p class="figure-caption">Sponsorships Director</p>
-            <a href="https://linkedin.com/in/bansal-rohan" target="_blank"><i
-                class="personal hvr-grow-shadow fab fa-linkedin fa-lg" style="color: white;" aria-hidden="true"></i></a>
-            <a href="https://github.com/rohan-bansal" target="_blank"><i
-                class="personal hvr-grow-shadow fab fa-github fa-lg" style="color: white;" aria-hidden="true"></i></a>
-          </figcaption>
-        </figure>
+        <div class="directors">
+          <figure>
+            <div class="figure-image-container">
+              <img class="figure-image" src="img/profiles/rohan.jpeg" />
+            </div>
+            <figcaption>
+              <h5 class="figure-caption-title">Rohan Bansal</h5>
+              <p class="figure-caption">Sponsorships Director</p>
+              <a href="https://linkedin.com/in/bansal-rohan" target="_blank"
+                ><i
+                  class="personal hvr-grow-shadow fab fa-linkedin fa-lg"
+                  style="color: white"
+                  aria-hidden="true"
+                ></i
+              ></a>
+              <a href="https://github.com/rohan-bansal" target="_blank"
+                ><i
+                  class="personal hvr-grow-shadow fab fa-github fa-lg"
+                  style="color: white"
+                  aria-hidden="true"
+                ></i
+              ></a>
+            </figcaption>
+          </figure>
 
-        <figure>
-          <div class="figure-image-container">
-            <img class="figure-image absolute-jesus" src="img/profiles/anshul.png" />
-          </div>
-          <figcaption>
-            <h5 class="figure-caption-title">Anshul Gupta</h5>
-            <p class="figure-caption">Logistics Director</p>
-            <a href="https://linkedin.com/in/theAnshulGupta" target="_blank"><i
-                class="personal hvr-grow-shadow fab fa-linkedin fa-lg" style="color: white;" aria-hidden="true"></i></a>
-            <a href="https://github.com/theAnshulGupta" target="_blank"><i
-                class="personal hvr-grow-shadow fab fa-github fa-lg" style="color: white;" aria-hidden="true"></i></a>
-          </figcaption>
-        </figure>
+          <figure>
+            <div class="figure-image-container">
+              <img
+                class="figure-image absolute-jesus"
+                src="img/profiles/anshul.png"
+              />
+            </div>
+            <figcaption>
+              <h5 class="figure-caption-title">Anshul Gupta</h5>
+              <p class="figure-caption">Logistics Director</p>
+              <a href="https://linkedin.com/in/theAnshulGupta" target="_blank"
+                ><i
+                  class="personal hvr-grow-shadow fab fa-linkedin fa-lg"
+                  style="color: white"
+                  aria-hidden="true"
+                ></i
+              ></a>
+              <a href="https://github.com/theAnshulGupta" target="_blank"
+                ><i
+                  class="personal hvr-grow-shadow fab fa-github fa-lg"
+                  style="color: white"
+                  aria-hidden="true"
+                ></i
+              ></a>
+            </figcaption>
+          </figure>
 
-        <figure>
-          <div class="figure-image-container">
-            <img class="figure-image" src="img/profiles/andy.jpg" />
-          </div>
-          <figcaption>
-            <h5 class="figure-caption-title">Andy Li</h5>
-            <p class="figure-caption">Tech Director</p>
-            <a href="https://instagram.com/andilyee" target="_blank"><i
-                class="personal hvr-grow-shadow fab fa-instagram fa-lg" style="color: white;"
-                aria-hidden="true"></i></a>
-            <a href="https://github.com/andyli23" target="_blank"><i
-                class="personal hvr-grow-shadow fab fa-github fa-lg" style="color: white;" aria-hidden="true"></i></a>
-          </figcaption>
-        </figure>
+          <figure>
+            <div class="figure-image-container">
+              <img class="figure-image" src="img/profiles/andy.jpg" />
+            </div>
+            <figcaption>
+              <h5 class="figure-caption-title">Andy Li</h5>
+              <p class="figure-caption">Tech Director</p>
+              <a href="https://instagram.com/andilyee" target="_blank"
+                ><i
+                  class="personal hvr-grow-shadow fab fa-instagram fa-lg"
+                  style="color: white"
+                  aria-hidden="true"
+                ></i
+              ></a>
+              <a href="https://github.com/andyli23" target="_blank"
+                ><i
+                  class="personal hvr-grow-shadow fab fa-github fa-lg"
+                  style="color: white"
+                  aria-hidden="true"
+                ></i
+              ></a>
+            </figcaption>
+          </figure>
+        </div>
 
+        <div class="everyone-else">
+          <figure class="figure-e">
+            <div class="figure-image-container-e">
+              <img class="figure-image-e" src="img/profiles/yixuan.jpg" />
+            </div>
+            <figcaption>
+              <h5 class="figure-caption-title-e">Yixuan Qiao</h5>
+              <p class="figure-caption-e">Tech</p>
+            </figcaption>
+          </figure>
 
+          <figure class="figure-e">
+            <div class="figure-image-container-e">
+              <img class="figure-image-e" src="img/profiles/aanika.png" />
+            </div>
+            <figcaption>
+              <h5 class="figure-caption-title-e">Aanika Jain</h5>
+              <p class="figure-caption-e">Sponsorships</p>
+            </figcaption>
+          </figure>
+
+          <figure class="figure-e">
+            <div class="figure-image-container-e">
+              <img class="figure-image-e" src="img/profiles/rigel.png" />
+            </div>
+            <figcaption>
+              <h5 class="figure-caption-title-e">Rigel Arana Fantozzi</h5>
+              <p class="figure-caption-e">Logistics</p>
+            </figcaption>
+          </figure>
+
+          <figure class="figure-e">
+            <div class="figure-image-container-e">
+              <img class="figure-image-e" src="img/profiles/adarsh.png" />
+            </div>
+            <figcaption>
+              <h5 class="figure-caption-title-e">Adarsh Krishnan</h5>
+              <p class="figure-caption-e">Design</p>
+            </figcaption>
+          </figure>
+        </div>
       </div>
+    </section>
 
-      <div class="everyone-else">
-        <figure class="figure-e">
-          <div class="figure-image-container-e">
-            <img class="figure-image-e" src="img/profiles/yixuan.jpg" />
-          </div>
-          <figcaption>
-            <h5 class="figure-caption-title-e">Yixuan Qiao</h5>
-            <p class="figure-caption-e">Tech</p>
-          </figcaption>
-        </figure>
-
-        <figure class="figure-e">
-          <div class="figure-image-container-e">
-            <img class="figure-image-e" src="img/profiles/aanika.png" />
-          </div>
-          <figcaption>
-            <h5 class="figure-caption-title-e">Aanika Jain</h5>
-            <p class="figure-caption-e">Sponsorships</p>
-          </figcaption>
-        </figure>
-
-        <figure class="figure-e">
-          <div class="figure-image-container-e">
-            <img class="figure-image-e" src="img/profiles/colin.jpg" />
-          </div>
-          <figcaption>
-            <h5 class="figure-caption-title-e">Colin Harper</h5>
-            <p class="figure-caption-e">Logistics</p>
-          </figcaption>
-        </figure>
-
-        <figure class="figure-e">
-          <div class="figure-image-container-e">
-            <img class="figure-image-e" src="img/profiles/adarsh.png" />
-          </div>
-          <figcaption>
-            <h5 class="figure-caption-title-e">Adarsh Krishnan</h5>
-            <p class="figure-caption-e">Design</p>
-          </figcaption>
-        </figure>
-
+    <section style="padding: 5vh 0vh 5vh 0vh; background: #151525">
+      <!-- logos since imo white and black are meh: https://www.flaticon.com/packs/social-media?word=social%20media -->
+      <div class="footer-container" style="text-align: center; display: block">
+        <div class="social-links">
+          <a
+            href="https://discord.gg"
+            style="display: inline-block"
+            target="_blank"
+          >
+            <img class="social-logo" src="img/media/discord.svg" />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/ThetaHacks"
+            style="display: inline-block"
+            target="_blank"
+          >
+            <img class="social-logo" src="img/media/linkedin.svg" />
+          </a>
+          <a
+            class="social-link"
+            href="https://www.instagram.com/thetahacks/"
+            target="_blank"
+          >
+            <img class="social-logo" src="img/media/instagram.svg" />
+          </a>
+          <a
+            class="social-link"
+            href="mailto:hello@thetahacks.tech"
+            target="_blank"
+          >
+            <img class="social-logo" src="img/media/gmail.svg" />
+          </a>
+          <a
+            class="social-link"
+            href="https://twitter.com/ThetaHacks"
+            target="_blank"
+          >
+            <img class="social-logo" src="img/media/twitter.svg" />
+          </a>
+          <a
+            class="social-link"
+            href="https://github.com/ThetaHacks"
+            target="_blank"
+          >
+            <img class="social-logo" src="img/media/cat.svg" />
+          </a>
+          <a
+            href="https://www.hackclub.com/bank"
+            style="margin: 2% 20px; display: inline-block"
+            target="_blank"
+          >
+            <img class="social-logo-2" src="img/media/bank.png" />
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section style="padding: 5vh 0vh 5vh 0vh; background: #151525;">
-    <!-- logos since imo white and black are meh: https://www.flaticon.com/packs/social-media?word=social%20media -->
-    <div class="footer-container" style="text-align: center; display: block;">
-      <div class="social-links">
-        <a href="https://discord.gg" style="display: inline-block;" target="_blank">
-          <img class="social-logo" src="img/media/discord.svg" />
-        </a>
-        <a href="https://www.linkedin.com/company/ThetaHacks" style="display: inline-block;" target="_blank">
-          <img class="social-logo" src="img/media/linkedin.svg" />
-        </a>
-        <a class="social-link" href="https://www.instagram.com/thetahacks/" target="_blank">
-          <img class="social-logo" src="img/media/instagram.svg" />
-        </a>
-        <a class="social-link" href="mailto:hello@thetahacks.tech" target="_blank">
-          <img class="social-logo" src="img/media/gmail.svg" />
-        </a>
-        <a class="social-link" href="https://twitter.com/ThetaHacks" target="_blank">
-          <img class="social-logo" src="img/media/twitter.svg" />
-        </a>
-        <a class="social-link" href="https://github.com/ThetaHacks" target="_blank">
-          <img class="social-logo" src="img/media/cat.svg" />
-        </a>
-        <a href="https://www.hackclub.com/bank" style="margin: 2% 20px; display: inline-block;" target="_blank">
-          <img class="social-logo-2" src="img/media/bank.png" />
-        </a>
-      </div>
-    </div>
-  </section>
+    <section id="copyright-wrapper" style="background: #101020">
+      <p id="copyright">
+        Copyright &copy; 2020 -
+        <script>
+          document.write(new Date().getFullYear() + 1);
+        </script>
+        ThetaHacks, a 501(c)(3) non-profit organization, fiscally sponsored by
+        Hack Club Bank, a project by the The Hack Foundation (d.b.a Hack Club)
+        (EIN: 81-2908499).
+      </p>
+    </section>
+  </body>
 
-  <section id="copyright-wrapper" style="background: #101020;">
-    <p id="copyright">
-      Copyright &copy; 2020 -
-      <script>
-        document.write(new Date().getFullYear() + 1);
-      </script>
-      ThetaHacks, a 501(c)(3) non-profit organization, fiscally sponsored by
-      Hack Club Bank, a project by the The Hack Foundation (d.b.a Hack Club)
-      (EIN: 81-2908499).
-    </p>
-  </section>
-</body>
-
-<script src="js/jquery-3.5.1.min.js"></script>
-<script src="js/jquery.visible.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/sweetalert.min.js"></script>
-<script src="js/vivus.js"></script>
-<script src="js/velocity.min.js"></script>
-<script src="js/main.js"></script>
-
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/jquery.visible.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/sweetalert.min.js"></script>
+  <script src="js/vivus.js"></script>
+  <script src="js/velocity.min.js"></script>
+  <script src="js/main.js"></script>
 </html>
