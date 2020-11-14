@@ -152,6 +152,7 @@ html {
   #about-section {
     padding: 5vh 10vw 5vh 10vw !important;
   }
+  
   .prev {
     transform: translateY(-50px) translateX(-40px) !important;
   }
@@ -174,6 +175,10 @@ html {
 
 #about-section {
   padding: 5vh 20vw 5vh 20vw;
+}
+
+#info-section {
+  padding: 5vh 10vw;
 }
 
 a:active,

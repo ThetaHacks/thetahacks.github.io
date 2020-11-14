@@ -55,6 +55,7 @@ $(document).ready(function() {
   $(".desc").height('0px');
 
   showFaqBeginning();
+
 });
 
 function bindFaq() {
