@@ -287,7 +287,7 @@ a:focus {
 }
 
 #sponsors-sec img {
-  max-height: calc(20px + 6 * 1vw);
+  max-height: calc(30px + 4 * 1vw);
 }
 
 #sponsor-list {
@@ -341,7 +341,7 @@ a:focus {
 #title-navbar-right {
   color: #ce7b91;
   font-size: 30px;
-  transform: translateY(-22px) translateX(170px);
+  transform: translateY(-21px) translateX(170px);
   position: absolute;
 }
 
