@@ -137,8 +137,16 @@ html {
   height: 800px;
 }
 
+#title-i {
+  font-size: 8.5rem;
+}
+
 @media (max-width: 1100px) {
   .main-title {
+    font-size: 12vw !important;
+  }
+
+  #title-i {
     font-size: 12vw !important;
   }
 
@@ -253,6 +261,9 @@ a:focus {
   .directors {
     padding: 0vw 12.5vw;
   }
+  .speakers {
+    padding: 0vw 12.5vw;
+  }
   .everyone-else {
     padding: 0vw 5vw;
   }
@@ -328,6 +339,13 @@ a:focus {
   .sponsor {
     width: 175px;
   }
+}
+
+.speakers{
+    display: flex;
+    flex-direction: row;
+    padding: 0vw 20vw;
+    margin: 2vw 0vw 2vw 0vw;
 }
 
 .gb {
