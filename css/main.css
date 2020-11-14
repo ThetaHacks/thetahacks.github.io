@@ -315,6 +315,13 @@ a:focus {
   }
 }
 
+.speakers{
+    display: flex;
+    flex-direction: row;
+    padding: 0vw 20vw;
+    margin: 2vw 0vw 2vw 0vw;
+}
+
 .gb {
   box-shadow: 2px 5px 10px #101030;
 }
