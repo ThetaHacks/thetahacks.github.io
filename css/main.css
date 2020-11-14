@@ -137,8 +137,16 @@ html {
   height: 800px;
 }
 
+#title-i {
+  font-size: 8.5rem;
+}
+
 @media (max-width: 1100px) {
   .main-title {
+    font-size: 12vw !important;
+  }
+
+  #title-i {
     font-size: 12vw !important;
   }
 
@@ -152,6 +160,7 @@ html {
   #about-section {
     padding: 5vh 10vw 5vh 10vw !important;
   }
+  
   .prev {
     transform: translateY(-50px) translateX(-40px) !important;
   }
@@ -172,8 +181,21 @@ html {
   }
 }
 
+.stuf1 {
+  display: inline-table;
+  padding: 20px 60px;
+}
+
 #about-section {
   padding: 5vh 20vw 5vh 20vw;
+}
+
+.infodiv {
+  text-align: left;
+}
+
+#info-section {
+  padding: 5vh 10vw;
 }
 
 a:active,
@@ -239,6 +261,9 @@ a:focus {
   .directors {
     padding: 0vw 12.5vw;
   }
+  .speakers {
+    padding: 0vw 12.5vw;
+  }
   .everyone-else {
     padding: 0vw 5vw;
   }
@@ -273,6 +298,7 @@ a:focus {
   justify-content: space-evenly;
 }
 
+
 .sponsor-row > :not(:only-child) {
   padding: 1rem;
 }
@@ -289,7 +315,7 @@ a:focus {
 }
 
 #sponsors-sec img {
-  max-height: calc(20px + 6 * 1vw);
+  max-height: calc(30px + 4 * 1vw);
   max-width: auto;
 }
 
@@ -313,6 +339,13 @@ a:focus {
   .sponsor {
     width: 175px;
   }
+}
+
+.speakers{
+    display: flex;
+    flex-direction: row;
+    padding: 0vw 20vw;
+    margin: 2vw 0vw 2vw 0vw;
 }
 
 .gb {
@@ -344,7 +377,7 @@ a:focus {
 #title-navbar-right {
   color: #ce7b91;
   font-size: 30px;
-  transform: translateY(-22px) translateX(170px);
+  transform: translateY(-21px) translateX(170px);
   position: absolute;
 }
 
