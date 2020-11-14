@@ -16,29 +16,29 @@ We are not accepting any more team members. The only way to join our team is by 
 
 <strong>Coordinators</strong>: Anshul Gupta, Andy Li, Rohan Bansal<br>
 <strong>Tech</strong>: Yixuan Qiao<br>
-<strong>Sponsorships</strong>: Aanika Jain, Colin Harper<br>
-<strong>Design</strong>: Adarsh Krishnan, Archish Ray<br>
+<strong>Sponsorships</strong>: Aanika Jain, Rigel Arana Fantozzi<br>
+<strong>Design</strong>: Adarsh Krishnan<br>
 
 ### Website
 
 https://thetahacks.tech
 
-Website created by **AndyLi23**, **Rohan-Bansal**, **theAnshulGupta**, and **yixqiao**.
+Website created by **Rohan-Bansal**, **theAnshulGupta**, **AndyLi23**, and **yixqiao**.
 
 ### Sign up Today!
 
-Student: Signups on website!<br>
+Attendees: Signups on website!<br>
 Mentor: Signups on website!
 
 ### Join our Discord!
 
-Discord: Going public soon!  
+Discord: https://discord.gg/fgA4PPt  
 Discord Bot: https://github.com/ThetaHacks/ThetaHacksBot
 
 ### Be sure to follow us on social media!
 
-Instagram: @ThetaHacks  
-Twitter: @ThetaHacks  
-Email: hello@thetahacks.tech
+Instagram: <a href="https://instagram.com/thetahacks">@thetahacks</a>
+Twitter: <a href="https://twitter.com/thetahacks">@thetahacks</a>
+Email: <a href="mailto:hello@thetahacks.tech">hello@thetahacks.tech</a>
 <br>
-Sponsor email: sponsors@thetahacks.tech
+Sponsor email: <a href="mailto:sponsors@thetahacks.tech">sponsors@thetahacks.tech</a>
