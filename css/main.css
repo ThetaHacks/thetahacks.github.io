@@ -197,7 +197,6 @@ html {
 #info-section {
   padding: 5vh 10vw;
 }
-
 a:active,
 a:focus {
   outline: 0 !important;
@@ -209,6 +208,9 @@ a:focus {
 @media (max-width: 992px) {
   .col-md-6 {
     min-width: 80vw;
+  }
+  .stuf1 {
+    font-size: 0.8rem !important;
   }
   .text3 {
     font-size: 0.8rem !important;
@@ -960,7 +962,7 @@ table.schedule1 {
 
 @media (max-width: 1500px) {
   .schedule {
-    margin: 6vh 10vw 0 0 !important;
+    margin: 0vh 10vw!important;
   }
   .svg-container {
     margin-left: 10vw !important;
@@ -968,9 +970,7 @@ table.schedule1 {
 }
 
 @media (max-width: 1300px) {
-  .schedule {
-    margin: 6vh 5vw 0 0 !important;
-  }
+  
   .svg-container {
     margin-left: 5vw !important;
   }
@@ -980,9 +980,7 @@ table.schedule1 {
   .svg-container {
     transform: scaleX(0.9);
   }
-  .schedule {
-    margin: 6vh 5vw 0 0 !important;
-  }
+
   .svg-container {
     margin-left: 0vw !important;
   }
@@ -991,7 +989,6 @@ table.schedule1 {
 @media (max-width: 992px) {
   .schedule {
     float: none;
-    margin: 6vh 5vw 0vh 5vw !important;
   }
   #schedule-section {
     height: auto !important;
