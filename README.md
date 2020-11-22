@@ -14,14 +14,12 @@ We are, however, hosting a digital hackathon on December 19-20, 2020! Register o
 
 We are not accepting any more team members. The only way to join our team is by an invitation from one of the coordinators.
 
-<strong>Coordinators</strong>: Anshul Gupta, Andy Li, Rohan Bansal<br>
-<strong>Tech</strong>: Yixuan Qiao<br>
-<strong>Sponsorships</strong>: Aanika Jain, Rigel Arana Fantozzi<br>
-<strong>Design</strong>: Adarsh Krishnan<br>
+<strong>Coordinators</strong>: Anshul Gupta, Rohan Bansal,  Andy Li<br>
+<strong>Team</strong>: Rigel Arana Fantozzi, Aanika Jain, Yixuan Qiao, Adarsh Krishnan<br>
 
 ### Website
 
-https://thetahacks.tech
+https://wwww.thetahacks.tech
 
 Website created by **Rohan-Bansal**, **theAnshulGupta**, **AndyLi23**, and **yixqiao**.
 
@@ -37,8 +35,7 @@ Discord Bot: https://github.com/ThetaHacks/ThetaHacksBot
 
 ### Be sure to follow us on social media!
 
-Instagram: <a href="https://instagram.com/thetahacks">@thetahacks</a>
-Twitter: <a href="https://twitter.com/thetahacks">@thetahacks</a>
-Email: <a href="mailto:hello@thetahacks.tech">hello@thetahacks.tech</a>
-<br>
+Instagram: <a href="https://instagram.com/thetahacks">@thetahacks</a> <br>
+Twitter: <a href="https://twitter.com/thetahacks">@thetahacks</a> <br>
+Email: <a href="mailto:hello@thetahacks.tech">hello@thetahacks.tech</a> <br>
 Sponsor email: <a href="mailto:sponsors@thetahacks.tech">sponsors@thetahacks.tech</a>
