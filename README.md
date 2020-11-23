@@ -19,7 +19,7 @@ We are not accepting any more team members. The only way to join our team is by 
 
 ### Website
 
-https://wwww.thetahacks.tech
+https://www.thetahacks.tech
 
 Website created by **Rohan-Bansal**, **theAnshulGupta**, **AndyLi23**, and **yixqiao**.
 
