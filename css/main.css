@@ -341,13 +341,13 @@ a:focus {
   }
 }
 
-.speakers{
-    display: flex;
-    flex-direction: row;
-    /* padding: 0vw 20vw; */
-    margin: 2vw 0vw 2vw 0vw;
-    align-items: center;
-    justify-content: center;
+.speakers {
+  display: flex;
+  flex-direction: row;
+  /* padding: 0vw 20vw; */
+  margin: 2vw 0vw 2vw 0vw;
+  align-items: center;
+  justify-content: center;
 }
 
 .gb {
@@ -1083,4 +1083,3 @@ table.schedule1 {
   transition: all 0.3s ease-in-out 0s;
 }
 /* ? super hot underline animation end */
->>>>>>> d2ec044e110912d77ab4ec12d60a5014cddfebcc
