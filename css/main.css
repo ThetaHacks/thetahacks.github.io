@@ -1052,10 +1052,35 @@ table.schedule1 {
   margin-left: 2%;
   margin-right: 2%;
 }
-<<<<<<< HEAD
 
 .speakers figure {
   padding: 3%;
 }
-=======
->>>>>>> 1b277aa9ba2b438621bf85de19dbdaa0674ed71b
+
+/* ? super hot underline animation */
+.underline {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+}
+.underline:hover {
+  color: #ffffff;
+}
+.underline:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.underline::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+/* ? super hot underline animation end */
+>>>>>>> d2ec044e110912d77ab4ec12d60a5014cddfebcc
