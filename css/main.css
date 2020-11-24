@@ -160,7 +160,7 @@ html {
   #about-section {
     padding: 5vh 10vw 5vh 10vw !important;
   }
-  
+
   .prev {
     transform: translateY(-50px) translateX(-40px) !important;
   }
@@ -290,7 +290,6 @@ a:focus {
   margin: 5% 2% !important;
 }
 
-
 .sponsor-row {
   max-width: 80vw;
   width: 100%;
@@ -299,7 +298,6 @@ a:focus {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
 
 .sponsor-row > :not(:only-child) {
   padding: 1rem;
@@ -343,11 +341,11 @@ a:focus {
   }
 }
 
-.speakers{
-    display: flex;
-    flex-direction: row;
-    padding: 0vw 20vw;
-    margin: 2vw 0vw 2vw 0vw;
+.speakers {
+  display: flex;
+  flex-direction: row;
+  padding: 0vw 20vw;
+  margin: 2vw 0vw 2vw 0vw;
 }
 
 .gb {
@@ -962,7 +960,7 @@ table.schedule1 {
 
 @media (max-width: 1500px) {
   .schedule {
-    margin: 0vh 10vw!important;
+    margin: 0vh 10vw !important;
   }
   .svg-container {
     margin-left: 10vw !important;
@@ -970,7 +968,6 @@ table.schedule1 {
 }
 
 @media (max-width: 1300px) {
-  
   .svg-container {
     margin-left: 5vw !important;
   }
