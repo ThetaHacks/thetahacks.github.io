@@ -263,9 +263,9 @@ a:focus {
   .directors {
     padding: 0vw 12.5vw;
   }
-  .speakers {
+  /* .speakers {
     padding: 0vw 12.5vw;
-  }
+  } */
   .everyone-else {
     padding: 0vw 5vw;
   }
@@ -346,8 +346,10 @@ a:focus {
 .speakers{
     display: flex;
     flex-direction: row;
-    padding: 0vw 20vw;
+    /* padding: 0vw 20vw; */
     margin: 2vw 0vw 2vw 0vw;
+    align-items: center;
+    justify-content: center;
 }
 
 .gb {
@@ -1052,4 +1054,8 @@ table.schedule1 {
 .personal {
   margin-left: 2%;
   margin-right: 2%;
+}
+
+.speakers figure {
+  padding: 3%;
 }
