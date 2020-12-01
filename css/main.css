@@ -135,6 +135,8 @@ html {
 
 #schedule-section {
   height: 800px;
+  padding: 5vh 0vh 5vh 0vh;
+  background: #181828;
 }
 
 #title-i {
@@ -194,9 +196,22 @@ html {
   text-align: left;
 }
 
-#info-section {
-  padding: 5vh 10vw;
+#ul-1 {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
+
+#events {
+  padding: 5vh 10vw;
+  background: #101020;
+}
+
+.info-container {
+  text-align: center;
+}
+
 a:active,
 a:focus {
   outline: 0 !important;
