@@ -213,15 +213,71 @@ $(function () {
   });
 });
 
-function shift() {
-  if (document.getElementById("day").innerHTML == "Saturday") {
-    document.getElementById("day").innerHTML = " Sunday ";
-    document.getElementById("sched1").style.display = "none";
-    document.getElementById("sched2").style.display = "block";
-  } else {
+var shiftDay = "Saturday";
+// function shift() {
+//   if (shiftDay == "Saturday") {
+//     document.getElementById("day").innerHTML = "Sunday";
+//     document.getElementById("sched1").style.display = "none";
+//     document.getElementById("sched2").style.display = "block";
+//   }
+//   else if (shiftDay == '')
+//   else {
+//     document.getElementById("day").innerHTML = "Saturday";
+//     document.getElementById("sched2").style.display = "none";
+//     document.getElementById("sched1").style.display = "block";
+//   }
+// }
+function shiftBackward() {
+  if (shiftDay == "Saturday") {
+    shiftDay = "Friday";
+    document.getElementById("day").innerHTML = "Friday";
+    document.getElementById("schedSat").style.display = "none";
+    document.getElementById("schedFri").style.display = "block";
+  }
+  else if (shiftDay == "Friday") {
+    shiftDay = "Monday";
+    document.getElementById("day").innerHTML = "Monday";
+    document.getElementById("schedFri").style.display = "none";
+    document.getElementById("schedMon").style.display = "block";
+  }
+  else if (shiftDay == "Monday") {
+    shiftDay = "Sunday";
+    document.getElementById("day").innerHTML = "Sunday";
+    document.getElementById("schedMon").style.display = "none";
+    document.getElementById("schedSun").style.display = "block";
+  }
+  else if (shiftDay == "Sunday") {
+    shiftDay = "Saturday";
     document.getElementById("day").innerHTML = "Saturday";
-    document.getElementById("sched2").style.display = "none";
-    document.getElementById("sched1").style.display = "block";
+    document.getElementById("schedSun").style.display = "none";
+    document.getElementById("schedSat").style.display = "block";
+  }
+}
+
+function shiftForward() {
+  if (shiftDay == "Saturday") {
+    shiftDay = "Sunday";
+    document.getElementById("day").innerHTML = "Sunday";
+    document.getElementById("schedSat").style.display = "none";
+    document.getElementById("schedSun").style.display = "block";
+  }
+  else if (shiftDay == "Sunday") {
+    shiftDay = "Monday";
+    document.getElementById("day").innerHTML = "Monday";
+    document.getElementById("schedSun").style.display = "none";
+    document.getElementById("schedMon").style.display = "block";
+  }
+  else if (shiftDay == "Monday") {
+    shiftDay = "Friday";
+    document.getElementById("day").innerHTML = "Friday";
+    document.getElementById("schedMon").style.display = "none";
+    document.getElementById("schedFri").style.display = "block";
+  }
+  else if (shiftDay == "Friday") {
+    shiftDay = "Saturday";
+    document.getElementById("day").innerHTML = "Saturday";
+    document.getElementById("schedFri").style.display = "none";
+    document.getElementById("schedSat").style.display = "block";
   }
 }
 
