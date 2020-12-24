@@ -1,5 +1,5 @@
 {
-  "liveServer.settings.port": 5500,
+  "liveServer.settings.port": 1551,
   "cSpell.words": [
     "arrowpath",
     "balsamiq",
@@ -22,5 +22,6 @@
     "taskade",
     "typef",
     "typef orm share"
-  ]
+  ],
+  "liveServer.settings.multiRootWorkspaceName": "thetahacks.github.io"
 }
