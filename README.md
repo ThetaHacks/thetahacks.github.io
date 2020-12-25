@@ -2,7 +2,7 @@
 
 # ThetaHacks I Official Website
 
-The official site for ThetaHacks, a digitel high school hackathon located online.
+The official site for ThetaHacks, a digital high school hackathon located online.
 
 ThetaHacks I will be a 24-hour online hackathon from January 15-18, 2021, with teams of up to four persons. Please sign up before January 1.
 
