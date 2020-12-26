@@ -186,6 +186,7 @@ html {
 .stuf1 {
   display: inline-table;
   padding: 20px 60px;
+  min-width:700px;
 }
 
 #about-section {
@@ -196,7 +197,9 @@ html {
   text-align: left;
 }
 
-#ul-1 {
+#ul-1,
+#ul-2,
+#ul-3 {
   color: #fff;
   margin: 0;
   padding: 0;
@@ -218,6 +221,13 @@ a:focus {
   border: none !important;
   -moz-outline-style: none !important;
   outline-style: none !important;
+}
+
+
+@media (max-width: 500px) {
+  .stuf1 {
+    min-width: 0 !important;
+  }
 }
 
 @media (max-width: 992px) {
@@ -377,7 +387,7 @@ a:focus {
   margin-left: 70px;
   font-size: 30px;
   position: absolute;
-  transform: translateY(-20px);
+  transform: translateY(-19px);
 }
 
 .faq-page {
@@ -394,7 +404,7 @@ a:focus {
 #title-navbar-right {
   color: #ce7b91;
   font-size: 30px;
-  transform: translateY(-21px) translateX(170px);
+  transform: translateY(-20px) translateX(170px);
   position: absolute;
 }
 
@@ -1069,7 +1079,7 @@ table.schedule1 {
 }
 
 .speakers figure {
-  padding: 3%;
+  margin-top: 2vh;
 }
 
 /* ? super hot underline animation */
