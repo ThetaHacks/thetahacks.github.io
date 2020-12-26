@@ -1,896 +1,790 @@
 <!DOCTYPE html>
 <html lang="en" prefix="oh: http://ogp.me/ns#">
-  <head>
-    <meta charset="utf-8" />
-    <title>ThetaHacks I</title>
-    <link rel="icon" href="img/logo/logo_nobuffer.png" />
-    <meta
-      name="description"
-      content="ThetaHacks is a 36 hour virtual high school hackathon for developers of all skill levels."
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"
-    />
-    <meta name="author" content="ThetaHacks" />
-    <meta
-      property="og:title"
-      content="ThetaHacks | Bringing the world of tech to prospective engineers"
-    />
-    <meta property="og:site_name" content="ThetaHacks" />
-    <meta
-      property="og:description"
-      content="ThetaHacks is a virtual 36-hour
-         hackathon with swag and awards for high-school hackers of all ages and skill levels across the globe!"
-    />
-    <meta property="og:image" content="https://i.imgur.com/ihydEWt.png" />
-    <meta property="og:image:height" content="300" />
-    <meta property="og:url" content="https://thetahacks.tech" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/hover.css" />
-    <link rel="stylesheet" href="css/button.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/table.css" />
-    <link rel="stylesheet" href="css/animate.min.css" />
-    <link rel="stylesheet" href="css/fontawesome.min.css" />
-    <link rel="stylesheet" href="css/hamburger.min.css" />
-    <link rel="stylesheet" href="fonts/montserrat.css" />
-    <link rel="stylesheet" href="fonts/exo.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Merriweather"
-    />
-  </head>
-  <body id="top" style="background: #202030; font-family: Montserrat">
-    <nav
-      class="navbar navbar-custom navbar-expand-lg fixed-top text-uppercase"
-      id="mainNav"
-      style=""
-    >
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#top"
-          ><img
-            id="mainlogo"
-            src="img/logo/logo_clear.png"
-            class="logo"
-            alt="thetahacks logo"
-            style="margin-left: 30px; filter: blur(0px)"
-          /><span id="title-navbar-left">Theta</span>
-          <span id="title-navbar-right"
-            >Hacks
-            <span style="font-family: Merriweather; font-weight: 600"
-              >I</span
-            ></span
-          >
-        </a>
-        <button
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          class="navbar-toggler navbar-toggler-right text-uppercase text-white rounded"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fa fa-bars"></i>
+
+<head>
+  <meta charset="utf-8" />
+  <title>ThetaHacks I</title>
+  <link rel="icon" href="img/logo/logo_nobuffer.png" />
+  <meta name="description"
+    content="ThetaHacks is a 36 hour virtual high school hackathon for developers of all skill levels." />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+  <meta name="author" content="ThetaHacks" />
+  <meta property="og:title" content="ThetaHacks | Bringing the world of tech to prospective engineers" />
+  <meta property="og:site_name" content="ThetaHacks" />
+  <meta property="og:description" content="ThetaHacks is a virtual 36-hour
+         hackathon with swag and awards for high-school hackers of all ages and skill levels across the globe!" />
+  <meta property="og:image" content="https://i.imgur.com/ihydEWt.png" />
+  <meta property="og:image:height" content="300" />
+  <meta property="og:url" content="https://thetahacks.tech" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/hover.css" />
+  <link rel="stylesheet" href="css/button.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/table.css" />
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <link rel="stylesheet" href="css/fontawesome.min.css" />
+  <link rel="stylesheet" href="css/hamburger.min.css" />
+  <link rel="stylesheet" href="fonts/montserrat.css" />
+  <link rel="stylesheet" href="fonts/exo.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather" />
+</head>
+
+<body id="top" style="background: #202030; font-family: Montserrat">
+  <nav class="navbar navbar-custom navbar-expand-lg fixed-top text-uppercase" id="mainNav" style="">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#top"><img id="mainlogo" src="img/logo/logo_clear.png"
+          class="logo" alt="thetahacks logo" style="margin-left: 30px; filter: blur(0px)" /><span
+          id="title-navbar-left">Theta</span>
+        <span id="title-navbar-right">Hacks
+          <span style="font-family: Merriweather; font-weight: 600">I</span></span>
+      </a>
+      <button data-toggle="collapse" data-target="#navbarResponsive"
+        class="navbar-toggler navbar-toggler-right text-uppercase text-white rounded" aria-controls="navbarResponsive"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse pull-right" id="navbarResponsive">
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1" role="presentation">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1" role="presentation">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#events">Events</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1" role="presentation">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#schedule">Schedule</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1" role="presentation">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#faq">FAQ</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1" role="presentation">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#sponsors">Sponsors</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1" role="presentation">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#team">Team</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="masthead">
+    <div class="layer">
+      <div class="title-page" style="text-align: center">
+        <div class="title-container">
+          <div class="title-left animate__animated animate__bounceInLeft" style="display: inline-block">
+            <h2 class="main-title" id="title-1">Theta</h2>
+          </div>
+          <div class="title-right animate__animated animate__bounceInRight" style="display: inline-block">
+            <h2 class="main-title" id="title-2">
+              Hacks
+              <span style="font-family: Merriweather; font-weight: 600" id="title-i">I</span>
+            </h2>
+          </div>
+        </div>
+        <div class="info-text" style="text-align: center">
+          <div class="sub1 animate__animated animate__bounceInLeft">
+            <h3 class="text1"><strong>January 15-18, 2021</strong></h3>
+          </div>
+          <div class="sub1 animate__animated animate__bounceInRight">
+            <h3 class="text2">Register by January 10th</h3>
+          </div>
+          <div class="sub1 animate__animated animate__bounceInLeft">
+            <h3 class="text2"><i>Digital</i></h3>
+          </div>
+        </div>
+        <!-- to open add link to a -->
+        <button class="gb gb-bordered hover-slide hover-fill reverse discord animate__animated animate__fadeInUp"
+          id="gb12" onclick="location.href='https://discord.gg/NCpE8PD'">
+          <span style="font-family: Montserrat">Discord Server</span>
         </button>
-        <div class="collapse navbar-collapse pull-right" id="navbarResponsive">
-          <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item mx-0 mx-lg-1" role="presentation">
-              <a
-                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                href="#about"
-                >About</a
-              >
-            </li>
-            <li class="nav-item mx-0 mx-lg-1" role="presentation">
-               <a
-                 class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                 href="#events"
-                 >Events</a
-               >
-             </li> 
-            <li class="nav-item mx-0 mx-lg-1" role="presentation">
-              <a
-                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                href="#schedule"
-                >Schedule</a
-              >
-            </li>
-            <li class="nav-item mx-0 mx-lg-1" role="presentation">
-              <a
-                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                href="#faq"
-                >FAQ</a
-              >
-            </li>
-            <li class="nav-item mx-0 mx-lg-1" role="presentation">
-              <a
-                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                href="#sponsors"
-                >Sponsors</a
-              >
-            </li>
-            <li class="nav-item mx-0 mx-lg-1" role="presentation">
-              <a
-                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                href="#team"
-                >Team</a
-              >
-            </li>
-          </ul>
-        </div>
+        <button
+          class="typeform-share gb gb-bordered hover-slide hover-fill reverse attendee animate__animated animate__fadeInUp"
+          id="gb12" href="https://form.typeform.com/to/PhePnrTa" data-mode="drawer_right">
+          Attendee Signup
+        </button>
+        <!-- <a class="typeform-share button" href="https://form.typeform.com/to/PhePnrTa" data-mode="drawer_right" style="display:inline-block;text-decoration:none;background-color:#3A7685;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-submit-close-delay="1" target="_blank">Launch me </a> -->
+        <script>
+          (function () {
+            var qs,
+              js,
+              q,
+              s,
+              d = document,
+              gi = d.getElementById,
+              ce = d.createElement,
+              gt = d.getElementsByTagName,
+              id = "typef_orm_share",
+              b = "https://embed.typeform.com/";
+            if (!gi.call(d, id)) {
+              js = ce.call(d, "script");
+              js.id = id;
+              js.src = b + "embed.js";
+              q = gt.call(d, "script")[0];
+              q.parentNode.insertBefore(js, q);
+            }
+          })();
+        </script>
+        <button
+          class="typeform-share gb gb-bordered hover-slide hover-fill reverse mentor animate__animated animate__fadeInUp"
+          id="gb10" href="https://form.typeform.com/to/XTexU8Se" data-mode="drawer_right">
+          Mentor Signup
+        </button>
+        <!-- <a class="typeform-share button" href="https://form.typeform.com/to/XTexU8Se" data-mode="drawer_right" style="display:inline-block;text-decoration:none;background-color:#3A7685;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-submit-close-delay="1" target="_blank">Launch me </a>  -->
+        <script>
+          (function () {
+            var qs,
+              js,
+              q,
+              s,
+              d = document,
+              gi = d.getElementById,
+              ce = d.createElement,
+              gt = d.getElementsByTagName,
+              id = "typef_orm_share",
+              b = "https://embed.typeform.com/";
+            if (!gi.call(d, id)) {
+              js = ce.call(d, "script");
+              js.id = id;
+              js.src = b + "embed.js";
+              q = gt.call(d, "script")[0];
+              q.parentNode.insertBefore(js, q);
+            }
+          })();
+        </script>
       </div>
-    </nav>
-    <header class="masthead">
-      <div class="layer">
-        <div class="title-page" style="text-align: center">
-          <div class="title-container">
-            <div
-              class="title-left animate__animated animate__bounceInLeft"
-              style="display: inline-block"
-            >
-              <h2 class="main-title" id="title-1">Theta</h2>
-            </div>
-            <div
-              class="title-right animate__animated animate__bounceInRight"
-              style="display: inline-block"
-            >
-              <h2 class="main-title" id="title-2">
-                Hacks
-                <span
-                  style="font-family: Merriweather; font-weight: 600"
-                  id="title-i"
-                  >I</span
-                >
-              </h2>
-            </div>
-          </div>
-          <div class="info-text" style="text-align: center">
-            <div class="sub1 animate__animated animate__bounceInLeft">
-              <h3 class="text1"><strong>January 15-18, 2021</strong></h3>
-            </div>
-            <div class="sub1 animate__animated animate__bounceInRight">
-              <h3 class="text2">Register by January 10th</h3>
-            </div>
-            <div class="sub1 animate__animated animate__bounceInLeft">
-              <h3 class="text2"><i>Digital</i></h3>
-            </div>
-          </div>
-          <!-- to open add link to a -->
-          <button
-            class="gb gb-bordered hover-slide hover-fill reverse discord animate__animated animate__fadeInUp"
-            id="gb12"
-            onclick="location.href='https://discord.gg/NCpE8PD'"
-          >
-            <span style="font-family: Montserrat">Discord Server</span>
-          </button>
-          <button
-            class="typeform-share gb gb-bordered hover-slide hover-fill reverse attendee animate__animated animate__fadeInUp"
-            id="gb12"
-            href="https://form.typeform.com/to/PhePnrTa"
-            data-mode="drawer_right"
-          >
-            Attendee Signup
-          </button>
-          <!-- <a class="typeform-share button" href="https://form.typeform.com/to/PhePnrTa" data-mode="drawer_right" style="display:inline-block;text-decoration:none;background-color:#3A7685;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-submit-close-delay="1" target="_blank">Launch me </a> -->
-          <script>
-            (function () {
-              var qs,
-                js,
-                q,
-                s,
-                d = document,
-                gi = d.getElementById,
-                ce = d.createElement,
-                gt = d.getElementsByTagName,
-                id = "typef_orm_share",
-                b = "https://embed.typeform.com/";
-              if (!gi.call(d, id)) {
-                js = ce.call(d, "script");
-                js.id = id;
-                js.src = b + "embed.js";
-                q = gt.call(d, "script")[0];
-                q.parentNode.insertBefore(js, q);
-              }
-            })();
-          </script>
-          <button
-            class="typeform-share gb gb-bordered hover-slide hover-fill reverse mentor animate__animated animate__fadeInUp"
-            id="gb10"
-            href="https://form.typeform.com/to/XTexU8Se"
-            data-mode="drawer_right"
-          >
-            Mentor Signup
-          </button>
-          <!-- <a class="typeform-share button" href="https://form.typeform.com/to/XTexU8Se" data-mode="drawer_right" style="display:inline-block;text-decoration:none;background-color:#3A7685;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-submit-close-delay="1" target="_blank">Launch me </a>  -->
-          <script>
-            (function () {
-              var qs,
-                js,
-                q,
-                s,
-                d = document,
-                gi = d.getElementById,
-                ce = d.createElement,
-                gt = d.getElementsByTagName,
-                id = "typef_orm_share",
-                b = "https://embed.typeform.com/";
-              if (!gi.call(d, id)) {
-                js = ce.call(d, "script");
-                js.id = id;
-                js.src = b + "embed.js";
-                q = gt.call(d, "script")[0];
-                q.parentNode.insertBefore(js, q);
-              }
-            })();
-          </script>
-        </div>
-      </div>
-    </header>
-    <a class="hyperlink" id="about" href="#about"></a>
-    <section id="about-section" style="background: #181828">
-      <div class="about-container" style="text-align: center">
-        <h1
-          style="
+    </div>
+  </header>
+  <a class="hyperlink" id="about" href="#about"></a>
+  <section id="about-section" style="background: #181828">
+    <div class="about-container" style="text-align: center">
+      <h1 style="
             font-size: 2.5rem;
             font-family: 'CircularStd';
             color: #ce7b91;
             margin-top: 2%;
-          "
-        >
-          About
-        </h1>
-        <hr
-          width="200px"
-          style="
+          ">
+        About
+      </h1>
+      <hr width="200px" style="
             height: 1px;
             border-color: gainsboro;
             background-color: gainsboro;
             margin-bottom: 4%;
-          "
-        />
-        <div class="quote">
-          <p class="text3">
-            "I think it is possible for ordinary people to choose to be
-            extraordinary."<br />-Elon Musk
-          </p>
-        </div>
+          " />
+      <div class="quote">
         <p class="text3">
-          ThetaHacks is a global high-school virtual hackathon occurring from January 15-18, 2021. Anyone of any skill level is free to submit a project that benefits the world around us. Our event is free, with tons of epic swag, events, and more. 
-
-          During our hackathon, you can form a team of up to 4 people to code anything you want! Attend various workshops and speaker events throughout the long weekend, while hanging out in our (discord) community and getting a ton of free swag. And yes, the more events you attend in our hackathon, the more free swag and merch you get. <br> <span class="underline" style="color:inherit"><a href="https://docs.google.com/document/d/14fLYzPr2uSxBVvGGFBhZGOQSAjHK4Yvnh_8_rhDyfWc/edit?usp=sharing" target="_blank">Read more here!</a></span>
-                  </p>
+          "I think it is possible for ordinary people to choose to be
+          extraordinary."<br />-Elon Musk
+        </p>
       </div>
-      <br />
-    </section>
+      <p class="text3">
+        ThetaHacks is a global high-school virtual hackathon occurring from January 15-18, 2021. Anyone of any skill
+        level is free to submit a project that benefits the world around us. Our event is free, with tons of epic swag,
+        events, and more.
+
+        During our hackathon, you can form a team of up to 4 people to code anything you want! Attend various workshops
+        and speaker events throughout the long weekend, while hanging out in our (discord) community and getting a ton
+        of free swag. And yes, the more events you attend in our hackathon, the more free swag and merch you get. <br>
+        <span class="underline" style="color:inherit"><a
+            href="https://docs.google.com/document/d/14fLYzPr2uSxBVvGGFBhZGOQSAjHK4Yvnh_8_rhDyfWc/edit?usp=sharing"
+            target="_blank">Read more here!</a></span>
+      </p>
+    </div>
+    <br />
+  </section>
 
 
-    <a class="hyperlink" id="info" href="#events"></a>
-    <section id="events">
-      <div class="info-container">
-        <h1
-          style="
+  <a class="hyperlink" id="info" href="#events"></a>
+  <section id="events">
+    <div class="info-container">
+      <h1 style="
             font-size: 2.5rem;
             font-family: 'CircularStd';
             color: #ce7b91;
             margin-top: 2%;
-          "
-        >
-          Merch & Events
-        </h1>
-        <hr
-          width="200px"
-          style="
+          ">
+        Merch & Events
+      </h1>
+      <hr width="200px" style="
             height: 1px;
             border-color: gainsboro;
             background-color: gainsboro;
             margin-bottom: 2%;
-          "
-        />
-        <div class="infodiv" style="text-align: center">
-          <div class="stuf1">
-            <h1
-              style="
+          " />
+      <div class="infodiv" style="text-align: center">
+        <div class="stuf1">
+          <h1 style="
                 font-size: 1.8rem;
                 font-family: 'CircularStd';
                 color: #fff;
                 text-align: left;
-              "
-            >
-              Free Swag
-            </h1>
-            <ul
-              id="ul-1"
-            >
+              ">
+            Free Swag
+          </h1>
+          <ul id="ul-1">
             <span class="underline">Free for all attendees!</span>
 
-              <li style="list-style-type: circle">
-                 Business tier plan on EchoAR
-              </li>
-              <li style="list-style-type: circle">
-                Wolfram|One platform access and prizes
-              </li>
-              <li style="list-style-type: circle">
-               30-Day access to Centered
-             </li>
-              <li style="list-style-type: circle">
-                Repl.it Hacker/Upgraded Plan
-              </li>
-              <li style="list-style-type: circle">
-                ProductHunt Stickers and Shirts
-              </li>
-              <li style="list-style-type: circle">
-                Stickermule & ThetaHacks Stickers
-              </li>
-              <li style="list-style-type: circle">
-                Linode Hosting Stickers and Merch
-              </li>
-              <li style="list-style-type: circle">
-                90 Day Access to Balsamiq Cloud
-              </li>
-              <li style="list-style-type: circle">
-                Free Pro upgrades on Taskade
-              </li>
-              <li style="list-style-type: circle">
-                Free web hosting from Cynderhost
-              </li>
-              ...and more!
-            </ul>
-            <!-- <ul
+            <li style="list-style-type: circle">
+              Business tier plan on EchoAR
+            </li>
+            <li style="list-style-type: circle">
+              Wolfram|One platform access and prizes
+            </li>
+            <li style="list-style-type: circle">
+              30-Day access to Centered
+            </li>
+            <li style="list-style-type: circle">
+              Repl.it Hacker/Upgraded Plan
+            </li>
+            <li style="list-style-type: circle">
+              ProductHunt Stickers and Shirts
+            </li>
+            <li style="list-style-type: circle">
+              Stickermule & ThetaHacks Stickers
+            </li>
+            <li style="list-style-type: circle">
+              Linode Hosting Stickers and Merch
+            </li>
+            <li style="list-style-type: circle">
+              90 Day Access to Balsamiq Cloud
+            </li>
+            <li style="list-style-type: circle">
+              Free Pro upgrades on Taskade
+            </li>
+            <li style="list-style-type: circle">
+              Free web hosting from Cynderhost
+            </li>
+            ...and more!
+          </ul>
+          <!-- <ul
               id="ul-1"
             >
              </ul>
  -->
-          </div>
-          <div class="stuf1">
-            <h1
-              style="
-                font-size: 1.8rem;
-                font-family: 'CircularStd';
-                color: #fff;
-                margin-top: 2%;
-                text-align: left;
-              "
-            >
-              Prizes
-            </h1>
-            <ul
-              style="color: #fff; margin: 0; padding: 0; text-align: left"
-              id="ul-2"
-            >
-              <li style="list-style-type: circle">
-                1st -> $200 and 4x HyperX Keyboard
-              </li>
-              <li style="list-style-type: circle">2nd -> $100</li>
-              <li style="list-style-type: circle">3rd -> $70</li>
-              <li style="list-style-type: circle">
-                Best EchoAR Project -> EchoAR Business Access + Gift Card
-              </li>
-              <li style="list-style-type: circle">
-                Best Wolfram API Project -> Wolfram Pro (worth $200+)
-              </li>
-              <li style="list-style-type: circle">
-                Best Environmental Hack -> Lifetime Licenses of
-                <a href="https://centered.app">Centered</a>
-              </li>
-              <li style="list-style-type: circle">
-                Best Beginner Hack -> 4x Google Home Mini
-              </li>
-              <li style="list-style-type: circle">
-                Best Duo Hack -> <i>Premium</i> Discord Merch
-              </li>
-            </ul>
-          </div>
-          <div class="stuf1">
-            <h1
-              style="
-                font-size: 1.8rem;
-                font-family: 'CircularStd';
-                color: #fff;
-                text-align: left;
-                margin-top: 2%;
-              "
-            >
-              Workshops & Events
-            </h1>
-            <ul
-              style="color: #fff; margin: 0; padding: 0; text-align: left"
-              id="ul-3"
-            >
-              <li style="list-style-type: circle">
-                EchoAR Workshop (Time TBD)
-              </li>
-              <li style="list-style-type: circle">
-                Linux Ricing Workshop (Time TBD)
-              </li>
-              <li style="list-style-type: circle">
-                Web Design Workshop (Time TBD)
-              </li>
-              <li style="list-style-type: circle">Intro to CAD (Time TBD)</li>
-              <li style="list-style-type: circle">
-                Minecraft Hunger Games (9:30 PM)
-              </li>
-              <li style="list-style-type: circle">
-                Among Us Tournament (11:00 PM)
-              </li>
-              <li style="list-style-type: circle">
-                Scribbl.io Tournament (1:30 AM)
-              </li>
-            </ul>
-          </div>
         </div>
-        <!-- ! for some reason my linter dies with this section closing tag, idk why -->
-        </section>
+        <div class="stuf1">
+          <h1 style="
+                font-size: 1.8rem;
+                font-family: 'CircularStd';
+                color: #fff;
+                margin-top: 2%;
+                text-align: left;
+              ">
+            Prizes
+          </h1>
+          <ul style="color: #fff; margin: 0; padding: 0; text-align: left" id="ul-2">
+            <li style="list-style-type: circle">
+              1st -> $200 and 4x HyperX Keyboard
+            </li>
+            <li style="list-style-type: circle">2nd -> $100</li>
+            <li style="list-style-type: circle">3rd -> $70</li>
+            <li style="list-style-type: circle">
+              Best EchoAR Project -> EchoAR Business Access + Gift Card
+            </li>
+            <li style="list-style-type: circle">
+              Best Wolfram API Project -> Wolfram Pro (worth $200+)
+            </li>
+            <li style="list-style-type: circle">
+              Best Environmental Hack -> Lifetime Licenses of
+              <a href="https://centered.app">Centered</a>
+            </li>
+            <li style="list-style-type: circle">
+              Best Beginner Hack -> 4x Google Home Mini
+            </li>
+            <li style="list-style-type: circle">
+              Best Duo Hack -> <i>Premium</i> Discord Merch
+            </li>
+          </ul>
+        </div>
+        <div class="stuf1">
+          <h1 style="
+                font-size: 1.8rem;
+                font-family: 'CircularStd';
+                color: #fff;
+                text-align: left;
+                margin-top: 2%;
+              ">
+            Workshops & Events
+          </h1>
+          <ul style="color: #fff; margin: 0; padding: 0; text-align: left" id="ul-3">
+            <li style="list-style-type: circle">
+              EchoAR Workshop (Time TBD)
+            </li>
+            <li style="list-style-type: circle">
+              Linux Ricing Workshop (Time TBD)
+            </li>
+            <li style="list-style-type: circle">
+              Web Design Workshop (Time TBD)
+            </li>
+            <li style="list-style-type: circle">Intro to CAD (Time TBD)</li>
+            <li style="list-style-type: circle">
+              Minecraft Hunger Games (9:30 PM)
+            </li>
+            <li style="list-style-type: circle">
+              Among Us Tournament (11:00 PM)
+            </li>
+            <li style="list-style-type: circle">
+              Scribbl.io Tournament (1:30 AM)
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- ! for some reason my linter dies with this section closing tag, idk why -->
+  </section>
 
 
 
-    <a class="hyperlink" id="schedule" href="#schedule"></a>
-    <section
-      id="schedule-section"
-    >
-      <div class="schedule-container" style="text-align: center">
-        <h1
-          style="
+  <a class="hyperlink" id="schedule" href="#schedule"></a>
+  <section id="schedule-section">
+    <div class="schedule-container" style="text-align: center">
+      <h1 style="
             font-size: 2.5rem;
             font-family: 'CircularStd';
             color: #ce7b91;
             margin-top: 1%;
-          "
-        >
-          Schedule
-        </h1>
-        <p style="color: gainsboro">
-          Due to the recent delay (to January), this schedule is TENTATIVE. It will be updated before the end of the semester.
-        </p>
-        <hr
-          width="200px"
-          style="
+          ">
+        Schedule
+      </h1>
+      <hr width="200px" style="
             height: 1px;
             border-color: gainsboro;
             background-color: gainsboro;
-          "
-        />
-        <div class="innercontainer">
-          <div class="svg-container" style="position: relative">
-            <span id="timestamp"></span>
-            <span id="daystamp"></span>
-            <div class="arrow-container">
-              <svg
-                id="arrowsvg"
-                style="transform: none"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 50 640"
-                width="40"
-                height="600"
-              >
-                <path
-                  class="arrowpath"
-                  opacity="1"
-                  fill-opacity="0"
-                  stroke="#b8d3d1"
-                  stroke-width="5"
-                  stroke-linecap="round"
-                  stroke-opacity="1"
-                  d="M10 636.03L10 6.33"
-                  id="a2v1t8OFOh"
-                ></path>
-              </svg>
-            </div>
-            <div class="path-container" id="path-container">
-              <svg
-                class="sched-line"
-                id="sched-line"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 640 640"
-                width="600"
-                height="640"
-              >
-                <path
-                  class="mainpath"
-                  id="mainpath"
-                  opacity="1"
-                  fill-opacity="0"
-                  stroke="#ce7b91"
-                  stroke-width="5"
-                  stroke-opacity="1"
-                  stroke-dasharray="1500 1500"
-                  d="M626.47 348.06C510.93 614.72 410.81 614.72 326.11 348.06C241.41 81.39 141.53 81.39 26.47 348.06"
-                  id="aLxU1whWA"
-                ></path>
-              </svg>
-            </div>
+          " />
+      <div class="innercontainer">
+        <div class="svg-container" style="position: relative">
+          <span id="timestamp"></span>
+          <span id="daystamp"></span>
+          <div class="arrow-container">
+            <svg id="arrowsvg" style="transform: none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 50 640"
+              width="40" height="600">
+              <path class="arrowpath" opacity="1" fill-opacity="0" stroke="#b8d3d1" stroke-width="5"
+                stroke-linecap="round" stroke-opacity="1" d="M10 636.03L10 6.33" id="a2v1t8OFOh"></path>
+            </svg>
           </div>
-          <div class="schedule">
-            <div style="margin-bottom: 2vh">
-              <span class="leftarrow" onclick="shift()">◄</span>
-              <pre id="day">Saturday</pre>
-              <span class="rightarrow" onclick="shift()">►</span>
-            </div>
-            <div id="sched1" style="box-shadow: 5px 10px 10px #050510">
-              <div class="table100 ver1 m-b-110">
-                <div class="table100-head">
-                  <table>
-                    <thead>
-                      <tr class="row100 head">
-                        <th class="column1 header1">Time</th>
-                        <th class="column2 header1">Event</th>
-                      </tr>
-                    </thead>
-                  </table>
-                </div>
-                <div class="table100-body js-pscroll">
-                  <table
-                    class="schedule1"
-                    id="table-saturday"
-                    style="overflow-y: hidden; overflow-x: hidden"
-                  >
-                    <tbody style="cursor: pointer">
-                      <tr class="row100 body">
-                        <td class="cell100 column1">9:00 AM</td>
-                        <td class="cell100 column2">Check In</td>
-                      </tr>
-                      <tr class="row100 body">
-                        <td class="cell100 column1">10:00 AM</td>
-                        <td class="cell100 column2">Opening, Hacking Begins</td>
-                      </tr>
-                      <tr class="row100 body">
-                        <td class="cell100 column1">11:00 AM</td>
-                        <td class="cell100 column2">Team Mixer</td>
-                      </tr>
-                      <!-- <tr class="row100 body">
+          <div class="path-container" id="path-container">
+            <svg class="sched-line" id="sched-line" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640"
+              width="600" height="640">
+              <path class="mainpath" id="mainpath" opacity="1" fill-opacity="0" stroke="#ce7b91" stroke-width="5"
+                stroke-opacity="1" stroke-dasharray="1500 1500"
+                d="M626.47 348.06C510.93 614.72 410.81 614.72 326.11 348.06C241.41 81.39 141.53 81.39 26.47 348.06"
+                id="aLxU1whWA"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="schedule">
+          <div style="margin-bottom: 2vh">
+            <span class="leftarrow" onclick="shiftBackward()">◄</span>
+            <pre id="day">Saturday</pre>
+            <span class="rightarrow" onclick="shiftForward()">►</span>
+          </div>
+          <div id="schedSat" style="box-shadow: 5px 10px 10px #050510">
+            <div class="table100 ver1 m-b-110">
+              <div class="table100-head">
+                <table>
+                  <thead>
+                    <tr class="row100 head">
+                      <th class="column1 header1">Time</th>
+                      <th class="column2 header1">Event</th>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+              <div class="table100-body js-pscroll">
+                <table class="scheduleSat" id="table-saturday" style="overflow-y: hidden; overflow-x: hidden">
+                  <tbody style="cursor: pointer">
+                    <tr class="row100 body">
+                      <td class="cell100 column1">9:00 AM</td>
+                      <td class="cell100 column2">Check In</td>
+                    </tr>
+                    <tr class="row100 body">
+                      <td class="cell100 column1">10:00 AM</td>
+                      <td class="cell100 column2">Opening, Hacking Begins</td>
+                    </tr>
+                    <tr class="row100 body">
+                      <td class="cell100 column1">11:30 AM</td>
+                      <td class="cell100 column2">Team Mixer</td>
+                    </tr>
+                    <!-- <tr class="row100 body">
                                     <td class="cell100 column1">12:30 PM</td>
                                     <td class="cell100 column2">Lunch</td>
                                     </tr> -->
-                      <tr class="row100 body">
-                        <td class="cell100 column1">1:15 PM</td>
-                        <td class="cell100 column2">Workshop (EchoAR)</td>
-                      </tr>
-                      <tr class="row100 body">
-                        <td class="cell100 column1">4:30 PM</td>
-                        <td class="cell100 column2">Workshop (Linux Ricing)</td>
-                      </tr>
-                      <tr class="row100 body">
-                        <td class="cell100 column1">9:30 PM</td>
-                        <td class="cell100 column2">
-                          Minecraft Hunger Games :)
-                        </td>
-                      </tr>
-                      <!-- <tr class="row100 body">
+                    <tr class="row100 body">
+                      <td class="cell100 column1">1:30 PM</td>
+                      <td class="cell100 column2">Workshop (EchoAR)</td>
+                    </tr>
+                    <tr class="row100 body">
+                      <td class="cell100 column1">4:00 PM</td>
+                      <td class="cell100 column2">Speaker (Chinmayi Balasu)</td>
+                    </tr>
+                    <tr class="row100 body">
+                      <td class="cell100 column1">6:00 PM</td>
+                      <td class="cell100 column2">Workshop (Linux Ricing)</td>
+                    </tr>
+                    <tr class="row100 body">
+                      <td class="cell100 column1">8:00 PM</td>
+                      <td class="cell100 column2">Speaker (Ivy Xu)</td>
+                    </tr>
+                    <tr class="row100 body">
+                      <td class="cell100 column1">9:30 PM</td>
+                      <td class="cell100 column2">
+                        Among Us Game Night
+                      </td>
+                    </tr>
+                    <!-- <tr class="row100 body">
                                     <td class="cell100 column1">10:30 PM</td>
                                     <td class="cell100 column2">Cup Stacking</td>
                                     </tr> -->
-                    </tbody>
-                  </table>
-                </div>
+                  </tbody>
+                </table>
               </div>
             </div>
-            <div id="sched2" style="display: none">
-              <div class="table100 ver1 m-b-110">
-                <div class="table100-head">
-                  <table>
-                    <thead>
-                      <tr class="row100 head">
-                        <th class="column1">Time</th>
-                        <th class="column2">Event</th>
-                      </tr>
-                    </thead>
-                  </table>
-                </div>
-                <div class="table100-body js-pscroll">
-                  <table
-                    class="schedule1"
-                    id="table-sunday"
-                    style="overflow-y: hidden; overflow-x: hidden"
-                  >
-                    <tbody style="cursor: pointer">
-                      <!-- <tr class="row100 body">
+          </div>
+          <div id="schedSun" style="display: none">
+            <div class="table100 ver1 m-b-110">
+              <div class="table100-head">
+                <table>
+                  <thead>
+                    <tr class="row100 head">
+                      <th class="column1">Time</th>
+                      <th class="column2">Event</th>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+              <div class="table100-body js-pscroll">
+                <table class="scheduleSun" id="table-sunday" style="overflow-y: hidden; overflow-x: hidden">
+                  <tbody style="cursor: pointer">
+                    <tr class="row100 body">
+                      <td class="cell100 column1">10:00 AM</td>
+                      <td class="cell100 column2">Speaker (TBD)</td>
+                    </tr>
+                    <tr class="row100 body">
+                      <td class="cell100 column1">1:30 PM</td>
+                      <td class="cell100 column2">Workshop (TBD)</td>
+                    </tr>
+                    <tr class="row100 body">
+                      <td class="cell100 column1">4:00 P.M</td>
+                      <td class="cell100 column2">Speaker (Steven Puri)</td>
+                    </tr>
+                    <tr class="row100 body">
+                      <td class="cell100 column1">6:00 P.M</td>
+                      <td class="cell100 column2">Workshop (TBD)</td>
+                    </tr>
+                    <tr class="row100 body">
+                      <td class="cell100 column1">8:30 P.M</td>
+                      <td class="cell100 column2">
+                        Minecraft Hunger Games
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div id="schedMon" style="display: none">
+            <div class="table100 ver1 m-b-110">
+              <div class="table100-head">
+                <table>
+                  <thead>
+                    <tr class="row100 head">
+                      <th class="column1">Time</th>
+                      <th class="column2">Event</th>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+              <div class="table100-body js-pscroll">
+                <table class="scheduleMon" id="table-sunday" style="overflow-y: hidden; overflow-x: hidden">
+                  <tbody style="cursor: pointer">
+                    <tr class="row100 body">
+                      <td class="cell100 column1">9:00 P.M</td>
+                      <td class="cell100 column2">Among Us Hype Night</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div id="schedFri" style="display: none">
+            <div class="table100 ver1 m-b-110">
+              <div class="table100-head">
+                <table>
+                  <thead>
+                    <tr class="row100 head">
+                      <th class="column1">Time</th>
+                      <th class="column2">Event</th>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+              <div class="table100-body js-pscroll">
+                <table class="scheduleFri" id="table-sunday" style="overflow-y: hidden; overflow-x: hidden">
+                  <tbody style="cursor: pointer">
+                    <!-- <tr class="row100 body">
                                     <td class="cell100 column1">12:00 AM</td>
                                     <td class="cell100 column2">
                                       Midnight! Surprise In Store?
                                     </td>
                                     </tr> -->
-                      <tr class="row100 body">
-                        <td class="cell100 column1">1:30 AM</td>
-                        <td class="cell100 column2">Scribbl.io Tournament</td>
-                      </tr>
-                      <tr class="row100 body">
-                        <td class="cell100 column1">7:00 AM</td>
-                        <td class="cell100 column2">DevPost Submissions Due</td>
-                      </tr>
-                      <tr class="row100 body">
-                        <td class="cell100 column1">7:30 AM</td>
-                        <td class="cell100 column2">Workshop (TBD)</td>
-                      </tr>
-                      <tr class="row100 body">
-                        <td class="cell100 column1">8:00 AM</td>
-                        <td class="cell100 column2">Judging Begins</td>
-                      </tr>
-                      <tr class="row100 body">
-                        <td class="cell100 column1">9:35 AM</td>
-                        <td class="cell100 column2">
-                          Closing Ceremony, Prizes
-                        </td>
-                      </tr>
-                      <tr class="row100 body">
-                        <td class="cell100 column1">10:15 AM</td>
-                        <td class="cell100 column2">End of Hackathon</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+                    <tr class="row100 body">
+                      <td class="cell100 column1">8:00 A.M</td>
+                      <td class="cell100 column2">Judging</td>
+                    </tr>
+                    <tr class="row100 body">
+                      <td class="cell100 column1">9:00 AM</td>
+                      <td class="cell100 column2">Workshop</td>
+                    </tr>
+                    <tr class="row100 body">
+                      <td class="cell100 column1">10:30 AM</td>
+                      <td class="cell100 column2">Closing, Awards Cermony</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-   <section id="all" class="dark-back;">
-          <div class="faq-page2" style="text-align: center; clear: both">
-            <a class="hyperlink" id="faq" href="#faq"></a>
-            <section class="dark-back">
-              <div class="faq-page">
-                <div class="layer2">
-                  <h1
-                    class="ml-4 faq-arrow-rotate"
-                    style="
+    </div>
+  </section>
+  <section id="all" class="dark-back;">
+    <div class="faq-page2" style="text-align: center; clear: both">
+      <a class="hyperlink" id="faq" href="#faq"></a>
+      <section class="dark-back">
+        <div class="faq-page">
+          <div class="layer2">
+            <h1 class="ml-4 faq-arrow-rotate" style="
                       font-size: 2.5rem;
                       opacity: 1;
                       font-family: 'CircularStd';
                       color: #ce7b91;
-                    "
-                  >
-                    FAQ
-                    <!-- <a id="show-faq-button" onclick="showFaq()">▸</a> -->
-                  </h1>
-                  <hr
-                    width="200px"
-                    style="
+                    ">
+              FAQ
+              <!-- <a id="show-faq-button" onclick="showFaq()">▸</a> -->
+            </h1>
+            <hr width="200px" style="
                       height: 1px;
                       border-color: gainsboro;
                       background-color: gainsboro;
-                    "
-                  />
-                  <div class="not-mobile">
-                    <div class="container-fluid">
-                      <div class="row order-1">
-                        <div class="col-md-6">
-                          <div class="prof">
-                            <h3 class="proftitle">
-                              What is ThetaHacks?<span>▸</span>
-                            </h3>
-                            <p class="desc">
-                              ThetaHacks is a 36-hour virtual event where students from
-                              all over the world can come together to make
-                              something together, whether software or hardware!
-                            </p>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="prof">
-                            <h3 class="proftitle">
-                              Who can participate?<span>▸</span>
-                            </h3>
-                            <p class="desc">
-                              Anyone in high school can join! If you've
-                              graduated already, consider becoming a mentor! If
-                              you are in middle school, email us for details.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="container-fluid">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="prof">
-                            <h3 class="proftitle">
-                              Do I need to form a team?<span>▸</span>
-                            </h3>
-                            <p class="desc">
-                              You may form a team with up to 4 members! If you
-                              would like to go solo, thats perfectly fine too.
-                            </p>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="prof">
-                            <h3 class="proftitle">
-                              Does this cost money?<span>▸</span>
-                            </h3>
-                            <p class="desc">
-                              Nope. ThetaHacks is free, and always will be!
-                              Everything from swag to workshops is covered for
-                              all participants.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="container-fluid">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="prof">
-                            <h3 class="proftitle">
-                              What if I can't code?<span>▸</span>
-                            </h3>
-                            <p class="desc">
-                              If you can't code, thats totally not a problem! We
-                              will be hosting workshops so you can learn, so
-                              please join us.
-                            </p>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="prof">
-                            <h3 class="proftitle">
-                              What should I bring?<span>▸</span>
-                            </h3>
-                            <p class="desc">
-                              Make sure you have a computer handy! Other than
-                              that, just sign the waiver (details soon).
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="container-fluid">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="prof">
-                            <h3 class="proftitle">
-                              Where do I get more information?<span>▸</span>
-                            </h3>
-                            <p class="desc">
-Check out our <a href="https://thetahacks.devpost.com">Devpost</a> for more info!                            </p>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="prof">
-                            <h3 class="proftitle">
-                              I have another question!<span>▸</span>
-                            </h3>
-                            <p class="desc">
-                              Great, we're always open to questions! Feel free
-                              to contact us at
-                              <a
-                                class="questionLink"
-                                target="_blank"
-                                href="mailto: hello@thetahacks.tech"
-                                >hello@thetahacks.tech!</a
-                              >
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mobile-only">
+                    " />
+            <div class="not-mobile">
+              <div class="container-fluid">
+                <div class="row order-1">
+                  <div class="col-md-6">
                     <div class="prof">
                       <h3 class="proftitle">
                         What is ThetaHacks?<span>▸</span>
                       </h3>
                       <p class="desc">
-                        ThetaHacks is a 36-hour virtual event where students from all
-                        over the world can come together to make something
-                        together, whether software or hardware!
+                        ThetaHacks is a 36-hour virtual event where students from
+                        all over the world can come together to make
+                        something together, whether software or hardware!
                       </p>
                     </div>
+                  </div>
+                  <div class="col-md-6">
                     <div class="prof">
                       <h3 class="proftitle">
                         Who can participate?<span>▸</span>
                       </h3>
                       <p class="desc">
-                        Anyone in high school can join! If you've graduated
-                        already, consider becoming a mentor! If you are in
-                        middle school, email us for details.
-                      </p>
-                    </div>
-                    <div class="prof">
-                      <h3 class="proftitle">
-                        How do I form a team? Do I need a team?<span>▸</span>
-                      </h3>
-                      <p class="desc">
-                        You may form a team with up to 4 members! If you would
-                        like to go solo, thats perfectly fine too.
-                      </p>
-                    </div>
-                    <div class="prof">
-                      <h3 class="proftitle">
-                        Does this cost money?<span>▸</span>
-                      </h3>
-                      <p class="desc">
-                        Nope. ThetaHacks is free, and always will be! Everything
-                        from swag to workshops is covered for all participants.
-                      </p>
-                    </div>
-                    <div class="prof">
-                      <h3 class="proftitle">
-                        What if I can't code?<span>▸</span>
-                      </h3>
-                      <p class="desc">
-                        If you can't code, thats totally not a problem! We will
-                        be hosting workshops so you can learn, so please join
-                        us.
-                      </p>
-                    </div>
-                    <div class="prof">
-                      <h3 class="proftitle">
-                        What should I bring?<span>▸</span>
-                      </h3>
-                      <p class="desc">
-                        Make sure you have a computer handy! Other than that,
-                        just sign the waiver (details soon).
-                      </p>
-                    </div>
-                    <div class="prof">
-                      <h3 class="proftitle">
-                        What are the prizes? Rules? Code of Conduct?<span
-                          >▸</span
-                        >
-                      </h3>
-                      <p class="desc">
-                        Check out our <a href="https://thetahacks.devpost.com">Devpost</a> for more info. 
-                      </p>
-                    </div>
-                    <div class="prof">
-                      <h3 class="proftitle">
-                        I have another question!<span>▸</span>
-                      </h3>
-                      <p class="desc">
-                        Great! Feel free to contact us
-                        <a
-                          class="questionLink"
-                          target="_blank"
-                          href="https://forms.gle/bCT2fwE8JkSx4PSd7"
-                          >here.</a
-                        >
+                        Anyone in high school can join! If you've
+                        graduated already, consider becoming a mentor! If
+                        you are in middle school, email us for details.
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-            </section>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="prof">
+                      <h3 class="proftitle">
+                        Do I need to form a team?<span>▸</span>
+                      </h3>
+                      <p class="desc">
+                        You may form a team with up to 4 members! If you
+                        would like to go solo, thats perfectly fine too.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="prof">
+                      <h3 class="proftitle">
+                        Does this cost money?<span>▸</span>
+                      </h3>
+                      <p class="desc">
+                        Nope. ThetaHacks is free, and always will be!
+                        Everything from swag to workshops is covered for
+                        all participants.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="prof">
+                      <h3 class="proftitle">
+                        What if I can't code?<span>▸</span>
+                      </h3>
+                      <p class="desc">
+                        If you can't code, thats totally not a problem! We
+                        will be hosting workshops so you can learn, so
+                        please join us.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="prof">
+                      <h3 class="proftitle">
+                        What should I bring?<span>▸</span>
+                      </h3>
+                      <p class="desc">
+                        Make sure you have a computer handy! Other than
+                        that, just sign the waiver (details soon).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="prof">
+                      <h3 class="proftitle">
+                        Where do I get more information?<span>▸</span>
+                      </h3>
+                      <p class="desc">
+                        Check out our <a href="https://thetahacks.devpost.com">Devpost</a> for more info! </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="prof">
+                      <h3 class="proftitle">
+                        I have another question!<span>▸</span>
+                      </h3>
+                      <p class="desc">
+                        Great, we're always open to questions! Feel free
+                        to contact us at
+                        <a class="questionLink" target="_blank"
+                          href="mailto: hello@thetahacks.tech">hello@thetahacks.tech!</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mobile-only">
+              <div class="prof">
+                <h3 class="proftitle">
+                  What is ThetaHacks?<span>▸</span>
+                </h3>
+                <p class="desc">
+                  ThetaHacks is a 36-hour virtual event where students from all
+                  over the world can come together to make something
+                  together, whether software or hardware!
+                </p>
+              </div>
+              <div class="prof">
+                <h3 class="proftitle">
+                  Who can participate?<span>▸</span>
+                </h3>
+                <p class="desc">
+                  Anyone in high school can join! If you've graduated
+                  already, consider becoming a mentor! If you are in
+                  middle school, email us for details.
+                </p>
+              </div>
+              <div class="prof">
+                <h3 class="proftitle">
+                  How do I form a team? Do I need a team?<span>▸</span>
+                </h3>
+                <p class="desc">
+                  You may form a team with up to 4 members! If you would
+                  like to go solo, thats perfectly fine too.
+                </p>
+              </div>
+              <div class="prof">
+                <h3 class="proftitle">
+                  Does this cost money?<span>▸</span>
+                </h3>
+                <p class="desc">
+                  Nope. ThetaHacks is free, and always will be! Everything
+                  from swag to workshops is covered for all participants.
+                </p>
+              </div>
+              <div class="prof">
+                <h3 class="proftitle">
+                  What if I can't code?<span>▸</span>
+                </h3>
+                <p class="desc">
+                  If you can't code, thats totally not a problem! We will
+                  be hosting workshops so you can learn, so please join
+                  us.
+                </p>
+              </div>
+              <div class="prof">
+                <h3 class="proftitle">
+                  What should I bring?<span>▸</span>
+                </h3>
+                <p class="desc">
+                  Make sure you have a computer handy! Other than that,
+                  just sign the waiver (details soon).
+                </p>
+              </div>
+              <div class="prof">
+                <h3 class="proftitle">
+                  What are the prizes? Rules? Code of Conduct?<span>▸</span>
+                </h3>
+                <p class="desc">
+                  Check out our <a href="https://thetahacks.devpost.com">Devpost</a> for more info.
+                </p>
+              </div>
+              <div class="prof">
+                <h3 class="proftitle">
+                  I have another question!<span>▸</span>
+                </h3>
+                <p class="desc">
+                  Great! Feel free to contact us
+                  <a class="questionLink" target="_blank" href="https://forms.gle/bCT2fwE8JkSx4PSd7">here.</a>
+                </p>
+              </div>
+            </div>
           </div>
-        </section>
-        <a class="hyperlink" id="sponsors" href="#sponsors"></a>
-        <!-- ? =========================== SPONSORS START HERE =========================== -->
-        <section
-          id="sponsors-sec"
-          style="padding: 5vh 0vh 5vh 0vh; background: #181828"
-        >
-          <div class="sponsors-container" style="text-align: center">
-            <h1
-              style="
+        </div>
+      </section>
+    </div>
+  </section>
+  <a class="hyperlink" id="sponsors" href="#sponsors"></a>
+  <!-- ? =========================== SPONSORS START HERE =========================== -->
+  <section id="sponsors-sec" style="padding: 5vh 0vh 5vh 0vh; background: #181828">
+    <div class="sponsors-container" style="text-align: center">
+      <h1 style="
                 font-size: 2.5rem;
                 font-family: 'CircularStd';
                 color: #ce7b91;
                 margin-top: 2%;
-              "
-            >
-              Sponsors
-            </h1>
-            <hr
-              width="200px"
-              style="
+              ">
+        Sponsors
+      </h1>
+      <hr width="200px" style="
                 height: 1px;
                 border-color: gainsboro;
                 background-color: gainsboro;
                 margin-bottom: 2%;
-              "
-            />
-            <p style="color: gainsboro; margin-bottom: 2%">
-              Interested in sponsoring us? Read the
-              <a href="pdfs/prospectus.pdf">Sponsorship Prospectus</a> and shoot
-              us an email!
-            </p>
-            <!--? tiers -->
-            <!-- <h2 style="font-size: 2.5rem; font-family: 'CircularStd'; color: #61b4c9; margin-top: 2%;">
+              " />
+      <p style="color: gainsboro; margin-bottom: 2%">
+        Interested in sponsoring us? Read the
+        <a href="pdfs/prospectus.pdf">Sponsorship Prospectus</a> and shoot
+        us an email!
+      </p>
+      <!--? tiers -->
+      <!-- <h2 style="font-size: 2.5rem; font-family: 'CircularStd'; color: #61b4c9; margin-top: 2%;">
                Platinum Tier
                </h2>
                <h3 style="font-size: 2.5rem; font-family: 'CircularStd'; color: #dad161; margin-top: 2%;">
@@ -902,540 +796,312 @@ Check out our <a href="https://thetahacks.devpost.com">Devpost</a> for more info
                <h3 style="font-size: 2.5rem; font-family: 'CircularStd'; color: #cca366; margin-top: 2%;">
                Bronze Tier
                </h3> -->
-            <div class="sponsor-row">
-              <a target="_blank" href="https://wolfram.com">
-                <img
-                  src="img/sponsors/wolfram.png"
-                  title="Wolfram"
-                />
-              </a>
-              <a target="_blank" href="https://repl.it">
-                <img
-                  src="img/sponsors/replit2.png"
-                  title="ReplIt"
-                  class="img-fluid"
-                  style="width: 850px"
-                />
-              </a>
-              <a target="_blank" href="https://www.echoar.xyz">
-                <img
-                  src="img/sponsors/echoar.png"
-                  title="EchoAR"
-                />
-              </a>
-              <a target="_blank" href="https://centered.app">
-                <img
-                  src="img/sponsors/centered2.png"
-                  title="Centered"
-                  class="img-fluid"
-                  style="width: 700px"
-                />
-              </a>
+      <div class="sponsor-row">
+        <a target="_blank" href="https://wolfram.com">
+          <img src="img/sponsors/wolfram.png" title="Wolfram" />
+        </a>
+        <a target="_blank" href="https://repl.it">
+          <img src="img/sponsors/replit2.png" title="ReplIt" class="img-fluid" style="width: 850px" />
+        </a>
+        <a target="_blank" href="https://www.echoar.xyz">
+          <img src="img/sponsors/echoar.png" title="EchoAR" />
+        </a>
+        <a target="_blank" href="https://centered.app">
+          <img src="img/sponsors/centered2.png" title="Centered" class="img-fluid" style="width: 700px" />
+        </a>
 
-              <!-- ? why are we breaking it into multiple rows again? -->
-              <!-- </div> -->
-              <!-- <div class="sponsor-row"> -->
-              <a
-                target="_blank"
-                href="https://www.hyperxgaming.com/unitedstates/us"
-              >
-                <img
-                  src="img/sponsors/hyperx.png"
-                  title="HyperX"
-                  class="img-fluid"
-                  style="width: 750px"
-                />
-              </a>
+        <!-- ? why are we breaking it into multiple rows again? -->
+        <!-- </div> -->
+        <!-- <div class="sponsor-row"> -->
+        <a target="_blank" href="https://www.hyperxgaming.com/unitedstates/us">
+          <img src="img/sponsors/hyperx.png" title="HyperX" class="img-fluid" style="width: 750px" />
+        </a>
 
-              <a target="_blank" href="https://stickermule.com">
-                <img
-                  src="img/sponsors/stickermule.png"
-                  title="StickerMule"
-                />
-              </a>
-              <a target="_blank" href="https://www.taskade.com">
-                <img
-                  src="img/sponsors/taskade.png"
-                  title="Taskade"
-                />
-              </a>
-              <a target="_blank" href="https://linode.com">
-                <img
-                  src="img/sponsors/linode2.png"
-                  title="Linode"
-                />
-              </a>
-              <a target="_blank" href="https://www.get.tech">
-                <img
-                  src="img/sponsors/dottech.png"
-                  title=".Tech"
-                  class="img-fluid"
-                  style="width: 250px"
-                />
-              </a>
-              <a target="_blank" href="https://www.discord.com">
-                <img
-                  src="img/sponsors/discord-word.png"
-                  title="Discord"
-                />
-              </a>
-              <a target="_blank" href="https://www.makeschool.com">
-                <img
-                  src="img/sponsors/make-school.png"
-                  title="Make School"
-                />
-              </a>
+        <a target="_blank" href="https://stickermule.com">
+          <img src="img/sponsors/stickermule.png" title="StickerMule" />
+        </a>
+        <a target="_blank" href="https://www.taskade.com">
+          <img src="img/sponsors/taskade.png" title="Taskade" />
+        </a>
+        <a target="_blank" href="https://linode.com">
+          <img src="img/sponsors/linode2.png" title="Linode" />
+        </a>
+        <a target="_blank" href="https://www.get.tech">
+          <img src="img/sponsors/dottech.png" title=".Tech" class="img-fluid" style="width: 250px" />
+        </a>
+        <a target="_blank" href="https://www.discord.com">
+          <img src="img/sponsors/discord-word.png" title="Discord" />
+        </a>
+        <a target="_blank" href="https://www.makeschool.com">
+          <img src="img/sponsors/make-school.png" title="Make School" />
+        </a>
 
-              <!-- </div> -->
-              <!-- <div class="sponsor-row"> -->
-              <a target="_blank" href="https://www.sublimetext.com">
-                <img
-                  src="img/sponsors/sublime_4.png"
-                  title="Sublime Text"
-                />
-              </a>
-              <a target="_blank" href="https://www.producthunt.com">
-                <img
-                  src="img/sponsors/producthunt.webp"
-                  title="ProductHunt"
-                />
-              </a>
-              <a target="_blank" href="https://www.balsamiq.com">
-               <img
-                 src="img/sponsors/jetbrains.png"
-                 title="Balsamiq"
-               />
-             </a>
-              <a target="_blank" href="https://www.cynderhost.com">
-                <img
-                  src="img/sponsors/cynder_2.png"
-                  title="CynderHost"
-                />
-              </a>
-              <a target="_blank" href="https://discord.gg/FxABpUX">
-                <img
-                  src="img/sponsors/bah.png"
-                  title="Bay Area Hackathons"
-                />
-              </a>
-              <a target="_blank" href="https://www.balsamiq.com">
-               <img
-                 src="img/sponsors/balsamiq.png"
-                 title="Balsamiq"
-               />
-             </a>
-              <a target="_blank" href="https://bank.hackclub.com">
-               <img
-                 src="img/sponsors/bank.png"
-                 title="Hack Club Bank"
-                 class="img-fluid"
-                 style="width: 400px;"
-               />
-             </a>
-            </div>
-          </div>
-        </section>
-        <section style="padding: 5vh 0vw 5vh 0vw; background: #202030">
-          <div class="team-container" style="text-align: center">
-            <h1
-              style="
+        <!-- </div> -->
+        <!-- <div class="sponsor-row"> -->
+        <a target="_blank" href="https://www.sublimetext.com">
+          <img src="img/sponsors/sublime_4.png" title="Sublime Text" />
+        </a>
+        <a target="_blank" href="https://www.producthunt.com">
+          <img src="img/sponsors/producthunt.webp" title="ProductHunt" />
+        </a>
+        <a target="_blank" href="https://www.balsamiq.com">
+          <img src="img/sponsors/jetbrains.png" title="Balsamiq" />
+        </a>
+        <a target="_blank" href="https://www.cynderhost.com">
+          <img src="img/sponsors/cynder_2.png" title="CynderHost" />
+        </a>
+        <a target="_blank" href="https://discord.gg/FxABpUX">
+          <img src="img/sponsors/bah.png" title="Bay Area Hackathons" />
+        </a>
+        <a target="_blank" href="https://www.balsamiq.com">
+          <img src="img/sponsors/balsamiq.png" title="Balsamiq" />
+        </a>
+        <a target="_blank" href="https://bank.hackclub.com">
+          <img src="img/sponsors/bank.png" title="Hack Club Bank" class="img-fluid" style="width: 400px;" />
+        </a>
+      </div>
+    </div>
+  </section>
+  <section style="padding: 5vh 0vw 5vh 0vw; background: #202030">
+    <div class="team-container" style="text-align: center">
+      <h1 style="
                 font-size: 2.5rem;
                 font-family: 'CircularStd';
                 color: #ce7b91;
                 margin-top: 2%;
-              "
-            >
-              Speakers
-            </h1>
-            <hr
-              width="200px"
-              style="
+              ">
+        Speakers
+      </h1>
+      <hr width="200px" style="
                 height: 1px;
                 border-color: gainsboro;
                 background-color: gainsboro;
                 margin-bottom: 4%;
-              "
-            />
-            <div class="speakers">
-              <figure>
-                <div class="figure-image-container">
-                  <img
-                    class="figure-image"
-                    src="img/profiles/ivy.jpeg"
-                    alt="panelist"
-                  />
-                </div>
-                <figcaption>
-                  <h5 class="figure-caption-title">Ivy Xu</h5>
-                  <h7
-                    style="display: block; color: gainsboro; margin-bottom: 1vh"
-                    >Entrepreneurship</h7
-                  >
-                  <a href="https://www.linkedin.com/in/xuivy/" target="_blank"
-                    ><i
-                      class="personal hvr-grow-shadow fab fa-linkedin fa-lg"
-                      style="color: white"
-                      aria-hidden="true"
-                    ></i
-                  ></a>
-                </figcaption>
-              </figure>
-              <figure>
-                <div class="figure-image-container">
-                  <img
-                    class="figure-image"
-                    src="img/profiles/steven.jpeg"
-                    alt="panelist"
-                  />
-                </div>
-                <figcaption>
-                  <h5 class="figure-caption-title">Steven Puri</h5>
-                  <h7
-                    style="display: block; color: gainsboro; margin-bottom: 1vh"
-                    >The Flow</h7
-                  >
-                  <a
-                    href="https://www.linkedin.com/in/steven-puri-b0714436/"
-                    target="_blank"
-                    ><i
-                      class="personal hvr-grow-shadow fab fa-linkedin fa-lg"
-                      style="color: white"
-                      aria-hidden="true"
-                    ></i
-                  ></a>
-                  <!-- <a href="https://github.com/" target="_blank"
+              " />
+      <div class="speakers">
+        <figure>
+          <div class="figure-image-container">
+            <img class="figure-image" src="img/profiles/ivy.jpeg" alt="panelist" />
+          </div>
+          <figcaption>
+            <h5 class="figure-caption-title">Ivy Xu</h5>
+            <h7 style="display: block; color: gainsboro; margin-bottom: 1vh">Entrepreneurship</h7>
+            <a href="https://www.linkedin.com/in/xuivy/" target="_blank"><i
+                class="personal hvr-grow-shadow fab fa-linkedin fa-lg" style="color: white" aria-hidden="true"></i></a>
+          </figcaption>
+        </figure>
+        <figure>
+          <div class="figure-image-container">
+            <img class="figure-image" src="img/profiles/steven.jpeg" alt="panelist" />
+          </div>
+          <figcaption>
+            <h5 class="figure-caption-title">Steven Puri</h5>
+            <h7 style="display: block; color: gainsboro; margin-bottom: 1vh">The Flow</h7>
+            <a href="https://www.linkedin.com/in/steven-puri-b0714436/" target="_blank"><i
+                class="personal hvr-grow-shadow fab fa-linkedin fa-lg" style="color: white" aria-hidden="true"></i></a>
+            <!-- <a href="https://github.com/" target="_blank"
                    ><i
                      class="personal hvr-grow-shadow fab fa-github fa-lg"
                      style="color: white"
                      aria-hidden="true"
                    ></i
                  ></a> -->
-                </figcaption>
-              </figure>
-              <figure>
-                <div class="figure-image-container">
-                  <img
-                    class="figure-image"
-                    src="img/profiles/chinmayi.jpeg"
-                    alt="panelist"
-                  />
-                </div>
-                <figcaption>
-                  <h5 class="figure-caption-title">Chinmayi Balusu</h5>
-                  <h7
-                    style="display: block; color: gainsboro; margin-bottom: 1vh"
-                    >STEM Networking</h7
-                  >
-                  <a
-                    href="https://www.linkedin.com/in/chinmayi-balusu/"
-                    target="_blank"
-                    ><i
-                      class="personal hvr-grow-shadow fab fa-linkedin fa-lg"
-                      style="color: white"
-                      aria-hidden="true"
-                    ></i
-                  ></a>
-                </figcaption>
-              </figure>
-            </div>
+          </figcaption>
+        </figure>
+        <figure>
+          <div class="figure-image-container">
+            <img class="figure-image" src="img/profiles/chinmayi.jpeg" alt="panelist" />
           </div>
-        </section>
-        <a class="hyperlink" id="team" href="#team"></a>
-        <section style="padding: 5vh 0vw 5vh 0vw; background: #181828">
-          <div class="team-container" style="text-align: center">
-            <h1
-              style="
+          <figcaption>
+            <h5 class="figure-caption-title">Chinmayi Balasu</h5>
+            <h7 style="display: block; color: gainsboro; margin-bottom: 1vh">STEM Networking</h7>
+            <a href="https://www.linkedin.com/in/gilles-arnaud-bleu-lain%C3%A9-34136a6/" target="_blank"><i
+                class="personal hvr-grow-shadow fab fa-linkedin fa-lg" style="color: white" aria-hidden="true"></i></a>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+  <a class="hyperlink" id="team" href="#team"></a>
+  <section style="padding: 5vh 0vw 5vh 0vw; background: #181828">
+    <div class="team-container" style="text-align: center">
+      <h1 style="
                 font-size: 2.5rem;
                 font-family: 'CircularStd';
                 color: #ce7b91;
                 margin-top: 2%;
-              "
-            >
-              Our Team
-            </h1>
-            <hr
-            width="200px"
-            style="
+              ">
+        Our Team
+      </h1>
+      <hr width="200px" style="
               height: 1px;
               border-color: gainsboro;
               background-color: gainsboro;
-            "
-          />
-            <button
-            class="typeform-share gb gb-bordered hover-slide hover-fill reverse mentor animate__animated animate__fadeInUp"
-            id="gb10"
-            href="https://thetahacks.typeform.com/to/N4LXUNbR"
-            data-mode="drawer_right"
-            style="float: center; margin: 3px;"
-          >
-            Team Signup
-          </button>
-          <script>
-            (function () {
-              var qs,
-                js,
-                q,
-                s,
-                d = document,
-                gi = d.getElementById,
-                ce = d.createElement,
-                gt = d.getElementsByTagName,
-                id = "typef_orm_share",
-                b = "https://embed.typeform.com/";
-              if (!gi.call(d, id)) {
-                js = ce.call(d, "script");
-                js.id = id;
-                js.src = b + "embed.js";
-                q = gt.call(d, "script")[0];
-                q.parentNode.insertBefore(js, q);
-              }
-            })();
-          </script>
-         
-            <div class="directors">
-              <figure>
-                <div class="figure-image-container">
-                  <img
-                    class="figure-image"
-                    src="img/profiles/rohan.jpeg"
-                    alt="organizer"
-                  />
-                </div>
-                <figcaption>
-                  <h5 class="figure-caption-title">Rohan Bansal</h5>
-                  <p class="figure-caption">Lead and Sponsorships Director</p>
-                  <a href="https://linkedin.com/in/bansal-rohan" target="_blank"
-                    ><i
-                      class="personal hvr-grow-shadow fab fa-linkedin fa-lg"
-                      style="color: white"
-                      aria-hidden="true"
-                    ></i
-                  ></a>
-                  <a href="https://github.com/rohan-bansal" target="_blank"
-                    ><i
-                      class="personal hvr-grow-shadow fab fa-github fa-lg"
-                      style="color: white"
-                      aria-hidden="true"
-                    ></i
-                  ></a>
-                </figcaption>
-              </figure>
-              <figure>
-                <div class="figure-image-container">
-                  <img
-                    class="figure-image absolute-jesus"
-                    src="img/profiles/anshul.png"
-                    alt="organizer"
-                  />
-                </div>
-                <figcaption>
-                  <h5 class="figure-caption-title">Anshul Gupta</h5>
-                  <p class="figure-caption">Lead and Logistics Director</p>
-                  <a
-                    href="https://linkedin.com/in/theAnshulGupta"
-                    target="_blank"
-                    ><i
-                      class="personal hvr-grow-shadow fab fa-linkedin fa-lg"
-                      style="color: white"
-                      aria-hidden="true"
-                    ></i
-                  ></a>
-                  <a href="https://github.com/theAnshulGupta" target="_blank"
-                    ><i
-                      class="personal hvr-grow-shadow fab fa-github fa-lg"
-                      style="color: white"
-                      aria-hidden="true"
-                    ></i
-                  ></a>
-                </figcaption>
-              </figure>
-              <figure>
-                <div class="figure-image-container">
-                  <img
-                    class="figure-image"
-                    src="img/profiles/andy.jpg"
-                    alt="organizer"
-                  />
-                </div>
-                <figcaption>
-                  <h5 class="figure-caption-title">Andy Li</h5>
-                  <p class="figure-caption">Tech Director</p>
-                  <a href="https://instagram.com/andilyee" target="_blank"
-                    ><i
-                      class="personal hvr-grow-shadow fab fa-instagram fa-lg"
-                      style="color: white"
-                      aria-hidden="true"
-                    ></i
-                  ></a>
-                  <a href="https://github.com/andyli23" target="_blank"
-                    ><i
-                      class="personal hvr-grow-shadow fab fa-github fa-lg"
-                      style="color: white"
-                      aria-hidden="true"
-                    ></i
-                  ></a>
-                </figcaption>
-              </figure>
-            </div>
-            <div class="everyone-else">
-              <figure class="figure-e">
-                <div class="figure-image-container-e">
-                  <img
-                    class="figure-image-e"
-                    src="img/profiles/rigel.png"
-                    alt="organizer"
-                  />
-                </div>
-                <figcaption>
-                  <h5 class="figure-caption-title-e">Rigel Arana Fantozzi</h5>
-                  <p class="figure-caption-e">Logistics</p>
-                </figcaption>
-              </figure>
-              <figure class="figure-e">
-                <div class="figure-image-container-e">
-                  <img
-                    class="figure-image-e"
-                    src="img/profiles/yixuan.jpg"
-                    alt="organizer"
-                  />
-                </div>
-                <figcaption>
-                  <h5 class="figure-caption-title-e">Yixuan Qiao</h5>
-                  <p class="figure-caption-e">Tech</p>
-                </figcaption>
-              </figure>
-              <figure class="figure-e">
-                <div class="figure-image-container-e">
-                  <img
-                    class="figure-image-e"
-                    src="img/profiles/aanika.png"
-                    alt="organizer"
-                  />
-                </div>
-                <figcaption>
-                  <h5 class="figure-caption-title-e">Aanika Jain</h5>
-                  <p class="figure-caption-e">Sponsorships</p>
-                </figcaption>
-              </figure>
-              <figure class="figure-e">
-                <div class="figure-image-container-e">
-                  <img
-                    class="figure-image-e"
-                    src="img/profiles/adarsh.png"
-                    alt="organizer"
-                  />
-                </div>
-                <figcaption>
-                  <h5 class="figure-caption-title-e">Adarsh Krishnan</h5>
-                  <p class="figure-caption-e">Design</p>
-                </figcaption>
-              </figure>
-            </div>
+            " />
+      <button
+        class="typeform-share gb gb-bordered hover-slide hover-fill reverse mentor animate__animated animate__fadeInUp"
+        id="gb10" href="https://thetahacks.typeform.com/to/N4LXUNbR" data-mode="drawer_right"
+        style="float: center; margin: 3px;">
+        Team Signup
+      </button>
+      <script>
+        (function () {
+          var qs,
+            js,
+            q,
+            s,
+            d = document,
+            gi = d.getElementById,
+            ce = d.createElement,
+            gt = d.getElementsByTagName,
+            id = "typef_orm_share",
+            b = "https://embed.typeform.com/";
+          if (!gi.call(d, id)) {
+            js = ce.call(d, "script");
+            js.id = id;
+            js.src = b + "embed.js";
+            q = gt.call(d, "script")[0];
+            q.parentNode.insertBefore(js, q);
+          }
+        })();
+      </script>
 
+      <div class="directors">
+        <figure>
+          <div class="figure-image-container">
+            <img class="figure-image" src="img/profiles/rohan.jpeg" alt="organizer" />
           </div>
-
-          
-            
-        </section>
-        <section style="padding: 5vh 0vh 5vh 0vh; background: #151525">
-          <!-- logos since imo white and black are meh: https://www.flaticon.com/packs/social-media?word=social%20media -->
-          <div
-            class="footer-container"
-            style="text-align: center; display: block"
-          >
-            <div class="social-links">
-              <a
-                href="https://discord.gg/NCpE8PD"
-                style="display: inline-block"
-                target="_blank"
-              >
-                <img
-                  class="social-logo"
-                  src="img/media/discord.svg"
-                  alt="Discord"
-                />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/ThetaHacks"
-                style="display: inline-block"
-                target="_blank"
-              >
-                <img
-                  class="social-logo"
-                  src="img/media/linkedin.svg"
-                  alt="LinkedIn"
-                />
-              </a>
-              <a
-                class="social-link"
-                href="https://www.instagram.com/thetahacks/"
-                target="_blank"
-              >
-                <img
-                  class="social-logo"
-                  src="img/media/instagram.svg"
-                  alt="Instagram"
-                />
-              </a>
-              <a
-                class="social-link"
-                href="mailto:hello@thetahacks.tech"
-                target="_blank"
-              >
-                <img
-                  class="social-logo"
-                  src="img/media/gmail.svg"
-                  alt="Gmail"
-                />
-              </a>
-              <a
-                class="social-link"
-                href="https://twitter.com/ThetaHacks"
-                target="_blank"
-              >
-                <img
-                  class="social-logo"
-                  src="img/media/twitter.svg"
-                  alt="Twitter"
-                />
-              </a>
-              <a
-                class="social-link"
-                href="https://github.com/ThetaHacks"
-                target="_blank"
-              >
-                <img class="social-logo" src="img/media/cat.svg" alt="Cat" />
-              </a>
-              <a
-                href="https://www.hackclub.com/bank"
-                style="margin: 2% 20px; display: inline-block"
-                target="_blank"
-              >
-                <img
-                  class="social-logo-2"
-                  src="img/media/bank.png"
-                  alt="Bank"
-                />
-              </a>
-            </div>
+          <figcaption>
+            <h5 class="figure-caption-title">Rohan Bansal</h5>
+            <p class="figure-caption">Lead and Sponsorships Director</p>
+            <a href="https://linkedin.com/in/bansal-rohan" target="_blank"><i
+                class="personal hvr-grow-shadow fab fa-linkedin fa-lg" style="color: white" aria-hidden="true"></i></a>
+            <a href="https://github.com/rohan-bansal" target="_blank"><i
+                class="personal hvr-grow-shadow fab fa-github fa-lg" style="color: white" aria-hidden="true"></i></a>
+          </figcaption>
+        </figure>
+        <figure>
+          <div class="figure-image-container">
+            <img class="figure-image absolute-jesus" src="img/profiles/anshul.png" alt="organizer" />
           </div>
-        </section>
-        <section id="copyright-wrapper" style="background: #101020">
-          <p id="copyright">
-            Copyright &copy; 2020 ThetaHacks, a 501(c)(3) non-profit
-            organization, fiscally sponsored by Hack Club Bank.
-          </p>
-        </section>
-        <!-- </body> -->
-        <script src="js/jquery-3.5.1.min.js"></script>
-        <script src="js/jquery.visible.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/sweetalert.min.js"></script>
-        <script src="js/vivus.js"></script>
-        <script src="js/velocity.min.js"></script>
-        <script src="js/main.js"></script>
-        <!-- </html> -->
+          <figcaption>
+            <h5 class="figure-caption-title">Anshul Gupta</h5>
+            <p class="figure-caption">Lead and Logistics Director</p>
+            <a href="https://linkedin.com/in/theAnshulGupta" target="_blank"><i
+                class="personal hvr-grow-shadow fab fa-linkedin fa-lg" style="color: white" aria-hidden="true"></i></a>
+            <a href="https://github.com/theAnshulGupta" target="_blank"><i
+                class="personal hvr-grow-shadow fab fa-github fa-lg" style="color: white" aria-hidden="true"></i></a>
+          </figcaption>
+        </figure>
+        <figure>
+          <div class="figure-image-container">
+            <img class="figure-image" src="img/profiles/andy.jpg" alt="organizer" />
+          </div>
+          <figcaption>
+            <h5 class="figure-caption-title">Andy Li</h5>
+            <p class="figure-caption">Tech Director</p>
+            <a href="https://instagram.com/andilyee" target="_blank"><i
+                class="personal hvr-grow-shadow fab fa-instagram fa-lg" style="color: white" aria-hidden="true"></i></a>
+            <a href="https://github.com/andyli23" target="_blank"><i
+                class="personal hvr-grow-shadow fab fa-github fa-lg" style="color: white" aria-hidden="true"></i></a>
+          </figcaption>
+        </figure>
       </div>
-    </section>
-  </body>
+      <div class="everyone-else">
+        <figure class="figure-e">
+          <div class="figure-image-container-e">
+            <img class="figure-image-e" src="img/profiles/chenghao.png" alt="organizer" />
+          </div>
+          <figcaption>
+            <h5 class="figure-caption-title-e">Chenghao Li</h5>
+            <p class="figure-caption-e">Logistics</p>
+            <a href="https://github.com/chenghaoli36" target="_blank"><i
+              class="personal hvr-grow-shadow fab fa-github fa-lg" style="color: white" aria-hidden="true"></i></a>
+          </figcaption>
+        </figure>
+        <figure class="figure-e">
+          <div class="figure-image-container-e">
+            <img class="figure-image-e" src="img/profiles/yixuan.jpg" alt="organizer" />
+          </div>
+          <figcaption>
+            <h5 class="figure-caption-title-e">Yixuan Qiao</h5>
+            <p class="figure-caption-e">Tech</p>
+            <a href="https://github.com/yixqiao" target="_blank"><i
+              class="personal hvr-grow-shadow fab fa-github fa-lg" style="color: white" aria-hidden="true"></i></a>
+          </figcaption>
+        </figure>
+        <figure class="figure-e">
+          <div class="figure-image-container-e">
+            <img class="figure-image-e" src="img/profiles/aanika.png" alt="organizer" />
+          </div>
+          <figcaption>
+            <h5 class="figure-caption-title-e">Aanika Jain</h5>
+            <p class="figure-caption-e">Sponsorships</p>
+          </figcaption>
+        </figure>
+        <figure class="figure-e">
+          <div class="figure-image-container-e">
+            <img class="figure-image-e" src="img/profiles/kai.png" alt="organizer" />
+          </div>
+          <figcaption>
+            <h5 class="figure-caption-title-e">Kai McCormick</h5>
+            <p class="figure-caption-e">Tech</p>
+            <a href="https://github.com/kaidevrim" target="_blank"><i
+              class="personal hvr-grow-shadow fab fa-github fa-lg" style="color: white" aria-hidden="true"></i></a>
+          </figcaption>
+        </figure>
+      </div>
+
+    </div>
+
+
+
+  </section>
+  <section style="padding: 5vh 0vh 5vh 0vh; background: #151525">
+    <!-- logos since imo white and black are meh: https://www.flaticon.com/packs/social-media?word=social%20media -->
+    <div class="footer-container" style="text-align: center; display: block">
+      <div class="social-links">
+        <a href="https://discord.gg/NCpE8PD" style="display: inline-block" target="_blank">
+          <img class="social-logo" src="img/media/discord.svg" alt="Discord" />
+        </a>
+        <a href="https://www.linkedin.com/company/ThetaHacks" style="display: inline-block" target="_blank">
+          <img class="social-logo" src="img/media/linkedin.svg" alt="LinkedIn" />
+        </a>
+        <a class="social-link" href="https://www.instagram.com/thetahacks/" target="_blank">
+          <img class="social-logo" src="img/media/instagram.svg" alt="Instagram" />
+        </a>
+        <a class="social-link" href="mailto:hello@thetahacks.tech" target="_blank">
+          <img class="social-logo" src="img/media/gmail.svg" alt="Gmail" />
+        </a>
+        <a class="social-link" href="https://twitter.com/ThetaHacks" target="_blank">
+          <img class="social-logo" src="img/media/twitter.svg" alt="Twitter" />
+        </a>
+        <a class="social-link" href="https://github.com/ThetaHacks" target="_blank">
+          <img class="social-logo" src="img/media/cat.svg" alt="Cat" />
+        </a>
+        <a href="https://www.hackclub.com/bank" style="margin: 2% 20px; display: inline-block" target="_blank">
+          <img class="social-logo-2" src="img/media/bank.png" alt="Bank" />
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="copyright-wrapper" style="background: #101020">
+    <p id="copyright">
+      Copyright &copy; 2020 ThetaHacks, a 501(c)(3) non-profit
+      organization, fiscally sponsored by Hack Club Bank.
+    </p>
+  </section>
+  <!-- </body> -->
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/jquery.visible.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/sweetalert.min.js"></script>
+  <script src="js/vivus.js"></script>
+  <script src="js/velocity.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- </html> -->
+  </div>
+  </section>
+</body>
+
 </html>
