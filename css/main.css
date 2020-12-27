@@ -399,6 +399,7 @@ a:focus {
 
 #copyright-wrapper {
   padding: 2vh 20vw 2vh 20vw;
+  margin-bottom:-3vh;
 }
 
 #title-navbar-right {
