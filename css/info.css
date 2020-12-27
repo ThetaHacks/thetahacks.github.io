@@ -202,6 +202,7 @@ transform: translateY(-5px);
 
 #copyright-wrapper {
     padding: 2vh 20vw 2vh 20vw;
+    background: #0a0a1a;z-index:100000 !important;position:relative;
   }
 
   #copyright {
