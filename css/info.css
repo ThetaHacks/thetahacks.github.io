@@ -35,16 +35,68 @@ body {
 }
 
 a {
-    color: #b8d3d1;
+    color: #5bbee6;
 }
 
 
 a:hover {
-    color: #768891;
+    color: #7fb2cc;
     text-decoration: none;
     cursor: pointer;
 }
   
+
+/* ? super hot underline animation */
+.underline {
+    position: relative;
+    color: #5bbee6;
+    text-decoration: none;
+  }
+  .underline:hover {
+    color: #7fb2cc;
+  }
+  .underline:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  .underline::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #7fb2cc;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .underline2 {
+    position: relative;
+    color: #e9f9ff;
+    text-decoration: none;
+  }
+  .underline2:hover {
+    color: #e9f9ff;
+  }
+  .underline2:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  .underline2::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #e9f9ff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+  /* ? super hot underline animation end */
 
 .main-title {
     -webkit-user-select: none;
@@ -77,9 +129,15 @@ a:focus {
   outline-style: none !important;
 }
 
+strong {
+    color:#ddf5ff !important;
+}
+
 
 .titleh2 {
     padding: 5vh 4vw 0vh 4vw;text-align:center;font-size:2rem;
+    color:#ddf5ff !important;
+    font-weight:800 !important;
 }
 
 .titleh3 {
