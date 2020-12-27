@@ -12,6 +12,8 @@ body {
     background: url(../img/parallax/city2.jpg) no-repeat center center fixed;
     background-size: cover;
 
+    text-align:center;
+
     z-index:0;
 
     text-align: center;
@@ -148,11 +150,12 @@ strong {
 }
 
 .titleh3 {
-    padding: 2vh 4vw 0vh 4vw;text-align:center;font-size:1.5rem;
+    padding: 4vh 4vw 1vh 4vw;text-align:center;font-size:1.5rem;
 }
 
 .infop {
     padding: 2vh 10vw 0vh 10vw;margin:0;
+    text-align:center !important;
 }
 
 .social-logo {
@@ -167,6 +170,10 @@ display: inline-block;
 
 .social-logo:hover {
 transform: translateY(-5px);
+}
+
+ul {
+    text-align:left !important;
 }
 
 .social-logo-2 {
