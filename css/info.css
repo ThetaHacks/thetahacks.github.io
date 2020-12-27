@@ -24,6 +24,10 @@ ul {
   text-align: left;
 }
 
+.ul-other {
+    display: block !important;
+}
+
 
 .title-right {
     color: #ce7b91 !important;
