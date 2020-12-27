@@ -132,6 +132,8 @@ a:hover {
 .nonoverlay {
     z-index: 100 !important;
     position: relative;
+    max-width:1440px;
+    display:inline-block;
 }
 
 a:active,
