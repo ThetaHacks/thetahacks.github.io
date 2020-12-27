@@ -226,7 +226,14 @@ transform: translateY(-5px);
     z-index:5;
 }
 
+#backb {
+    font-size:1.5rem;
+}
+
 @media (max-width: 992px) {
+    #backb {
+        font-size:1rem !important;
+    }
     .titleh2 {
         font-size:1.7rem !important;
     }
@@ -249,6 +256,10 @@ transform: translateY(-5px);
 
     h3 {
         font-size: 1.4rem !important;
+    }
+
+    .main-title  {
+        font-size: 3.5rem !important;
     }
 }
 
