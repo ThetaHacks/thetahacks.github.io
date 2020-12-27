@@ -13,6 +13,13 @@ body {
     background-size: cover;
 
     z-index:0;
+
+    text-align: center;
+}
+
+ul {
+  display: inline-block;
+  text-align: left;
 }
 
 
