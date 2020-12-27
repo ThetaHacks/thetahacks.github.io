@@ -1,11 +1,7 @@
 console.log("This is ThetaHacks");
 
-var isSafari =
-  navigator.vendor &&
-  navigator.vendor.indexOf("Apple") > -1 &&
-  navigator.userAgent;
 
-if (isSafari) {
+if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
   // Special iPad css
   $("head").append(
     '<link rel="stylesheet" type="text/css" href="css/ipad.css">'
