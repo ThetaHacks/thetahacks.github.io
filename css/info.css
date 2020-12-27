@@ -3,11 +3,16 @@ body {
     min-width:100vw;
     min-height:100vh;
     max-width:100vw;
-    padding:0;
-    margin:0;
+    padding:0 !important;
+    margin:0 !important;
 
     color:#c0e8f9 !important;
     font-family: Montserrat !important;
+
+    background: url(../img/parallax/city2.jpg) no-repeat center center fixed;
+    background-size: cover;
+
+    z-index:0;
 }
 
 
@@ -29,6 +34,18 @@ body {
     font-weight: 300;
 }
 
+a {
+    color: #b8d3d1;
+}
+
+
+a:hover {
+    color: #768891;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+
 .main-title {
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -36,19 +53,40 @@ body {
     user-select: none;
     margin-top: 10vh;
 }
-  
 
-.overlay2 {
-    background-color: #101020cf;
-    min-width:100vw;
-    min-height:100vh;
+@media (max-width: 609px) {
+    .main-title {
+        margin-top: 0 !important;
+    }
+
+    .title-left {
+        margin-top: 10vh;
+    }
+}
+  
+.nonoverlay {
+    z-index: 100 !important;
+    position: relative;
 }
 
-.overlay {
-    background: url(../img/parallax/city2.jpg) no-repeat center center fixed;
-    background-size: cover;
-    min-width:100vw;
-    min-height:100vh;
+a:active,
+a:focus {
+  outline: 0 !important;
+  border: none !important;
+  -moz-outline-style: none !important;
+  outline-style: none !important;
+}
+
+
+.overlay2 {
+    opacity:    0.7; 
+    background: #000; 
+    width:      100%;
+    height:     100%; 
+    top:        0; 
+    left:       0; 
+    position:   fixed; 
+    z-index:5;
 }
 
 
@@ -61,7 +99,8 @@ html {
     overflow: hidden !important;
     overflow-y: auto !important;
     scroll-behavior: smooth;
-
+    padding:0;
+    margin:0;
 }
 
 @font-face {
