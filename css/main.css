@@ -909,6 +909,11 @@ pre {
   color: gainsboro;
   font-size: 2rem;
   margin-bottom: 1%;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 
 .arrow-container {

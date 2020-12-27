@@ -1,5 +1,5 @@
 body {
-    font-size: 1.1rem !important;
+    font-size: 1.1rem;
     min-width:100vw;
     min-height:100vh;
     max-width:100vw;
@@ -220,6 +220,21 @@ transform: translateY(-5px);
     position:   fixed; 
     z-index:5;
 }
+
+@media (max-width: 992px) {
+    .titleh2 {
+        font-size:2.5rem !important;
+    }
+
+.titleh3 {
+    font-size:2rem !important;
+}
+
+    body {
+        font-size: 1.3rem !important;
+    }
+}
+
 
 
 h3 {
