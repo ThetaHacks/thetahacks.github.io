@@ -35,6 +35,18 @@
   
     <div class="nonoverlay">
 
+      <div class="banner" id="banner" style="padding:10px; text-align:center;z-index:10000000;position:fixed;background:rgb(105, 0, 0);width:100vw;left:0;top:0;">
+        <div class="banner-content">
+        <p style="margin:0">You are viewing this page in Safari. For best performance, use <a href="https://www.google.com/chrome/" target="_blank">Chrome</a> or <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a>.<br><u><span onclick="hide(); return false" style="cursor: pointer;">Dismiss</span></u></p>
+        </div>
+        </div>
+
+        <script>
+          function hide() {
+            document.getElementById('banner').style.display = "none"; 
+          }
+        </script>
+
       <a href="/" style="position:fixed; top:2vh; left:3vw;font-size:1.5rem;background:#04040a;padding:10px 20px;border-radius:20px;"><span class="underline">Back to main site</span></a>
 
       <div class="title-container" style="text-align:center;">
@@ -52,9 +64,9 @@
 
       <h3 style="padding: 5vh 4vw;text-align:center">“Bringing the world of technology straight to the next generation of engineers”</h3>
 
-      <h2 style="padding: 5vh 4vw 0vh 4vw;text-align:center;font-size:3rem;color:#ddf5ff !important;
-      font-weight:800 !important;">Links</h2>
-      <p style="padding: 2vh 4vw;text-align:center;font-size:2rem;"><a href="https://linktr.ee/thetahacks" target="_blank" class="underline">Linktree</a> ~ <a href="https://thetahacks.tech/signup" target="_blank" class="underline">Signup</a>
+      <h2 style="padding: 5vh 4vw 0vh 4vw;text-align:center;color:#ddf5ff !important;
+      font-weight:800 !important;" id="h21">Links</h2>
+      <p style="padding: 2vh 4vw;text-align:center;" id="p2"><a href="https://linktr.ee/thetahacks" target="_blank" class="underline">Linktree</a> ~ <a href="https://thetahacks.tech/signup" target="_blank" class="underline">Signup</a>
       ~ <a href="http://thetahacks.devpost.com" target="_blank" class="underline">Devpost</a> ~ <a href="https://discord.gg/NCpE8PD" target="_blank" class="underline">Discord</a> ~ <a href="https://docs.google.com/spreadsheets/d/10dC7aha67TYWmRGh-0125gxFclHisrzf7x94adIuwWU/edit?usp=sharing" target="_blank" class="underline">Schedule</a></p>
 
       <h2 class="titleh2">What is ThetaHacks?</h2>

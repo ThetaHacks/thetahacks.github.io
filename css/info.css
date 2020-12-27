@@ -19,6 +19,10 @@ body {
     text-align: center;
 }
 
+#p2 {
+    font-size:2rem;
+}
+
 ul {
   display: inline-block;
   text-align: left;
@@ -224,16 +228,32 @@ transform: translateY(-5px);
 
 @media (max-width: 992px) {
     .titleh2 {
-        font-size:2.5rem !important;
+        font-size:1.7rem !important;
     }
 
-.titleh3 {
-    font-size:2rem !important;
-}
+    .titleh3 {
+        font-size:1.3rem !important;
+    }
 
     body {
-        font-size: 1.3rem !important;
+        font-size: 0.8rem !important;
     }
+
+    #p2 {
+        font-size:1.2rem !important;
+    }
+
+    #h21 {
+        font-size:1.9rem !important;
+    }
+
+    h3 {
+        font-size: 1.4rem !important;
+    }
+}
+
+#h21 {
+    font-size:3rem;
 }
 
 

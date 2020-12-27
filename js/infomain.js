@@ -5,4 +5,7 @@ if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
   $("head").append(
     '<link rel="stylesheet" type="text/css" href="css/ipad2.css">'
   );
+  document.getElementById('banner').style.display = "block"; 
+} else {
+  document.getElementById('banner').style.display = "none"; 
 }
