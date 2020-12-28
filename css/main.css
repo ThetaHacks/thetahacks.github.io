@@ -9,6 +9,7 @@ a {
 
 body {
   font-size: 1.1rem !important;
+  background-color: black;
 }
 
 h3 {
@@ -148,9 +149,8 @@ html {
 }
 
 #schedule-section {
-  height: 800px;
+  height: 850px;
   padding: 5vh 0vh 5vh 0vh;
-  background: #181828;
 }
 
 #title-i {

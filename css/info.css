@@ -10,6 +10,7 @@ body {
     font-family: Montserrat !important;
 
     background: url(../img/parallax/city2.jpg) no-repeat center center fixed;
+    background-color: black;
     background-size: cover;
 
     text-align:center;
