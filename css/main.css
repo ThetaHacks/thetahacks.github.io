@@ -91,6 +91,10 @@ figure {
   transform: scale(1.05);
 }
 
+.row100:hover {
+  background-color: #404060 !important;
+}
+
 .figure-image-e {
   width: 12vw;
   height: 12vw;
