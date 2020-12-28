@@ -1,6 +1,10 @@
 a {
-  color: #b8d3d1;
-  font-family: "CircularStd";
+  color: #5bbee6;
+  font-family: Montserrat;
+}
+
+.navbar-brand {
+  font-family: "CircularSTD";
 }
 
 body {
@@ -242,6 +246,15 @@ a:focus {
   margin-left: 5px;
 }
 
+.container {
+  padding-top: 10px !important;
+}
+
+.nav-link {
+  font-family: "CircularSTD" !important;
+  font-size: 20px;
+}
+
 @media (max-width: 992px) {
   .col-md-6 {
     min-width: 80vw;
@@ -410,7 +423,7 @@ a:focus {
   margin-left: 70px;
   font-size: 30px;
   position: absolute;
-  transform: translateY(-19px);
+  transform: translateY(-20px);
 }
 
 .faq-page {
@@ -458,6 +471,10 @@ a:focus {
   background-color: #101020cf;
 }
 
+#navbar-other-title {
+  font-size: 28px;
+}
+
 @media (max-width: 700px) {
   #title-navbar-left {
     margin-left: 10px !important;
@@ -465,8 +482,11 @@ a:focus {
     transform: translateY(-12px) translateX(45px) !important;
   }
   #title-navbar-right {
-    transform: translateY(-13px) translateX(122px) !important;
+    transform: translateY(-12px) translateX(122px) !important;
     font-size: 20px !important;
+  }
+  #navbar-other-title {
+    font-size: 18px !important;
   }
   #mainlogo {
     height: 30px !important;
@@ -610,7 +630,7 @@ span.active,
 }
 
 a:hover {
-  color: #768891;
+  color: #7fb2cc;
   text-decoration: none;
   cursor: pointer;
 }
@@ -696,6 +716,11 @@ h1 {
 .title-container {
   padding-top: 2vh;
   z-index: 30;
+}
+
+.nav-link,
+.navbar-brand {
+  color: #b8d3d1 !important;
 }
 
 .title-right {
@@ -1131,7 +1156,7 @@ table.schedule1 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #ffffff;
+  background-color: #7fb2cc;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
