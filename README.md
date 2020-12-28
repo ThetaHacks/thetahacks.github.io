@@ -12,16 +12,14 @@ We are, however, hosting a digital hackathon on January 15-18, 2021! Register on
 
 ### Team
 
-We are not accepting any more team members. The only way to join our team is by an invitation from one of the coordinators.
-
-<strong>Coordinators</strong>: Anshul Gupta, Rohan Bansal,  Andy Li<br>
-<strong>Team</strong>: Rigel Arana Fantozzi, Aanika Jain, Yixuan Qiao, Adarsh Krishnan, Kai Mccormick<br>
+<strong>Coordinators</strong>: Anshul Gupta, Rohan Bansal, Andy Li<br>
+<strong>Team</strong>: Chenghao Li, Aanika Jain, Yixuan Qiao, Kai McCormick<br>
 
 ### Website
 
 https://www.thetahacks.tech
 
-Website created by **Rohan-Bansal**, **theAnshulGupta**, **AndyLi23**, **yixqiao**, and **KaiDevrim**.
+Website created by **AndyLi23**, **theAnshulGupta**, **KaiDevrim**, **Rohan-Bansal**, and **yixqiao**.
 
 ### Sign up Today!
 
