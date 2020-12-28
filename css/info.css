@@ -148,6 +148,10 @@ a:hover {
     margin-top: 10vh;
 }
 
+#d1 {
+    margin-left:100px;margin-right:100px;
+}
+
 @media (max-width: 609px) {
     .main-title {
         margin-top: 0 !important;
@@ -299,6 +303,10 @@ transform: translateY(-5px);
     }
     #h23 {
         font-size: 2rem !important;
+    }
+
+    #d1 {
+        margin-left:10vw;margin-right:10vw;
     }
 }
 
