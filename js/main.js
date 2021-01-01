@@ -1,15 +1,14 @@
 console.log("This is ThetaHacks");
 
-var isSafari =
-  navigator.vendor &&
-  navigator.vendor.indexOf("Apple") > -1 &&
-  navigator.userAgent;
 
-if (isSafari) {
+if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
   // Special iPad css
   $("head").append(
     '<link rel="stylesheet" type="text/css" href="css/ipad.css">'
   );
+  document.getElementById('banner').style.display = "block"; 
+} else {
+  document.getElementById('banner').style.display = "none"; 
 }
 
 function showSVG() {
@@ -213,69 +212,69 @@ $(function () {
   });
 });
 
-var shiftDay = "Saturday";
+var shiftDay = "Saturday 1/16";
 // function shift() {
-//   if (shiftDay == "Saturday") {
-//     document.getElementById("day").innerHTML = "Sunday";
+//   if (shiftDay == "Saturday 1/16") {
+//     document.getElementById("day").innerHTML = "Sunday 1/17";
 //     document.getElementById("sched1").style.display = "none";
 //     document.getElementById("sched2").style.display = "block";
 //   }
 //   else if (shiftDay == '')
 //   else {
-//     document.getElementById("day").innerHTML = "Saturday";
+//     document.getElementById("day").innerHTML = "Saturday 1/16";
 //     document.getElementById("sched2").style.display = "none";
 //     document.getElementById("sched1").style.display = "block";
 //   }
 // }
 function shiftBackward() {
-  if (shiftDay == "Saturday") {
-    shiftDay = "Friday";
-    document.getElementById("day").innerHTML = "Friday";
+  if (shiftDay == "Saturday 1/16") {
+    shiftDay = "Friday 1/15";
+    document.getElementById("day").innerHTML = "Friday 1/15";
     document.getElementById("schedSat").style.display = "none";
     document.getElementById("schedFri").style.display = "block";
   }
-  else if (shiftDay == "Friday") {
-    shiftDay = "Monday";
-    document.getElementById("day").innerHTML = "Monday";
+  else if (shiftDay == "Friday 1/15") {
+    shiftDay = "Monday 1/18";
+    document.getElementById("day").innerHTML = "Monday 1/18";
     document.getElementById("schedFri").style.display = "none";
     document.getElementById("schedMon").style.display = "block";
   }
-  else if (shiftDay == "Monday") {
-    shiftDay = "Sunday";
-    document.getElementById("day").innerHTML = "Sunday";
+  else if (shiftDay == "Monday 1/18") {
+    shiftDay = "Sunday 1/17";
+    document.getElementById("day").innerHTML = "Sunday 1/17";
     document.getElementById("schedMon").style.display = "none";
     document.getElementById("schedSun").style.display = "block";
   }
-  else if (shiftDay == "Sunday") {
-    shiftDay = "Saturday";
-    document.getElementById("day").innerHTML = "Saturday";
+  else if (shiftDay == "Sunday 1/17") {
+    shiftDay = "Saturday 1/16";
+    document.getElementById("day").innerHTML = "Saturday 1/16";
     document.getElementById("schedSun").style.display = "none";
     document.getElementById("schedSat").style.display = "block";
   }
 }
 
 function shiftForward() {
-  if (shiftDay == "Saturday") {
-    shiftDay = "Sunday";
-    document.getElementById("day").innerHTML = "Sunday";
+  if (shiftDay == "Saturday 1/16") {
+    shiftDay = "Sunday 1/17";
+    document.getElementById("day").innerHTML = "Sunday 1/17";
     document.getElementById("schedSat").style.display = "none";
     document.getElementById("schedSun").style.display = "block";
   }
-  else if (shiftDay == "Sunday") {
-    shiftDay = "Monday";
-    document.getElementById("day").innerHTML = "Monday";
+  else if (shiftDay == "Sunday 1/17") {
+    shiftDay = "Monday 1/18";
+    document.getElementById("day").innerHTML = "Monday 1/18";
     document.getElementById("schedSun").style.display = "none";
     document.getElementById("schedMon").style.display = "block";
   }
-  else if (shiftDay == "Monday") {
-    shiftDay = "Friday";
-    document.getElementById("day").innerHTML = "Friday";
+  else if (shiftDay == "Monday 1/18") {
+    shiftDay = "Friday 1/15";
+    document.getElementById("day").innerHTML = "Friday 1/15";
     document.getElementById("schedMon").style.display = "none";
     document.getElementById("schedFri").style.display = "block";
   }
-  else if (shiftDay == "Friday") {
-    shiftDay = "Saturday";
-    document.getElementById("day").innerHTML = "Saturday";
+  else if (shiftDay == "Friday 1/15") {
+    shiftDay = "Saturday 1/16";
+    document.getElementById("day").innerHTML = "Saturday 1/16";
     document.getElementById("schedFri").style.display = "none";
     document.getElementById("schedSat").style.display = "block";
   }
@@ -314,9 +313,9 @@ function doThis() {
   document.getElementById("timestamp").innerText = timeEl.innerText;
   document.getElementById("timestamp").style.left = positions[time] + "%";
   if (positions[time] >= 18) {
-    document.getElementById("daystamp").innerHTML = "Sunday";
+    document.getElementById("daystamp").innerHTML = "Sunday 1/17";
   } else {
-    document.getElementById("daystamp").innerHTML = "Saturday";
+    document.getElementById("daystamp").innerHTML = "Saturday 1/16";
   }
   document.getElementById("daystamp").style.left = positions[time] + "%";
   arrow.style.left = positions[time] + "%";
@@ -348,7 +347,7 @@ document.getElementById("timestamp").style.left = "1%";
 document.getElementById("timestamp").innerText = "9:00 AM";
 
 document.getElementById("daystamp").style.left = "1%";
-document.getElementById("daystamp").innerText = "Saturday";
+document.getElementById("daystamp").innerText = "Saturday 1/16";
 
 function calcHyperlinkPos() {
   // Set hyperlinks to be at the correct positions
@@ -357,8 +356,8 @@ function calcHyperlinkPos() {
 }
 calcHyperlinkPos();
 
-$("#table-saturday tr").click(function () {
+$("#table-Saturday 1/16 tr").click(function () {
   var selected = $(this).hasClass("highlight");
-  $("#table-saturday tr").removeClass("highlight");
+  $("#table-Saturday 1/16 tr").removeClass("highlight");
   if (!selected) $(this).addClass("highlight");
 });

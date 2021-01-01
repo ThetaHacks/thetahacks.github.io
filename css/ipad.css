@@ -7,3 +7,9 @@
     background: url(../img/parallax/city2.jpg) no-repeat center center scroll !important; 
     background-size: cover !important; 
 }
+
+
+#mainlogo {
+    animation: none !important;
+    transform: translateY(-25px);
+}

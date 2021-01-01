@@ -1,0 +1,5 @@
+body {
+    background: url(../img/parallax/city2.jpg) no-repeat center center scroll !important;
+    background-size: cover !important;
+    background-color: #000000 !important;
+}

@@ -1,10 +1,15 @@
 a {
-  color: #b8d3d1;
-  font-family: "CircularStd";
+  color: #5bbee6;
+  font-family: Montserrat;
+}
+
+.navbar-brand {
+  font-family: "CircularSTD";
 }
 
 body {
   font-size: 1.1rem !important;
+  background-color: black;
 }
 
 h3 {
@@ -17,6 +22,12 @@ h3 {
 
 ::-moz-selection {
   background: rgba(206, 123, 145, 0.7);
+}
+
+#infopagelink {
+  font-size:1.5rem;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 ::selection {
@@ -81,6 +92,10 @@ figure {
   transform: scale(1.05);
 }
 
+.row100:hover {
+  background-color: #404060 !important;
+}
+
 .figure-image-e {
   width: 12vw;
   height: 12vw;
@@ -134,9 +149,8 @@ html {
 }
 
 #schedule-section {
-  height: 800px;
+  height: 850px;
   padding: 5vh 0vh 5vh 0vh;
-  background: #181828;
 }
 
 #title-i {
@@ -186,6 +200,7 @@ html {
 .stuf1 {
   display: inline-table;
   padding: 20px 60px;
+  min-width:700px;
 }
 
 #about-section {
@@ -196,7 +211,9 @@ html {
   text-align: left;
 }
 
-#ul-1 {
+#ul-1,
+#ul-2,
+#ul-3 {
   color: #fff;
   margin: 0;
   padding: 0;
@@ -220,6 +237,29 @@ a:focus {
   outline-style: none !important;
 }
 
+
+@media (max-width: 500px) {
+  .stuf1 {
+    min-width: 0 !important;
+  }
+}
+
+
+.fa-external-link-alt {
+  font-size: 1.2rem !important;
+  margin-left: 5px;
+}
+
+.container {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.nav-link {
+  font-family: "CircularSTD" !important;
+  font-size: 20px;
+}
+
 @media (max-width: 992px) {
   .col-md-6 {
     min-width: 80vw;
@@ -228,6 +268,17 @@ a:focus {
     font-size: 0.8rem !important;
   }
   .text3 {
+    font-size: 0.8rem !important;
+  }
+
+
+  #infopagelink {
+    font-size:1.1rem !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+
+  .fa-external-link-alt {
     font-size: 0.8rem !important;
   }
   .prof {
@@ -247,7 +298,7 @@ a:focus {
     cursor: pointer;
     font-size: 1rem;
     border-radius: 4px;
-    margin: 0px 10px;
+    margin: 10px 10px;
   }
   .figure-caption-title {
     font-size: 1.6rem !important;
@@ -367,6 +418,7 @@ a:focus {
 
 .gb {
   box-shadow: 2px 5px 10px #101030;
+  margin-top: 30px;
 }
 
 .gb:hover {
@@ -389,12 +441,13 @@ a:focus {
 
 #copyright-wrapper {
   padding: 2vh 20vw 2vh 20vw;
+  margin-bottom:-3vh;
 }
 
 #title-navbar-right {
   color: #ce7b91;
   font-size: 30px;
-  transform: translateY(-21px) translateX(170px);
+  transform: translateY(-20px) translateX(170px);
   position: absolute;
 }
 
@@ -424,6 +477,10 @@ a:focus {
   background-color: #101020cf;
 }
 
+#navbar-other-title {
+  font-size: 28px;
+}
+
 @media (max-width: 700px) {
   #title-navbar-left {
     margin-left: 10px !important;
@@ -431,8 +488,11 @@ a:focus {
     transform: translateY(-12px) translateX(45px) !important;
   }
   #title-navbar-right {
-    transform: translateY(-13px) translateX(122px) !important;
+    transform: translateY(-12px) translateX(122px) !important;
     font-size: 20px !important;
+  }
+  #navbar-other-title {
+    font-size: 18px !important;
   }
   #mainlogo {
     height: 30px !important;
@@ -451,7 +511,7 @@ a:focus {
     cursor: pointer;
     font-size: 1rem;
     border-radius: 4px;
-    margin: 0px 5px;
+    margin: 10px 5px;
   }
   .figure-caption-title {
     font-size: 3vw !important;
@@ -576,7 +636,7 @@ span.active,
 }
 
 a:hover {
-  color: #768891;
+  color: #7fb2cc;
   text-decoration: none;
   cursor: pointer;
 }
@@ -662,6 +722,11 @@ h1 {
 .title-container {
   padding-top: 2vh;
   z-index: 30;
+}
+
+.nav-link,
+.navbar-brand {
+  color: #b8d3d1 !important;
 }
 
 .title-right {
@@ -812,7 +877,7 @@ a.questionLink:hover {
 }
 
 .mentor {
-  margin-top: 4vh;
+  margin-top: 2vh;
   display: inline-block;
 }
 
@@ -898,6 +963,11 @@ pre {
   color: gainsboro;
   font-size: 2rem;
   margin-bottom: 1%;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 
 .arrow-container {
@@ -1069,7 +1139,7 @@ table.schedule1 {
 }
 
 .speakers figure {
-  padding: 3%;
+  margin-top: 2vh;
 }
 
 /* ? super hot underline animation */
@@ -1092,7 +1162,7 @@ table.schedule1 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #ffffff;
+  background-color: #7fb2cc;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
