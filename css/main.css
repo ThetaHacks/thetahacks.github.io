@@ -121,6 +121,12 @@ figure {
   margin-bottom: 0.2rem;
 }
 
+.figure-caption-e2 {
+  color: rgb(182, 182, 182);
+  font-size: 0.8rem !important;
+  margin-bottom: 0.1rem;
+}
+
 .figure-caption-title {
   margin-top: 20px;
   color: white;
@@ -520,6 +526,9 @@ a:focus {
   }
   .figure-caption-e {
     font-size: 0.6rem !important;
+  }
+  .figure-caption-e2 {
+    font-size: 0.5rem !important;
   }
   .figure-caption-title-e {
     font-size: 0.8rem !important;
