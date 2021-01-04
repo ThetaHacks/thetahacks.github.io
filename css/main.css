@@ -467,7 +467,7 @@ a:focus {
 .info-container {
   text-align: center;
   clear: both;
-  background: url(../img/parallax/blue.jpg) no-repeat center center fixed;
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/parallax/blue.jpeg) no-repeat center center fixed;
   background-size: cover;
   padding: 5vh 5vw;
 }
