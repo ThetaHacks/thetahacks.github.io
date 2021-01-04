@@ -8,6 +8,11 @@
     background-size: cover !important; 
 }
 
+.info-container {
+    background: url(../img/parallax/blue.jpg) no-repeat center center scroll !important;
+    background-size: cover !important;
+  }
+
 
 #mainlogo {
     animation: none !important;
