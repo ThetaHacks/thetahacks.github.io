@@ -7,8 +7,15 @@ if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
     '<link rel="stylesheet" type="text/css" href="css/ipad.css">'
   );
   document.getElementById('banner').style.display = "block"; 
-} else {
-  document.getElementById('banner').style.display = "none"; 
+}
+
+var ua = navigator.userAgent.toLowerCase();
+var isAndroid = ua.indexOf("android") > -1;
+if(isAndroid) {
+  $("head").append(
+    '<link rel="stylesheet" type="text/css" href="css/ipad.css">'
+  );
+  document.getElementById('banner').style.display = "block"; 
 }
 
 function showSVG() {
