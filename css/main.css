@@ -209,7 +209,7 @@ html {
 }
 
 
-@media (max-width: 1073px) {
+@media (max-width: 1300px) {
   .infodiv {
     text-align: left !important;
   }
