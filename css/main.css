@@ -1218,11 +1218,11 @@ table.schedule1 {
 /* ? super hot underline animation */
 .underline {
   position: relative;
-  color: #ffffff;
+  color: #65c8fa;
   text-decoration: none;
 }
 .underline:hover {
-  color: #ffffff;
+  color: #7fb2cc;
 }
 .underline:hover::before {
   visibility: visible;
