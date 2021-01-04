@@ -382,12 +382,23 @@ a:focus {
   display: flex;
   justify-content: center;
   flex: 1 calc(240px + 7vw);
+  margin-top: 20px;
 }
 
 @media (min-width: 1700px) {
   .sponsor-row > a {
     min-width: 500px !important;
   }
+}
+
+@media (min-width: 2000px) {
+  .sponsor-row > a {
+    min-width: 600px !important;
+  }
+}
+
+.sponsor-row > a > img:hover {
+  transform: scale(1.3);
 }
 
 .sponsor-row > a > img {
