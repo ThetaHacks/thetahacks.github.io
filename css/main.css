@@ -208,10 +208,15 @@ html {
   }
 }
 
+@media (max-width: 1406px) {
+  .stuf1 {
+    min-width: 700px;
+  }
+}
+
 .stuf1 {
   display: inline-table;
   padding: 20px 60px;
-  min-width: 700px;
 }
 
 #about-section {
