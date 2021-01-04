@@ -361,3 +361,16 @@ $("#table-Saturday 1/16 tr").click(function () {
   $("#table-Saturday 1/16 tr").removeClass("highlight");
   if (!selected) $(this).addClass("highlight");
 });
+
+function leftArrow() {
+  speaker1 = document.getElementById('speakers-1');
+  speaker2 = document.getElementById('speakers-2');
+  speaker3 = document.getElementById('speakers-3');
+
+  if (speaker1.style.display === 'flex') {
+    speaker1.style.display = 'none';
+    speaker3.style.display = 'flex';
+  }
+  console.log("LeftArrow clicked!");
+  console.log(speaker1.style.display);
+}

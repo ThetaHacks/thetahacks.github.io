@@ -1150,6 +1150,18 @@ table.schedule1 {
   margin-top: 2vh;
 }
 
+#speakers-1 {
+  display: flex;
+}
+
+#speakers-2 {
+  display: none;
+}
+
+#speakers-3 {
+  display: none;
+}
+
 /* ? super hot underline animation */
 .underline {
   position: relative;
