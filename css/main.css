@@ -375,13 +375,19 @@ a:focus {
 }
 
 .sponsor-row > :not(:only-child) {
-  padding: 1rem;
+  padding: 0.7rem;
 }
 
 .sponsor-row > a {
   display: flex;
   justify-content: center;
-  flex: 1 calc(240px + 7 * 1vw);
+  flex: 1 calc(240px + 7vw);
+}
+
+@media (min-width: 1700px) {
+  .sponsor-row > a {
+    min-width: 500px !important;
+  }
 }
 
 .sponsor-row > a > img {
@@ -390,7 +396,8 @@ a:focus {
 }
 
 #sponsors-sec img {
-  max-height: calc(30px + 4 * 1vw);
+  height: calc(30px + 2vw);
+  max-height: 100px;
   max-width: auto;
 }
 

@@ -15,6 +15,7 @@ window.mobileCheck = function() {
   return check;
 };
 
+
 console.log(window.mobileCheck());
 
 if(window.mobileCheck()) {
