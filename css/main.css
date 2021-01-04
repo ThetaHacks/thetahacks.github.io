@@ -1167,8 +1167,9 @@ table.schedule1 {
 }
 
 .speaker-arrow {
-  margin-left: 48%;
   position: relative;
+  width: 140px;
+  margin: auto;
 }
 
 .left-arrow {
@@ -1176,14 +1177,13 @@ table.schedule1 {
 	-webkit-border-radius:42px;
 	-moz-border-radius:42px;
 	border-radius:42px;
-	display:inline-block;
 	cursor:pointer;
 	font-size:20px;
 	padding:13px 23px;
   text-decoration:none;
   color: gainsboro;
   border-style: none;
-  margin: 5px;
+  
 }
 
 .right-arrow {
@@ -1191,14 +1191,14 @@ table.schedule1 {
 	-webkit-border-radius:42px;
 	-moz-border-radius:42px;
 	border-radius:42px;
-	display:inline-block;
 	cursor:pointer;
 	font-size:20px;
 	padding:13px 23px;
   text-decoration:none;
   color: gainsboro;
   border-style: none;
-  margin: 5px;
+  margin-left: 20px;
+
 }
 
 /* ? super hot underline animation */
