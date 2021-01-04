@@ -208,23 +208,24 @@ html {
   }
 }
 
-@media (max-width: 1406px) {
-  .stuf1 {
-    min-width: 700px;
+
+@media (max-width: 1073px) {
+  .infodiv {
+    text-align: left !important;
   }
+}
+
+.infodiv {
+  text-align: center;
 }
 
 .stuf1 {
   display: inline-table;
-  padding: 20px 60px;
+  padding: 20px 20px 40px 20px;
 }
 
 #about-section {
   padding: 5vh 20vw 5vh 20vw;
-}
-
-.infodiv {
-  text-align: left;
 }
 
 #ul-1,
@@ -253,11 +254,6 @@ a:focus {
   outline-style: none !important;
 }
 
-@media (max-width: 500px) {
-  .stuf1 {
-    min-width: 0 !important;
-  }
-}
 
 .fa-external-link-alt {
   font-size: 1.2rem !important;
@@ -278,6 +274,12 @@ a:focus {
   .col-md-6 {
     min-width: 80vw;
   }
+
+  .info-container {
+    padding-left: 10vw !important;
+    padding-right: 10vw !important;
+  }
+
   .stuf1 {
     font-size: 0.8rem !important;
   }
@@ -443,7 +445,7 @@ a:focus {
   clear: both;
   background: url(../img/parallax/blue.jpg) no-repeat center center fixed;
   background-size: cover;
-  padding: 5vh 10vw;
+  padding: 5vh 5vw;
 }
 
 .faq-page {
