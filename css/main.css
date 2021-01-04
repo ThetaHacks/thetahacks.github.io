@@ -232,7 +232,7 @@ html {
 }
 
 #events {
-  padding: 5vh 10vw;
+  padding: 0;
   background: #101020;
 }
 
@@ -431,6 +431,14 @@ a:focus {
   font-size: 30px;
   position: absolute;
   transform: translateY(-20px);
+}
+
+.info-container {
+  text-align: center;
+  clear: both;
+  background: url(../img/parallax/blue.jpg) no-repeat center center fixed;
+  background-size: cover;
+  padding: 5vh 10vw;
 }
 
 .faq-page {
