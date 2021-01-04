@@ -398,7 +398,7 @@ a:focus {
 #sponsors-sec img {
   height: calc(30px + 2vw);
   max-height: 100px;
-  max-width: auto;
+  min-height: 50px
 }
 
 #sponsor-list {
