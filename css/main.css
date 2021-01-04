@@ -209,9 +209,7 @@ html {
 }
 
 .stuf1 {
-  display: inline-table;
   padding: 20px 60px;
-  min-width: 700px;
 }
 
 #about-section {
@@ -248,11 +246,6 @@ a:focus {
   outline-style: none !important;
 }
 
-@media (max-width: 500px) {
-  .stuf1 {
-    min-width: 0 !important;
-  }
-}
 
 .fa-external-link-alt {
   font-size: 1.2rem !important;
