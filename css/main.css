@@ -25,7 +25,7 @@ h3 {
 }
 
 #infopagelink {
-  font-size:1.5rem;
+  font-size: 1.5rem;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -107,7 +107,6 @@ figure {
 }
 
 .speakers figure {
-  
 }
 
 .figure-caption {
@@ -124,7 +123,7 @@ figure {
 .figure-caption-e2 {
   color: rgb(182, 182, 182);
   font-size: 0.8rem !important;
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.25rem;
 }
 
 .figure-caption-title {
@@ -212,7 +211,7 @@ html {
 .stuf1 {
   display: inline-table;
   padding: 20px 60px;
-  min-width:700px;
+  min-width: 700px;
 }
 
 #about-section {
@@ -249,13 +248,11 @@ a:focus {
   outline-style: none !important;
 }
 
-
 @media (max-width: 500px) {
   .stuf1 {
     min-width: 0 !important;
   }
 }
-
 
 .fa-external-link-alt {
   font-size: 1.2rem !important;
@@ -283,9 +280,8 @@ a:focus {
     font-size: 0.8rem !important;
   }
 
-
   #infopagelink {
-    font-size:1.1rem !important;
+    font-size: 1.1rem !important;
     margin-left: 10px !important;
     margin-right: 10px !important;
   }
@@ -446,7 +442,7 @@ a:focus {
 
 #copyright-wrapper {
   padding: 2vh 20vw 2vh 20vw;
-  margin-bottom:-3vh;
+  margin-bottom: -3vh;
 }
 
 #title-navbar-right {
