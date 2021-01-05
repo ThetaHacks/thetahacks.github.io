@@ -361,7 +361,6 @@ a:focus {
 }
 
 .sponsor {
-  width: 250px !important;
   margin: 5% 2% !important;
 }
 
@@ -385,17 +384,6 @@ a:focus {
   margin-top: 20px;
 }
 
-@media (min-width: 1700px) {
-  .sponsor-row > a {
-    min-width: 500px !important;
-  }
-}
-
-@media (min-width: 2000px) {
-  .sponsor-row > a {
-    min-width: 600px !important;
-  }
-}
 
 .sponsor-row > a:hover {
   transform: scale(1.25);
@@ -413,9 +401,13 @@ a:focus {
 
 
 #sponsors-sec img {
-  height: calc(30px + 2vw);
-  max-height: 100px;
-  min-height: 50px
+  max-width: 300px;
+}
+
+@media (max-width: 992px) {
+  #sponsors-sec img {
+    max-width: 50vw;
+  }
 }
 
 #sponsor-list {
