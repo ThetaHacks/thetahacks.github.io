@@ -361,7 +361,7 @@ a:focus {
 }
 
 .sponsor {
-  margin: 5% 2% !important;
+  margin: 30px !important;
 }
 
 .sponsor-row {
@@ -386,7 +386,7 @@ a:focus {
 
 
 .sponsor-row > a:hover {
-  transform: scale(1.25);
+  transform: scale(1.15);
 }
 
 .sponsor-row > a > img {
