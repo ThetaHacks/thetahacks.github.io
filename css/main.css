@@ -402,6 +402,7 @@ a:focus {
 
 #sponsors-sec img {
   max-width: 300px;
+  max-height: 200px;
 }
 
 @media (max-width: 992px) {
