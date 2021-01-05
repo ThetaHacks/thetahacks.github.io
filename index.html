@@ -115,12 +115,12 @@
           /><span id="title-navbar-left">Theta</span>
           <span id="title-navbar-right"
             >Hacks
-            <span
+            <!-- <span
               id="navbar-other-title"
               style="font-family: Merriweather; font-weight: 600"
               >I</span
-            ></span
-          >
+            > -->
+          </span>
         </a>
         <button
           data-toggle="collapse"
@@ -203,7 +203,7 @@
           <button
             class="gb gb-bordered hover-slide hover-fill reverse discord animate__animated animate__fadeInUp"
             id="gb12"
-            onclick="location.href='https://discord.gg/NCpE8PD'"
+            onclick=" window.open('https://thetahacks.tech/discord', '_blank'); return false;"
           >
             <span style="font-family: Montserrat">Discord Server</span>
           </button>
@@ -267,7 +267,8 @@
           <button
             class="gb gb-bordered hover-slide hover-fill reverse discord animate__animated animate__fadeInUp"
             id="gb12"
-            onclick="location.href='https://thetahacks.devpost.com/'"
+            onclick=" window.open('https://thetahacks.tech/devpost', '_blank'); return false;"
+            target="_blank"
           >
             <span style="font-family: Montserrat">Devpost</span>
           </button>
@@ -314,7 +315,7 @@
           free swag and merch you get. <br /><br />
           <span class="underline" id="infopagelink" style="color: inherit"
             ><a href="/info/" target="_blank"
-              >Info page<i
+              >Info Page<i
                 class="fa fa-external-link-alt"
                 aria-hidden="true"
               ></i> </a
@@ -357,7 +358,6 @@
             height: 1px;
             border-color: gainsboro;
             background-color: gainsboro;
-            margin-bottom: 2%;
           "
         />
 
@@ -386,7 +386,7 @@
                 Business tier plan on EchoAR
               </li>
               <li style="list-style-type: circle">
-                Wolfram|One platform access and prizes
+                Wolfram|One platform access
               </li>
               <li style="list-style-type: circle">
                 Repl.it Hacker/Upgraded Plan
@@ -399,11 +399,16 @@
               </li>
               <span
                 style="
+                  font-size: 12px;
                   font-weight: 400;
                   max-width: 500px;
                   display: inline-block;
                 "
-                >Attendees must sign up to least two workshops/speaker events to be eligible.</span
+                >Provided to attendees beforehand as resources to use during the
+                event. Attendees are required to
+                <a href="https://thetahacks.tech/events" target="_blank"></a
+                >sign up attend at least two events and submit a project during
+                the hackathon.</span
               >
             </ul>
           </div>
@@ -433,17 +438,21 @@
                 Free Pro upgrades on Taskade
               </li>
               <li style="list-style-type: circle">
-                Raffles and Giveaways
+                AMC/AIME Problem sets from To The Limit Maths
               </li>
+              <li style="list-style-type: circle">Credits for JetBrains IDE</li>
+              <li style="list-style-type: circle">Raffles and Giveaways</li>
               <span
                 style="
+                  font-size: 12px;
+
                   font-weight: 400;
                   max-width: 500px;
                   margin-top: 2%;
                   display: inline-block;
                 "
-                >Attendees must <b>attend</b> at least two workshops/speaker events and
-                <b>submit</b> a project to be eligible.</span
+                >Attendees must <b>attend</b> at least two workshops/speaker
+                events and <b>submit</b> a project to be eligible.</span
               >
             </ul>
           </div>
@@ -483,6 +492,7 @@
               </li>
               <span
                 style="
+                  font-size: 12px;
                   font-weight: 400;
                   max-width: 600px;
                   display: inline-block;
@@ -815,9 +825,17 @@
             height: 1px;
             border-color: gainsboro;
             background-color: gainsboro;
-            margin-bottom: 4%;
           "
         />
+        <span class="underline" id="infopagelink" style="color: inherit"
+          ><a
+            href="https://docs.google.com/spreadsheets/d/1X3jphjCNp0npVpU5el_XC4MkuNbcdtPRyqHfg90yVVw/edit#gid=1081069866"
+            target="_blank"
+            >Volunteer Info<i
+              class="fa fa-external-link-alt"
+              aria-hidden="true"
+            ></i> </a
+        ></span>
         <div class="speakers" id="speakers1">
           <figure>
             <div class="figure-image-container-e">
@@ -913,25 +931,21 @@
             <div class="figure-image-container-e">
               <img
                 class="figure-image-e"
-                src="img/profiles/Jordan.jpg"
+                src="img/profiles/fairley.png"
                 alt="panelist"
               />
             </div>
             <figcaption>
-              <h5 class="figure-caption-title-e">Jordan Arnesen</h5>
-              <p class="figure-caption-e">Judge</p>
-              <p class="figure-caption-e2">Outreach Manager at Make School</p>
-              <a
-                href="https://www.linkedin.com/in/jordanxarnesen/"
-                target="_blank"
-                ><i
-                  class="personal hvr-grow-shadow fab fa-linkedin fa-sm"
-                  style="color: white"
-                  aria-hidden="true"
-                ></i
-              ></a>
+              <h5 class="figure-caption-title-e">Chris Fairley</h5>
+              <p class="figure-caption-e">Workshop - Fusion 360</p>
+              <p class="figure-caption-e2">
+                Former engineer, teacher, and robotics coach
+              </p>
+              <!-- <a href="https://www.linkedin.com/in/" target="_blank"><i
+                class="personal hvr-grow-shadow fab fa-linkedin fa-sm" style="color: white" aria-hidden="true"></i></a> -->
             </figcaption>
           </figure>
+
           <figure>
             <div class="figure-image-container-e">
               <img
@@ -962,18 +976,23 @@
             <div class="figure-image-container-e">
               <img
                 class="figure-image-e"
-                src="img/profiles/fairley.png"
+                src="img/profiles/Jordan.jpg"
                 alt="panelist"
               />
             </div>
             <figcaption>
-              <h5 class="figure-caption-title-e">Chris Fairley</h5>
-              <p class="figure-caption-e">Workshop - Fusion 360</p>
-              <p class="figure-caption-e2">
-                Former engineer, teacher, and robotics coach
-              </p>
-              <!-- <a href="https://www.linkedin.com/in/" target="_blank"><i
-                class="personal hvr-grow-shadow fab fa-linkedin fa-sm" style="color: white" aria-hidden="true"></i></a> -->
+              <h5 class="figure-caption-title-e">Jordan Arnesen</h5>
+              <p class="figure-caption-e">Judge</p>
+              <p class="figure-caption-e2">Outreach Manager at Make School</p>
+              <a
+                href="https://www.linkedin.com/in/jordanxarnesen/"
+                target="_blank"
+                ><i
+                  class="personal hvr-grow-shadow fab fa-linkedin fa-sm"
+                  style="color: white"
+                  aria-hidden="true"
+                ></i
+              ></a>
             </figcaption>
           </figure>
           <figure>
@@ -1378,7 +1397,6 @@
               style="width: 700px"
             />
           </a>
-
           <!-- ? why are we breaking it into multiple rows again? -->
           <!-- </div> -->
           <!-- <div class="sponsor-row"> -->
@@ -1411,6 +1429,14 @@
               style="width: 250px"
             />
           </a>
+          <a target="_blank" href="https://www.tothelimitmaths.org">
+            <img
+              src="img/sponsors/tothelimitmaths.png"
+              title="To The Limit Maths"
+              class="img-fluid"
+            />
+          </a>
+
           <a target="_blank" href="https://www.discord.com">
             <img src="img/sponsors/discord-word.png" title="Discord" />
           </a>
@@ -1587,7 +1613,7 @@
     </section>
     <section id="copyright-wrapper" style="background: #050510">
       <p id="copyright">
-        Copyright &copy; 2020 ThetaHacks, a 501(c)(3) non-profit organization,
+        Copyright &copy; 2021 ThetaHacks, a 501(c)(3) non-profit organization,
         fiscally sponsored by Hack Club Bank.
       </p>
     </section>
