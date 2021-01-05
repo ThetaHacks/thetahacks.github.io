@@ -4,31 +4,29 @@
 
 The official site for ThetaHacks, a digital high school hackathon located online.
 
-ThetaHacks I will be a 24-hour online hackathon from January 15-18, 2021, with teams of up to four persons. Please sign up before January 1.
+ThetaHacks I will be a 24-hour online hackathon from January 15-18, 2021, with teams of up to four persons. Please sign up before January 10.
 
-Due to COVID-19, the official date for the 2021 in-person hackathon has not been determined yet. 
-
-We are, however, hosting a digital hackathon on January 15-18, 2021! Register on our site.
+Due to COVID-19, the official date for the 2021 in-person hackathon has not been determined yet. We are, however, hosting a digital hackathon on January 15-18, 2021! Register on our site.
 
 ### Team
 
 <strong>Coordinators</strong>: Anshul Gupta, Rohan Bansal, Andy Li<br>
-<strong>Team</strong>: Chenghao Li, Aanika Jain, Yixuan Qiao, Kai McCormick<br>
+<strong>Team</strong>: Chenghao Li, Aanika Jain, Neel Gajare, Kai McCormick<br>
 
 ### Website
 
-https://www.thetahacks.tech
+https://thetahacks.tech
 
-Website created by **AndyLi23**, **theAnshulGupta**, **KaiDevrim**, **Rohan-Bansal**, and **yixqiao**.
+Website created by **AndyLi23**, **theAnshulGupta**, **KaiDevrim**, and **Rohan-Bansal**
 
 ### Sign up Today!
 
-Attendees: Signups on website!<br>
-Mentor: Signups on website!
+Attendees: Signups on website, devpost, and events signup<br>
+Mentor: Signups on website! <br>
 
 ### Join our Discord!
 
-Discord: https://discord.gg/fgA4PPt  
+Discord: https://thetahacks.tech/discord  
 Discord Bot: https://github.com/ThetaHacks/ThetaHacksBot
 
 ### Be sure to follow us on social media!
