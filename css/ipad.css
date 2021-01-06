@@ -9,7 +9,7 @@
 }
 
 .info-container {
-    background: url(../img/parallax/blue.jpg) no-repeat center center scroll !important;
+    background:  linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/parallax/blue.jpeg) no-repeat center center scroll !important;
     background-size: cover !important;
   }
 

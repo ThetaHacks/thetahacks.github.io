@@ -77,6 +77,11 @@ figure {
   width: 25vw;
 }
 
+.flickity-slider > figure{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .figure-image {
   width: 15vw;
   height: 15vw;
@@ -99,11 +104,11 @@ figure {
 .figure-image-e {
   width: 12vw;
   height: 12vw;
+  min-width: 80px;
+  min-height: 80px;
   border-radius: 50%;
   border: 0.3vw solid #eeeeee;
   transition: transform 0.3s ease-out;
-  max-width: 200px;
-  max-height: 200px;
 }
 
 .speakers figure {
@@ -111,18 +116,20 @@ figure {
 
 .figure-caption {
   color: lightgray;
-  font-size: 1.2rem !important;
+  font-size: 1.4rem !important;
 }
 
 .figure-caption-e {
   color: lightgray;
-  font-size: 1rem !important;
-  margin: 0.25rem;
+  font-size: 1.2rem !important;
+  margin-bottom: 0.5rem;
+  margin-top: 0.25rem;
 }
 
 .figure-caption-e2 {
   color: rgb(182, 182, 182);
-  font-size: 0.8rem !important;
+  font-size: 1rem !important;
+  margin-bottom: 0.5rem;
   margin-top: 0.25rem;
 }
 
@@ -461,7 +468,7 @@ a:focus {
 .info-container {
   text-align: center;
   clear: both;
-  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/parallax/blue.jpeg) no-repeat center center fixed;
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/parallax/blue.jpeg) no-repeat center center fixed;
   background-size: cover;
   padding: 5vh 5vw;
 }
@@ -661,6 +668,10 @@ span.active,
   to {
     opacity: 1;
   }
+}
+
+.figure-image-container-e {
+  margin-top: 10px;
 }
 
 @keyframes fade3 {
