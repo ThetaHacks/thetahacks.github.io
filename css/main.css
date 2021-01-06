@@ -96,11 +96,32 @@ figure {
 .figure-image {
   width: 15vw;
   height: 15vw;
-  border-radius: 50%;
-  border: 0.3vw solid #eeeeee;
+  border: double 4px transparent;
+  border-radius: 180px;
+  background-image: linear-gradient(rgb(2, 1, 1), white),
+    radial-gradient(circle at top left, purple, rgb(194, 108, 123));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: animated-gradient 2s linear infinite;
+
   transition: transform 0.3s ease-out;
   max-width: 250px;
   max-height: 250px;
+}
+
+@keyframes animated-gradient {
+  25% {
+    background-position: left bottom;
+  }
+  50% {
+    background-position: right bottom;
+  }
+  75% {
+    background-position: right top;
+  }
+  100% {
+    background-position: left top;
+  }
 }
 
 .figure-image:hover,
