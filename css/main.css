@@ -90,8 +90,7 @@ figure {
   transition: transform 0.3s ease-out;
   max-width: 250px;
   max-height: 250px;
-  min-width: 100px;
-  min-height: 100px;
+
 }
 
 .figure-image:hover,
@@ -111,8 +110,8 @@ figure {
 .figure-image-e {
   width: 12vw;
   height: 12vw;
-  min-width: 80px;
-  min-height: 80px;
+  max-width: 200px;
+  max-height: 200px;
   border-radius: 50%;
   border: 0.3vw solid #eeeeee;
   transition: transform 0.3s ease-out;
