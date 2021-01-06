@@ -81,11 +81,19 @@ figure {
 .figure-e {
   width: 25vw;
 }
-
 .flickity-slider > figure{
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
+
+@media (min-width: 992px) {
+
+  .flickity-slider > figure{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .figure-image {
   width: 15vw;
   height: 15vw;
@@ -589,13 +597,20 @@ a:focus {
     font-size: 0.7rem !important;
   }
   .figure-caption-e {
-    font-size: 0.7rem !important;
+    font-size: 0.6rem !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+
   }
   .figure-caption-e2 {
     display: none;
   }
   .figure-caption-title-e {
-    font-size: 0.8rem !important;
+    font-size: 0.7rem !important;
   }
   .cell100,
   th {
