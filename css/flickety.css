@@ -89,6 +89,7 @@ https://flickity.metafizzy.co
     border-radius: 50%;
     /* vertically center */
     transform: translateY(-50%);
+    margin: 0;
   }
 
   @media (min-width: 992px) {
