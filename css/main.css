@@ -90,12 +90,19 @@ figure {
   transition: transform 0.3s ease-out;
   max-width: 250px;
   max-height: 250px;
+  min-width: 100px;
+  min-height: 100px;
 }
 
 .figure-image:hover,
 .figure-image-e:hover {
   transform: scale(1.05);
 }
+
+.figure-image-e3:hover {
+  transform: scale(1.05);
+}
+
 
 .row100:hover {
   background-color: #404060 !important;
@@ -104,6 +111,18 @@ figure {
 .figure-image-e {
   width: 12vw;
   height: 12vw;
+  min-width: 80px;
+  min-height: 80px;
+  border-radius: 50%;
+  border: 0.3vw solid #eeeeee;
+  transition: transform 0.3s ease-out;
+}
+
+.figure-image-e3 {
+  width: 12vw;
+  height: 12vw;
+  max-width: 200px;
+  max-height: 200px;
   min-width: 80px;
   min-height: 80px;
   border-radius: 50%;
@@ -339,6 +358,10 @@ a:focus {
     height: 20vw;
   }
   .figure-image-e {
+    width: 14vw;
+    height: 14vw;
+  }
+  .figure-image-e3 {
     width: 14vw;
     height: 14vw;
   }
