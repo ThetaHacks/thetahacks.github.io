@@ -81,14 +81,13 @@ figure {
 .figure-e {
   width: 25vw;
 }
-.flickity-slider > figure{
+.flickity-slider > figure {
   padding-left: 10px;
   padding-right: 10px;
 }
 
 @media (min-width: 700px) {
-
-  .flickity-slider > figure{
+  .flickity-slider > figure {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -102,7 +101,6 @@ figure {
   transition: transform 0.3s ease-out;
   max-width: 250px;
   max-height: 250px;
-
 }
 
 .figure-image:hover,
@@ -113,7 +111,6 @@ figure {
 .figure-image-e3:hover {
   transform: scale(1.05);
 }
-
 
 .row100:hover {
   background-color: #404060 !important;
@@ -158,11 +155,11 @@ figure {
   margin-top: 0.25rem;
 
   overflow-wrap: break-word;
-    word-wrap: break-word;
-    -ms-hyphens: auto;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto;
+  word-wrap: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
 .figure-caption-e2 {
@@ -254,7 +251,6 @@ html {
   }
 }
 
-
 @media (max-width: 1320px) {
   .infodiv {
     text-align: left !important;
@@ -299,7 +295,6 @@ a:focus {
   -moz-outline-style: none !important;
   outline-style: none !important;
 }
-
 
 .fa-external-link-alt {
   font-size: 1.2rem !important;
@@ -438,7 +433,6 @@ a:focus {
   margin-top: 20px;
 }
 
-
 .sponsor-row > a:hover {
   transform: scale(1.15);
 }
@@ -452,7 +446,6 @@ a:focus {
   transition: transform 0.6s, filter 0.5s;
   object-fit: contain;
 }
-
 
 #sponsors-sec img {
   max-width: 300px;
@@ -515,7 +508,8 @@ a:focus {
 .info-container {
   text-align: center;
   clear: both;
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/parallax/blue.jpeg) no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/parallax/blue.jpeg) no-repeat center center fixed;
   background-size: cover;
   padding: 5vh 5vw;
 }
@@ -609,10 +603,8 @@ a:focus {
   }
   .figure-caption-e {
     font-size: 0.6rem !important;
-    
-
   }
-  
+
   .figure-caption-title-e {
     font-size: 0.7rem !important;
   }
@@ -1260,32 +1252,30 @@ table.schedule1 {
 }
 
 .left-arrow {
-	background-color:#ce7b91;
-	-webkit-border-radius:42px;
-	-moz-border-radius:42px;
-	border-radius:42px;
-	cursor:pointer;
-	font-size:20px;
-	padding:13px 23px;
-  text-decoration:none;
+  background-color: #ce7b91;
+  -webkit-border-radius: 42px;
+  -moz-border-radius: 42px;
+  border-radius: 42px;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 13px 23px;
+  text-decoration: none;
   color: gainsboro;
   border-style: none;
-  
 }
 
 .right-arrow {
-	background-color:#ce7b91;
-	-webkit-border-radius:42px;
-	-moz-border-radius:42px;
-	border-radius:42px;
-	cursor:pointer;
-	font-size:20px;
-	padding:13px 23px;
-  text-decoration:none;
+  background-color: #ce7b91;
+  -webkit-border-radius: 42px;
+  -moz-border-radius: 42px;
+  border-radius: 42px;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 13px 23px;
+  text-decoration: none;
   color: gainsboro;
   border-style: none;
   margin-left: 20px;
-
 }
 
 /* ? super hot underline animation */
