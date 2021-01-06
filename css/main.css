@@ -110,6 +110,8 @@ figure {
 .figure-image-e {
   width: 12vw;
   height: 12vw;
+  margin-left: 10px;
+  margin-right: 10px;
   max-width: 200px;
   max-height: 200px;
   border-radius: 50%;
