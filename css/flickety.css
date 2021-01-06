@@ -45,13 +45,13 @@ https://flickity.metafizzy.co
   
   .flickity-button {
     position: absolute;
-    background: hsla(0, 0%, 100%, 0.75);
+    background: rgba(100, 100, 100, 0.25);
     border: none;
-    color: #333;
+    color: white;
   }
   
   .flickity-button:hover {
-    background: white;
+    background: rgba(100, 100, 100, 0.65);
     cursor: pointer;
   }
   
@@ -65,7 +65,6 @@ https://flickity.metafizzy.co
   }
   
   .flickity-button:disabled {
-    opacity: 0.3;
     cursor: auto;
     /* prevent disabled button from capturing pointer up event. #716 */
     pointer-events: none;

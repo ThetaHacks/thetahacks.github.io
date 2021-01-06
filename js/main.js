@@ -268,31 +268,6 @@ function shiftForward() {
 }
 
 
-function leftArrow() {
-  speaker1ID = document.getElementById('speakers1');
-  speaker1 = window.getComputedStyle(speaker1ID);
-  speaker2ID = document.getElementById('speakers2');
-  speaker2 = window.getComputedStyle(speaker2ID);
-   speaker3ID = document.getElementById('speakers3');
-  speaker3 = window.getComputedStyle(speaker3ID);
-
-  if (speaker1.getPropertyValue('display') == 'flex') {
-    speaker1ID.style.display = 'none';
-    speaker2ID.style.display = 'none';
-     speaker3ID.style.display = 'flex';
-  }
-   else if (speaker3.getPropertyValue('display') == 'flex') {
-     speaker3ID.style.display = 'none';
-     speaker2ID.style.display = 'flex';
-     speaker1ID.style.display = 'none';
-   }
-  else if (speaker2.getPropertyValue('display') == 'flex') {
-     speaker3ID.style.display = 'none';
-    speaker2ID.style.display = 'none';
-    speaker1ID.style.display = 'flex';
-  }
-}
-
 
 $(".volunteer-container").flickity({
   cellAlign: 'left',
@@ -302,28 +277,3 @@ $(".volunteer-container").flickity({
   wrapAround: true
 });
 
-
-function rightArrow() {
-  console.log("This!");
-  speaker1ID = document.getElementById('speakers1');
-  speaker1 = window.getComputedStyle(speaker1ID);
-  speaker2ID = document.getElementById('speakers2');
-  speaker2 = window.getComputedStyle(speaker2ID);
-   speaker3ID = document.getElementById('speakers3');
-   speaker3 = window.getComputedStyle(speaker3ID);
-
-  if (speaker1.getPropertyValue('display') == 'flex') {
-    speaker1ID.style.display = 'none';
-     speaker3ID.style.display = 'none';
-    speaker2ID.style.display = 'flex';
-  }
-  else if (speaker2.getPropertyValue('display') == 'flex') {
-     speaker3ID.style.display = 'flex';
-    speaker2ID.style.display = 'none';
-    speaker1ID.style.display = 'none';
-  } else if (speaker3.getPropertyValue('display') == 'flex') {
-    speaker3ID.style.display = 'none';
-    speaker2ID.style.display = 'none';
-    speaker1ID.style.display = 'flex';
-  }
-}
