@@ -86,7 +86,7 @@ figure {
   padding-right: 10px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 700px) {
 
   .flickity-slider > figure{
     padding-left: 20px;
@@ -156,6 +156,13 @@ figure {
   font-size: 1.2rem !important;
   margin-bottom: 0.5rem;
   margin-top: 0.25rem;
+
+  overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
 }
 
 .figure-caption-e2 {
@@ -312,6 +319,10 @@ a:focus {
 @media (max-width: 992px) {
   .col-md-6 {
     min-width: 80vw;
+  }
+
+  .figure-caption-e2 {
+    display: none;
   }
 
   .info-container {
@@ -598,17 +609,10 @@ a:focus {
   }
   .figure-caption-e {
     font-size: 0.6rem !important;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    -ms-hyphens: auto;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto;
+    
 
   }
-  .figure-caption-e2 {
-    display: none;
-  }
+  
   .figure-caption-title-e {
     font-size: 0.7rem !important;
   }
@@ -1164,6 +1168,10 @@ table.schedule1 {
 @media (max-width: 992px) {
   .schedule {
     float: none;
+  }
+
+  .figure-caption-e {
+    font-size: 1rem;
   }
   #schedule-section {
     height: auto !important;
