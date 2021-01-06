@@ -117,13 +117,13 @@ figure {
 .figure-caption-e {
   color: lightgray;
   font-size: 1rem !important;
-  margin-bottom: 0.2rem;
+  margin: 0.25rem;
 }
 
 .figure-caption-e2 {
   color: rgb(182, 182, 182);
   font-size: 0.8rem !important;
-  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
 }
 
 .figure-caption-title {
@@ -188,10 +188,10 @@ html {
     padding: 5vh 10vw 5vh 10vw !important;
   }
 
-  .prev {
+  .prev1 {
     transform: translateY(-50px) translateX(-40px) !important;
   }
-  .next {
+  .next1 {
     transform: translateY(-50px) translateX(40px) !important;
   }
   .quote {
@@ -408,6 +408,7 @@ a:focus {
 @media (max-width: 992px) {
   #sponsors-sec img {
     max-width: 50vw;
+    max-height: 100px;
   }
 }
 
@@ -556,7 +557,7 @@ a:focus {
     font-size: 0.7rem !important;
   }
   .figure-caption-e2 {
-    font-size: 0.65rem !important;
+    display: none;
   }
   .figure-caption-title-e {
     font-size: 0.8rem !important;
@@ -592,9 +593,9 @@ a.hyperlink {
   display: none;
 }
 
-/* Next & previous buttons */
-.prev,
-.next {
+/* next1 & prev1ious buttons */
+.prev1,
+.next1 {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -607,20 +608,20 @@ a.hyperlink {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
-.prev {
+/* Position the "next1 button" to the right */
+.prev1 {
   left: 0 !important;
   transform: translateY(-50px) translateX(-100px);
 }
 
-.next {
+.next1 {
   right: 0 !important;
   transform: translateY(-50px) translateX(100px);
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
+.prev1:hover,
+.next1:hover {
   color: #999 !important;
 }
 

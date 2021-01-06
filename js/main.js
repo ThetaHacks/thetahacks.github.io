@@ -143,23 +143,6 @@ $(window).resize(function () {
     }
   });
 
-  var arrow = document.querySelector("#show-faq-button");
-  var mobOnly = document.querySelector(".mobile-only");
-  var notMob = document.querySelector(".not-mobile");
-  if (arrow.style.transform === "rotate(0deg)") {
-    // Close
-    mobOnly.style.display = "none";
-    notMob.style.display = "none";
-  } else {
-    // Open
-    if ($(document).width() <= 992) {
-      mobOnly.style.display = "inline-block";
-      notMob.style.display = "none";
-    } else {
-      notMob.style.display = "inline-block";
-      mobOnly.style.display = "none";
-    }
-  }
 });
 
 var scheduleDone = false;
@@ -229,19 +212,7 @@ $(function () {
 });
 
 var shiftDay = "Saturday 1/16";
-// function shift() {
-//   if (shiftDay == "Saturday 1/16") {
-//     document.getElementById("day").innerHTML = "Sunday 1/17";
-//     document.getElementById("sched1").style.display = "none";
-//     document.getElementById("sched2").style.display = "block";
-//   }
-//   else if (shiftDay == '')
-//   else {
-//     document.getElementById("day").innerHTML = "Saturday 1/16";
-//     document.getElementById("sched2").style.display = "none";
-//     document.getElementById("sched1").style.display = "block";
-//   }
-// }
+
 function shiftBackward() {
   if (shiftDay == "Saturday 1/16") {
     shiftDay = "Friday 1/15";
@@ -296,132 +267,41 @@ function shiftForward() {
   }
 }
 
-function getPos(el) {
-  for (
-    var lx = 0, ly = 0;
-    el != null;
-    lx += el.offsetLeft, ly += el.offsetTop, el = el.offsetParent
-  );
-  return { x: lx, y: ly };
-}
-
-positions = {
-  "9:00": 1,
-  "10:00": 4,
-  "11:00": 7,
-  "1:15": 11,
-  "4:30": 15,
-  "9:30": 16.2,
-  "10:30": 17.3,
-  "12:00": 18,
-  "1:30": 20,
-  "7:00": 24,
-  "7:30": 25,
-  "8:00": 28,
-  "9:35": 33,
-  "10:15": 35.5,
-};
-
-function doThis() {
-  let timeEl = this.querySelector("td");
-  let time = timeEl.innerText.split(" ")[0];
-  var arrow = document.getElementsByClassName("arrow-container")[0];
-  document.getElementById("timestamp").innerText = timeEl.innerText;
-  document.getElementById("timestamp").style.left = positions[time] + "%";
-  if (positions[time] >= 18) {
-    document.getElementById("daystamp").innerHTML = "Sunday 1/17";
-  } else {
-    document.getElementById("daystamp").innerHTML = "Saturday 1/16";
-  }
-  document.getElementById("daystamp").style.left = positions[time] + "%";
-  arrow.style.left = positions[time] + "%";
-
-  var rect = document.getElementById("sched-line").getBoundingClientRect();
-  var left = document.getElementById("path-container").offsetLeft;
-  console.log(left + rect.width / 2);
-  arrow.style.left = left + rect.width / 2;
-}
-
-function onRowClick(tableClass) {
-  var table = document.getElementsByClassName(tableClass);
-
-  var rows = table[0].getElementsByTagName("tr");
-  var i;
-  for (i = 0; i < rows.length; i++) {
-    rows[i].addEventListener("click", doThis.bind(rows[i]));
-  }
-
-  rows = table[1].getElementsByTagName("tr");
-  var x;
-  for (x = 0; x < rows.length; x++) {
-    rows[x].addEventListener("click", doThis.bind(rows[x]));
-  }
-}
-
-onRowClick("schedule1");
-document.getElementById("timestamp").style.left = "1%";
-document.getElementById("timestamp").innerText = "9:00 AM";
-
-document.getElementById("daystamp").style.left = "1%";
-document.getElementById("daystamp").innerText = "Saturday 1/16";
-
-function calcHyperlinkPos() {
-  // Set hyperlinks to be at the correct positions
-  // Avoid stuff being covered up by the navbar
-  $(".hyperlink").css("top", "-" + $(".navbar").css("height"));
-}
-calcHyperlinkPos();
-
-$("#table-Saturday 1/16 tr").click(function () {
-  var selected = $(this).hasClass("highlight");
-  $("#table-Saturday 1/16 tr").removeClass("highlight");
-  if (!selected) $(this).addClass("highlight");
-});
 
 function leftArrow() {
   speaker1ID = document.getElementById('speakers1');
   speaker1 = window.getComputedStyle(speaker1ID);
   speaker2ID = document.getElementById('speakers2');
   speaker2 = window.getComputedStyle(speaker2ID);
-  // speaker3ID = document.getElementById('speakers3');
-  // speaker3 = window.getComputedStyle(speaker3ID);
+   speaker3ID = document.getElementById('speakers3');
+  speaker3 = window.getComputedStyle(speaker3ID);
 
   if (speaker1.getPropertyValue('display') == 'flex') {
     speaker1ID.style.display = 'none';
-    speaker2ID.style.display = 'flex';
-    // speaker3ID.style.display = 'flex';
+    speaker2ID.style.display = 'none';
+     speaker3ID.style.display = 'flex';
   }
-  // else if (speaker3.getPropertyValue('display') == 'flex') {
-  //   speaker3ID.style.display = 'none';
-  //   speaker2ID.style.display = 'flex';
-  //   speaker1ID.style.display = 'none';
-  // }
+   else if (speaker3.getPropertyValue('display') == 'flex') {
+     speaker3ID.style.display = 'none';
+     speaker2ID.style.display = 'flex';
+     speaker1ID.style.display = 'none';
+   }
   else if (speaker2.getPropertyValue('display') == 'flex') {
-    // speaker3ID.style.display = 'none';
+     speaker3ID.style.display = 'none';
     speaker2ID.style.display = 'none';
     speaker1ID.style.display = 'flex';
   }
 }
 
-// setInterval(() => {
-//   speaker1ID = document.getElementById('speakers1');
-//   speaker1 = window.getComputedStyle(speaker1ID);
-//   speaker2ID = document.getElementById('speakers2');
-//   speaker2 = window.getComputedStyle(speaker2ID);
 
+$(".volunteer-container").flickity({
+  cellAlign: 'left',
+  contain: true,
+  groupCells: true,
+  autoPlay: 2500,
+  wrapAround: true
+});
 
-//   if (speaker1.getPropertyValue('display') == 'flex') {
-//     speaker1ID.style.display = 'none';
-    
-//     speaker2ID.style.display = 'flex';
-//   }
-//   else if (speaker2.getPropertyValue('display') == 'flex') {
-    
-//     speaker2ID.style.display = 'none';
-//     speaker1ID.style.display = 'flex';
-//   }
-
-// }, 2);
 
 function rightArrow() {
   console.log("This!");
@@ -429,34 +309,21 @@ function rightArrow() {
   speaker1 = window.getComputedStyle(speaker1ID);
   speaker2ID = document.getElementById('speakers2');
   speaker2 = window.getComputedStyle(speaker2ID);
-  // speaker3ID = document.getElementById('speakers3');
-  // speaker3 = window.getComputedStyle(speaker3ID);
+   speaker3ID = document.getElementById('speakers3');
+   speaker3 = window.getComputedStyle(speaker3ID);
 
   if (speaker1.getPropertyValue('display') == 'flex') {
     speaker1ID.style.display = 'none';
-    // speaker3ID.style.display = 'none';
+     speaker3ID.style.display = 'none';
     speaker2ID.style.display = 'flex';
   }
   else if (speaker2.getPropertyValue('display') == 'flex') {
-    // speaker3ID.style.display = 'flex';
+     speaker3ID.style.display = 'flex';
+    speaker2ID.style.display = 'none';
+    speaker1ID.style.display = 'none';
+  } else if (speaker3.getPropertyValue('display') == 'flex') {
+    speaker3ID.style.display = 'none';
     speaker2ID.style.display = 'none';
     speaker1ID.style.display = 'flex';
   }
 }
-
-
-setInterval(rightArrow(), 100);
-
-  // else if (speaker3.getPropertyValue('display') == 'flex') {
-  //   speaker2ID.style.display = 'none';
-  //   speaker1ID.style.display = 'flex';
-  //   speaker3ID.style.display = 'none';
-  // }
-  // setTimeout(rightArrow, 5000);
-
-  // speaker3ID.style.display = 'flex';
-
-  // speaker3ID.style.display = 'none';
-
-    // speaker3ID = document.getElementById('speakers3');
-  // speaker3 = window.getComputedStyle(speaker3ID);
