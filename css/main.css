@@ -65,6 +65,11 @@ h3 {
   padding: 0vw 18.5vw;
 }
 
+.flickity-viewport {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
 figure {
   width: 20vw;
 }
@@ -78,10 +83,9 @@ figure {
 }
 
 .flickity-slider > figure{
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-
 .figure-image {
   width: 15vw;
   height: 15vw;

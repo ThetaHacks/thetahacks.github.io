@@ -272,7 +272,7 @@ function shiftForward() {
 $(".volunteer-container").flickity({
   cellAlign: 'left',
   contain: true,
-  groupCells: true,
+  groupCells: '80%',
   autoPlay: 2500,
   wrapAround: true
 });
