@@ -107,7 +107,7 @@ figure {
   border-radius: 180px;
   border: double 4px transparent;
   background-image: linear-gradient(rgb(2, 1, 1), white),
-    radial-gradient(circle at top left, purple, rgb(194, 108, 123));
+    radial-gradient(circle at top left, rgb(255, 0, 115), rgb(132, 0, 255));
   background-origin: border-box;
   background-clip: content-box, border-box;
   animation: animated-gradient 2s linear infinite;
@@ -158,7 +158,7 @@ figure {
   border-radius: 180px;
   border: double 4px transparent;
   background-image: linear-gradient(rgb(2, 1, 1), white),
-    radial-gradient(circle at top left, rgb(175, 131, 175), rgb(145, 8, 31));
+    radial-gradient(circle at top left, rgb(255, 0, 115), rgb(132, 0, 255));
   background-origin: border-box;
   background-clip: content-box, border-box;
   animation: animated-gradient 2s linear infinite;
@@ -184,7 +184,7 @@ figure {
   border-radius: 180px;
   border: double 4px transparent;
   background-image: linear-gradient(rgb(2, 1, 1), white),
-    radial-gradient(circle at top left, rgb(175, 131, 175), rgb(145, 8, 31));
+    radial-gradient(circle at top left, rgb(255, 0, 115), rgb(132, 0, 255));
   background-origin: border-box;
   background-clip: content-box, border-box;
   animation: animated-gradient 2s linear infinite;
