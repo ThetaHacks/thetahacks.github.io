@@ -154,15 +154,30 @@ figure {
 }
 
 .figure-image-e3 {
+  /* size */
   width: 12vw;
   height: 12vw;
   max-width: 200px;
   max-height: 200px;
   min-width: 80px;
   min-height: 80px;
-  border-radius: 50%;
-  border: 0.3vw solid #eeeeee;
+
+  /* border */
+  /* hover animation  */
   transition: transform 0.3s ease-out;
+
+  /* border */
+  border-radius: 180px;
+  border: double 4px transparent;
+  background-image: linear-gradient(rgb(2, 1, 1), white),
+    radial-gradient(circle at top left, rgb(175, 131, 175), rgb(145, 8, 31));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: animated-gradient 2s linear infinite;
+
+  /* border-radius: 50%;
+  border: 0.3vw solid #eeeeee;
+  transition: transform 0.3s ease-out; */
 }
 
 .speakers figure {
