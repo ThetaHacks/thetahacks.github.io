@@ -277,3 +277,49 @@ $(".volunteer-container").flickity({
   wrapAround: true
 });
 
+function getTime(countdownTime) {
+  // Get today's date and time
+  var now = new Date().getTime();
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  return days + "d " + " • " + hours + "h " + " • " + minutes + "m " + " • " + seconds + "s ";
+}
+
+function getDistance(countdownTime) {
+  var now = new Date().getTime();
+  distance = countDownDate - now;
+}
+
+var signupCountDown = setInterval(function() {
+  var countDownDate = new Date("Jan 10, 2021 12:00:00").getTime() - 8;
+  // Output the result in an element with id="registerBy"
+  document.getElementById("registerBy").innerHTML = "Registration ends in:  " + getTime(countDownDate);
+
+  // If the count down is over, write some text 
+  if (getDistance(countDownDate) < 0) {
+    clearInterval(countDown);
+    document.getElementById("registerBy").innerHTML = "Sign Ups Closed";
+    document.getElementById("gb10").href = "https://thetahacks.tech";
+    document.getElementById("gb10").innerHTML = "Sign Ups are Closed";
+    document.getElementById("gb10").style.display = 'none';
+  }
+}, 1000);
+
+var eventCountDown = setInterval(function() {
+  var amongUsHypeNight = new Date("Jan 15, 2021 21:00:00").getTime() - 8;
+  var openingCermony = new Date("Jan 16, 2021 10:00:00").getTime() -8;
+  if (date.getDay > 10 && date.getMonth == 1 && date.getFullYear == 2021) {
+    if (getDistance(amongUsHypeNight) > 0) {
+    document.getElementById("registerBy").innerHTML = "Among Us Hype Night Starts in:  " + getTime(amongUsHypeNight);
+    }
+    else if (getDistance(openingCermony) > 0) {
+      document.getElementById("registerBy").innerHTML = "Opening Ceremony Starts in:  " + getTime(openingCermony);
+    }
+  }
+}, 1000);
