@@ -281,7 +281,7 @@ function getTime(countdownTime) {
   // Get today's date and time
   var now = new Date().getTime();
   // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+  var distance = countdownTime - now;
     
   // Time calculations for days, hours, minutes and seconds
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -293,7 +293,7 @@ function getTime(countdownTime) {
 
 function getDistance(countdownTime) {
   var now = new Date().getTime();
-  distance = countDownDate - now;
+  distance = countdownTime - now;
 }
 
 var signupCountDown = setInterval(function() {
@@ -314,6 +314,7 @@ var signupCountDown = setInterval(function() {
 var eventCountDown = setInterval(function() {
   var amongUsHypeNight = new Date("Jan 15, 2021 21:00:00").getTime() - 8;
   var openingCermony = new Date("Jan 16, 2021 10:00:00").getTime() -8;
+  var date = new Date();
   if (date.getDay > 10 && date.getMonth == 1 && date.getFullYear == 2021) {
     if (getDistance(amongUsHypeNight) > 0) {
     document.getElementById("registerBy").innerHTML = "Among Us Hype Night Starts in:  " + getTime(amongUsHypeNight);
