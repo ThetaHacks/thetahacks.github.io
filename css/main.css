@@ -1013,7 +1013,6 @@ a.questionLink:hover {
 }
 
 .attendee {
-  margin-top: 4vh;
   display: inline-block;
 }
 
@@ -1161,6 +1160,10 @@ pre {
 
 div.table100-head {
   background-color: #6c7ae0;
+}
+
+.discord {
+  margin-top: 4vh;
 }
 
 div.table100 {
