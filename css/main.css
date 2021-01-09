@@ -110,7 +110,11 @@ figure {
   position: relative;
   z-index: 1;
 
+  border: 5px transparent;
+
+  background-clip:content-box;
 }
+
 
 .figure-image-container {
   background: transparent;
@@ -124,11 +128,13 @@ figure {
   margin-left: auto;
   margin-right: auto;
 
-  
-  
+  border-radius: 180px;
+
+  transition: transform 0.3s ease-out;
+
 }
 
-.figure-image-container:hover:after {
+.figure-image-container:hover {
   transform: scale(1.05);
 }
 
@@ -139,6 +145,7 @@ figure {
   left: calc(-1 * 5px);
   height: calc(100% + 5px * 2);
   width: calc(100% + 5px * 2);
+  
   background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
   border-radius: 180px;
   animation: animatedgradient 3s ease alternate infinite;
@@ -167,11 +174,9 @@ figure {
 
 .figure-image:hover,
 .figure-image-e:hover {
-  transform: scale(1.05);
 }
 
 .figure-image-e3:hover {
-  transform: scale(1.05);
 }
 
 .row100:hover {
@@ -213,7 +218,15 @@ figure {
   max-height: 200px;
   min-width: 80px;
   min-height: 80px;
+
+  transition: transform 0.3s ease-out;
+
+  border-radius: 180px;
   
+}
+
+.figure-image-container-e:hover {
+  transform: scale(1.05);
 }
 
 .figure-image-container-e:after {
@@ -232,9 +245,6 @@ figure {
   transition: transform 0.3s ease-out;
 }
 
-.figure-image-container-e:hover:after {
-  transform: scale(1.05);
-}
 
 
 @keyframes animatedgradient {
@@ -284,8 +294,15 @@ figure {
   min-width: 80px;
   min-height: 80px;
   
+  transition: transform 0.3s ease-out;
+
+  border-radius: 180px;
+  
 }
 
+.figure-image-container-e3:hover {
+  transform: scale(1.05);
+}
 .figure-image-container-e3:after {
   content: '';
   position: absolute;
@@ -302,9 +319,6 @@ figure {
   transition: transform 0.3s ease-out;
 }
 
-.figure-image-container-e3:hover:after {
-  transform: scale(1.05);
-}
 
 
 
