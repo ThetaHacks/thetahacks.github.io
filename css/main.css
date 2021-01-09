@@ -563,6 +563,18 @@ a:focus {
     width: 14vw;
     height: 14vw;
   }
+  .figure-image-container {
+    width: 20vw !important;
+    height: 20vw !important;
+  }
+  .figure-image-container-e3 {
+    width: 14vw !important;
+    height: 14vw !important;
+  }
+  .figure-image-container-e {
+    width: 14vw !important;
+    height: 14vw !important;
+  }
   .directors {
     padding: 0vw 12.5vw;
   }
