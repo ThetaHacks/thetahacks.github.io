@@ -596,6 +596,11 @@ a:focus {
   }
 }
 
+.directors > figure {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 #ssssc {
   min-height: 760px;
 }
