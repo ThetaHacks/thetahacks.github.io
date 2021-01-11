@@ -596,9 +596,8 @@ a:focus {
   }
 }
 
-.directors > figure {
-  margin-left: 10px;
-  margin-right: 10px;
+.directors {
+  margin-top: 40px;
 }
 
 #ssssc {
