@@ -306,13 +306,13 @@ function getDistance(countdownTime) {
 }
 console.log("Hello World");
 function signupCountDown() {
-  var amongUsHypeNight = new Date("Jan 15, 2021 21:00:00").getTime() - 8;
-  var openingCermony = new Date("Jan 16, 2021 10:00:00").getTime() - 8;
-  console.log("1");
-  console.log(getDistance(amongUsHypeNight));
-  console.log("2");
-  document.getElementById("registerBy").innerHTML =
-    "Among Us Hype Night Starts in:  " + getTime(amongUsHypeNight);
+  // var amongUsHypeNight = new Date("Jan 15, 2021 21:00:00").getTime() - 8;
+  // var openingCermony = new Date("Jan 16, 2021 10:00:00").getTime() - 8;
+  // console.log("1");
+  // console.log(getDistance(amongUsHypeNight));
+  // console.log("2");
+  // document.getElementById("registerBy").innerHTML =
+  //   "Among Us Hype Night Starts in:  " + getTime(amongUsHypeNight);
   // else if (getDistance(openingCermony) > 0) {
   //   document.getElementById("registerBy").innerHTML =
   //     "Opening Ceremony Starts in:  " + getTime(openingCermony);
