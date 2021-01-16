@@ -306,18 +306,18 @@ function getDistance(countdownTime) {
 }
 console.log("Hello World");
 function signupCountDown() {
-  // var amongUsHypeNight = new Date("Jan 15, 2021 21:00:00").getTime() - 8;
-  // var openingCermony = new Date("Jan 16, 2021 10:00:00").getTime() - 8;
-  // console.log("1");
-  // console.log(getDistance(amongUsHypeNight));
-  // console.log("2");
-  // document.getElementById("registerBy").innerHTML =
-  //   "Among Us Hype Night Starts in:  " + getTime(amongUsHypeNight);
-  // else if (getDistance(openingCermony) > 0) {
-  //   document.getElementById("registerBy").innerHTML =
-  //     "Opening Ceremony Starts in:  " + getTime(openingCermony);
-  //   console.log("3");
-  // }
+  var openingCermony = new Date("Jan 16, 2021 10:00:00").getTime() - 8;
+  var openingCermonyS =
+    "Opening Ceremony Starts in: " + getTime(openingCermony);
+  var arWorkshop = new Date("Jan 16, 2021 12:00:00").getTime() - 8;
+  var arWorkshopS = "AR Workshop Starts in: " + getTime(arWorkshop);
+  "AR Workshop Starts in: " + getTime(arWorkshop);
+  var memeWorkshop = new Date("Jan 16, 2021 14:00:00").getTime() - 8;
+  var stemWorkshop = new Date("Jan 16, 2021 16:00:00").getTime() - 8;
+  var emojiWorkshop = new Date("Jan 16, 2021 18:00:00").getTime() - 8;
+  var entreSpeaker = new Date("Jan 16, 2021 20:00:00").getTime() - 8;
+  var amongUs = new Date("Jan 16, 2021 21:30:00").getTime() - 8;
+  document.getElementById("eventScript").innerHTML = openingCermonyS;
 }
 // var eventCountDown = setInterval(function () {}, 1000);
 var run = setInterval(signupCountDown, 100);
