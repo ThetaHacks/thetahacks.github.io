@@ -317,7 +317,7 @@ function signupCountDown() {
   var emojiWorkshop = new Date("Jan 16, 2021 18:00:00").getTime() - 8;
   var entreSpeaker = new Date("Jan 16, 2021 20:00:00").getTime() - 8;
   var amongUs = new Date("Jan 16, 2021 21:30:00").getTime() - 8;
-  document.getElementById("eventScript").innerHTML = openingCermonyS;
+  document.getElementById("eventScript").innerHTML = arWorkshopS;
 }
 // var eventCountDown = setInterval(function () {}, 1000);
 var run = setInterval(signupCountDown, 100);
