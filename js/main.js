@@ -304,34 +304,20 @@ function getDistance(countdownTime) {
   var now = new Date().getTime();
   distance = countdownTime - now;
 }
-
-var signupCountDown = setInterval(function () {
-  var countDownDate = new Date("Jan 15, 2021 12:00:00").getTime() - 8;
-  // Output the result in an element with id="registerBy"
-  document.getElementById("registerBy").innerHTML =
-    "Registration ends in:  " + getTime(countDownDate);
-
-  // If the count down is over, write some text
-  if (getDistance(countDownDate) < 0) {
-    clearInterval(countDown);
-    document.getElementById("registerBy").innerHTML = "Sign Ups Closed";
-    document.getElementById("gb10").href = "https://thetahacks.tech";
-    document.getElementById("gb10").innerHTML = "Sign Ups are Closed";
-    document.getElementById("gb10").style.display = "none";
-  }
-}, 1000);
-
-var eventCountDown = setInterval(function () {
-  var amongUsHypeNight = new Date("Jan 15, 2021 21:00:00").getTime() - 8;
+console.log("Hello World");
+function signupCountDown() {
   var openingCermony = new Date("Jan 16, 2021 10:00:00").getTime() - 8;
-  var date = new Date();
-  if (date.getDay > 10 && date.getMonth == 1 && date.getFullYear == 2021) {
-    if (getDistance(amongUsHypeNight) > 0) {
-      document.getElementById("registerBy").innerHTML =
-        "Among Us Hype Night Starts in:  " + getTime(amongUsHypeNight);
-    } else if (getDistance(openingCermony) > 0) {
-      document.getElementById("registerBy").innerHTML =
-        "Opening Ceremony Starts in:  " + getTime(openingCermony);
-    }
-  }
-}, 1000);
+  var openingCermonyS =
+    "Opening Ceremony Starts in: " + getTime(openingCermony);
+  var arWorkshop = new Date("Jan 16, 2021 12:00:00").getTime() - 8;
+  var arWorkshopS = "AR Workshop Starts in: " + getTime(arWorkshop);
+  "AR Workshop Starts in: " + getTime(arWorkshop);
+  var memeWorkshop = new Date("Jan 16, 2021 14:00:00").getTime() - 8;
+  var stemWorkshop = new Date("Jan 16, 2021 16:00:00").getTime() - 8;
+  var emojiWorkshop = new Date("Jan 16, 2021 18:00:00").getTime() - 8;
+  var entreSpeaker = new Date("Jan 16, 2021 20:00:00").getTime() - 8;
+  var amongUs = new Date("Jan 16, 2021 21:30:00").getTime() - 8;
+  document.getElementById("eventScript").innerHTML = arWorkshopS;
+}
+// var eventCountDown = setInterval(function () {}, 1000);
+var run = setInterval(signupCountDown, 100);
