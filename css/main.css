@@ -596,6 +596,60 @@ a:focus {
   }
 }
 
+
+.winner-box-1 {
+  justify-content: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.winner-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+}
+
+.winner {
+  background: #101020;
+  max-width: 400px;
+  min-width: 400px;
+  margin: 20px 20px 40px 20px;
+  padding: 20px;
+  border-radius: 20px;
+  max-height: 500px;
+  min-height: 500px;
+
+  transition: transform 0.4s ease-out;
+}
+
+.winner:hover {
+  transform: scale(1.04);
+}
+
+.winner > h3 {
+  font-size: 2.0rem !important;
+  font-family: Montserrat;
+  color: #c0e8f9;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.winner > img {
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.winner > h4 {
+  color: gainsboro;
+}
+
+.winner > p {
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #bbb;
+}
+
 .directors {
   margin-top: 40px;
 }
