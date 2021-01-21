@@ -599,8 +599,7 @@ a:focus {
 
 .winner-box-1 {
   justify-content: center;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  
 }
 
 .winner-box {
@@ -608,6 +607,8 @@ a:focus {
   flex-wrap: wrap;
   margin: auto;
   justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .winner {
