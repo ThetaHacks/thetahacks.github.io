@@ -441,8 +441,11 @@ html {
 }
 
 .stuf1 {
-  display: block;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
   padding: 20px 20px 40px 20px;
+  min-width: 900px;
 }
 
 #about-section {
@@ -506,6 +509,7 @@ a:focus {
 
   .stuf1 {
     font-size: 0.8rem !important;
+    min-width: 0px;
   }
   .text3 {
     font-size: 0.8rem !important;
