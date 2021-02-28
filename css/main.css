@@ -112,9 +112,8 @@ figure {
 
   border: 5px transparent;
 
-  background-clip:content-box;
+  background-clip: content-box;
 }
-
 
 .figure-image-container {
   background: transparent;
@@ -131,7 +130,6 @@ figure {
   border-radius: 180px;
 
   transition: transform 0.3s ease-out;
-
 }
 
 .figure-image-container:hover {
@@ -139,23 +137,30 @@ figure {
 }
 
 .figure-image-container:after {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(-1 * 5px);
   left: calc(-1 * 5px);
   height: calc(100% + 5px * 2);
   width: calc(100% + 5px * 2);
-  
-  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
   border-radius: 180px;
   animation: animatedgradient 3s ease alternate infinite;
   background-size: 300% 300%;
 
   transition: transform 0.3s ease-out;
 }
-
-
-
 
 @keyframes animated-gradient {
   25% {
@@ -200,7 +205,6 @@ figure {
 
   /* border */
   border-radius: 180px;
-  
 
   /* border-radius: 50%;
   border: 0.3vw solid #eeeeee;
@@ -222,7 +226,6 @@ figure {
   transition: transform 0.3s ease-out;
 
   border-radius: 180px;
-  
 }
 
 .figure-image-container-e:hover {
@@ -230,13 +233,23 @@ figure {
 }
 
 .figure-image-container-e:after {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(-1 * 5px);
   left: calc(-1 * 5px);
   height: calc(100% + 5px * 2);
   width: calc(100% + 5px * 2);
-  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
   border-radius: 180px;
   z-index: -1;
   animation: animatedgradient 3s ease alternate infinite;
@@ -245,20 +258,17 @@ figure {
   transition: transform 0.3s ease-out;
 }
 
-
-
 @keyframes animatedgradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-
 
 .figure-image-e3 {
   /* size */
@@ -275,7 +285,7 @@ figure {
   /* border */
   border-radius: 180px;
 
- position: relative;
+  position: relative;
   z-index: 1 !important;
   /* border-radius: 50%;
   border: 0.3vw solid #eeeeee;
@@ -293,24 +303,33 @@ figure {
   max-height: 200px;
   min-width: 80px;
   min-height: 80px;
-  
+
   transition: transform 0.3s ease-out;
 
   border-radius: 180px;
-  
 }
 
 .figure-image-container-e3:hover {
   transform: scale(1.05);
 }
 .figure-image-container-e3:after {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(-1 * 5px);
   left: calc(-1 * 5px);
   height: calc(100% + 5px * 2);
   width: calc(100% + 5px * 2);
-  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
   border-radius: 180px;
   animation: animatedgradient 3s ease alternate infinite;
   z-index: 0 !important;
@@ -318,9 +337,6 @@ figure {
 
   transition: transform 0.3s ease-out;
 }
-
-
-
 
 .figure-caption {
   color: lightgray;
@@ -600,10 +616,8 @@ a:focus {
   }
 }
 
-
 .winner-box-1 {
   justify-content: center;
-  
 }
 
 .winner-box {
@@ -633,7 +647,7 @@ a:focus {
 }
 
 .winner > h3 {
-  font-size: 2.0rem !important;
+  font-size: 2rem !important;
   font-family: Montserrat;
   color: #c0e8f9;
   margin-bottom: 30px;
