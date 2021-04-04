@@ -10,14 +10,11 @@ Due to COVID-19, the official date for the 2021 in-person hackathon has not been
 
 ### Team
 
-<strong>Coordinators</strong>: Anshul Gupta, Rohan Bansal, Andy Li<br>
-<strong>Team</strong>: Chenghao Li, Aanika Jain, Neel Gajare, Kai McCormick<br>
+Anshul Gupta, Rohan Bansal, Chenghao Li, Aanika Jain, Neel Gajare, Kai McCormick<br>
 
 ### Website
 
 https://thetahacks.tech
-
-Website created by **AndyLi23**, **theAnshulGupta**, **KaiDevrim**, and **Rohan-Bansal**
 
 ### Sign up Today!
 
