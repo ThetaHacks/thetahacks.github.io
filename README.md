@@ -8,9 +8,9 @@ ThetaHacks I Virtual was an online hackathon from January 15-18, 2021, with team
 
 Due to COVID-19, the official date for the 2021 in-person hackathon has not been determined yet. We are, however, hosting a digital hackathon on January 15-18, 2021! Register on our site.
 
-### Team
+### Website Credits
 
-Anshul Gupta, Rohan Bansal, Chenghao Li, Aanika Jain, Neel Gajare, Kai McCormick<br>
+Anshul Gupta, Rohan Bansal, Kai McCormick, Andy Li<br>
 
 ### Website
 
