@@ -2,11 +2,7 @@
 
 # ThetaHacks I Official Website
 
-The official site for ThetaHacks, a digital high school hackathon located online.
-
-ThetaHacks I Virtual was an online hackathon from January 15-18, 2021, with teams of up to four people. 
-
-Due to COVID-19, the official date for the 2021 in-person hackathon has not been determined yet. We are, however, hosting a digital hackathon on January 15-18, 2021! Register on our site.
+ThetaHacks was a global hackathon from January 15-18, 2021, with teams of up to four people.
 
 ### Website Credits
 
@@ -14,7 +10,7 @@ Anshul Gupta, Rohan Bansal, Kai McCormick, Andy Li<br>
 
 ### Website
 
-https://thetahacks.tech
+https://thetahacks.github.io
 
 ### Sign up Today!
 
@@ -23,7 +19,7 @@ Mentor: Signups on website! <br>
 
 ### Join our Discord!
 
-Discord: https://thetahacks.tech/discord  
+Discord: https://thetahacks.github.io/discord  
 Discord Bot: https://github.com/ThetaHacks/ThetaHacksBot
 
 ### Be sure to follow us on social media!
